@@ -19,6 +19,46 @@
 
 KDL_CLASS_INTROSPECTION_1 (KMainMenu, KMenuWindow)
 
+#if defined(__APPLE__) && defined(__MACH__) // Mac default key bindings
+
+#define KEYS_OPEN    "META_o"
+#define KEYS_SAVE    "META_s"
+#define KEYS_SAVE_AS "SHIFT+META_s"
+#define KEYS_CLOSE   "META_w"
+#define KEYS_QUIT    "META_q"
+
+#define KEYS_CUT     "META_x"
+#define KEYS_COPY    "META_c"
+#define KEYS_PASTE   "META_v"
+#define KEYS_UNDO    "META_z"
+
+#define KEYS_SHORTCUTS "CTRL_s"
+#define KEYS_SCREENSHOT "SHIFT+ALT_s"
+
+#define KEYS_TEST    "META_t"
+#define KEYS_ABOUT   "SHIFT+CTRL+ALT+META_a"
+
+#else // Windows/Linux default key bindings
+
+#define KEYS_OPEN    "CTRL_o"
+#define KEYS_SAVE    "CTRL_s"
+#define KEYS_SAVE_AS "SHIFT+CTRL_s"
+#define KEYS_CLOSE   "CTRL_w"
+#define KEYS_QUIT    "CTRL_q"
+
+#define KEYS_CUT     "CTRL_x"
+#define KEYS_COPY    "CTRL_c"
+#define KEYS_PASTE   "ALT_v"
+#define KEYS_UNDO    "CTRL_z"
+
+#define KEYS_SHORTCUTS  "ALT_s"
+#define KEYS_SCREENSHOT "SHIFT+ALT_s"
+
+#define KEYS_TEST    "ALT_t"
+#define KEYS_ABOUT   "SHIFT+CTRL+ALT_a"
+
+#endif
+
 // --------------------------------------------------------------------------------------------------------
 KMainMenu::KMainMenu () : KMenuWindow ()
 {
@@ -58,29 +98,29 @@ void KMainMenu::create ()
             item->addReceiverCallback(Controller.modules, (KSetStringPtr)&KModules::addObjectCallback);
          
     addMenuItem(new KSubMenuItem ("file", fileMenu));
-        fileMenu->addChild(item = new KMenuItem ("save", "META_s"));
+        fileMenu->addChild(item = new KMenuItem ("save", KEYS_SAVE));
         item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::save );
-        fileMenu->addChild(item = new KMenuItem ("save as ...", "SHIFT+META_s"));
+        fileMenu->addChild(item = new KMenuItem ("save as ...", KEYS_SAVE_AS));
         item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::saveAs );
-        fileMenu->addChild(item = new KMenuItem ("open ...", "META_o"));
+        fileMenu->addChild(item = new KMenuItem ("open ...", KEYS_OPEN));
         item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::open );
-        fileMenu->addChild(item = new KMenuItem ("close", "META_w"));
+        fileMenu->addChild(item = new KMenuItem ("close", KEYS_CLOSE));
         item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::close );
         
         fileMenu->addChild(item = new KSubMenuItem ("textures", texturesMenu));
         module_mode_items.push_back(item);
-            texturesMenu->addChild(item = new KMenuItem ("texture file", "CTRL_t f"));
+            texturesMenu->addChild(item = new KMenuItem ("texture file", "ALT_t ALT_f"));
             ADD_OBJECT_CALLBACK
-            texturesMenu->addChild(item = new KMenuItem ("texture batch", "CTRL_t b"));
+            texturesMenu->addChild(item = new KMenuItem ("texture batch", "ALT_t ALT_b"));
             ADD_OBJECT_CALLBACK
-            texturesMenu->addChild(item = new KMenuItem ("texture set", "CTRL_t s"));
+            texturesMenu->addChild(item = new KMenuItem ("texture set", "ALT_t ALT_s"));
             ADD_OBJECT_CALLBACK
             texturesMenu->addChild(item = new KMenuItem ("save", "ALT_t s"));
             item->addReceiverCallback(Controller.texture_sets, (KCallbackPtr)&KTextureSets::save );
             texturesMenu->addChild(item = new KMenuItem ("close", "ALT_t w"));
             item->addReceiverCallback(Controller.texture_sets, (KCallbackPtr)&KTextureSets::close );
 
-        fileMenu->addChild(item = new KMenuItem ("quit", "META_q"));
+        fileMenu->addChild(item = new KMenuItem ("quit", KEYS_QUIT));
         item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::quit );
             
     addMenuItem(new KSubMenuItem ("view", viewMenu));
@@ -100,7 +140,8 @@ void KMainMenu::create ()
         
         viewMenu->addChild(item = new KSubMenuItem ("modules", viewModulatorsMenu));
         module_mode_items.push_back(item);
-            viewModulatorsMenu->addChild(item = new KStatusMenuItem ("hide modulators", "show modulators", 											"CTRL_h CTRL_m"));
+            viewModulatorsMenu->addChild(item = new KStatusMenuItem ("hide modulators", "show modulators",
+																						"CTRL_h CTRL_m"));
             item->addReceiverCallback(Controller.modules, (KSetBoolPtr)&KModules::setShowModulators );
             item->setProviderCallback(Controller.modules, (KGetBoolPtr)&KModules::getShowModulators );
             viewModulatorsMenu->addChild(item = new KStatusMenuItem ("hide connections", "show connections",
@@ -142,11 +183,11 @@ void KMainMenu::create ()
             item->addReceiverCallback(Controller.modules->objects, (KSetBoolPtr)&KObjects::showAll );
                 
         viewMenu->addChild(item = new KSubMenuItem ("mode", displayModeMenu));
-            displayModeMenu->addChild(item = new KStatusMenuItem ("nice & slow", "fast & ugly", "CTRL_n"));
+            displayModeMenu->addChild(item = new KStatusMenuItem ("nice & slow", "fast & ugly", "CTRL_d CTRL_u"));
             item->addReceiverCallback(&Controller, (KSetBoolPtr)&KEventHandler::setFastDisplay );
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KEventHandler::getFastDisplay );
         
-            displayModeMenu->addChild(item = new KStatusMenuItem ("solid", "wireframe", "CTRL_w"));
+            displayModeMenu->addChild(item = new KStatusMenuItem ("solid", "wireframe", "CTRL_d w"));
             item->addReceiverCallback(&Controller, (KSetBoolPtr)&KController::setWireframeMode );
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KController::getWireframeMode );
             displayModeMenu->addChild(item = new KStatusMenuItem ("constrained rotation", "free rotation",
@@ -154,17 +195,17 @@ void KMainMenu::create ()
             animation_mode_items.push_back(item); // active in animation mode
             item->addReceiverCallback(&Controller, (KSetBoolPtr)&KController::setFreeRotation );
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KController::getFreeRotation );
-            displayModeMenu->addChild(item = new KStatusMenuItem ("window", "fullscreen", "CTRL_f"));
+            displayModeMenu->addChild(item = new KStatusMenuItem ("window", "fullscreen", "CTRL_d CTRL_f"));
             item->addReceiverCallback(&Controller, (KSetBoolPtr)&KController::setFullscreenMode );
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KController::getFullscreenMode );
 #ifdef TEST_MODE
-            displayModeMenu->addChild(item = new KStatusMenuItem ("no test", "test", "META_t"));
+            displayModeMenu->addChild(item = new KStatusMenuItem ("no test", "test", KEYS_TEST));
             item->addReceiverCallback(&Controller, (KSetBoolPtr)&KController::setTestFlag );
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KController::getTestFlag );
             animation_mode_items.push_back(item); // active in animation mode
 #endif
             displayModeMenu->addChild(item = new KStatusMenuItem ("hide shortcuts", "show shortcuts",
-                                                                                            "CTRL_s"));
+                                                                                            KEYS_SHORTCUTS));
             item->addReceiverCallback(this, (KSetBoolPtr)&KMainMenu::setShowShortCuts );
             item->setProviderCallback(this, (KGetBoolPtr)(bool (KWidget::*)() const)&KMainMenu::getShowShortCuts );
 
@@ -173,7 +214,7 @@ void KMainMenu::create ()
             item->setProviderCallback(&Controller, (KGetBoolPtr)&KController::getDisplayFps );
             animation_mode_items.push_back(item); // active in animation mode
 
-            displayModeMenu->addChild(item = new KMenuItem ("save screenshot", "ALT_s ALT_s"));
+            displayModeMenu->addChild(item = new KMenuItem ("save screenshot", KEYS_SCREENSHOT));
             item->addReceiverCallback(&Controller, (KCallbackPtr)&KController::saveScreenShot );
             animation_mode_items.push_back(item); // active in animation mode
 
@@ -191,108 +232,108 @@ void KMainMenu::create ()
                 
     addMenuItem(item = new KSubMenuItem ("matrix", matrixMenu));
     module_mode_items.push_back(item);	
-        matrixMenu->addChild(item = new KMenuItem ("transform", "CTRL_m m"));
+        matrixMenu->addChild(item = new KMenuItem ("transform", "ALT_m m"));
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("scale", "CTRL_m s")); 		
+        matrixMenu->addChild(item = new KMenuItem ("scale", "ALT_m s")); 		
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("rotate", "CTRL_m r"));
+        matrixMenu->addChild(item = new KMenuItem ("rotate", "ALT_m r"));
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("translate", "CTRL_m t"));		
+        matrixMenu->addChild(item = new KMenuItem ("translate", "ALT_m t"));		
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("identity", "CTRL_m i"));
+        matrixMenu->addChild(item = new KMenuItem ("identity", "ALT_m i"));
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("goto", "CTRL_m g"));
+        matrixMenu->addChild(item = new KMenuItem ("goto", "ALT_m g"));
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("label", "CTRL_m l"));
+        matrixMenu->addChild(item = new KMenuItem ("label", "ALT_m l"));
         ADD_OBJECT_CALLBACK
-        matrixMenu->addChild(item = new KMenuItem ("matrix hub", "CTRL_m h"));
+        matrixMenu->addChild(item = new KMenuItem ("matrix hub", "ALT_m h"));
         ADD_OBJECT_CALLBACK
    
     addMenuItem(item = new KSubMenuItem ("objects", modulesMenu));
     module_mode_items.push_back(item);
         modulesMenu->addChild(new KSubMenuItem ("attributes", attributesMenu));
-            attributesMenu->addChild(item = new KMenuItem ("color", "CTRL_a c"));
+            attributesMenu->addChild(item = new KMenuItem ("color", "ALT_a c"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("texture", "CTRL_a t"));
+            attributesMenu->addChild(item = new KMenuItem ("texture", "ALT_a t"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("texture (file)", "CTRL_a f"));
+            attributesMenu->addChild(item = new KMenuItem ("texture (file)", "ALT_a f"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("texture matrix", "CTRL_a SHIFT_t"));
+            attributesMenu->addChild(item = new KMenuItem ("texture matrix", "ALT_a SHIFT_t"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("material", "CTRL_a m"));
+            attributesMenu->addChild(item = new KMenuItem ("material", "ALT_a m"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("blend", "CTRL_a b"));
+            attributesMenu->addChild(item = new KMenuItem ("blend", "ALT_a b"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("color mask", "CTRL_a SHIFT_c"));
+            attributesMenu->addChild(item = new KMenuItem ("color mask", "ALT_a SHIFT_c"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("size","CTRL_a s"));
+            attributesMenu->addChild(item = new KMenuItem ("size","ALT_a s"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("fog"));
+            attributesMenu->addChild(item = new KMenuItem ("fog","ALT_a o"));
             ADD_OBJECT_CALLBACK
-            attributesMenu->addChild(item = new KMenuItem ("attribute hub", "CTRL_a h"));
+            attributesMenu->addChild(item = new KMenuItem ("attribute hub", "ALT_a h"));
             ADD_OBJECT_CALLBACK
 
-            modulesMenu->addChild(item = new KMenuItem ("sphere", "CTRL_o s"));
+            modulesMenu->addChild(item = new KMenuItem ("sphere", "ALT_o s"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("cube", "CTRL_o c"));
+            modulesMenu->addChild(item = new KMenuItem ("cube", "ALT_o c"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("cylinder", "CTRL_o y"));
+            modulesMenu->addChild(item = new KMenuItem ("cylinder", "ALT_o y"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("disk", "CTRL_o d"));
+            modulesMenu->addChild(item = new KMenuItem ("disk", "ALT_o d"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("face", "CTRL_o f"));
+            modulesMenu->addChild(item = new KMenuItem ("face", "ALT_o f"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("point", "CTRL_o p"));
+            modulesMenu->addChild(item = new KMenuItem ("point", "ALT_o p"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("l-system", "CTRL_o SHIFL_l"));
+            modulesMenu->addChild(item = new KMenuItem ("l-system", "ALT_o SHIFL_l"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("text", "CTRL_o t"));
+            modulesMenu->addChild(item = new KMenuItem ("text", "ALT_o t"));
             ADD_OBJECT_CALLBACK
             modulesMenu->addChild(item = new KMenuItem ("landscape"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("particle emitter", "CTRL_o e"));
+            modulesMenu->addChild(item = new KMenuItem ("particle emitter", "ALT_o e"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("particle", "CTRL_o SHIFT_p"));
+            modulesMenu->addChild(item = new KMenuItem ("particle", "ALT_o SHIFT_p"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("vertex", "CTRL_o v"));
+            modulesMenu->addChild(item = new KMenuItem ("vertex", "ALT_o v"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("light", "CTRL_o l"));
+            modulesMenu->addChild(item = new KMenuItem ("light", "ALT_o l"));
             ADD_OBJECT_CALLBACK
-            modulesMenu->addChild(item = new KMenuItem ("camera", "CTRL_o SHIFT_c"));
+            modulesMenu->addChild(item = new KMenuItem ("camera", "ALT_o SHIFT_c"));
             ADD_OBJECT_CALLBACK
     addMenuItem(item = new KSubMenuItem ("value", valueMenu));
         valueMenu->addChild(item = new KSubMenuItem ("shortcuts", valueShortcutsMenu));
-            valueShortcutsMenu->addChild(item = new KMenuItem ("add modulated variable", "SHIFT+CTRL_a"));
+            valueShortcutsMenu->addChild(item = new KMenuItem ("add modulated variable", "SHIFT+ALT_a"));
             ADD_OBJECT_CALLBACK
-            valueShortcutsMenu->addChild(item = new KMenuItem ("multiply modulated variable", "SHIFT+CTRL_m"));
+            valueShortcutsMenu->addChild(item = new KMenuItem ("multiply modulated variable", "SHIFT+ALT_m"));
             ADD_OBJECT_CALLBACK
-            valueShortcutsMenu->addChild(item = new KMenuItem ("multiply and modulo", "SHIFT+CTRL_s"));
+            valueShortcutsMenu->addChild(item = new KMenuItem ("multiply and modulo", "SHIFT+ALT_o"));
             ADD_OBJECT_CALLBACK
-            valueShortcutsMenu->addChild(item = new KMenuItem ("trigger switches value", "SHIFT+CTRL_t"));
+            valueShortcutsMenu->addChild(item = new KMenuItem ("trigger switches value", "SHIFT+ALT_v"));
             ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("variable", "CTRL_v v"));
+        valueMenu->addChild(item = new KMenuItem ("variable", "ALT_v v"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("multiply", "CTRL_v m"));
+        valueMenu->addChild(item = new KMenuItem ("multiply", "ALT_v m"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("modulo", "CTRL_v SHIFT_m"));
+        valueMenu->addChild(item = new KMenuItem ("modulo", "ALT_v SHIFT_m"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("add", "CTRL_v a"));
+        valueMenu->addChild(item = new KMenuItem ("add", "ALT_v a"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("switch", "CTRL_v s"));
+        valueMenu->addChild(item = new KMenuItem ("switch", "ALT_v s"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("trigger", "CTRL_v t"));
+        valueMenu->addChild(item = new KMenuItem ("trigger", "ALT_v t"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("accu", "CTRL_v c"));
+        valueMenu->addChild(item = new KMenuItem ("accu", "ALT_v c"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("random", "CTRL_v r"));
+        valueMenu->addChild(item = new KMenuItem ("random", "ALT_v r"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("attack", "CTRL_v CTRL_a"));
+        valueMenu->addChild(item = new KMenuItem ("attack", "ALT_v ALT_a"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("decay", "CTRL_v CTRL_d"));
+        valueMenu->addChild(item = new KMenuItem ("decay", "ALT_v ALT_d"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("invert", "CTRL_v CTRL_i"));
+        valueMenu->addChild(item = new KMenuItem ("invert", "ALT_v ALT_i"));
         ADD_OBJECT_CALLBACK
-        valueMenu->addChild(item = new KMenuItem ("modulator", "CTRL_v CTRL_m"));
+        valueMenu->addChild(item = new KMenuItem ("modulator", "ALT_v ALT_m"));
         ADD_OBJECT_CALLBACK
         /*
         modulesMenu->addChild(new KSubMenuItem ("scenes", scenesMenu));
@@ -310,17 +351,17 @@ void KMainMenu::create ()
 #undef ADD_OBJECT_CALLBACK
 
     addMenuItem(item = new KSubMenuItem ("edit", editMenu));
-        editMenu->addChild(item = new KMenuItem ("cut", "META_x"));
+        editMenu->addChild(item = new KMenuItem ("cut", KEYS_CUT));
         module_mode_items.push_back(item);
         item->addReceiverCallback(Controller.modules, (KCallbackPtr)&KModules::cut );
         KEventHandler::menu_key_handler.setSequenceCallback
                                                 ("DELETE", item, (KCallbackPtr)&KMenuItem::activate);
         KEventHandler::menu_key_handler.setSequenceCallback
                                                 ("BACKSPACE", item, (KCallbackPtr)&KMenuItem::activate);
-        editMenu->addChild(item = new KMenuItem ("copy", "META_c"));
+        editMenu->addChild(item = new KMenuItem ("copy", KEYS_COPY));
         module_mode_items.push_back(item);
         item->addReceiverCallback(Controller.modules, (KCallbackPtr)&KModules::copy );
-        editMenu->addChild(item = new KMenuItem ("paste", "META_v"));
+        editMenu->addChild(item = new KMenuItem ("paste", KEYS_PASTE));
         item->addReceiverCallback(Controller.modules, (KCallbackPtr)&KModules::paste );
         module_mode_items.push_back(item);
         
@@ -355,7 +396,7 @@ void KMainMenu::create ()
             selectHandleMenu->addChild(item = new KMenuItem ("previous sibling", "LEFT"));
             item->addReceiverCallback(Controller.modules->objects,(KCallbackPtr)&KObjects::showPrevSibling );
 
-        editMenu->addChild(item = new KMenuItem ("unpick", "META_z"));
+        editMenu->addChild(item = new KMenuItem ("unpick", KEYS_UNDO));
         module_mode_items.push_back(item);
         item->addReceiverCallback((KObject*)Controller.modules, (KCallbackPtr)&KModules::unpick );
 
@@ -392,8 +433,8 @@ void KMainMenu::create ()
         windowMenu->addChild(item = new KStatusMenuItem ("hide preferences", "show preferences", "CTRL_h CTRL_p"));
         item->addReceiverCallback(Controller.preferences, (KSetBoolPtr)&KPreferences::setVisibility );
         item->setProviderCallback(Controller.preferences, (KGetBoolPtr)(bool (KWidget::*)() const)&KPreferences::getVisibility );
-        windowMenu->addChild(item = new KMenuItem ("about kodisein", "SHIFT+CTRL+ALT+META_a"));
-        item->addReceiverCallback(this, (KSetBoolPtr)(void (KWidget::*)(bool))&KMainMenu::displayAboutPanel );
+        windowMenu->addChild(item = new KMenuItem ("about kodisein", KEYS_ABOUT));
+        item->addReceiverCallback(this, (KCallbackPtr)&KMainMenu::displayAboutPanel );
             
     rButton = new KButton ("r");
     tButton = new KButton ("t");
@@ -559,12 +600,14 @@ bool KMainMenu::getShowShortCuts () const
 // --------------------------------------------------------------------------------------------------------
 void KMainMenu::displayIntroPanel ()
 {
-    KMessagePanel::displayMessage("welcome to kodisein!", kStringPrintf("this is kodisein version %3.1f\n\nplease read the manual before using the program.\nit's available at:\n\nhttp://www.mulle-kybernetik.com/software/kodisein\n\nI hope you enjoy using this software.\nplease send feedback to:\n\nmonsterkodi@gmx.net\n", KODISEIN_VERSION));
+    KMessagePanel::displayMessage("welcome to kodisein!", 
+		kStringPrintf("this is kodisein version %3.1f\n\nplease read the manual before using the program.\nit's available at:\n\nhttp://kodisein.sourceforge.net\n\nI hope you enjoy using this software.\nplease send feedback to:\n\nmonsterkodi@users.sourceforge.net\n", KODISEIN_VERSION));
 }
 
 // --------------------------------------------------------------------------------------------------------
 void KMainMenu::displayAboutPanel ()
 {
-    KMessagePanel::displayMessage("about kodisein", kStringPrintf("kodisein version %3.1f\n\nwww.mulle-kybernetik.com/software/kodisein\n\n2002 by (monster)kodi\n", KODISEIN_VERSION));
+    KMessagePanel::displayMessage("about kodisein", 
+		kStringPrintf("kodisein version %3.1f\n\nkodisein.sourceforge.net\n\n2002,2004 by (monster)kodi\n", KODISEIN_VERSION));
 }
 

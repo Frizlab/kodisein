@@ -590,7 +590,10 @@ void KEventHandler::mainLoop ()
                     handleMouseButtonEvent(event.button);
                     break;
                 case SDL_VIDEORESIZE:
-                    // todo
+					setScreenSize(KSize(((SDL_ResizeEvent *)&event)->w, 
+										((SDL_ResizeEvent *)&event)->h), getFullscreen());
+					//KController::texture_sets->reload();
+					resetLighting();
                     break;
                 case SDL_QUIT:
                     return;

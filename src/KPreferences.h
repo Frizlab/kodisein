@@ -119,7 +119,7 @@ class KPreferences : public KWindow
     void		setBindMouseYKey	( const string & s ) { bind_mouse_y_key = s; }
     string 		getBindMouseYKey	() const { return bind_mouse_y_key; }
 
-    void		setModStatusHeight	( float f ) { mod_status_height = kMax(0,kMin((int)f,10)); }
+    void		setModStatusHeight	( float f ) { mod_status_height = kMax(0,kMin((int)f,30)); }
     float 		getModStatusHeight	() const { return (float)mod_status_height; }
 };
 
