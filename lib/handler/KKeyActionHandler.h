@@ -9,7 +9,7 @@
 #include "KKeyHandler.h"
 #include "KConsole.h"
 
-#include <hash_map>
+#include <hash_map>
 
 using namespace std;
 
