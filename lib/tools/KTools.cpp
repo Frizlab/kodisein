@@ -20,17 +20,17 @@ SDL_PixelFormat KDL_PIXEL_FORMAT = {
     0x04,    		// bytes per pixel
     0x0,0x0,0x0,0x0,	// loss
     0x18,0x10,0x08,0x0, // shift
-#if SDL_BYTEORDER == SDL_BIG_ENDIAN
+//#if SDL_BYTEORDER == SDL_BIG_ENDIAN
     0xff000000, 	// rmask 
     0x00ff0000, 	// gmask
     0x0000ff00, 	// bmask
     0x000000ff, 	// amask
-#else
-    0x000000ff, 	// rmask
-    0x0000ff00, 	// gmask
-    0x00ff0000, 	// bmask
-    0xff000000, 	// amask
-#endif
+//#else
+//    0x000000ff, 	// rmask
+//    0x0000ff00, 	// gmask
+//    0x00ff0000, 	// bmask
+//    0xff000000, 	// amask
+//#endif
     0x0,		// color key
     0xff 		// alpha
 };

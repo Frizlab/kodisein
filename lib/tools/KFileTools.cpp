@@ -51,13 +51,15 @@ string kFileHomeDir ()
 // --------------------------------------------------------------------------------------------------------
 string kFileNativePath ( const string & path )
 {
-	string native(path);
+	string replaced(path);
+    
 #ifdef WIN32
-	kStringReplace(native, "/", "\\");
+	kStringReplace(replaced, "/", "\\");
 #else
-	kStringReplace(native, "\\", "/");
+	kStringReplace(replaced, "/", "\\");
 #endif
-	return native;
+
+	return replaced;
 }
 
 // --------------------------------------------------------------------------------------------------------
@@ -84,7 +86,6 @@ bool kFileHasParent ( const string & path )
 	if (path.size() == 1 && path[0] == kPathSep) return false;
 	if (path.size() == 2 && path[1] == ':') return false;
 	if (path.size() == 3 && path[1] == ':' && path[2] == kPathSep) return false;
-	KConsole::dbg("path: %s size: %d", path.c_str(), path.size());
 	return true;
 }
 

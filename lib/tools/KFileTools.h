@@ -32,5 +32,6 @@ bool 		kFileGetDirEntries 	( const string &, vector<string> &, bool = false );
 string 		kFileReadStringFromFile ( const string &, unsigned int = 0 );
 bool 		kFileWriteStringToFile  ( const string &, const string & );
 string      kFileJoinPaths      ( const string &, const string & );
+string      kFileNativePath     ( const string & );
  
 #endif

@@ -180,7 +180,6 @@ void KFileTreeWidget::displayContent ()
     
     if (kFileHasParent(getCurrentDir()))
     {
-		KConsole::dbg("current_dir_node: %s", getCurrentDir().c_str());
         up_node->display();
     }
     

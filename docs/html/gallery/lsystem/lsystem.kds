@@ -2,30 +2,30 @@
 <Modules>
   <Projection>
     <Value name='matrix' type='matrix'>
-      0.152797 -0.553623 0.81863 24.2682
-      -2.6077e-07 0.828356 0.5602 23.6355
-      -0.988257 -0.0855974 0.126571 1.18057
+      0.217905 -0.288588 0.932327 38.9557
+      -1.86377e-007 0.955282 0.295694 18.8293
+      -0.975969 -0.0644332 0.208161 6.22964
       0 0 0 1
     </Value>
-    <Value name='eye distance' type='float' value='31.4886' />
+    <Value name='eye distance' type='float' value='43.4022' />
   </Projection>
   <ResetProjection>
     <Projection>
       <Value name='matrix' type='matrix'>
         0.152797 -0.553623 0.81863 24.2682
-        -2.6077e-07 0.828356 0.5602 23.6355
+        -2.6077e-007 0.828356 0.5602 23.6355
         -0.988257 -0.0855974 0.126571 1.18057
         0 0 0 1
       </Value>
       <Value name='eye distance' type='float' value='31.4886' />
     </Projection>
   </ResetProjection>
-  <GlobalModulator x='-0.330636' y='-1.07552' z='9.76785'>
+  <GlobalModulator x='-0.320032' y='-1.07552' z='9.74216'>
     <Value name='description' type='string'>
       "global modulator"
     </Value>
     <Value name='texture set' type='string'>
-      "../textureset.kts"
+      ""
     </Value>
     <Value name='clear frame' type='string'>
       "yes"
@@ -952,7 +952,7 @@
   <Projection>
     <Value name='matrix' type='matrix'>
       0.999073 -0.0146979 -0.0403434 4.65139
-      -2.65427e-07 0.939583 -0.342317 -4.11824
+      -2.65427e-007 0.939583 -0.342317 -4.11824
       0.0429373 0.342 0.938715 16.4388
       0 0 0 1
     </Value>
@@ -962,7 +962,7 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         0.999529 -0.00288216 0.030244 0.00840122
-        4.21656e-07 0.995489 0.0948528 1.5315
+        4.21656e-007 0.995489 0.0948528 1.5315
         -0.0303809 -0.0948091 0.995025 18.3621
         0 0 0 1
       </Value>
