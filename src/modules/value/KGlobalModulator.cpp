@@ -357,12 +357,14 @@ void KGlobalModulator::initScene ()
     }
     else
     {
+		/*
         glPushAttrib(GL_PIXEL_MODE_BIT);
         glReadBuffer(GL_FRONT);
         glAccum(GL_LOAD, 0.5);
         glDrawBuffer(GL_BACK);
         glAccum(GL_RETURN, 1.0);
         glPopAttrib();
+		*/
     }
 
     // always clear the depth buffer
@@ -421,15 +423,15 @@ void KGlobalModulator::createConnectors ()
     names.push_back("yes");
     names.push_back("no");
     vector<int> bools;
-    bools.push_back(true);
-    bools.push_back(false);
+    bools.push_back((int)true);
+    bools.push_back((int)false);
     ioConnector = new KConnectorIntValueInOut( this, names, bools, "clear frame" );
     ioConnector->translate (0.0, 0.9f, 1.5f); 
     ioConnector->rotate(RAD2DEG(0.5/asin((ir-1)*(ir-1)+0.25)), 0.0, 0.0);
     addConnector(ioConnector);
     values.push_back((KConnectorValueInOut*)ioConnector);
-    values.back()->addReceiverCallback(this, (KSetBoolPtr)&KGlobalModulator::setClearFrame);
-    values.back()->setProviderCallback(this, (KGetBoolPtr)&KGlobalModulator::getClearFrame);    
+    values.back()->addReceiverCallback(this, (KSetIntPtr)&KGlobalModulator::setClearFrame);
+    values.back()->setProviderCallback(this, (KGetIntPtr)&KGlobalModulator::getClearFrame);    
 }
 
 // --------------------------------------------------------------------------------------------------------

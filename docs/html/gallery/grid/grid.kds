@@ -2,12 +2,12 @@
 <Modules>
   <Projection>
     <Value name='matrix' type='matrix'>
-      0.164911 -0.184659 0.968866 31.7055
-      -6.38887e-007 0.982316 0.187222 28.951
-      -0.986305 -0.0308758 0.161995 -8.52341
+      0.996821 0.0353428 -0.0714139 -5.34641
+      -7.19394e-007 0.896252 0.443545 15.6326
+      0.079681 -0.442136 0.893403 0.730104
       0 0 0 1
     </Value>
-    <Value name='eye distance' type='float' value='39.4298' />
+    <Value name='eye distance' type='float' value='5.56073' />
   </Projection>
   <ResetProjection>
     <Projection>
@@ -20,7 +20,7 @@
       <Value name='eye distance' type='float' value='33.9679' />
     </Projection>
   </ResetProjection>
-  <GlobalModulator x='-4.9493' y='13.1662' z='-4.23787'>
+  <GlobalModulator x='-4.94083' y='13.1577' z='-4.23276'>
     <Value name='description' type='string'>
       "global modulator"
     </Value>

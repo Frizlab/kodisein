@@ -84,6 +84,7 @@ class KController : public KEventHandler
 
     void		setFastDisplay			( bool );
 
+	void		reloadTextures			();
     void		setFullscreenMode		( bool );
     bool		getFullscreenMode		() { return KEventHandler::getFullscreen(); }
 

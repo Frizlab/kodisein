@@ -44,7 +44,6 @@ bool KFileHandler::pushCurrentDir ( const string & newCurrentDir )
 {
     string absPathName = kFileAbsPathName(newCurrentDir);
     
-	KConsole::dbg("psh: %s", absPathName.c_str());
     if (chdir(absPathName.c_str()) == 0)
     {
         current_dir_stack.push_back(absPathName);
@@ -59,7 +58,6 @@ bool KFileHandler::pushCurrentDir ( const string & newCurrentDir )
 void KFileHandler::popCurrentDir ()
 {
     current_dir_stack.pop_back();
-	KConsole::dbg("pop: %s", current_dir_stack.back().c_str());
 	chdir (current_dir_stack.back().c_str());
 }
 

@@ -7,6 +7,7 @@
 #define __KGlobalModulator
 
 #include "KModulator.h"
+//#include "KConsole.h"
 
 class KModuleInspector;
 
@@ -50,8 +51,8 @@ class KGlobalModulator : public KModulator
     float		getMouseX		() { return mouse_x; }
     float		getMouseY		() { return mouse_y; }
 
-    void		setClearFrame		( bool b ) { clear_frame = b; }
-    bool		getClearFrame		() const { return clear_frame; }
+    void		setClearFrame		( int b ) { clear_frame = (bool)b; }
+    int			getClearFrame		() const { return (int)clear_frame; }
 
     string		getDocumentation	();
     int			getSex			() const { return VALUEMODULE_SEX_FEMALE; }

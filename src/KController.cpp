@@ -119,6 +119,10 @@ bool KController::init ()
     startModuleEditing();
     resetLighting();
 
+	KEventHandler::notification_center.addReceiverCallback
+        (this, (KCallbackPtr)&KController::reloadTextures, KDL_NOTIFICATION_TYPE_VIDEO_MODE_CHANGED);
+
+	
     return true;
 }
 
@@ -282,7 +286,16 @@ void KController::setFullscreenMode ( bool fullScreen )
 {
     KEventHandler::setScreenSize(fullScreen ? preferences->fullscreen_size : preferences->window_size, 
                                  fullScreen);
+	/*
     texture_sets->reload();
+    resetLighting();
+	*/
+}
+
+// --------------------------------------------------------------------------------------------------------
+void KController::reloadTextures ()
+{
+	texture_sets->reload();
     resetLighting();
 }
 
