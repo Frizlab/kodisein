@@ -49,6 +49,18 @@ string kFileHomeDir ()
 }
 
 // --------------------------------------------------------------------------------------------------------
+string kFileNativePath ( const string & path )
+{
+	string native(path);
+#ifdef WIN32
+	kStringReplace(native, "/", "\\");
+#else
+	kStringReplace(native, "\\", "/");
+#endif
+	return native;
+}
+
+// --------------------------------------------------------------------------------------------------------
 string kFileSubstitutePath ( const string & path )
 {
     string filePath;

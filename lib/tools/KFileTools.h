@@ -17,6 +17,7 @@ extern const char kPathSep;
 
 // --------------------------------------------------------------------------------------------------------
 string		kFileSubstitutePath	( const string & );
+string		kFileNativePath		( const string & );
 bool		kFileIsImageFile 	( const string & );
 bool		kFileHasParent  	( const string & );
 bool		kFileIsAbsPath  	( const string & );
