@@ -1,0 +1,135 @@
+<KODISEIN version='1' />
+<Modules>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.204984 -0.869279 0.44982 6.4642
+      -8.9407e-08 0.459581 0.888136 9.75387
+      -0.978767 -0.182054 0.0942063 0.118339
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='12.7193' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        1 0 0 0
+        0 1 0 0
+        0 0 1 5
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='5' />
+    </Projection>
+  </ResetProjection>
+  <GlobalModulator x='2.76654' y='-0.514185' z='-4.85548'>
+    <Value name='description' type='string'>
+      "global modulator"
+    </Value>
+    <Value name='texture set' type='string'>
+      "textureset.kts"
+    </Value>
+    <Value name='clear frame' type='string'>
+      "yes"
+    </Value>
+    <Connector name='background'>
+      <Texture>
+        <Value name='description' type='string'>
+          "background texture"
+        </Value>
+        <Value name='batch index' type='float' value='0' />
+        <Value name='texture index' type='float' value='0' />
+        <Value name='version index' type='float' value='0' />
+        <Value name='env mode' type='string'>
+          "modulate"
+        </Value>
+        <Value name='s generation mode' type='string'>
+          "linear"
+        </Value>
+        <Value name='t generation mode' type='string'>
+          "linear"
+        </Value>
+        <Value name='blend red' type='float' value='0' />
+        <Value name='blend green' type='float' value='0' />
+        <Value name='blend blue' type='float' value='0' />
+        <Connector name='batch index'>
+          <Switch>
+            <Connector name='value in 2'>
+              <Variable>
+                <Value name='variable' type='float' value='1' />
+              </Variable>
+            </Connector>
+            <Connector name='switch'>
+              <Trigger>
+                <Value name='description' type='string'>
+                  "toggles the batch index"
+                </Value>
+                <Value name='activation key' type='string'>
+                  "b"
+                </Value>
+              </Trigger>
+            </Connector>
+          </Switch>
+        </Connector>
+        <Connector name='texture index'>
+          <Switch>
+            <Connector name='value in 2'>
+              <Variable>
+                <Value name='variable' type='float' value='1' />
+              </Variable>
+            </Connector>
+            <Connector name='switch'>
+              <Trigger>
+                <Value name='description' type='string'>
+                  "toggles the texture index"
+                </Value>
+                <Value name='activation key' type='string'>
+                  "t"
+                </Value>
+              </Trigger>
+            </Connector>
+          </Switch>
+        </Connector>
+        <Connector name='version index'>
+          <Switch>
+            <Connector name='value in 2'>
+              <Variable>
+                <Value name='variable' type='float' value='1' />
+              </Variable>
+            </Connector>
+            <Connector name='switch'>
+              <Trigger>
+                <Value name='description' type='string'>
+                  "toggles the version index"
+                </Value>
+                <Value name='activation key' type='string'>
+                  "v"
+                </Value>
+              </Trigger>
+            </Connector>
+          </Switch>
+        </Connector>
+      </Texture>
+    </Connector>
+  </GlobalModulator>
+</Modules>
+<Objects>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.879145 -0.174656 0.443378 23.6492
+      5.06639e-07 0.930413 0.366507 4.82324
+      -0.476537 -0.322214 0.817972 26.2776
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='29.4449' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.879145 -0.174656 0.443378 23.6492
+        5.06639e-07 0.930413 0.366507 4.82324
+        -0.476537 -0.322214 0.817972 26.2776
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='29.4449' />
+    </Projection>
+  </ResetProjection>
+</Objects>

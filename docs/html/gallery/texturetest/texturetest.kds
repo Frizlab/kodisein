@@ -1,0 +1,56 @@
+<KODISEIN version='1' />
+<Modules>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      1 0 0 0
+      0 1 0 0
+      0 0 1 5
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='5' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        1 0 0 0
+        0 1 0 0
+        0 0 1 5
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='5' />
+    </Projection>
+  </ResetProjection>
+  <GlobalModulator x='0' y='0' z='0'>
+    <Value name='description' type='string'>
+      "global modulator"
+    </Value>
+    <Value name='texture set' type='string'>
+      ""
+    </Value>
+    <Value name='clear frame' type='string'>
+      "yes"
+    </Value>
+  </GlobalModulator>
+</Modules>
+<Objects>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.091909 0.295731 -0.950834 -21.2799
+      -5.17815e-07 0.954878 0.296987 8.40082
+      0.995759 -0.0272956 0.0877625 1.09513
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='20' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.999529 -0.00288216 0.030244 0.00840122
+        4.21656e-07 0.995489 0.0948528 1.5315
+        -0.0303809 -0.0948091 0.995025 18.3621
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='8.74011' />
+    </Projection>
+  </ResetProjection>
+</Objects>

@@ -1,0 +1,939 @@
+<KODISEIN version='1' />
+<Modules>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.422 -0.675692 0.604447 15.5489
+      1.3411e-07 0.666721 0.745306 17.1341
+      -0.906595 -0.31452 0.281357 7.75449
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='17.1586' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.610383 -0.409054 0.678312 17.2026
+        -5.81145e-07 0.856339 0.516413 23.2064
+        -0.792106 -0.31521 0.522695 5.6012
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='29.1017' />
+    </Projection>
+  </ResetProjection>
+  <GlobalModulator x='5.17743' y='4.34566' z='2.92681'>
+    <Value name='description' type='string'>
+      "global modulator"
+    </Value>
+    <Value name='texture set' type='string'>
+      "../textureset.kts"
+    </Value>
+    <Value name='clear frame' type='string'>
+      "yes"
+    </Value>
+    <Connector name='modulator 1'>
+      <Modulator>
+        <Value name='description' type='string'>
+          "body rotation"
+        </Value>
+        <Value name='activation key' type='string'>
+          "F2"
+        </Value>
+        <Value name='sequence' type='string'>
+          "6.25"
+        </Value>
+        <Connector name='value out 1' id='1322150820' />
+        <Connector name='modulator 6'>
+          <Modulator>
+            <Value name='description' type='string'>
+              "backround texture rotation"
+            </Value>
+            <Value name='activation key' type='string'>
+              "r"
+            </Value>
+            <Value name='sequence' type='string'>
+              "25.2"
+            </Value>
+            <Connector name='value out 0' id='-1478664440' />
+          </Modulator>
+        </Connector>
+      </Modulator>
+    </Connector>
+    <Connector name='modulator 2'>
+      <Modulator>
+        <Value name='description' type='string'>
+          "body texture"
+        </Value>
+        <Value name='activation key' type='string'>
+          "t"
+        </Value>
+        <Value name='sequence' type='string'>
+          "6250"
+        </Value>
+        <Connector name='value out 2' id='1452394218'>
+          <Multiply>
+            <Connector name='value out' id='1288238498'>
+              <Modulo>
+                <Connector name='value out' id='-1424668001'>
+                  <Multiply>
+                    <Connector name='value out' id='1143872800'>
+                      <Modulo>
+                        <Connector name='value out' id='-1972663083' />
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='10' />
+                          </Variable>
+                        </Connector>
+                      </Modulo>
+                    </Connector>
+                    <Connector name='value in 2'>
+                      <Variable>
+                        <Value name='variable' type='float' value='10' />
+                      </Variable>
+                    </Connector>
+                  </Multiply>
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='10' />
+                  </Variable>
+                </Connector>
+              </Modulo>
+            </Connector>
+            <Connector name='value in 2'>
+              <Variable>
+                <Value name='variable' type='float' value='10' />
+              </Variable>
+            </Connector>
+          </Multiply>
+        </Connector>
+      </Modulator>
+    </Connector>
+    <Connector name='background'>
+      <TextureMatrix>
+        <Value name='pos x' type='float' value='0' />
+        <Value name='pos y' type='float' value='0' />
+        <Value name='size x' type='float' value='1' />
+        <Value name='size y' type='float' value='1' />
+        <Value name='rot x' type='float' value='0' />
+        <Value name='rot y' type='float' value='0' />
+        <Connector name='rot x'>
+          <Add>
+            <Connector name='value in 2'>
+              <Multiply>
+                <Connector name='value in 1'>
+                  <ValueOutLink id='-1478664440' />
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='360' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Add>
+        </Connector>
+        <Connector name='rot y'>
+          <Add>
+            <Connector name='value in 2'>
+              <Multiply>
+                <Connector name='value in 1'>
+                  <ValueOutLink id='-1478664440' />
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='360' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Add>
+        </Connector>
+        <Connector name='attributes in'>
+          <Color>
+            <Value name='red' type='float' value='0' />
+            <Value name='green' type='float' value='0' />
+            <Value name='blue' type='float' value='1' />
+            <Value name='alpha' type='float' value='1' />
+            <Connector name='attributes in'>
+              <Texture>
+                <Value name='batch index' type='float' value='0' />
+                <Value name='texture index' type='float' value='0' />
+                <Value name='version index' type='float' value='0' />
+                <Value name='env mode' type='string'>
+                  "modulate"
+                </Value>
+                <Value name='s generation mode' type='string'>
+                  "linear"
+                </Value>
+                <Value name='t generation mode' type='string'>
+                  "linear"
+                </Value>
+                <Value name='blend red' type='float' value='0' />
+                <Value name='blend green' type='float' value='0' />
+                <Value name='blend blue' type='float' value='0' />
+                <Connector name='batch index'>
+                  <Add>
+                    <Connector name='value in 2'>
+                      <Multiply>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='100' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Add>
+                </Connector>
+                <Connector name='texture index'>
+                  <Add>
+                    <Connector name='value in 2'>
+                      <Multiply>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='100' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Add>
+                </Connector>
+                <Connector name='version index'>
+                  <Add>
+                    <Connector name='value in 2'>
+                      <Multiply>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='100' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Add>
+                </Connector>
+              </Texture>
+            </Connector>
+          </Color>
+        </Connector>
+      </TextureMatrix>
+    </Connector>
+    <Connector name='clear frame'>
+      <Switch>
+        <Connector name='value in 2'>
+          <Variable>
+            <Value name='variable' type='float' value='1' />
+          </Variable>
+        </Connector>
+        <Connector name='switch'>
+          <Trigger>
+            <Value name='description' type='string'>
+              "clear frame"
+            </Value>
+            <Value name='activation key' type='string'>
+              "c"
+            </Value>
+          </Trigger>
+        </Connector>
+      </Switch>
+    </Connector>
+  </GlobalModulator>
+  <Modulator x='9.34393' y='7.37012' z='-10.4455'>
+    <Value name='description' type='string'>
+      "lower leg rotation"
+    </Value>
+    <Value name='activation key' type='string'>
+      "F4"
+    </Value>
+    <Value name='sequence' type='string'>
+      "1.25"
+    </Value>
+    <Connector name='value out 1' id='-1311890029'>
+      <Invert>
+        <Value name='pos' type='float' value='0.5' />
+        <Value name='length' type='float' value='0.5' />
+        <Connector name='value out' id='-1836866314'>
+          <Multiply>
+            <Connector name='value out' id='-1913916779'>
+              <Invert>
+                <Value name='pos' type='float' value='0' />
+                <Value name='length' type='float' value='1' />
+                <Connector name='value out' id='-1221361382' />
+              </Invert>
+            </Connector>
+            <Connector name='value in 2'>
+              <Variable>
+                <Value name='variable' type='float' value='2' />
+              </Variable>
+            </Connector>
+          </Multiply>
+        </Connector>
+      </Invert>
+    </Connector>
+    <Connector name='modulator 4'>
+      <Modulator>
+        <Value name='description' type='string'>
+          "upper leg rotation"
+        </Value>
+        <Value name='activation key' type='string'>
+          "F3"
+        </Value>
+        <Value name='sequence' type='string'>
+          "1.25"
+        </Value>
+        <Connector name='value out 5' id='-1923554648'>
+          <Invert>
+            <Value name='pos' type='float' value='0.5' />
+            <Value name='length' type='float' value='0.5' />
+            <Connector name='value out' id='-1392581928'>
+              <Multiply>
+                <Connector name='value out' id='1762144004'>
+                  <Invert>
+                    <Value name='pos' type='float' value='0' />
+                    <Value name='length' type='float' value='1' />
+                    <Connector name='value out' id='1855499924' />
+                  </Invert>
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='2' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Invert>
+        </Connector>
+        <Connector name='modulator 5'>
+          <Modulator>
+            <Value name='description' type='string'>
+              "upper arm rotation"
+            </Value>
+            <Value name='activation key' type='string'>
+              "F5"
+            </Value>
+            <Value name='sequence' type='string'>
+              "6.25"
+            </Value>
+            <Connector name='value out 5' id='-1315115590'>
+              <Invert>
+                <Value name='pos' type='float' value='0.5' />
+                <Value name='length' type='float' value='0.5' />
+                <Connector name='value out' id='1890489974'>
+                  <Multiply>
+                    <Connector name='value out' id='2136110116'>
+                      <Invert>
+                        <Value name='pos' type='float' value='0' />
+                        <Value name='length' type='float' value='1' />
+                        <Connector name='value out' id='1451798142' />
+                      </Invert>
+                    </Connector>
+                    <Connector name='value in 2'>
+                      <Variable>
+                        <Value name='variable' type='float' value='2' />
+                      </Variable>
+                    </Connector>
+                  </Multiply>
+                </Connector>
+              </Invert>
+            </Connector>
+            <Connector name='modulator 6'>
+              <Modulator>
+                <Value name='description' type='string'>
+                  "lower arm rotation"
+                </Value>
+                <Value name='activation key' type='string'>
+                  "F6"
+                </Value>
+                <Value name='sequence' type='string'>
+                  "1.25"
+                </Value>
+                <Connector name='value out 5' id='1598150782'>
+                  <Invert>
+                    <Value name='pos' type='float' value='0.5' />
+                    <Value name='length' type='float' value='0.5' />
+                    <Connector name='value out' id='-2014920702'>
+                      <Multiply>
+                        <Connector name='value out' id='1903071469'>
+                          <Invert>
+                            <Value name='pos' type='float' value='0' />
+                            <Value name='length' type='float' value='1' />
+                            <Connector name='value out' id='-1166537845' />
+                          </Invert>
+                        </Connector>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='2' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Invert>
+                </Connector>
+                <Connector name='modulator 3'>
+                  <iTunesModulator>
+                    <Value name='activation key' type='string'>
+                      "i"
+                    </Value>
+                  </iTunesModulator>
+                </Connector>
+              </Modulator>
+            </Connector>
+          </Modulator>
+        </Connector>
+      </Modulator>
+    </Connector>
+  </Modulator>
+  <Rotate x='-1.73851' y='0.253904' z='-6.13813'>
+    <Value name='rot x' type='float' value='0' />
+    <Value name='rot y' type='float' value='208.44' />
+    <Value name='rot z' type='float' value='0' />
+    <Connector name='rot y'>
+      <Add>
+        <Connector name='value in 2'>
+          <Multiply>
+            <Connector name='value in 1'>
+              <Variable>
+                <Value name='variable' type='float' value='360' />
+              </Variable>
+            </Connector>
+            <Connector name='value in 2'>
+              <ValueOutLink id='1322150820' />
+            </Connector>
+          </Multiply>
+        </Connector>
+      </Add>
+    </Connector>
+    <Connector name='matrix out'>
+      <Camera>
+        <Value name='matrix' type='transformation'>
+          0 0 12.2902   0 0 0   1 1 1
+        </Value>
+        <Value name='manual' type='bool' value='true' />
+        <Value name='perspective' type='string'>
+          "yes"
+        </Value>
+        <Value name='viewport x' type='float' value='0' />
+        <Value name='viewport y' type='float' value='0' />
+        <Value name='viewport width' type='float' value='1' />
+        <Value name='viewport height' type='float' value='1' />
+        <Value name='aspect ratio' type='float' value='-1' />
+        <Value name='field of view y' type='float' value='60' />
+        <Connector name='matrix out 1'>
+          <Identity>
+            <Connector name='matrix out'>
+              <AttributeHub>
+                <Connector name='matrix out'>
+                  <Transform>
+                    <Value name='pos x' type='float' value='0' />
+                    <Value name='pos y' type='float' value='0' />
+                    <Value name='pos z' type='float' value='0' />
+                    <Value name='size x' type='float' value='1' />
+                    <Value name='size y' type='float' value='1' />
+                    <Value name='size z' type='float' value='1' />
+                    <Value name='rot x' type='float' value='0' />
+                    <Value name='rot y' type='float' value='0' />
+                    <Value name='rot z' type='float' value='0' />
+                    <Connector name='matrix out'>
+                      <Box>
+                        <Value name='matrix' type='transformation'>
+                          0 0 0   0 0 0   1 1 1
+                        </Value>
+                        <Value name='orientation' type='string'>
+                          "outside"
+                        </Value>
+                        <Connector name='matrix out 1'>
+                          <Translate>
+                            <Value name='pos x' type='float' value='0' />
+                            <Value name='pos y' type='float' value='1.1' />
+                            <Value name='pos z' type='float' value='0' />
+                            <Connector name='matrix out'>
+                              <Rotate>
+                                <Value name='rot x' type='float' value='0' />
+                                <Value name='rot y' type='float' value='0' />
+                                <Value name='rot z' type='float' value='0' />
+                                <Connector name='matrix out'>
+                                  <Box>
+                                    <Value name='matrix' type='transformation'>
+                                      0 1 0   0 0 0   1 1 1
+                                    </Value>
+                                    <Value name='orientation' type='string'>
+                                      "outside"
+                                    </Value>
+                                    <Connector name='matrix out 1'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='0' />
+                                        <Value name='pos y' type='float' value='1.1' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <Rotate>
+                                            <Value name='rot x' type='float' value='0' />
+                                            <Value name='rot y' type='float' value='0' />
+                                            <Value name='rot z' type='float' value='0' />
+                                            <Connector name='matrix out'>
+                                              <Sphere>
+                                                <Value name='matrix' type='transformation'>
+                                                  0 1.5 0   -90 0 0   1.5 1.5 1.5
+                                                </Value>
+                                                <Value name='slices' type='float' value='10' />
+                                                <Value name='stacks' type='float' value='10' />
+                                                <Value name='normals' type='string'>
+                                                  "smooth"
+                                                </Value>
+                                                <Value name='orientation' type='string'>
+                                                  "outside"
+                                                </Value>
+                                              </Sphere>
+                                            </Connector>
+                                          </Rotate>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                    <Connector name='matrix out 2'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='-1.1' />
+                                        <Value name='pos y' type='float' value='0' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <Rotate>
+                                            <Value name='rot x' type='float' value='35' />
+                                            <Value name='rot y' type='float' value='0' />
+                                            <Value name='rot z' type='float' value='0' />
+                                            <Connector name='rot x'>
+                                              <Add>
+                                                <Connector name='value in 1'>
+                                                  <Multiply>
+                                                    <Connector name='value in 1'>
+                                                      <Variable>
+                                                        <Value name='variable' type='float' value='-205' />
+                                                      </Variable>
+                                                    </Connector>
+                                                    <Connector name='value in 2'>
+                                                      <ValueOutLink id='2136110116' />
+                                                    </Connector>
+                                                  </Multiply>
+                                                </Connector>
+                                              </Add>
+                                            </Connector>
+                                            <Connector name='matrix out'>
+                                              <Box>
+                                                <Value name='matrix' type='transformation'>
+                                                  -1 0 0   0 0 0   1 1 1
+                                                </Value>
+                                                <Value name='orientation' type='string'>
+                                                  "outside"
+                                                </Value>
+                                                <Connector name='matrix out 1'>
+                                                  <Translate>
+                                                    <Value name='pos x' type='float' value='0' />
+                                                    <Value name='pos y' type='float' value='-1.1' />
+                                                    <Value name='pos z' type='float' value='0' />
+                                                    <Connector name='matrix out'>
+                                                      <Rotate>
+                                                        <Value name='rot x' type='float' value='0' />
+                                                        <Value name='rot y' type='float' value='0' />
+                                                        <Value name='rot z' type='float' value='0' />
+                                                        <Connector name='rot x'>
+                                                          <Add>
+                                                            <Connector name='value in 2'>
+                                                              <Multiply>
+                                                                <Connector name='value in 1'>
+                                                                  <Variable>
+                                                                    <Value name='variable' type='float' value='-90' />
+                                                                  </Variable>
+                                                                </Connector>
+                                                                <Connector name='value in 2'>
+                                                                  <ValueOutLink id='1903071469' />
+                                                                </Connector>
+                                                              </Multiply>
+                                                            </Connector>
+                                                          </Add>
+                                                        </Connector>
+                                                        <Connector name='matrix out'>
+                                                          <Box>
+                                                            <Value name='matrix' type='transformation'>
+                                                              0 -1 0   0 0 0   1 1 1
+                                                            </Value>
+                                                            <Value name='orientation' type='string'>
+                                                              "outside"
+                                                            </Value>
+                                                          </Box>
+                                                        </Connector>
+                                                      </Rotate>
+                                                    </Connector>
+                                                  </Translate>
+                                                </Connector>
+                                              </Box>
+                                            </Connector>
+                                          </Rotate>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                    <Connector name='matrix out 3'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='1.1' />
+                                        <Value name='pos y' type='float' value='0' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <Rotate>
+                                            <Value name='rot x' type='float' value='35' />
+                                            <Value name='rot y' type='float' value='0' />
+                                            <Value name='rot z' type='float' value='0' />
+                                            <Connector name='rot x'>
+                                              <Add>
+                                                <Connector name='value in 1'>
+                                                  <Multiply>
+                                                    <Connector name='value in 1'>
+                                                      <Variable>
+                                                        <Value name='variable' type='float' value='-205' />
+                                                      </Variable>
+                                                    </Connector>
+                                                    <Connector name='value in 2'>
+                                                      <ValueOutLink id='1451798142' />
+                                                    </Connector>
+                                                  </Multiply>
+                                                </Connector>
+                                              </Add>
+                                            </Connector>
+                                            <Connector name='matrix out'>
+                                              <Box>
+                                                <Value name='matrix' type='transformation'>
+                                                  1 0 0   0 0 0   1 1 1
+                                                </Value>
+                                                <Value name='orientation' type='string'>
+                                                  "outside"
+                                                </Value>
+                                                <Connector name='matrix out 1'>
+                                                  <Translate>
+                                                    <Value name='pos x' type='float' value='0' />
+                                                    <Value name='pos y' type='float' value='-1.1' />
+                                                    <Value name='pos z' type='float' value='0' />
+                                                    <Connector name='matrix out'>
+                                                      <Rotate>
+                                                        <Value name='rot x' type='float' value='0' />
+                                                        <Value name='rot y' type='float' value='0' />
+                                                        <Value name='rot z' type='float' value='0' />
+                                                        <Connector name='rot x'>
+                                                          <Add>
+                                                            <Connector name='value in 2'>
+                                                              <Multiply>
+                                                                <Connector name='value in 1'>
+                                                                  <Variable>
+                                                                    <Value name='variable' type='float' value='-90' />
+                                                                  </Variable>
+                                                                </Connector>
+                                                                <Connector name='value in 2'>
+                                                                  <ValueOutLink id='-1166537845' />
+                                                                </Connector>
+                                                              </Multiply>
+                                                            </Connector>
+                                                          </Add>
+                                                        </Connector>
+                                                        <Connector name='matrix out'>
+                                                          <Box>
+                                                            <Value name='matrix' type='transformation'>
+                                                              0 -1 0   0 0 0   1 1 1
+                                                            </Value>
+                                                            <Value name='orientation' type='string'>
+                                                              "outside"
+                                                            </Value>
+                                                          </Box>
+                                                        </Connector>
+                                                      </Rotate>
+                                                    </Connector>
+                                                  </Translate>
+                                                </Connector>
+                                              </Box>
+                                            </Connector>
+                                          </Rotate>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                  </Box>
+                                </Connector>
+                              </Rotate>
+                            </Connector>
+                          </Translate>
+                        </Connector>
+                        <Connector name='matrix out 2'>
+                          <Translate>
+                            <Value name='pos x' type='float' value='-1.1' />
+                            <Value name='pos y' type='float' value='-2.1' />
+                            <Value name='pos z' type='float' value='0' />
+                            <Connector name='matrix out'>
+                              <Rotate>
+                                <Value name='rot x' type='float' value='35' />
+                                <Value name='rot y' type='float' value='0' />
+                                <Value name='rot z' type='float' value='0' />
+                                <Connector name='rot x'>
+                                  <Add>
+                                    <Connector name='value in 2'>
+                                      <Multiply>
+                                        <Connector name='value in 1'>
+                                          <Variable>
+                                            <Value name='variable' type='float' value='-135' />
+                                          </Variable>
+                                        </Connector>
+                                        <Connector name='value in 2'>
+                                          <ValueOutLink id='1762144004' />
+                                        </Connector>
+                                      </Multiply>
+                                    </Connector>
+                                  </Add>
+                                </Connector>
+                                <Connector name='matrix out'>
+                                  <Box>
+                                    <Value name='matrix' type='transformation'>
+                                      -1 0 0   0 0 0   1 1 1
+                                    </Value>
+                                    <Value name='orientation' type='string'>
+                                      "outside"
+                                    </Value>
+                                    <Connector name='matrix out 2'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='0' />
+                                        <Value name='pos y' type='float' value='-1.1' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <Rotate>
+                                            <Value name='rot x' type='float' value='0' />
+                                            <Value name='rot y' type='float' value='0' />
+                                            <Value name='rot z' type='float' value='0' />
+                                            <Connector name='rot x'>
+                                              <Add>
+                                                <Connector name='value in 2'>
+                                                  <Multiply>
+                                                    <Connector name='value in 1'>
+                                                      <Variable>
+                                                        <Value name='variable' type='float' value='90' />
+                                                      </Variable>
+                                                    </Connector>
+                                                    <Connector name='value in 2'>
+                                                      <ValueOutLink id='-1913916779' />
+                                                    </Connector>
+                                                  </Multiply>
+                                                </Connector>
+                                              </Add>
+                                            </Connector>
+                                            <Connector name='matrix out'>
+                                              <Box>
+                                                <Value name='matrix' type='transformation'>
+                                                  0 -1 0   0 0 0   1 1 1
+                                                </Value>
+                                                <Value name='orientation' type='string'>
+                                                  "outside"
+                                                </Value>
+                                              </Box>
+                                            </Connector>
+                                          </Rotate>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                  </Box>
+                                </Connector>
+                              </Rotate>
+                            </Connector>
+                          </Translate>
+                        </Connector>
+                        <Connector name='matrix out 3'>
+                          <Translate>
+                            <Value name='pos x' type='float' value='1.1' />
+                            <Value name='pos y' type='float' value='-2.1' />
+                            <Value name='pos z' type='float' value='0' />
+                            <Connector name='matrix out'>
+                              <Rotate>
+                                <Value name='rot x' type='float' value='35' />
+                                <Value name='rot y' type='float' value='0' />
+                                <Value name='rot z' type='float' value='0' />
+                                <Connector name='rot x'>
+                                  <Add>
+                                    <Connector name='value in 2'>
+                                      <Multiply>
+                                        <Connector name='value in 1'>
+                                          <Variable>
+                                            <Value name='variable' type='float' value='-135' />
+                                          </Variable>
+                                        </Connector>
+                                        <Connector name='value in 2'>
+                                          <ValueOutLink id='1855499924' />
+                                        </Connector>
+                                      </Multiply>
+                                    </Connector>
+                                  </Add>
+                                </Connector>
+                                <Connector name='matrix out'>
+                                  <Box>
+                                    <Value name='matrix' type='transformation'>
+                                      1 0 0   0 0 0   1 1 1
+                                    </Value>
+                                    <Value name='orientation' type='string'>
+                                      "outside"
+                                    </Value>
+                                    <Connector name='matrix out 3'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='0' />
+                                        <Value name='pos y' type='float' value='-1.1' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <Rotate>
+                                            <Value name='rot x' type='float' value='0' />
+                                            <Value name='rot y' type='float' value='0' />
+                                            <Value name='rot z' type='float' value='0' />
+                                            <Connector name='rot x'>
+                                              <Add>
+                                                <Connector name='value in 2'>
+                                                  <Multiply>
+                                                    <Connector name='value in 1'>
+                                                      <Variable>
+                                                        <Value name='variable' type='float' value='90' />
+                                                      </Variable>
+                                                    </Connector>
+                                                    <Connector name='value in 2'>
+                                                      <ValueOutLink id='-1221361382' />
+                                                    </Connector>
+                                                  </Multiply>
+                                                </Connector>
+                                              </Add>
+                                            </Connector>
+                                            <Connector name='matrix out'>
+                                              <Box>
+                                                <Value name='matrix' type='transformation'>
+                                                  0 -1 0   0 0 0   1 1 1
+                                                </Value>
+                                                <Value name='orientation' type='string'>
+                                                  "outside"
+                                                </Value>
+                                              </Box>
+                                            </Connector>
+                                          </Rotate>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                  </Box>
+                                </Connector>
+                              </Rotate>
+                            </Connector>
+                          </Translate>
+                        </Connector>
+                      </Box>
+                    </Connector>
+                  </Transform>
+                </Connector>
+                <Connector name='attribute in 1'>
+                  <Material>
+                    <Value name='face mode' type='string'>
+                      "front"
+                    </Value>
+                    <Value name='parameter' type='string'>
+                      "emission"
+                    </Value>
+                    <Value name='red' type='float' value='0' />
+                    <Value name='green' type='float' value='0' />
+                    <Value name='blue' type='float' value='1' />
+                    <Value name='alpha' type='float' value='1' />
+                    <Value name='shininess' type='float' value='0' />
+                    <Value name='polygon mode' type='string'>
+                      "fill"
+                    </Value>
+                    <Value name='shading mode' type='string'>
+                      "flat"
+                    </Value>
+                    <Value name='cull face' type='string'>
+                      "no"
+                    </Value>
+                  </Material>
+                </Connector>
+                <Connector name='attribute in 3'>
+                  <Texture>
+                    <Value name='batch index' type='float' value='0' />
+                    <Value name='texture index' type='float' value='0' />
+                    <Value name='version index' type='float' value='0' />
+                    <Value name='env mode' type='string'>
+                      "modulate"
+                    </Value>
+                    <Value name='s generation mode' type='string'>
+                      "linear"
+                    </Value>
+                    <Value name='t generation mode' type='string'>
+                      "linear"
+                    </Value>
+                    <Value name='blend red' type='float' value='0' />
+                    <Value name='blend green' type='float' value='0' />
+                    <Value name='blend blue' type='float' value='0' />
+                    <Connector name='batch index'>
+                      <Add>
+                        <Connector name='value in 2'>
+                          <Multiply>
+                            <Connector name='value in 1'>
+                              <Variable>
+                                <Value name='variable' type='float' value='100' />
+                              </Variable>
+                            </Connector>
+                            <Connector name='value in 2'>
+                              <ValueOutLink id='1452394218' />
+                            </Connector>
+                          </Multiply>
+                        </Connector>
+                      </Add>
+                    </Connector>
+                    <Connector name='texture index'>
+                      <Add>
+                        <Connector name='value in 1'>
+                          <Multiply>
+                            <Connector name='value in 1'>
+                              <Variable>
+                                <Value name='variable' type='float' value='100' />
+                              </Variable>
+                            </Connector>
+                            <Connector name='value in 2'>
+                              <ValueOutLink id='-1424668001' />
+                            </Connector>
+                          </Multiply>
+                        </Connector>
+                      </Add>
+                    </Connector>
+                    <Connector name='version index'>
+                      <Add>
+                        <Connector name='value in 1'>
+                          <Multiply>
+                            <Connector name='value in 1'>
+                              <Variable>
+                                <Value name='variable' type='float' value='100' />
+                              </Variable>
+                            </Connector>
+                            <Connector name='value in 2'>
+                              <ValueOutLink id='-1972663083' />
+                            </Connector>
+                          </Multiply>
+                        </Connector>
+                      </Add>
+                    </Connector>
+                  </Texture>
+                </Connector>
+              </AttributeHub>
+            </Connector>
+          </Identity>
+        </Connector>
+      </Camera>
+    </Connector>
+  </Rotate>
+</Modules>
+<Objects>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      -0.247738 0.563361 -0.78819 -15.7638
+      -6.78003e-07 0.813553 0.581489 11.6298
+      0.968822 0.144058 -0.201548 -4.03094
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='20' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.999529 -0.00288216 0.030244 0.00840122
+        4.21656e-07 0.995489 0.0948528 1.5315
+        -0.0303809 -0.0948091 0.995025 18.3621
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='8.74011' />
+    </Projection>
+  </ResetProjection>
+</Objects>

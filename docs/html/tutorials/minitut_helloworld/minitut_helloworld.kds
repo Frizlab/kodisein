@@ -1,0 +1,321 @@
+<KODISEIN version='1' />
+<Modules>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      -0.508981 -0.467975 0.722452 8.37639
+      -5.96046e-08 0.839302 0.543666 7.25264
+      -0.860777 0.276715 -0.427189 -7.50444
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='9.21716' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        -0.508981 -0.467975 0.722452 8.37639
+        -5.96046e-08 0.839302 0.543666 7.25264
+        -0.860777 0.276715 -0.427189 -7.50444
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='9.21716' />
+    </Projection>
+  </ResetProjection>
+  <GlobalModulator x='4.25475' y='-0.557795' z='-0.972908'>
+    <Value name='description' type='string'>
+      "global modulator"
+    </Value>
+    <Value name='texture set' type='string'>
+      ""
+    </Value>
+    <Value name='clear frame' type='string'>
+      "yes"
+    </Value>
+    <Connector name='value out mouse x' id='-1186762716' />
+    <Connector name='value out mouse y' id='1172590441' />
+    <Connector name='background'>
+      <FileTexture>
+        <Value name='file' type='string'>
+          "../../images/icon.gif"
+        </Value>
+        <Value name='env mode' type='string'>
+          "replace"
+        </Value>
+        <Value name='s generation mode' type='string'>
+          "linear"
+        </Value>
+        <Value name='t generation mode' type='string'>
+          "linear"
+        </Value>
+        <Value name='blend red' type='float' value='0' />
+        <Value name='blend green' type='float' value='0' />
+        <Value name='blend blue' type='float' value='0' />
+        <Connector name='attributes in'>
+          <Color>
+            <Value name='red' type='float' value='0' />
+            <Value name='green' type='float' value='0' />
+            <Value name='blue' type='float' value='0.4' />
+            <Value name='alpha' type='float' value='1' />
+            <Connector name='blue'>
+              <Add>
+                <Connector name='value in 2'>
+                  <Multiply>
+                    <Connector name='value in 1'>
+                      <ValueOutLink id='-1186762716' />
+                    </Connector>
+                    <Connector name='value in 2'>
+                      <Variable>
+                        <Value name='variable' type='float' value='0.6' />
+                      </Variable>
+                    </Connector>
+                  </Multiply>
+                </Connector>
+              </Add>
+            </Connector>
+            <Connector name='attributes in'>
+              <TextureMatrix>
+                <Value name='pos x' type='float' value='0' />
+                <Value name='pos y' type='float' value='0' />
+                <Value name='size x' type='float' value='1' />
+                <Value name='size y' type='float' value='1' />
+                <Value name='rot x' type='float' value='0' />
+                <Value name='rot y' type='float' value='0' />
+                <Connector name='rot x'>
+                  <Add>
+                    <Connector name='value in 2'>
+                      <Multiply>
+                        <Connector name='value in 1'>
+                          <ValueOutLink id='-1186762716' />
+                        </Connector>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='180' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Add>
+                </Connector>
+                <Connector name='rot y'>
+                  <Add>
+                    <Connector name='value in 2'>
+                      <Multiply>
+                        <Connector name='value in 1'>
+                          <ValueOutLink id='1172590441' />
+                        </Connector>
+                        <Connector name='value in 2'>
+                          <Variable>
+                            <Value name='variable' type='float' value='90' />
+                          </Variable>
+                        </Connector>
+                      </Multiply>
+                    </Connector>
+                  </Add>
+                </Connector>
+              </TextureMatrix>
+            </Connector>
+          </Color>
+        </Connector>
+      </FileTexture>
+    </Connector>
+    <Connector name='clear frame'>
+      <Switch>
+        <Connector name='value in 2'>
+          <Variable>
+            <Value name='variable' type='float' value='1' />
+          </Variable>
+        </Connector>
+        <Connector name='switch'>
+          <Trigger>
+            <Value name='description' type='string'>
+              "toggle clear frame"
+            </Value>
+            <Value name='activation key' type='string'>
+              "c"
+            </Value>
+          </Trigger>
+        </Connector>
+      </Switch>
+    </Connector>
+  </GlobalModulator>
+  <Camera x='-0.987647' y='-0.63494' z='-3.0231'>
+    <Value name='matrix' type='transformation'>
+      0 0 0   0 0 0   1 1 1
+    </Value>
+    <Value name='manual' type='bool' value='false' />
+    <Value name='perspective' type='string'>
+      "yes"
+    </Value>
+    <Value name='viewport x' type='float' value='0' />
+    <Value name='viewport y' type='float' value='0' />
+    <Value name='viewport width' type='float' value='1' />
+    <Value name='viewport height' type='float' value='1' />
+    <Value name='aspect ratio' type='float' value='-1' />
+    <Value name='field of view y' type='float' value='60' />
+    <Connector name='matrix out 1'>
+      <Transform>
+        <Value name='pos x' type='float' value='0' />
+        <Value name='pos y' type='float' value='0' />
+        <Value name='pos z' type='float' value='-1' />
+        <Value name='size x' type='float' value='1' />
+        <Value name='size y' type='float' value='1' />
+        <Value name='size z' type='float' value='1' />
+        <Value name='rot x' type='float' value='0' />
+        <Value name='rot y' type='float' value='0' />
+        <Value name='rot z' type='float' value='0' />
+        <Connector name='pos z'>
+          <Add>
+            <Connector name='value in 2'>
+              <Multiply>
+                <Connector name='value in 1'>
+                  <ValueOutLink id='1172590441' />
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='-2' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Add>
+        </Connector>
+        <Connector name='rot x'>
+          <Add>
+            <Connector name='value in 2'>
+              <Multiply>
+                <Connector name='value in 1'>
+                  <ValueOutLink id='1172590441' />
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='40' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Add>
+        </Connector>
+        <Connector name='rot y'>
+          <Add>
+            <Connector name='value in 2'>
+              <Multiply>
+                <Connector name='value in 1'>
+                  <ValueOutLink id='-1186762716' />
+                </Connector>
+                <Connector name='value in 2'>
+                  <Variable>
+                    <Value name='variable' type='float' value='120' />
+                  </Variable>
+                </Connector>
+              </Multiply>
+            </Connector>
+          </Add>
+        </Connector>
+        <Connector name='matrix out'>
+          <Box>
+            <Value name='matrix' type='transformation'>
+              0 0 0   0 0 0   1 1 1
+            </Value>
+            <Value name='orientation' type='string'>
+              "outside"
+            </Value>
+            <Connector name='attributes in'>
+              <FileTexture>
+                <Value name='file' type='string'>
+                  "../../images/icon.gif"
+                </Value>
+                <Value name='env mode' type='string'>
+                  "replace"
+                </Value>
+                <Value name='s generation mode' type='string'>
+                  "sphere map"
+                </Value>
+                <Value name='t generation mode' type='string'>
+                  "sphere map"
+                </Value>
+                <Value name='blend red' type='float' value='0' />
+                <Value name='blend green' type='float' value='0' />
+                <Value name='blend blue' type='float' value='0' />
+                <Connector name='s generation mode'>
+                  <Switch>
+                    <Connector name='value in 1'>
+                      <Accu>
+                        <Value name='increment' type='bool' value='true' />
+                        <Connector name='value in'>
+                          <ValueOutLink id='-1186762716' />
+                        </Connector>
+                      </Accu>
+                    </Connector>
+                    <Connector name='value in 2'>
+                      <Variable>
+                        <Value name='variable' type='float' value='1' />
+                      </Variable>
+                    </Connector>
+                    <Connector name='switch'>
+                      <Trigger>
+                        <Value name='description' type='string'>
+                          "toggle texture mode"
+                        </Value>
+                        <Value name='activation key' type='string'>
+                          "SPACE"
+                        </Value>
+                      </Trigger>
+                    </Connector>
+                  </Switch>
+                </Connector>
+                <Connector name='t generation mode'>
+                  <Switch>
+                    <Connector name='value in 1'>
+                      <Accu>
+                        <Value name='increment' type='bool' value='true' />
+                        <Connector name='value in'>
+                          <ValueOutLink id='1172590441' />
+                        </Connector>
+                      </Accu>
+                    </Connector>
+                    <Connector name='value in 2'>
+                      <Variable>
+                        <Value name='variable' type='float' value='1' />
+                      </Variable>
+                    </Connector>
+                    <Connector name='switch'>
+                      <Trigger>
+                        <Value name='description' type='string'>
+                          "toggle texture mode"
+                        </Value>
+                        <Value name='activation key' type='string'>
+                          "SPACE"
+                        </Value>
+                      </Trigger>
+                    </Connector>
+                  </Switch>
+                </Connector>
+              </FileTexture>
+            </Connector>
+          </Box>
+        </Connector>
+      </Transform>
+    </Connector>
+  </Camera>
+</Modules>
+<Objects>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.879145 -0.174656 0.443378 23.6492
+      5.06639e-07 0.930413 0.366507 4.82324
+      -0.476537 -0.322214 0.817972 26.2776
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='29.4449' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.879145 -0.174656 0.443378 23.6492
+        5.06639e-07 0.930413 0.366507 4.82324
+        -0.476537 -0.322214 0.817972 26.2776
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='29.4449' />
+    </Projection>
+  </ResetProjection>
+</Objects>

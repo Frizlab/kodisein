@@ -1,0 +1,712 @@
+<KODISEIN version='1' />
+<Modules>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.28323 -0.296244 0.912142 33.6168
+      -1.49012e-07 0.951091 0.308894 18.6218
+      -0.959037 -0.0874891 0.26938 -0.170987
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='31.5043' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        -0.499281 -0.380108 0.778599 18.0304
+        4.47035e-08 0.898625 0.438704 11.4571
+        -0.866423 0.219039 -0.448671 -19.5878
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='28.6948' />
+    </Projection>
+  </ResetProjection>
+  <GlobalModulator x='5.29551' y='7.28836' z='-5.32758'>
+    <Value name='description' type='string'>
+      "global modulator"
+    </Value>
+    <Value name='texture set' type='string'>
+      ""
+    </Value>
+    <Value name='clear frame' type='string'>
+      "yes"
+    </Value>
+    <Connector name='modulator 1'>
+      <Modulator>
+        <Value name='activation key' type='string'>
+          "F3"
+        </Value>
+        <Value name='sequence' type='string'>
+          "1.25"
+        </Value>
+        <Connector name='value out 0' id='1998681820' />
+        <Connector name='modulator 2'>
+          <iTunesModulator>
+            <Value name='activation key' type='string'>
+              "F1"
+            </Value>
+            <Connector name='value out max' id='1463559206' />
+            <Connector name='value out 1' id='-1246655133' />
+            <Connector name='value out 2' id='1467990195' />
+            <Connector name='value out 3' id='1843255785' />
+            <Connector name='value out 4' id='-1562041224' />
+            <Connector name='value out 5' id='1648633335' />
+            <Connector name='value out 6' id='1603441559' />
+            <Connector name='value out 7' id='1795997555' />
+            <Connector name='value out 8' id='1305406946' />
+            <Connector name='value out 9' id='-1754920000' />
+          </iTunesModulator>
+        </Connector>
+      </Modulator>
+    </Connector>
+  </GlobalModulator>
+  <Camera x='2.56815' y='3.00414' z='3.67808'>
+    <Value name='matrix' type='transformation'>
+      6.81604 2.41818 9.13759   0 0 0   1 1 1
+    </Value>
+    <Value name='manual' type='bool' value='true' />
+    <Value name='perspective' type='string'>
+      "yes"
+    </Value>
+    <Value name='viewport x' type='float' value='0' />
+    <Value name='viewport y' type='float' value='0' />
+    <Value name='viewport width' type='float' value='1' />
+    <Value name='viewport height' type='float' value='1' />
+    <Value name='aspect ratio' type='float' value='-1' />
+    <Value name='field of view y' type='float' value='60' />
+    <Connector name='matrix out 1'>
+      <Identity>
+        <Connector name='matrix out'>
+          <Rotate>
+            <Value name='rot x' type='float' value='0' />
+            <Value name='rot y' type='float' value='0' />
+            <Value name='rot z' type='float' value='0' />
+            <Connector name='matrix out'>
+              <MatrixHub>
+                <Connector name='matrix out 1'>
+                  <AttributeHub>
+                    <Connector name='matrix out'>
+                      <Translate>
+                        <Value name='pos x' type='float' value='1.5' />
+                        <Value name='pos y' type='float' value='0' />
+                        <Value name='pos z' type='float' value='0' />
+                        <Connector name='matrix out'>
+                          <MatrixHub>
+                            <Connector name='matrix out 1'>
+                              <Translate>
+                                <Value name='pos x' type='float' value='0' />
+                                <Value name='pos y' type='float' value='0' />
+                                <Value name='pos z' type='float' value='0' />
+                                <Connector name='pos y'>
+                                  <Add>
+                                    <Connector name='value in 2'>
+                                      <Multiply>
+                                        <Connector name='value in 1'>
+                                          <ValueOutLink id='1463559206' />
+                                        </Connector>
+                                        <Connector name='value in 2'>
+                                          <Variable>
+                                            <Value name='variable' type='float' value='6' />
+                                          </Variable>
+                                        </Connector>
+                                      </Multiply>
+                                    </Connector>
+                                  </Add>
+                                </Connector>
+                                <Connector name='matrix out'>
+                                  <Label>
+                                    <Value name='name' type='string'>
+                                      "sphere"
+                                    </Value>
+                                    <Value name='active' type='string'>
+                                      "yes"
+                                    </Value>
+                                    <Connector name='matrix out'>
+                                      <Sphere>
+                                        <Value name='matrix' type='transformation'>
+                                          0 0 0   0 0 0   0.4 0.4 0.4
+                                        </Value>
+                                        <Value name='slices' type='float' value='10' />
+                                        <Value name='stacks' type='float' value='10' />
+                                        <Value name='normals' type='string'>
+                                          "smooth"
+                                        </Value>
+                                        <Value name='orientation' type='string'>
+                                          "outside"
+                                        </Value>
+                                      </Sphere>
+                                    </Connector>
+                                  </Label>
+                                </Connector>
+                              </Translate>
+                            </Connector>
+                            <Connector name='matrix out 4'>
+                              <Translate>
+                                <Value name='pos x' type='float' value='1' />
+                                <Value name='pos y' type='float' value='0' />
+                                <Value name='pos z' type='float' value='0' />
+                                <Connector name='matrix out'>
+                                  <MatrixHub>
+                                    <Connector name='matrix out 1'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='1' />
+                                        <Value name='pos y' type='float' value='0' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='matrix out'>
+                                          <MatrixHub>
+                                            <Connector name='matrix out 1'>
+                                              <Translate>
+                                                <Value name='pos x' type='float' value='1' />
+                                                <Value name='pos y' type='float' value='0' />
+                                                <Value name='pos z' type='float' value='0' />
+                                                <Connector name='matrix out'>
+                                                  <MatrixHub>
+                                                    <Connector name='matrix out 1'>
+                                                      <Translate>
+                                                        <Value name='pos x' type='float' value='1' />
+                                                        <Value name='pos y' type='float' value='0' />
+                                                        <Value name='pos z' type='float' value='0' />
+                                                        <Connector name='matrix out'>
+                                                          <MatrixHub>
+                                                            <Connector name='matrix out 1'>
+                                                              <Translate>
+                                                                <Value name='pos x' type='float' value='1' />
+                                                                <Value name='pos y' type='float' value='0' />
+                                                                <Value name='pos z' type='float' value='0' />
+                                                                <Connector name='matrix out'>
+                                                                  <MatrixHub>
+                                                                    <Connector name='matrix out 1'>
+                                                                      <Translate>
+                                                                        <Value name='pos x' type='float' value='1' />
+                                                                        <Value name='pos y' type='float' value='0' />
+                                                                        <Value name='pos z' type='float' value='0' />
+                                                                        <Connector name='matrix out'>
+                                                                          <MatrixHub>
+                                                                            <Connector name='matrix out 1'>
+                                                                              <Translate>
+                                                                                <Value name='pos x' type='float' value='1' />
+                                                                                <Value name='pos y' type='float' value='0' />
+                                                                                <Value name='pos z' type='float' value='0' />
+                                                                                <Connector name='matrix out'>
+                                                                                  <MatrixHub>
+                                                                                    <Connector name='matrix out 1'>
+                                                                                      <Translate>
+                                                                                        <Value name='pos x' type='float' value='1' />
+                                                                                        <Value name='pos y' type='float' value='0' />
+                                                                                        <Value name='pos z' type='float' value='0' />
+                                                                                        <Connector name='matrix out'>
+                                                                                          <MatrixHub>
+                                                                                            <Connector name='matrix out 1'>
+                                                                                              <Translate>
+                                                                                                <Value name='pos x' type='float' value='1' />
+                                                                                                <Value name='pos y' type='float' value='0' />
+                                                                                                <Value name='pos z' type='float' value='0' />
+                                                                                                <Connector name='matrix out'>
+                                                                                                  <MatrixHub>
+                                                                                                    <Connector name='matrix out 3'>
+                                                                                                      <Translate>
+                                                                                                        <Value name='pos x' type='float' value='0' />
+                                                                                                        <Value name='pos y' type='float' value='0' />
+                                                                                                        <Value name='pos z' type='float' value='0' />
+                                                                                                        <Connector name='pos y'>
+                                                                                                          <Add>
+                                                                                                            <Connector name='value in 2'>
+                                                                                                              <Multiply>
+                                                                                                                <Connector name='value in 1'>
+                                                                                                                  <ValueOutLink id='-1754920000' />
+                                                                                                                </Connector>
+                                                                                                                <Connector name='value in 2'>
+                                                                                                                  <Variable>
+                                                                                                                    <Value name='variable' type='float' value='6' />
+                                                                                                                  </Variable>
+                                                                                                                </Connector>
+                                                                                                              </Multiply>
+                                                                                                            </Connector>
+                                                                                                          </Add>
+                                                                                                        </Connector>
+                                                                                                        <Connector name='matrix out'>
+                                                                                                          <Goto>
+                                                                                                            <Value name='label name' type='string'>
+                                                                                                              "sphere"
+                                                                                                            </Value>
+                                                                                                            <Value name='active' type='string'>
+                                                                                                              "yes"
+                                                                                                            </Value>
+                                                                                                          </Goto>
+                                                                                                        </Connector>
+                                                                                                      </Translate>
+                                                                                                    </Connector>
+                                                                                                  </MatrixHub>
+                                                                                                </Connector>
+                                                                                              </Translate>
+                                                                                            </Connector>
+                                                                                            <Connector name='matrix out 3'>
+                                                                                              <Translate>
+                                                                                                <Value name='pos x' type='float' value='0' />
+                                                                                                <Value name='pos y' type='float' value='0' />
+                                                                                                <Value name='pos z' type='float' value='0' />
+                                                                                                <Connector name='pos y'>
+                                                                                                  <Add>
+                                                                                                    <Connector name='value in 2'>
+                                                                                                      <Multiply>
+                                                                                                        <Connector name='value in 1'>
+                                                                                                          <ValueOutLink id='1305406946' />
+                                                                                                        </Connector>
+                                                                                                        <Connector name='value in 2'>
+                                                                                                          <Variable>
+                                                                                                            <Value name='variable' type='float' value='6' />
+                                                                                                          </Variable>
+                                                                                                        </Connector>
+                                                                                                      </Multiply>
+                                                                                                    </Connector>
+                                                                                                  </Add>
+                                                                                                </Connector>
+                                                                                                <Connector name='matrix out'>
+                                                                                                  <Goto>
+                                                                                                    <Value name='label name' type='string'>
+                                                                                                      "sphere"
+                                                                                                    </Value>
+                                                                                                    <Value name='active' type='string'>
+                                                                                                      "yes"
+                                                                                                    </Value>
+                                                                                                  </Goto>
+                                                                                                </Connector>
+                                                                                              </Translate>
+                                                                                            </Connector>
+                                                                                          </MatrixHub>
+                                                                                        </Connector>
+                                                                                      </Translate>
+                                                                                    </Connector>
+                                                                                    <Connector name='matrix out 3'>
+                                                                                      <Translate>
+                                                                                        <Value name='pos x' type='float' value='0' />
+                                                                                        <Value name='pos y' type='float' value='0' />
+                                                                                        <Value name='pos z' type='float' value='0' />
+                                                                                        <Connector name='pos y'>
+                                                                                          <Add>
+                                                                                            <Connector name='value in 2'>
+                                                                                              <Multiply>
+                                                                                                <Connector name='value in 1'>
+                                                                                                  <ValueOutLink id='1795997555' />
+                                                                                                </Connector>
+                                                                                                <Connector name='value in 2'>
+                                                                                                  <Variable>
+                                                                                                    <Value name='variable' type='float' value='6' />
+                                                                                                  </Variable>
+                                                                                                </Connector>
+                                                                                              </Multiply>
+                                                                                            </Connector>
+                                                                                          </Add>
+                                                                                        </Connector>
+                                                                                        <Connector name='matrix out'>
+                                                                                          <Goto>
+                                                                                            <Value name='label name' type='string'>
+                                                                                              "sphere"
+                                                                                            </Value>
+                                                                                            <Value name='active' type='string'>
+                                                                                              "yes"
+                                                                                            </Value>
+                                                                                          </Goto>
+                                                                                        </Connector>
+                                                                                      </Translate>
+                                                                                    </Connector>
+                                                                                  </MatrixHub>
+                                                                                </Connector>
+                                                                              </Translate>
+                                                                            </Connector>
+                                                                            <Connector name='matrix out 3'>
+                                                                              <Translate>
+                                                                                <Value name='pos x' type='float' value='0' />
+                                                                                <Value name='pos y' type='float' value='0' />
+                                                                                <Value name='pos z' type='float' value='0' />
+                                                                                <Connector name='pos y'>
+                                                                                  <Add>
+                                                                                    <Connector name='value in 2'>
+                                                                                      <Multiply>
+                                                                                        <Connector name='value in 1'>
+                                                                                          <ValueOutLink id='1603441559' />
+                                                                                        </Connector>
+                                                                                        <Connector name='value in 2'>
+                                                                                          <Variable>
+                                                                                            <Value name='variable' type='float' value='6' />
+                                                                                          </Variable>
+                                                                                        </Connector>
+                                                                                      </Multiply>
+                                                                                    </Connector>
+                                                                                  </Add>
+                                                                                </Connector>
+                                                                                <Connector name='matrix out'>
+                                                                                  <Goto>
+                                                                                    <Value name='label name' type='string'>
+                                                                                      "sphere"
+                                                                                    </Value>
+                                                                                    <Value name='active' type='string'>
+                                                                                      "yes"
+                                                                                    </Value>
+                                                                                  </Goto>
+                                                                                </Connector>
+                                                                              </Translate>
+                                                                            </Connector>
+                                                                          </MatrixHub>
+                                                                        </Connector>
+                                                                      </Translate>
+                                                                    </Connector>
+                                                                    <Connector name='matrix out 3'>
+                                                                      <Translate>
+                                                                        <Value name='pos x' type='float' value='0' />
+                                                                        <Value name='pos y' type='float' value='0' />
+                                                                        <Value name='pos z' type='float' value='0' />
+                                                                        <Connector name='pos y'>
+                                                                          <Add>
+                                                                            <Connector name='value in 2'>
+                                                                              <Multiply>
+                                                                                <Connector name='value in 1'>
+                                                                                  <ValueOutLink id='1648633335' />
+                                                                                </Connector>
+                                                                                <Connector name='value in 2'>
+                                                                                  <Variable>
+                                                                                    <Value name='variable' type='float' value='6' />
+                                                                                  </Variable>
+                                                                                </Connector>
+                                                                              </Multiply>
+                                                                            </Connector>
+                                                                          </Add>
+                                                                        </Connector>
+                                                                        <Connector name='matrix out'>
+                                                                          <Goto>
+                                                                            <Value name='label name' type='string'>
+                                                                              "sphere"
+                                                                            </Value>
+                                                                            <Value name='active' type='string'>
+                                                                              "yes"
+                                                                            </Value>
+                                                                          </Goto>
+                                                                        </Connector>
+                                                                      </Translate>
+                                                                    </Connector>
+                                                                  </MatrixHub>
+                                                                </Connector>
+                                                              </Translate>
+                                                            </Connector>
+                                                            <Connector name='matrix out 3'>
+                                                              <Translate>
+                                                                <Value name='pos x' type='float' value='0' />
+                                                                <Value name='pos y' type='float' value='0' />
+                                                                <Value name='pos z' type='float' value='0' />
+                                                                <Connector name='pos y'>
+                                                                  <Add>
+                                                                    <Connector name='value in 2'>
+                                                                      <Multiply>
+                                                                        <Connector name='value in 1'>
+                                                                          <ValueOutLink id='-1562041224' />
+                                                                        </Connector>
+                                                                        <Connector name='value in 2'>
+                                                                          <Variable>
+                                                                            <Value name='variable' type='float' value='6' />
+                                                                          </Variable>
+                                                                        </Connector>
+                                                                      </Multiply>
+                                                                    </Connector>
+                                                                  </Add>
+                                                                </Connector>
+                                                                <Connector name='matrix out'>
+                                                                  <Goto>
+                                                                    <Value name='label name' type='string'>
+                                                                      "sphere"
+                                                                    </Value>
+                                                                    <Value name='active' type='string'>
+                                                                      "yes"
+                                                                    </Value>
+                                                                  </Goto>
+                                                                </Connector>
+                                                              </Translate>
+                                                            </Connector>
+                                                          </MatrixHub>
+                                                        </Connector>
+                                                      </Translate>
+                                                    </Connector>
+                                                    <Connector name='matrix out 3'>
+                                                      <Translate>
+                                                        <Value name='pos x' type='float' value='0' />
+                                                        <Value name='pos y' type='float' value='0' />
+                                                        <Value name='pos z' type='float' value='0' />
+                                                        <Connector name='pos y'>
+                                                          <Add>
+                                                            <Connector name='value in 2'>
+                                                              <Multiply>
+                                                                <Connector name='value in 1'>
+                                                                  <ValueOutLink id='1843255785' />
+                                                                </Connector>
+                                                                <Connector name='value in 2'>
+                                                                  <Variable>
+                                                                    <Value name='variable' type='float' value='6' />
+                                                                  </Variable>
+                                                                </Connector>
+                                                              </Multiply>
+                                                            </Connector>
+                                                          </Add>
+                                                        </Connector>
+                                                        <Connector name='matrix out'>
+                                                          <Goto>
+                                                            <Value name='label name' type='string'>
+                                                              "sphere"
+                                                            </Value>
+                                                            <Value name='active' type='string'>
+                                                              "yes"
+                                                            </Value>
+                                                          </Goto>
+                                                        </Connector>
+                                                      </Translate>
+                                                    </Connector>
+                                                  </MatrixHub>
+                                                </Connector>
+                                              </Translate>
+                                            </Connector>
+                                            <Connector name='matrix out 3'>
+                                              <Translate>
+                                                <Value name='pos x' type='float' value='0' />
+                                                <Value name='pos y' type='float' value='0' />
+                                                <Value name='pos z' type='float' value='0' />
+                                                <Connector name='pos y'>
+                                                  <Add>
+                                                    <Connector name='value in 2'>
+                                                      <Multiply>
+                                                        <Connector name='value in 1'>
+                                                          <ValueOutLink id='1467990195' />
+                                                        </Connector>
+                                                        <Connector name='value in 2'>
+                                                          <Variable>
+                                                            <Value name='variable' type='float' value='6' />
+                                                          </Variable>
+                                                        </Connector>
+                                                      </Multiply>
+                                                    </Connector>
+                                                  </Add>
+                                                </Connector>
+                                                <Connector name='matrix out'>
+                                                  <Goto>
+                                                    <Value name='label name' type='string'>
+                                                      "sphere"
+                                                    </Value>
+                                                    <Value name='active' type='string'>
+                                                      "yes"
+                                                    </Value>
+                                                  </Goto>
+                                                </Connector>
+                                              </Translate>
+                                            </Connector>
+                                          </MatrixHub>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                    <Connector name='matrix out 3'>
+                                      <Translate>
+                                        <Value name='pos x' type='float' value='0' />
+                                        <Value name='pos y' type='float' value='0' />
+                                        <Value name='pos z' type='float' value='0' />
+                                        <Connector name='pos y'>
+                                          <Add>
+                                            <Connector name='value in 2'>
+                                              <Multiply>
+                                                <Connector name='value in 1'>
+                                                  <ValueOutLink id='-1246655133' />
+                                                </Connector>
+                                                <Connector name='value in 2'>
+                                                  <Variable>
+                                                    <Value name='variable' type='float' value='6' />
+                                                  </Variable>
+                                                </Connector>
+                                              </Multiply>
+                                            </Connector>
+                                          </Add>
+                                        </Connector>
+                                        <Connector name='matrix out'>
+                                          <Goto>
+                                            <Value name='label name' type='string'>
+                                              "sphere"
+                                            </Value>
+                                            <Value name='active' type='string'>
+                                              "yes"
+                                            </Value>
+                                          </Goto>
+                                        </Connector>
+                                      </Translate>
+                                    </Connector>
+                                  </MatrixHub>
+                                </Connector>
+                              </Translate>
+                            </Connector>
+                          </MatrixHub>
+                        </Connector>
+                      </Translate>
+                    </Connector>
+                    <Connector name='attribute in 1'>
+                      <Color>
+                        <Value name='red' type='float' value='1' />
+                        <Value name='green' type='float' value='1' />
+                        <Value name='blue' type='float' value='0' />
+                        <Value name='alpha' type='float' value='1' />
+                        <Connector name='attributes in'>
+                          <Material>
+                            <Value name='face mode' type='string'>
+                              "front & back"
+                            </Value>
+                            <Value name='parameter' type='string'>
+                              "specular"
+                            </Value>
+                            <Value name='red' type='float' value='1' />
+                            <Value name='green' type='float' value='1' />
+                            <Value name='blue' type='float' value='1' />
+                            <Value name='alpha' type='float' value='1' />
+                            <Value name='shininess' type='float' value='128' />
+                            <Value name='polygon mode' type='string'>
+                              "line"
+                            </Value>
+                            <Value name='shading mode' type='string'>
+                              "flat"
+                            </Value>
+                            <Value name='cull face' type='string'>
+                              "yes"
+                            </Value>
+                            <Connector name='polygon mode'>
+                              <Add>
+                                <Connector name='value in 2'>
+                                  <Multiply>
+                                    <Connector name='value in 1'>
+                                      <ValueOutLink id='1998681820' />
+                                    </Connector>
+                                    <Connector name='value in 2'>
+                                      <Variable>
+                                        <Value name='variable' type='float' value='3' />
+                                      </Variable>
+                                    </Connector>
+                                  </Multiply>
+                                </Connector>
+                              </Add>
+                            </Connector>
+                          </Material>
+                        </Connector>
+                      </Color>
+                    </Connector>
+                  </AttributeHub>
+                </Connector>
+                <Connector name='matrix out 3'>
+                  <AttributeHub>
+                    <Connector name='matrix out'>
+                      <LSystem>
+                        <Value name='matrix' type='transformation'>
+                          0 0 0   0 0 0   1 1 1
+                        </Value>
+                        <Value name='leaf mode' type='bool' value='false' />
+                        <Value name='1. depth' type='float' value='4' />
+                        <Value name='2. depth' type='float' value='0' />
+                        <Value name='3. depth' type='float' value='0' />
+                        <Value name='4. depth' type='float' value='0' />
+                        <Connector name='matrix out'>
+                          <Box>
+                            <Value name='matrix' type='transformation'>
+                              0 0 0   0 0 0   0.1 0.1 0.1
+                            </Value>
+                            <Value name='orientation' type='string'>
+                              "outside"
+                            </Value>
+                          </Box>
+                        </Connector>
+                        <Connector name='matrix in 1'>
+                          <Translate>
+                            <Value name='pos x' type='float' value='0' />
+                            <Value name='pos y' type='float' value='1.5' />
+                            <Value name='pos z' type='float' value='0' />
+                          </Translate>
+                        </Connector>
+                      </LSystem>
+                    </Connector>
+                    <Connector name='attribute in 1'>
+                      <Color>
+                        <Value name='red' type='float' value='1' />
+                        <Value name='green' type='float' value='0' />
+                        <Value name='blue' type='float' value='0' />
+                        <Value name='alpha' type='float' value='1' />
+                        <Connector name='attributes in'>
+                          <Material>
+                            <Value name='face mode' type='string'>
+                              "front & back"
+                            </Value>
+                            <Value name='parameter' type='string'>
+                              "specular"
+                            </Value>
+                            <Value name='red' type='float' value='1' />
+                            <Value name='green' type='float' value='1' />
+                            <Value name='blue' type='float' value='1' />
+                            <Value name='alpha' type='float' value='1' />
+                            <Value name='shininess' type='float' value='128' />
+                            <Value name='polygon mode' type='string'>
+                              "fill"
+                            </Value>
+                            <Value name='shading mode' type='string'>
+                              "smooth"
+                            </Value>
+                            <Value name='cull face' type='string'>
+                              "yes"
+                            </Value>
+                          </Material>
+                        </Connector>
+                      </Color>
+                    </Connector>
+                  </AttributeHub>
+                </Connector>
+              </MatrixHub>
+            </Connector>
+          </Rotate>
+        </Connector>
+      </Identity>
+    </Connector>
+    <Connector name='matrix out 4'>
+      <Light>
+        <Value name='matrix' type='transformation'>
+          -2.54295 -7.3888 -4.83416   0 -200.641 0   1 1 1
+        </Value>
+        <Value name='directional' type='bool' value='false' />
+        <Value name='spot exponent' type='float' value='0' />
+        <Value name='spot cutoff' type='float' value='180' />
+        <Value name='constant attenuation' type='float' value='1' />
+        <Value name='linear attenuation' type='float' value='0' />
+        <Value name='quadratic attenuation' type='float' value='0' />
+      </Light>
+    </Connector>
+    <Connector name='matrix out 7'>
+      <Light>
+        <Value name='matrix' type='transformation'>
+          -7.01006 1.52395 -2.70667   0 -200.641 0   1 1 1
+        </Value>
+        <Value name='directional' type='bool' value='false' />
+        <Value name='spot exponent' type='float' value='0' />
+        <Value name='spot cutoff' type='float' value='90' />
+        <Value name='constant attenuation' type='float' value='1' />
+        <Value name='linear attenuation' type='float' value='0' />
+        <Value name='quadratic attenuation' type='float' value='0' />
+      </Light>
+    </Connector>
+  </Camera>
+</Modules>
+<Objects>
+  <Projection>
+    <Value name='matrix' type='matrix'>
+      0.926203 -0.0906306 0.36595 21.1686
+      -3.72529e-07 0.970672 0.240395 13.0484
+      -0.377005 -0.222657 0.899044 36.2607
+      0 0 0 1
+    </Value>
+    <Value name='eye distance' type='float' value='42.9303' />
+  </Projection>
+  <ResetProjection>
+    <Projection>
+      <Value name='matrix' type='matrix'>
+        0.999529 -0.00288216 0.030244 0.00840122
+        4.21656e-07 0.995489 0.0948528 1.5315
+        -0.0303809 -0.0948091 0.995025 18.3621
+        0 0 0 1
+      </Value>
+      <Value name='eye distance' type='float' value='8.74011' />
+    </Projection>
+  </ResetProjection>
+</Objects>
