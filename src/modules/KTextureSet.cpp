@@ -29,15 +29,16 @@ KTextureSet * KTextureSet::newTextureSet ()
 // --------------------------------------------------------------------------------------------------------
 KTextureSet * KTextureSet::newTextureSetFromFile ( const string & textureSetFile )
 {
-    string xml = Controller.getXMLFromFileWithName(textureSetFile);
+	string fileName = kFileNativePath(textureSetFile);
+    string xml = Controller.getXMLFromFileWithName(fileName);
     if (!xml.empty()) 
     {
         if (kXMLReadNamedOpenTag(xml, "TextureSet"))
         {
-            if (KFileHandler::pushCurrentDir(kFileDirName(textureSetFile)))
+            if (KFileHandler::pushCurrentDir(kFileDirName(fileName)))
             {
                 KTextureSet * newTextureSet = new KTextureSet();
-                newTextureSet->filename = textureSetFile;
+                newTextureSet->filename = fileName;
                 newTextureSet->setXML(xml);
                 KFileHandler::popCurrentDir();
                 Controller.modules->addModule(newTextureSet);

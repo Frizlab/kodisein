@@ -8,6 +8,7 @@
 #include "KTextureSet.h"
 #include "KModules.h"
 #include "KController.h"
+#include "KFileTools.h"
 #include "KConsole.h"
 
 #include <algorithm>
@@ -54,7 +55,7 @@ void KTextureSets::removeTextureSet ( KTextureSet * textureSet )
 // --------------------------------------------------------------------------------------------------------
 void KTextureSets::setCurrentTextureSetFileName ( const string & fn )
 {
-    string textureSetFile = fn;
+    string textureSetFile = kFileNativePath(fn);
     
     current_index = getIndexOfTextureSet(getTextureSetWithFileName(textureSetFile));
     if (current_index < 0)
@@ -134,7 +135,7 @@ int KTextureSets::getIndexOfTextureSet ( KTextureSet * ts ) const
 // --------------------------------------------------------------------------------------------------------
 void KTextureSets::openFile ( const string & fn )
 {
-    string textureSetFile = fn;
+    string textureSetFile = kFileNativePath(fn);
 
     KTextureSet * newTextureSet = KTextureSet::newTextureSetFromFile (textureSetFile);
     if (newTextureSet)

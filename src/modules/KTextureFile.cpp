@@ -110,8 +110,8 @@ void KTextureFile::setFileName ( const string & fn )
 {
     if (filename != fn)
     {
-	deleteTextures();
-        filename = fn; 
+		deleteTextures();
+        filename = kFileNativePath(fn); 
     }
 }
 
@@ -123,7 +123,7 @@ string KTextureFile::getTextureSetDir () const
     {
         return kFileDirName(((KTextureSet*)rootModule)->getFileName());
     }
-    return "./";
+    return string(".") + kPathSep;
 }
 
 // --------------------------------------------------------------------------------------------------------
