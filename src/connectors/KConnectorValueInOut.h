@@ -35,13 +35,13 @@ class KModuleInspector;
 #define NEW_IO_CONNECTOR(vname,dirx,dirz,index,numSisters,objectName,className,setCallbackName,getCallbackName) \
     NEW_IO_CONNECTOR_Y(vname,dirx,0,dirz,index,numSisters,objectName,className,setCallbackName,getCallbackName)
 
-class KConnectorValueInOut : public KConnectorValueIn, public KFloatValueObject
+class KConnectorValueInOut : public KFloatValueObject, public KConnectorValueIn
 {
     INTROSPECTION
     
     public:
                         KConnectorValueInOut 	( KModule * m, const string & n = "value in") 
-                                                : KConnectorValueIn(m,n), KFloatValueObject(n) {}
+                                                : KFloatValueObject(n), KConnectorValueIn(m,n) {}
                         
     virtual float	getValue 		() const  { return value; }
     virtual void	setValue		( float );

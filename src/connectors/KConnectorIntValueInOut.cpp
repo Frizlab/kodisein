@@ -55,15 +55,20 @@ const string & KConnectorIntValueInOut::getNameForValue ( int typedValue ) const
 // --------------------------------------------------------------------------------------------------------
 int KConnectorIntValueInOut::getValueForName ( const string & valueName ) const
 {
-    vector<string>::const_iterator result = find (names.begin(), names.end(), valueName);
+    vector<string>::const_iterator result = find(names.begin(), names.end(), valueName);
     if (result != names.end())
     {
         return values[(result - names.begin())];
     }
 
-    KConsole::printError(kStringPrintf("getValueForName failed for module\n'%s'\nand name '%s'", 
-                                                            module->getName().c_str(), valueName.c_str()));
-    return values[0];
+    KConsole::printError(kStringPrintf("getValueForName failed for name '%s'", valueName.c_str()));
+	KConsole::dbg("values: %d", values.size());
+	if (values.size() >= 1)
+	{
+		//return values[0];
+		return 1;
+	}
+	return 0;
 }
 
 // --------------------------------------------------------------------------------------------------------

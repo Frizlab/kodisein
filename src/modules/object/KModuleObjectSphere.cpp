@@ -30,8 +30,8 @@ void KModuleObjectSphere::createConnectors ()
 {
     KConnectorValueInOut * ioConnector;
 
-    NEW_IO_CONNECTOR_Y("slices", -1.0f,0.333f,0,1,2, (KObject*)matrix_object,KSphere,setSlices,getSlices)
-    NEW_IO_CONNECTOR_Y("stacks", -1.0f,0.333f,0,2,2, (KObject*)matrix_object,KSphere,setStacks,getStacks)
+    NEW_IO_CONNECTOR_Y("slices", -1.0f,0.333f,0,1,2, matrix_object,KSphere,setSlices,getSlices)
+    NEW_IO_CONNECTOR_Y("stacks", -1.0f,0.333f,0,2,2, matrix_object,KSphere,setStacks,getStacks)
 
     vector<int>    enums;
     vector<string> names;

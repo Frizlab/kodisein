@@ -11,14 +11,12 @@ AppUpdatesURL=http://kodisein.sourceforge.net
 DefaultDirName={pf}\kodisein
 DefaultGroupName=kodisein
 AllowNoIcons=yes
-;LicenseFile=C:\Projects\kodisein\docs\LICENSE.txt
 ;InfoBeforeFile=C:\Projects\mp3ql\win\PREINSTALL.txt
 Compression=lzma
 SolidCompression=yes
-SetupIconFile=C:\Projects\kodisein\docs\html\images\icon64.ico
-;WizardSmallImageFile=C:\Projects\mp3ql\win\wizard_small.bmp
-;WizardSmallImageBackColor=$FFF677
-;WizardImageFile=C:\Projects\mp3ql\win\wizard.bmp
+SetupIconFile=C:\Projects\kodisein\win32-vc\kodisein.ico
+WizardSmallImageFile=C:\Projects\kodisein\win32-vc\wizard_small.bmp
+WizardImageFile=C:\Projects\kodisein\win32-vc\wizard.bmp
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked

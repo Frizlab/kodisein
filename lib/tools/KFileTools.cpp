@@ -56,7 +56,7 @@ string kFileNativePath ( const string & path )
 #ifdef WIN32
 	kStringReplace(replaced, "/", "\\");
 #else
-	kStringReplace(replaced, "/", "\\");
+	kStringReplace(replaced, "\\", "/");
 #endif
 
 	return replaced;
@@ -65,16 +65,17 @@ string kFileNativePath ( const string & path )
 // --------------------------------------------------------------------------------------------------------
 string kFileSubstitutePath ( const string & path )
 {
+	string native = kFileNativePath(path);
     string filePath;
-    if (path[0] == '~')
+    if (native[0] == '~')
     {
         filePath = kFileHomeDir();
-		if (path.size() > 1)
-			 filePath += path.substr(1);
+		if (native.size() > 1)
+			 filePath += native.substr(1);
     }
     else
     {
-        filePath = path;
+        filePath = native;
     }
 
     return filePath;
@@ -109,7 +110,12 @@ bool kFileExists ( const string & path )
     }
     return false;
 #else
-	return true;
+	DWORD dwAttr = GetFileAttributes(path.c_str());
+	KConsole::dbg("%s: %x", path.c_str(), dwAttr);
+	if (dwAttr == 0xffffffff)
+		return false;
+	else 
+		return true;
 #endif
 }
 
@@ -169,17 +175,18 @@ bool kFileIsDir ( const string & path )
 // --------------------------------------------------------------------------------------------------------
 string kFileAbsPathName ( const string & path )
 {
+	string native = kFileNativePath(path);
 #ifdef WIN32
 	char buffer[MAX_PATH];
-	DWORD result = GetFullPathName(path.c_str(), MAX_PATH, buffer, NULL);
+	DWORD result = GetFullPathName(native.c_str(), MAX_PATH, buffer, NULL);
 	if (result > 0 && result < MAX_PATH)
 	{
 		return string(buffer);
 	}
 	return "";
 #else
-    if (path.size() == 0) return "";
-    string filePath = kFileSubstitutePath(path);
+    if (native.size() == 0) return "";
+    string filePath = kFileSubstitutePath(native);
 
     if (kFileExists(filePath) == false) return "";
     
@@ -206,10 +213,11 @@ string kFileSuffix ( const string & path )
 // --------------------------------------------------------------------------------------------------------
 string kFileDirName ( const string & path )
 {
-    unsigned int lastSlashPos = path.rfind(kPathSep);
-    if (lastSlashPos < path.size())
+	string native = kFileNativePath(path);
+    unsigned int lastSlashPos = native.rfind(kPathSep);
+    if (lastSlashPos < native.size())
     {
-        return path.substr(0, lastSlashPos+1);
+        return native.substr(0, lastSlashPos+1);
     }
     return string(".") + kPathSep;
 }
@@ -217,13 +225,14 @@ string kFileDirName ( const string & path )
 // --------------------------------------------------------------------------------------------------------
 string kFileBaseName ( const string & path, bool removeSuffix )
 {
-    string baseName = path;
-    unsigned int lastSlashPos = path.rfind(kPathSep);
-    if (lastSlashPos < path.size() - 1) 
+	string native = kFileNativePath(path);
+    string baseName = native;
+    unsigned int lastSlashPos = native.rfind(kPathSep);
+    if (lastSlashPos < native.size() - 1) 
     {
-        baseName = path.substr(lastSlashPos+1);
+        baseName = native.substr(lastSlashPos+1);
     }
-    else if (lastSlashPos == path.size() - 1)
+    else if (lastSlashPos == native.size() - 1)
     {
         return "";
     }

@@ -2,9 +2,9 @@
 <Modules>
   <Projection>
     <Value name='matrix' type='matrix'>
-      0.422 -0.675692 0.604447 15.5489
-      1.3411e-07 0.666721 0.745306 17.1341
-      -0.906595 -0.31452 0.281357 7.75449
+      0.325311 -0.527968 0.78449 18.6382
+      5.23396e-007 0.829614 0.558337 13.926
+      -0.945608 -0.181633 0.269883 7.5576
       0 0 0 1
     </Value>
     <Value name='eye distance' type='float' value='17.1586' />
@@ -13,19 +13,19 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         0.610383 -0.409054 0.678312 17.2026
-        -5.81145e-07 0.856339 0.516413 23.2064
+        -5.81145e-007 0.856339 0.516413 23.2064
         -0.792106 -0.31521 0.522695 5.6012
         0 0 0 1
       </Value>
       <Value name='eye distance' type='float' value='29.1017' />
     </Projection>
   </ResetProjection>
-  <GlobalModulator x='5.17743' y='4.34566' z='2.92681'>
+  <GlobalModulator x='4.8043' y='3.98633' z='4.62174'>
     <Value name='description' type='string'>
       "global modulator"
     </Value>
     <Value name='texture set' type='string'>
-      "../textureset.kts"
+      "..\textureset.kts"
     </Value>
     <Value name='clear frame' type='string'>
       "yes"
@@ -366,13 +366,6 @@
                       </Multiply>
                     </Connector>
                   </Invert>
-                </Connector>
-                <Connector name='modulator 3'>
-                  <iTunesModulator>
-                    <Value name='activation key' type='string'>
-                      "i"
-                    </Value>
-                  </iTunesModulator>
                 </Connector>
               </Modulator>
             </Connector>
@@ -919,7 +912,7 @@
   <Projection>
     <Value name='matrix' type='matrix'>
       -0.247738 0.563361 -0.78819 -15.7638
-      -6.78003e-07 0.813553 0.581489 11.6298
+      -6.78003e-007 0.813553 0.581489 11.6298
       0.968822 0.144058 -0.201548 -4.03094
       0 0 0 1
     </Value>
@@ -929,7 +922,7 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         0.999529 -0.00288216 0.030244 0.00840122
-        4.21656e-07 0.995489 0.0948528 1.5315
+        4.21656e-007 0.995489 0.0948528 1.5315
         -0.0303809 -0.0948091 0.995025 18.3621
         0 0 0 1
       </Value>

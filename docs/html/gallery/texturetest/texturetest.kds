@@ -2,12 +2,12 @@
 <Modules>
   <Projection>
     <Value name='matrix' type='matrix'>
-      1 0 0 0
-      0 1 0 0
-      0 0 1 5
+      -0.769106 -0.361509 0.527061 10.7604
+      -1.19339e-007 0.82466 0.56563 14.3824
+      -0.639126 0.435029 -0.634249 -25.5857
       0 0 0 1
     </Value>
-    <Value name='eye distance' type='float' value='5' />
+    <Value name='eye distance' type='float' value='25.2587' />
   </Projection>
   <ResetProjection>
     <Projection>
@@ -20,23 +20,99 @@
       <Value name='eye distance' type='float' value='5' />
     </Projection>
   </ResetProjection>
-  <GlobalModulator x='0' y='0' z='0'>
+  <GlobalModulator x='1.09658' y='-5.01276' z='-11.7543'>
     <Value name='description' type='string'>
       "global modulator"
     </Value>
     <Value name='texture set' type='string'>
-      ""
+      "..\textureset.kts"
     </Value>
     <Value name='clear frame' type='string'>
       "yes"
     </Value>
+    <Connector name='modulator 1'>
+      <Modulator>
+        <Value name='activation key' type='string'>
+          "F1"
+        </Value>
+        <Value name='sequence' type='string'>
+          "1"
+        </Value>
+        <Connector name='value out 0' id='1088531457' />
+      </Modulator>
+    </Connector>
   </GlobalModulator>
+  <Camera x='-4.59941' y='-1.37643' z='-18.0115'>
+    <Value name='matrix' type='transformation'>
+      0 0 0   0 0 0   1 1 1
+    </Value>
+    <Value name='manual' type='bool' value='false' />
+    <Value name='perspective' type='string'>
+      "yes"
+    </Value>
+    <Value name='viewport x' type='float' value='0' />
+    <Value name='viewport y' type='float' value='0' />
+    <Value name='viewport width' type='float' value='1' />
+    <Value name='viewport height' type='float' value='1' />
+    <Value name='aspect ratio' type='float' value='-1' />
+    <Value name='field of view y' type='float' value='60' />
+    <Connector name='matrix out 1'>
+      <Transform>
+        <Value name='pos x' type='float' value='0' />
+        <Value name='pos y' type='float' value='0' />
+        <Value name='pos z' type='float' value='0' />
+        <Value name='size x' type='float' value='1' />
+        <Value name='size y' type='float' value='1' />
+        <Value name='size z' type='float' value='1' />
+        <Value name='rot x' type='float' value='0' />
+        <Value name='rot y' type='float' value='0' />
+        <Value name='rot z' type='float' value='0' />
+        <Connector name='matrix out'>
+          <Sphere>
+            <Value name='matrix' type='transformation'>
+              0 0 0   0 0 0   1 1 1
+            </Value>
+            <Value name='slices' type='float' value='10' />
+            <Value name='stacks' type='float' value='10' />
+            <Value name='normals' type='string'>
+              "smooth"
+            </Value>
+            <Value name='orientation' type='string'>
+              "outside"
+            </Value>
+            <Connector name='attributes in'>
+              <Texture>
+                <Value name='batch index' type='float' value='0' />
+                <Value name='texture index' type='float' value='0' />
+                <Value name='version index' type='float' value='0' />
+                <Value name='env mode' type='string'>
+                  "modulate"
+                </Value>
+                <Value name='s generation mode' type='string'>
+                  "linear"
+                </Value>
+                <Value name='t generation mode' type='string'>
+                  "linear"
+                </Value>
+                <Value name='blend red' type='float' value='0' />
+                <Value name='blend green' type='float' value='0' />
+                <Value name='blend blue' type='float' value='0' />
+                <Connector name='texture index'>
+                  <ValueOutLink id='1088531457' />
+                </Connector>
+              </Texture>
+            </Connector>
+          </Sphere>
+        </Connector>
+      </Transform>
+    </Connector>
+  </Camera>
 </Modules>
 <Objects>
   <Projection>
     <Value name='matrix' type='matrix'>
       0.091909 0.295731 -0.950834 -21.2799
-      -5.17815e-07 0.954878 0.296987 8.40082
+      -5.17815e-007 0.954878 0.296987 8.40082
       0.995759 -0.0272956 0.0877625 1.09513
       0 0 0 1
     </Value>
@@ -46,7 +122,7 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         0.999529 -0.00288216 0.030244 0.00840122
-        4.21656e-07 0.995489 0.0948528 1.5315
+        4.21656e-007 0.995489 0.0948528 1.5315
         -0.0303809 -0.0948091 0.995025 18.3621
         0 0 0 1
       </Value>

@@ -3,7 +3,7 @@
   <Projection>
     <Value name='matrix' type='matrix'>
       0.164911 -0.184659 0.968866 31.7055
-      -6.38887e-07 0.982316 0.187222 28.951
+      -6.38887e-007 0.982316 0.187222 28.951
       -0.986305 -0.0308758 0.161995 -8.52341
       0 0 0 1
     </Value>
@@ -13,7 +13,7 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         -0.278521 -0.167004 0.945798 25.2349
-        -3.72529e-07 0.984765 0.173885 29.2714
+        -3.72529e-007 0.984765 0.173885 29.2714
         -0.960429 0.0484301 -0.274278 -24.902
         0 0 0 1
       </Value>
@@ -32,13 +32,6 @@
     </Value>
     <Connector name='value out mouse x' id='-1187464346' />
     <Connector name='value out mouse y' id='1171888811' />
-    <Connector name='modulator 5'>
-      <iTunesModulator>
-        <Value name='activation key' type='string'>
-          "i"
-        </Value>
-      </iTunesModulator>
-    </Connector>
     <Connector name='modulator 6'>
       <Modulator>
         <Value name='description' type='string'>
@@ -714,7 +707,7 @@
   <Projection>
     <Value name='matrix' type='matrix'>
       -0.888217 0.027978 -0.45855 -8.94911
-      1.93715e-07 0.998141 0.0608995 1.18853
+      1.93715e-007 0.998141 0.0608995 1.18853
       0.459402 0.0540928 -0.886571 -17.3025
       0 0 0 1
     </Value>
@@ -724,7 +717,7 @@
     <Projection>
       <Value name='matrix' type='matrix'>
         0.999529 -0.00288216 0.030244 0.00840122
-        4.21656e-07 0.995489 0.0948528 1.5315
+        4.21656e-007 0.995489 0.0948528 1.5315
         -0.0303809 -0.0948091 0.995025 18.3621
         0 0 0 1
       </Value>

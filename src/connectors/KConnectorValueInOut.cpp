@@ -13,7 +13,7 @@
 #include "KConsole.h"
 #include "KTools.h"
 
-KDL_CLASS_INTROSPECTION_2 (KConnectorValueInOut, KConnectorValueIn, KFloatValueObject)
+KDL_CLASS_INTROSPECTION_2 (KConnectorValueInOut, KFloatValueObject, KConnectorValueIn)
 
 // --------------------------------------------------------------------------------------------------------
 void KConnectorValueInOut::connectWithConnector ( KConnector * c )
@@ -67,8 +67,8 @@ void KConnectorValueInOut::addToWidget ( KWidgetArray * widgetArray )
     valueWidget->addChild(label);
         
     KNumberField * valueField = new KNumberField (value);
-    valueField->addReceiverCallback((KConnectorValueIn*)this, 
-                (KSetFloatPtr)(void (KConnectorValueIn::*)(float))&KConnectorValueInOut::setReceiverValue);
+    valueField->addReceiverCallback((KFloatValueObject*)this, 
+                (KSetFloatPtr)(void (KFloatValueObject::*)(float))&KConnectorValueInOut::setReceiverValue);
     valueField->addReceiverCallback((KFloatValueObject*)this, 
                 (KSetBoolPtr)(void (KFloatValueObject::*)(bool))&KConnectorValueInOut::textFieldPicked,
                 KDL_NOTIFICATION_TYPE_TEXTFIELD_PICKED);
