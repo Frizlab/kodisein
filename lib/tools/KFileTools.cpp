@@ -111,7 +111,6 @@ bool kFileExists ( const string & path )
     return false;
 #else
 	DWORD dwAttr = GetFileAttributes(path.c_str());
-	KConsole::dbg("%s: %x", path.c_str(), dwAttr);
 	if (dwAttr == 0xffffffff)
 		return false;
 	else 

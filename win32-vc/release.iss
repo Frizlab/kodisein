@@ -11,22 +11,21 @@ AppUpdatesURL=http://kodisein.sourceforge.net
 DefaultDirName={pf}\kodisein
 DefaultGroupName=kodisein
 AllowNoIcons=yes
-;InfoBeforeFile=C:\Projects\mp3ql\win\PREINSTALL.txt
 Compression=lzma
 SolidCompression=yes
-SetupIconFile=C:\Projects\kodisein\win32-vc\kodisein.ico
-WizardSmallImageFile=C:\Projects\kodisein\win32-vc\wizard_small.bmp
-WizardImageFile=C:\Projects\kodisein\win32-vc\wizard.bmp
+SetupIconFile=.\kodisein.ico
+WizardSmallImageFile=.\wizard_small.bmp
+WizardImageFile=.\wizard.bmp
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Projects\kodisein\win32-vc\Release\*.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\kodisein\win32-vc\Release\*.html"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\kodisein\win32-vc\Release\*.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Projects\kodisein\docs\html\*"; DestDir: "{app}\Manual"; Flags: ignoreversion recursesubdirs
+Source: ".\Release\*.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\*.html"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\Release\*.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\docs\html\*"; DestDir: "{app}\Manual"; Flags: ignoreversion recursesubdirs
 
 [INI]
 Filename: "{app}\kodisein.sourceforge.net.url"; Section: "InternetShortcut"; Key: "URL"; String: "http://kodisein.sourceforge.net"

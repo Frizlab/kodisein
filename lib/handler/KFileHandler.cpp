@@ -50,7 +50,6 @@ bool KFileHandler::pushCurrentDir ( const string & newCurrentDir )
         return true;
     }
 
-	KConsole::dbg("psh: failed");
     return false;
 }
 

@@ -21,46 +21,6 @@
 #include <hash_map>
 #include "KConsole.h"
 
-void test()
-{
-	typedef hash_map<const char*, const char *> Hash;
-	Hash h;
-	string c("c");
-	string * b = new string("b");
-	KConsole::dbg("hash: %p", h);
-	h[c.c_str()] = "hallo c";
-	h[(new string(*b))->c_str()] = "HALLO B";
-
-	delete b;
-
-	Hash::iterator result;
-
-	result = h.find("a");
-	if (result != h.end())
-    {
-		KConsole::dbg("found value for key %s: %s", "a", (*result).second);
-    }
-
-	result = h.find("b");
-	if (result != h.end())
-    {
-		KConsole::dbg("found value for key %s: %s", "b", (*result).second);
-    }
-
-	result = h.find("c");
-	if (result != h.end())
-    {
-		KConsole::dbg("found value for key %s: %s", "c", (*result).second);
-    }
-
-	result = h.begin();
-	while (result != h.end())
-	{
-		KConsole::dbg("%s: %p", (*result).first, (*result).second);
-		result++;
-	}
-}
-
 KController Controller;
 
 // --------------------------------------------------------------------------------------------------------
@@ -82,8 +42,6 @@ int SDL_main (int argc, char* argv[])
     }
     
 #if defined(__APPLE__) && defined(__MACH__)
-    // OpenGL attributes
-    // OpenGL attributes
     SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 8 );
     SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 8 );
     SDL_GL_SetAttribute( SDL_GL_BLUE_SIZE, 8 );

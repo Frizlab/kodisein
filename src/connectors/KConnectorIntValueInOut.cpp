@@ -62,11 +62,9 @@ int KConnectorIntValueInOut::getValueForName ( const string & valueName ) const
     }
 
     KConsole::printError(kStringPrintf("getValueForName failed for name '%s'", valueName.c_str()));
-	KConsole::dbg("values: %d", values.size());
 	if (values.size() >= 1)
 	{
-		//return values[0];
-		return 1;
+		return values[0];
 	}
 	return 0;
 }

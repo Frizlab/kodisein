@@ -42,11 +42,6 @@ void KProjectionWidget::display ()
     
     glDisable(GL_LIGHTING);
     glEnable (GL_DEPTH_TEST);
-
-    //glColor4f(0.0, 0.0, 0.0, 0.75);
-    //GLuint depth = (GLuint)-1;
-
-    //glDepthFunc(GL_ALWAYS);
 	
     glPolygonMode(GL_FRONT_AND_BACK, KEventHandler::flags[KDL_DISPLAY_MODE_WIREFRAME] ? GL_LINE : GL_FILL);
     KEventHandler::resetLighting();
@@ -57,6 +52,12 @@ void KProjectionWidget::display ()
                                     screenPos.y + 1,
                                     screenSize.w - (screenPos.x + size.w) + 1,
                                     screenSize.h - (screenPos.y + size.h) + 1);
+
+	glEnable(GL_SCISSOR_TEST);
+    glScissor(screenPos.x, screenPos.y, size.w, size.h);
+
+	glClear(GL_DEPTH_BUFFER_BIT);
+
     glMatrixMode(GL_PROJECTION);
     glPushMatrix();    
     projection->initProjection();
@@ -64,6 +65,8 @@ void KProjectionWidget::display ()
     glMatrixMode(GL_PROJECTION);
     glPopMatrix();
        
+	glDisable(GL_SCISSOR_TEST);
+
     glMatrixMode(GL_MODELVIEW);
     glPopMatrix();
     glPopAttrib();
