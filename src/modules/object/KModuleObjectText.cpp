@@ -9,7 +9,7 @@
 #include "KConnectorDiscreteValueInOut.h"
 #include "KXMLTools.h"
 
-#include <GLUT/glut.h>
+#include <glut.h>
 
 KDL_CLASS_INTROSPECTION_1 	(KModuleObjectText, KObjectModule)
 KDS_MODULE_VALUES		(KModuleObjectText, "Text", 1.0, 1.0, 0.0, 0.6)

@@ -10,7 +10,7 @@
 #include "KProjection.h"
 #include "KConsole.h"
 
-#include <GLUT/glut.h>
+#include <glut.h>
 
 KDL_CLASS_INTROSPECTION_1 (KVertexHandle, KHandle)
 

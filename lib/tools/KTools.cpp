@@ -11,7 +11,7 @@
 
 #include <SDL_video.h>
 #include <SDL_image.h>
-#include <GLUT/glut.h>
+#include <glut.h>
 
 // --------------------------------------------------------------------------------------------------------
 SDL_PixelFormat KDL_PIXEL_FORMAT = { 

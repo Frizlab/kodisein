@@ -8,7 +8,7 @@
 #include "KMatrix.h"
 #include "KConsole.h"
 
-#include <GLUT/vvector.h> // INVERT_4X4
+#include <vvector.h> // INVERT_4X4
 
 #if defined(__APPLE__) && defined(__MACH__)
 #include <OpenGL/glu.h>

@@ -9,7 +9,7 @@
 #include "KConnectorSceneIn.h"
 #include "KConnectorSceneOut.h"
 #include "KFileNameValueObject.h"
-#include "KFilenameField.h"
+#include "KFileNameField.h"
 #include "KLabel.h"
 #include "KConsole.h"
 

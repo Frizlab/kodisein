@@ -6,7 +6,7 @@
 #include "KFileTreeFile.h"
 #include "KFileTreeDir.h"
 
-#include <GLUT/glut.h>
+#include <glut.h>
 
 KDL_CLASS_INTROSPECTION_1 (KFileTreeFile, KFileTreeNode)
 

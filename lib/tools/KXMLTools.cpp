@@ -7,6 +7,8 @@
 #include "KConsole.h"
 #include "KSeparatedMatrix.h"
 
+#include <stdio.h>
+
 using namespace std;
 
 // --------------------------------------------------------------------------------------------------------

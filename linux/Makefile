@@ -1,8 +1,7 @@
 
-SDL_INCLUDES  = -I ./SDL/include -I ./SDL_image/include
-STL_INCLUDES  = -I /usr/include/c++/3.3.1
-
-# /usr/include/c++/3.3.1/ext
+SDL_INCLUDES  = -I /usr/include/SDL
+STL_INCLUDES  = -I /usr/include/stlport
+GLUT_INCLUDES = -I /usr/include/GL
 
 LIB = ../lib
 LIB_HANDLER = ${LIB}/handler
@@ -26,11 +25,11 @@ KDS_MODULES_VALUE = ${KDS_MODULES}/value
 LIB_INCLUDES = -I ${LIB_HANDLER} -I ${LIB_TOOLS} -I ${LIB_TYPES} -I ${LIB_VALUES} -I ${LIB_WIDGETS} -I ${LIB_WINDOWS}
 KDS_INCLUDES = -I ${KDS_MAIN} -I ${KDS_CONNECTORS} -I ${KDS_HANDLES} -I ${KDS_OBJECTS} -I ${KDS_MODULES} -I ${KDS_MODULES_ATTRIBUTE} -I ${KDS_MODULES_MATRIX} -I ${KDS_MODULES_OBJECT} -I ${KDS_MODULES_VALUE}
 
-CXX_FLAGS = -w -D_REENTRANT -Dmain=SDL_main -DNO_HASH_MAP  -DWIN32 ${LIB_INCLUDES} ${KDS_INCLUDES} ${SDL_INCLUDES} ${STL_INCLUDES} ${GLUT_INCLUDES}
+CXX_FLAGS = -w ${STL_INCLUDES} ${LIB_INCLUDES} ${KDS_INCLUDES} ${SDL_INCLUDES} ${GLUT_INCLUDES}
 
-LIBS = -L./SDL/lib -L./SDL_image/lib -l SDL -l SDL_image -lSDLmain -l opengl32 -l glu32 -l glut -l kernel32 -l user32 -l gdi32 -l comdlg32 -l advapi32 -l shell32 -l ole32 -l oleaut32 -l uuid -l imm32 -l winmm -l wsock32 -mwindows
+# -DNO_HASH_MAP -Dmain=SDL_main -D_REENTRANT
 
-#-l kernel32 -l user32 -l gdi32 -l comdlg32 -l advapi32 -l shell32 -l ole32 -l oleaut32 -l uuid -l imm32 -l winmm -l wsock32
+LIBS = -l SDL -l SDL_image -lSDLmain -l GL -l GLU -l glut -lstlport_gcc
 
 SRC_LIB_HANDLER = \
 		${LIB_HANDLER}/KEventHandler.cpp \
@@ -93,7 +92,7 @@ OBJ_LIB_WINDOWS = $(SRC_LIB_WINDOWS:.cpp=.o)
 SRC_KDS_MAIN = \
 ../src/KCameraHandler.cpp  ../src/KMainMenu.cpp  ../src/KPreferences.cpp \
 ../src/KController.cpp     ../src/KModules.cpp   ../src/KTextureSets.cpp \
-../src/KMain.cpp           ../src/KObjects.cpp
+../src/KMain.cpp           ../src/KObjects.cpp   kodisein.cpp
 OBJ_KDS_MAIN = $(SRC_KDS_MAIN:.cpp=.o)
 
 SRC_KDS_CONNECTORS = \
@@ -215,7 +214,7 @@ OBJ_KDS_MODULES_VALUE = $(SRC_KDS_MODULES_VALUE:.cpp=.o)
 KODILIB_OBJECTS = ${OBJ_LIB_HANDLER} ${OBJ_LIB_TOOLS} ${OBJ_LIB_TYPES} ${OBJ_LIB_VALUES} ${OBJ_LIB_WIDGETS} ${OBJ_LIB_WINDOWS}
 KODISEIN_OBJECTS = ${OBJ_KDS_MAIN} ${OBJ_KDS_CONNECTORS} ${OBJ_KDS_HANDLES} ${OBJ_KDS_OBJECTS} ${OBJ_KDS_MODULES} ${OBJ_KDS_MODULES_ATTRIBUTE} ${OBJ_KDS_MODULES_MATRIX} ${OBJ_KDS_MODULES_OBJECT} ${OBJ_KDS_MODULES_VALUE}
 
-kodisein.exe: $(KODILIB_OBJECTS) ${KODISEIN_OBJECTS}
+kodisein: $(KODILIB_OBJECTS) ${KODISEIN_OBJECTS}
 	$(CXX) -o $@ $^  ${LIBS}
 
 kodilib.a: $(KODILIB_OBJECTS)

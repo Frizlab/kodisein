@@ -9,7 +9,7 @@
 #pragma warning(disable:4786)
 
 #include "KWidget.h"
-#include "KPickhandler.h"
+#include "KPickHandler.h"
 
 class KProjectionWidget : public KWidget, public KPickHandler
 {

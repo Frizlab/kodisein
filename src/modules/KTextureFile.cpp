@@ -12,7 +12,7 @@
 #include "KConnectorTextureFileIn.h"
 #include "KConnectorTextureFileOut.h"
 #include "KFileNameValueObject.h"
-#include "KFilenameField.h"
+#include "KFileNameField.h"
 #include "KLabel.h"
 #include "KConsole.h"
 #include "KController.h"

@@ -303,7 +303,7 @@ bool kFileGetDirEntries ( const string & path, vector<string> & entries, bool li
             string filename = entryPtr->d_name;
             
             if ((listDotFiles == false && filename[0] == '.') || 
-                filename == "." || filename == ".." || (filename == "dev" && dirPath == PATH_SEP))
+                filename == "." || filename == ".." || (filename == "dev" && dirPath[0] == kPathSep))
             {
             }
             else
