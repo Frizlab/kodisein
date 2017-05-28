@@ -1,3 +1,4 @@
+# Copied from the original .cvsignore
 Debug
 GLUT
 SDL
@@ -8,4 +9,3 @@ kodisein.opt
 kodisein.plg
 Output
 Release
-Thumbs.db
