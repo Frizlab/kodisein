@@ -1,0 +1,1493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BFA1EE71EDB83130081AFC7 /* KEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E601EDB83130081AFC7 /* KEventHandler.cpp */; };
+		7BFA1EE81EDB83130081AFC7 /* KFileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E621EDB83130081AFC7 /* KFileHandler.cpp */; };
+		7BFA1EE91EDB83130081AFC7 /* KKeyActionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E641EDB83130081AFC7 /* KKeyActionHandler.cpp */; };
+		7BFA1EEA1EDB83130081AFC7 /* KKeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E661EDB83130081AFC7 /* KKeyHandler.cpp */; };
+		7BFA1EEB1EDB83130081AFC7 /* KKeyRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E681EDB83130081AFC7 /* KKeyRecorder.cpp */; };
+		7BFA1EEC1EDB83130081AFC7 /* KPickHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E6A1EDB83130081AFC7 /* KPickHandler.cpp */; };
+		7BFA1EED1EDB83130081AFC7 /* KPickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E6C1EDB83130081AFC7 /* KPickable.cpp */; };
+		7BFA1EEE1EDB83130081AFC7 /* KSelectable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E6E1EDB83130081AFC7 /* KSelectable.cpp */; };
+		7BFA1EEF1EDB83130081AFC7 /* KSelectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E701EDB83130081AFC7 /* KSelectionHandler.cpp */; };
+		7BFA1EF01EDB83130081AFC7 /* KFileTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E731EDB83130081AFC7 /* KFileTools.cpp */; };
+		7BFA1EF11EDB83130081AFC7 /* KIntrospection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E751EDB83130081AFC7 /* KIntrospection.cpp */; };
+		7BFA1EF21EDB83130081AFC7 /* KKeyTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E781EDB83130081AFC7 /* KKeyTools.cpp */; };
+		7BFA1EF31EDB83130081AFC7 /* KNotificationObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E7A1EDB83130081AFC7 /* KNotificationObject.cpp */; };
+		7BFA1EF41EDB83130081AFC7 /* KStringTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E7C1EDB83130081AFC7 /* KStringTools.cpp */; };
+		7BFA1EF51EDB83130081AFC7 /* KTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E7E1EDB83130081AFC7 /* KTools.cpp */; };
+		7BFA1EF61EDB83130081AFC7 /* KXMLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E801EDB83130081AFC7 /* KXMLTools.cpp */; };
+		7BFA1EF71EDB83130081AFC7 /* KColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E841EDB83130081AFC7 /* KColor.cpp */; };
+		7BFA1EF81EDB83130081AFC7 /* KKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E861EDB83130081AFC7 /* KKey.cpp */; };
+		7BFA1EF91EDB83130081AFC7 /* KLightingProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E881EDB83130081AFC7 /* KLightingProjection.cpp */; };
+		7BFA1EFA1EDB83130081AFC7 /* KMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E8A1EDB83130081AFC7 /* KMatrix.cpp */; };
+		7BFA1EFB1EDB83130081AFC7 /* KOrthographicProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E8C1EDB83130081AFC7 /* KOrthographicProjection.cpp */; };
+		7BFA1EFC1EDB83130081AFC7 /* KPerspectiveProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E8E1EDB83130081AFC7 /* KPerspectiveProjection.cpp */; };
+		7BFA1EFD1EDB83130081AFC7 /* KProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E901EDB83130081AFC7 /* KProjection.cpp */; };
+		7BFA1EFE1EDB83130081AFC7 /* KSeparatedMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E921EDB83130081AFC7 /* KSeparatedMatrix.cpp */; };
+		7BFA1EFF1EDB83130081AFC7 /* KTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E941EDB83130081AFC7 /* KTexture.cpp */; };
+		7BFA1F001EDB83130081AFC7 /* KTrash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E961EDB83130081AFC7 /* KTrash.cpp */; };
+		7BFA1F011EDB83130081AFC7 /* KVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E981EDB83130081AFC7 /* KVector.cpp */; };
+		7BFA1F021EDB83130081AFC7 /* KBoolValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E9B1EDB83130081AFC7 /* KBoolValueObject.cpp */; };
+		7BFA1F031EDB83130081AFC7 /* KFileNameValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1E9E1EDB83130081AFC7 /* KFileNameValueObject.cpp */; };
+		7BFA1F041EDB83130081AFC7 /* KFloatValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EA01EDB83130081AFC7 /* KFloatValueObject.cpp */; };
+		7BFA1F051EDB83130081AFC7 /* KKeyValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EA21EDB83130081AFC7 /* KKeyValueObject.cpp */; };
+		7BFA1F061EDB83130081AFC7 /* KSizeValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EA41EDB83130081AFC7 /* KSizeValueObject.cpp */; };
+		7BFA1F071EDB83130081AFC7 /* KStringValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EA61EDB83130081AFC7 /* KStringValueObject.cpp */; };
+		7BFA1F081EDB83130081AFC7 /* KValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EA81EDB83130081AFC7 /* KValueObject.cpp */; };
+		7BFA1F091EDB83130081AFC7 /* KButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EAB1EDB83130081AFC7 /* KButton.cpp */; };
+		7BFA1F0A1EDB83130081AFC7 /* KButtonBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EAD1EDB83130081AFC7 /* KButtonBox.cpp */; };
+		7BFA1F0B1EDB83130081AFC7 /* KFileNameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EB01EDB83130081AFC7 /* KFileNameField.cpp */; };
+		7BFA1F0C1EDB83130081AFC7 /* KFileTreeDir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EB21EDB83130081AFC7 /* KFileTreeDir.cpp */; };
+		7BFA1F0D1EDB83130081AFC7 /* KFileTreeDirCurrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EB41EDB83130081AFC7 /* KFileTreeDirCurrent.cpp */; };
+		7BFA1F0E1EDB83130081AFC7 /* KFileTreeDirUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EB61EDB83130081AFC7 /* KFileTreeDirUp.cpp */; };
+		7BFA1F0F1EDB83130081AFC7 /* KFileTreeFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EB81EDB83130081AFC7 /* KFileTreeFile.cpp */; };
+		7BFA1F101EDB83130081AFC7 /* KFileTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EBA1EDB83130081AFC7 /* KFileTreeNode.cpp */; };
+		7BFA1F111EDB83130081AFC7 /* KFileTreeWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EBC1EDB83130081AFC7 /* KFileTreeWidget.cpp */; };
+		7BFA1F121EDB83130081AFC7 /* KIconButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EBE1EDB83130081AFC7 /* KIconButton.cpp */; };
+		7BFA1F131EDB83130081AFC7 /* KKeySequenceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EC01EDB83130081AFC7 /* KKeySequenceField.cpp */; };
+		7BFA1F141EDB83130081AFC7 /* KLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EC21EDB83130081AFC7 /* KLabel.cpp */; };
+		7BFA1F151EDB83130081AFC7 /* KMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EC41EDB83130081AFC7 /* KMenu.cpp */; };
+		7BFA1F161EDB83130081AFC7 /* KMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EC61EDB83130081AFC7 /* KMenuItem.cpp */; };
+		7BFA1F171EDB83130081AFC7 /* KNumberField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EC81EDB83130081AFC7 /* KNumberField.cpp */; };
+		7BFA1F181EDB83130081AFC7 /* KProjectionWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ECA1EDB83130081AFC7 /* KProjectionWidget.cpp */; };
+		7BFA1F191EDB83130081AFC7 /* KStatusMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ECC1EDB83130081AFC7 /* KStatusMenuItem.cpp */; };
+		7BFA1F1A1EDB83130081AFC7 /* KSubMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ECE1EDB83130081AFC7 /* KSubMenuItem.cpp */; };
+		7BFA1F1B1EDB83130081AFC7 /* KTextField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ED01EDB83130081AFC7 /* KTextField.cpp */; };
+		7BFA1F1C1EDB83130081AFC7 /* KTextWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ED21EDB83130081AFC7 /* KTextWidget.cpp */; };
+		7BFA1F1D1EDB83130081AFC7 /* KToggleButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ED41EDB83130081AFC7 /* KToggleButton.cpp */; };
+		7BFA1F1E1EDB83130081AFC7 /* KWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ED61EDB83130081AFC7 /* KWidget.cpp */; };
+		7BFA1F1F1EDB83130081AFC7 /* KWidgetArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1ED81EDB83130081AFC7 /* KWidgetArray.cpp */; };
+		7BFA1F201EDB83130081AFC7 /* KConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EDB1EDB83130081AFC7 /* KConsole.cpp */; };
+		7BFA1F211EDB83130081AFC7 /* KFileTreeWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EDD1EDB83130081AFC7 /* KFileTreeWindow.cpp */; };
+		7BFA1F221EDB83130081AFC7 /* KMenuWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EDF1EDB83130081AFC7 /* KMenuWindow.cpp */; };
+		7BFA1F231EDB83130081AFC7 /* KMessagePanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EE11EDB83130081AFC7 /* KMessagePanel.cpp */; };
+		7BFA1F241EDB83130081AFC7 /* KPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EE31EDB83130081AFC7 /* KPopupMenu.cpp */; };
+		7BFA1F251EDB83130081AFC7 /* KWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1EE51EDB83130081AFC7 /* KWindow.cpp */; };
+		7BFA20121EDB831D0081AFC7 /* KCameraHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F281EDB831D0081AFC7 /* KCameraHandler.cpp */; };
+		7BFA20131EDB831D0081AFC7 /* KController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F2A1EDB831D0081AFC7 /* KController.cpp */; };
+		7BFA20141EDB831D0081AFC7 /* KMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F2C1EDB831D0081AFC7 /* KMain.cpp */; };
+		7BFA20151EDB831D0081AFC7 /* KMainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F2E1EDB831D0081AFC7 /* KMainMenu.cpp */; };
+		7BFA20161EDB831D0081AFC7 /* KModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F301EDB831D0081AFC7 /* KModules.cpp */; };
+		7BFA20171EDB831D0081AFC7 /* KObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F321EDB831D0081AFC7 /* KObjects.cpp */; };
+		7BFA20181EDB831D0081AFC7 /* KPreferences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F341EDB831D0081AFC7 /* KPreferences.cpp */; };
+		7BFA20191EDB831D0081AFC7 /* KTextureSets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F361EDB831D0081AFC7 /* KTextureSets.cpp */; };
+		7BFA201A1EDB831D0081AFC7 /* KConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F391EDB831D0081AFC7 /* KConnector.cpp */; };
+		7BFA201B1EDB831D0081AFC7 /* KConnectorAttributeIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F3B1EDB831D0081AFC7 /* KConnectorAttributeIn.cpp */; };
+		7BFA201C1EDB831D0081AFC7 /* KConnectorAttributeOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F3D1EDB831D0081AFC7 /* KConnectorAttributeOut.cpp */; };
+		7BFA201D1EDB831D0081AFC7 /* KConnectorIntValueInOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F401EDB831D0081AFC7 /* KConnectorIntValueInOut.cpp */; };
+		7BFA201E1EDB831D0081AFC7 /* KConnectorMatrixIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F421EDB831D0081AFC7 /* KConnectorMatrixIn.cpp */; };
+		7BFA201F1EDB831D0081AFC7 /* KConnectorMatrixOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F441EDB831D0081AFC7 /* KConnectorMatrixOut.cpp */; };
+		7BFA20201EDB831D0081AFC7 /* KConnectorModulatorIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F461EDB831D0081AFC7 /* KConnectorModulatorIn.cpp */; };
+		7BFA20211EDB831D0081AFC7 /* KConnectorModulatorOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F481EDB831D0081AFC7 /* KConnectorModulatorOut.cpp */; };
+		7BFA20221EDB831D0081AFC7 /* KConnectorParticleIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F4A1EDB831D0081AFC7 /* KConnectorParticleIn.cpp */; };
+		7BFA20231EDB831D0081AFC7 /* KConnectorParticleOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F4C1EDB831D0081AFC7 /* KConnectorParticleOut.cpp */; };
+		7BFA20241EDB831D0081AFC7 /* KConnectorSceneIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F4E1EDB831D0081AFC7 /* KConnectorSceneIn.cpp */; };
+		7BFA20251EDB831D0081AFC7 /* KConnectorSceneOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F501EDB831D0081AFC7 /* KConnectorSceneOut.cpp */; };
+		7BFA20261EDB831D0081AFC7 /* KConnectorTextureBatchIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F521EDB831D0081AFC7 /* KConnectorTextureBatchIn.cpp */; };
+		7BFA20271EDB831D0081AFC7 /* KConnectorTextureBatchOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F541EDB831D0081AFC7 /* KConnectorTextureBatchOut.cpp */; };
+		7BFA20281EDB831D0081AFC7 /* KConnectorTextureFileIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F561EDB831D0081AFC7 /* KConnectorTextureFileIn.cpp */; };
+		7BFA20291EDB831D0081AFC7 /* KConnectorTextureFileOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F581EDB831D0081AFC7 /* KConnectorTextureFileOut.cpp */; };
+		7BFA202A1EDB831D0081AFC7 /* KConnectorTextureVersionIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F5A1EDB831D0081AFC7 /* KConnectorTextureVersionIn.cpp */; };
+		7BFA202B1EDB831D0081AFC7 /* KConnectorTextureVersionOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F5C1EDB831D0081AFC7 /* KConnectorTextureVersionOut.cpp */; };
+		7BFA202C1EDB831D0081AFC7 /* KConnectorValueIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F5E1EDB831D0081AFC7 /* KConnectorValueIn.cpp */; };
+		7BFA202D1EDB831D0081AFC7 /* KConnectorValueInOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F601EDB831D0081AFC7 /* KConnectorValueInOut.cpp */; };
+		7BFA202E1EDB831D0081AFC7 /* KConnectorValueOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F621EDB831D0081AFC7 /* KConnectorValueOut.cpp */; };
+		7BFA202F1EDB831D0081AFC7 /* KValueConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F641EDB831D0081AFC7 /* KValueConnector.cpp */; };
+		7BFA20301EDB831D0081AFC7 /* KHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F671EDB831D0081AFC7 /* KHandle.cpp */; };
+		7BFA20311EDB831D0081AFC7 /* KHandlesObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F691EDB831D0081AFC7 /* KHandlesObject.cpp */; };
+		7BFA20321EDB831D0081AFC7 /* KMatrixHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F6B1EDB831D0081AFC7 /* KMatrixHandle.cpp */; };
+		7BFA20331EDB831D0081AFC7 /* KMatrixHandleRotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F6D1EDB831D0081AFC7 /* KMatrixHandleRotate.cpp */; };
+		7BFA20341EDB831D0081AFC7 /* KMatrixHandleScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F6F1EDB831D0081AFC7 /* KMatrixHandleScale.cpp */; };
+		7BFA20351EDB831D0081AFC7 /* KMatrixHandleTranslate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F711EDB831D0081AFC7 /* KMatrixHandleTranslate.cpp */; };
+		7BFA20361EDB831D0081AFC7 /* KMoveHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F731EDB831D0081AFC7 /* KMoveHandle.cpp */; };
+		7BFA20371EDB831D0081AFC7 /* KOneDirectionHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F751EDB831D0081AFC7 /* KOneDirectionHandle.cpp */; };
+		7BFA20381EDB831D0081AFC7 /* KRotationHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F771EDB831D0081AFC7 /* KRotationHandle.cpp */; };
+		7BFA20391EDB831D0081AFC7 /* KScaleHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F791EDB831D0081AFC7 /* KScaleHandle.cpp */; };
+		7BFA203A1EDB831D0081AFC7 /* KTwoDirectionHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F7B1EDB831D0081AFC7 /* KTwoDirectionHandle.cpp */; };
+		7BFA203B1EDB831D0081AFC7 /* KVertexHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F7D1EDB831D0081AFC7 /* KVertexHandle.cpp */; };
+		7BFA203C1EDB831D0081AFC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F801EDB831D0081AFC7 /* main.m */; };
+		7BFA203D1EDB831D0081AFC7 /* KModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F821EDB831D0081AFC7 /* KModule.cpp */; };
+		7BFA203E1EDB831D0081AFC7 /* KModuleInspector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F841EDB831D0081AFC7 /* KModuleInspector.cpp */; };
+		7BFA203F1EDB831D0081AFC7 /* KScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F861EDB831D0081AFC7 /* KScene.cpp */; };
+		7BFA20401EDB831D0081AFC7 /* KSceneSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F881EDB831D0081AFC7 /* KSceneSet.cpp */; };
+		7BFA20411EDB831D0081AFC7 /* KTextureBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F8A1EDB831D0081AFC7 /* KTextureBatch.cpp */; };
+		7BFA20421EDB831D0081AFC7 /* KTextureFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F8C1EDB831D0081AFC7 /* KTextureFile.cpp */; };
+		7BFA20431EDB831D0081AFC7 /* KTextureModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F8E1EDB831D0081AFC7 /* KTextureModule.cpp */; };
+		7BFA20441EDB831D0081AFC7 /* KTextureSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F901EDB831D0081AFC7 /* KTextureSet.cpp */; };
+		7BFA20451EDB831D0081AFC7 /* KAttributeModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F931EDB831D0081AFC7 /* KAttributeModule.cpp */; };
+		7BFA20461EDB831D0081AFC7 /* KModuleAttributeHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F951EDB831D0081AFC7 /* KModuleAttributeHub.cpp */; };
+		7BFA20471EDB831D0081AFC7 /* KModuleBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F971EDB831D0081AFC7 /* KModuleBlend.cpp */; };
+		7BFA20481EDB831D0081AFC7 /* KModuleColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F991EDB831D0081AFC7 /* KModuleColor.cpp */; };
+		7BFA20491EDB831D0081AFC7 /* KModuleColorMask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F9B1EDB831D0081AFC7 /* KModuleColorMask.cpp */; };
+		7BFA204A1EDB831D0081AFC7 /* KModuleFog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F9D1EDB831D0081AFC7 /* KModuleFog.cpp */; };
+		7BFA204B1EDB831D0081AFC7 /* KModuleMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1F9F1EDB831D0081AFC7 /* KModuleMaterial.cpp */; };
+		7BFA204C1EDB831D0081AFC7 /* KModuleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FA11EDB831D0081AFC7 /* KModuleTexture.cpp */; };
+		7BFA204D1EDB831D0081AFC7 /* KModuleTextureFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FA31EDB831D0081AFC7 /* KModuleTextureFile.cpp */; };
+		7BFA204E1EDB831D0081AFC7 /* KModuleTextureMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FA51EDB831D0081AFC7 /* KModuleTextureMatrix.cpp */; };
+		7BFA204F1EDB831D0081AFC7 /* KHubModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FA81EDB831D0081AFC7 /* KHubModule.cpp */; };
+		7BFA20501EDB831D0081AFC7 /* KMatrixModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FAA1EDB831D0081AFC7 /* KMatrixModule.cpp */; };
+		7BFA20511EDB831D0081AFC7 /* KModuleGoto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FAC1EDB831D0081AFC7 /* KModuleGoto.cpp */; };
+		7BFA20521EDB831D0081AFC7 /* KModuleIdentity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FAE1EDB831D0081AFC7 /* KModuleIdentity.cpp */; };
+		7BFA20531EDB831D0081AFC7 /* KModuleLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FB01EDB831D0081AFC7 /* KModuleLabel.cpp */; };
+		7BFA20541EDB831D0081AFC7 /* KModuleMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FB21EDB831D0081AFC7 /* KModuleMatrix.cpp */; };
+		7BFA20551EDB831D0081AFC7 /* KModuleMatrixHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FB41EDB831D0081AFC7 /* KModuleMatrixHub.cpp */; };
+		7BFA20561EDB831D0081AFC7 /* KModuleRotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FB61EDB831D0081AFC7 /* KModuleRotate.cpp */; };
+		7BFA20571EDB831D0081AFC7 /* KModuleScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FB81EDB831D0081AFC7 /* KModuleScale.cpp */; };
+		7BFA20581EDB831D0081AFC7 /* KModuleSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FBA1EDB831D0081AFC7 /* KModuleSize.cpp */; };
+		7BFA20591EDB831D0081AFC7 /* KModuleTranslate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FBC1EDB831D0081AFC7 /* KModuleTranslate.cpp */; };
+		7BFA205A1EDB831D0081AFC7 /* KModuleCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FBF1EDB831D0081AFC7 /* KModuleCamera.cpp */; };
+		7BFA205B1EDB831D0081AFC7 /* KModuleLSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FC11EDB831D0081AFC7 /* KModuleLSystem.cpp */; };
+		7BFA205C1EDB831D0081AFC7 /* KModuleLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FC31EDB831D0081AFC7 /* KModuleLight.cpp */; };
+		7BFA205D1EDB831D0081AFC7 /* KModuleObjectBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FC51EDB831D0081AFC7 /* KModuleObjectBox.cpp */; };
+		7BFA205E1EDB831D0081AFC7 /* KModuleObjectCylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FC71EDB831D0081AFC7 /* KModuleObjectCylinder.cpp */; };
+		7BFA205F1EDB831D0081AFC7 /* KModuleObjectDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FC91EDB831D0081AFC7 /* KModuleObjectDisk.cpp */; };
+		7BFA20601EDB831D0081AFC7 /* KModuleObjectFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FCB1EDB831D0081AFC7 /* KModuleObjectFace.cpp */; };
+		7BFA20611EDB831D0081AFC7 /* KModuleObjectLandscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FCD1EDB831D0081AFC7 /* KModuleObjectLandscape.cpp */; };
+		7BFA20621EDB831D0081AFC7 /* KModuleObjectPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FCF1EDB831D0081AFC7 /* KModuleObjectPoint.cpp */; };
+		7BFA20631EDB831D0081AFC7 /* KModuleObjectSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FD11EDB831D0081AFC7 /* KModuleObjectSphere.cpp */; };
+		7BFA20641EDB831D0081AFC7 /* KModuleObjectText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FD31EDB831D0081AFC7 /* KModuleObjectText.cpp */; };
+		7BFA20651EDB831D0081AFC7 /* KModuleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FD51EDB831D0081AFC7 /* KModuleParticle.cpp */; };
+		7BFA20661EDB831D0081AFC7 /* KModuleParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FD71EDB831D0081AFC7 /* KModuleParticleEmitter.cpp */; };
+		7BFA20671EDB831D0081AFC7 /* KModuleVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FD91EDB831D0081AFC7 /* KModuleVertex.cpp */; };
+		7BFA20681EDB831D0081AFC7 /* KObjectModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FDB1EDB831D0081AFC7 /* KObjectModule.cpp */; };
+		7BFA20691EDB831D0081AFC7 /* KActivationValueModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FDE1EDB831D0081AFC7 /* KActivationValueModule.cpp */; };
+		7BFA206A1EDB831D0081AFC7 /* KFilterModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FE01EDB831D0081AFC7 /* KFilterModule.cpp */; };
+		7BFA206B1EDB831D0081AFC7 /* KGlobalModulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FE21EDB831D0081AFC7 /* KGlobalModulator.cpp */; };
+		7BFA206E1EDB831D0081AFC7 /* KModulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FE81EDB831D0081AFC7 /* KModulator.cpp */; };
+		7BFA206F1EDB831D0081AFC7 /* KModuleAccu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FEA1EDB831D0081AFC7 /* KModuleAccu.cpp */; };
+		7BFA20701EDB831D0081AFC7 /* KModuleRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FEC1EDB831D0081AFC7 /* KModuleRandom.cpp */; };
+		7BFA20711EDB831D0081AFC7 /* KModuleSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FEE1EDB831D0081AFC7 /* KModuleSwitch.cpp */; };
+		7BFA20721EDB831D0081AFC7 /* KModuleTrigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FF01EDB831D0081AFC7 /* KModuleTrigger.cpp */; };
+		7BFA20731EDB831D0081AFC7 /* KModuleVariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FF21EDB831D0081AFC7 /* KModuleVariable.cpp */; };
+		7BFA20741EDB831D0081AFC7 /* KOperationModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FF41EDB831D0081AFC7 /* KOperationModule.cpp */; };
+		7BFA20751EDB831D0081AFC7 /* KSequenceGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FF61EDB831D0081AFC7 /* KSequenceGenerator.cpp */; };
+		7BFA20761EDB831D0081AFC7 /* KValueModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FF81EDB831D0081AFC7 /* KValueModule.cpp */; };
+		7BFA20771EDB831D0081AFC7 /* KBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FFB1EDB831D0081AFC7 /* KBox.cpp */; };
+		7BFA20781EDB831D0081AFC7 /* KCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FFD1EDB831D0081AFC7 /* KCamera.cpp */; };
+		7BFA20791EDB831D0081AFC7 /* KCylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA1FFF1EDB831D0081AFC7 /* KCylinder.cpp */; };
+		7BFA207A1EDB831D0081AFC7 /* KDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA20011EDB831D0081AFC7 /* KDisk.cpp */; };
+		7BFA207B1EDB831D0081AFC7 /* KFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA20031EDB831D0081AFC7 /* KFace.cpp */; };
+		7BFA207C1EDB831D0081AFC7 /* KLandscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA20051EDB831D0081AFC7 /* KLandscape.cpp */; };
+		7BFA207D1EDB831D0081AFC7 /* KLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA20071EDB831D0081AFC7 /* KLight.cpp */; };
+		7BFA207E1EDB831D0081AFC7 /* KParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA20091EDB831D0081AFC7 /* KParticle.cpp */; };
+		7BFA207F1EDB831D0081AFC7 /* KSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA200B1EDB831D0081AFC7 /* KSphere.cpp */; };
+		7BFA20801EDB831D0081AFC7 /* KText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA200D1EDB831D0081AFC7 /* KText.cpp */; };
+		7BFA20811EDB831D0081AFC7 /* KVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA200F1EDB831D0081AFC7 /* KVertex.cpp */; };
+		7BFA20871EDB83B50081AFC7 /* libSDL_image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFA20851EDB83B50081AFC7 /* libSDL_image.dylib */; };
+		7BFA20881EDB83B50081AFC7 /* libSDL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFA20861EDB83B50081AFC7 /* libSDL.dylib */; };
+		7BFA208A1EDB83BA0081AFC7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFA20891EDB83BA0081AFC7 /* GLUT.framework */; };
+		7BFA208B1EDB848A0081AFC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA20821EDB83460081AFC7 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BFA1E471EDB82EC0081AFC7 /* kodisein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kodisein.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFA1E601EDB83130081AFC7 /* KEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KEventHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E611EDB83130081AFC7 /* KEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEventHandler.h; sourceTree = "<group>"; };
+		7BFA1E621EDB83130081AFC7 /* KFileHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E631EDB83130081AFC7 /* KFileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileHandler.h; sourceTree = "<group>"; };
+		7BFA1E641EDB83130081AFC7 /* KKeyActionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyActionHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E651EDB83130081AFC7 /* KKeyActionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyActionHandler.h; sourceTree = "<group>"; };
+		7BFA1E661EDB83130081AFC7 /* KKeyHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E671EDB83130081AFC7 /* KKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyHandler.h; sourceTree = "<group>"; };
+		7BFA1E681EDB83130081AFC7 /* KKeyRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyRecorder.cpp; sourceTree = "<group>"; };
+		7BFA1E691EDB83130081AFC7 /* KKeyRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyRecorder.h; sourceTree = "<group>"; };
+		7BFA1E6A1EDB83130081AFC7 /* KPickHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KPickHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E6B1EDB83130081AFC7 /* KPickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPickHandler.h; sourceTree = "<group>"; };
+		7BFA1E6C1EDB83130081AFC7 /* KPickable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KPickable.cpp; sourceTree = "<group>"; };
+		7BFA1E6D1EDB83130081AFC7 /* KPickable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPickable.h; sourceTree = "<group>"; };
+		7BFA1E6E1EDB83130081AFC7 /* KSelectable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSelectable.cpp; sourceTree = "<group>"; };
+		7BFA1E6F1EDB83130081AFC7 /* KSelectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSelectable.h; sourceTree = "<group>"; };
+		7BFA1E701EDB83130081AFC7 /* KSelectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSelectionHandler.cpp; sourceTree = "<group>"; };
+		7BFA1E711EDB83130081AFC7 /* KSelectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSelectionHandler.h; sourceTree = "<group>"; };
+		7BFA1E731EDB83130081AFC7 /* KFileTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTools.cpp; sourceTree = "<group>"; };
+		7BFA1E741EDB83130081AFC7 /* KFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTools.h; sourceTree = "<group>"; };
+		7BFA1E751EDB83130081AFC7 /* KIntrospection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KIntrospection.cpp; sourceTree = "<group>"; };
+		7BFA1E761EDB83130081AFC7 /* KIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIntrospection.h; sourceTree = "<group>"; };
+		7BFA1E771EDB83130081AFC7 /* KKeySymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeySymbols.h; sourceTree = "<group>"; };
+		7BFA1E781EDB83130081AFC7 /* KKeyTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyTools.cpp; sourceTree = "<group>"; };
+		7BFA1E791EDB83130081AFC7 /* KKeyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyTools.h; sourceTree = "<group>"; };
+		7BFA1E7A1EDB83130081AFC7 /* KNotificationObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KNotificationObject.cpp; sourceTree = "<group>"; };
+		7BFA1E7B1EDB83130081AFC7 /* KNotificationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNotificationObject.h; sourceTree = "<group>"; };
+		7BFA1E7C1EDB83130081AFC7 /* KStringTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KStringTools.cpp; sourceTree = "<group>"; };
+		7BFA1E7D1EDB83130081AFC7 /* KStringTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStringTools.h; sourceTree = "<group>"; };
+		7BFA1E7E1EDB83130081AFC7 /* KTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTools.cpp; sourceTree = "<group>"; };
+		7BFA1E7F1EDB83130081AFC7 /* KTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTools.h; sourceTree = "<group>"; };
+		7BFA1E801EDB83130081AFC7 /* KXMLTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KXMLTools.cpp; sourceTree = "<group>"; };
+		7BFA1E811EDB83130081AFC7 /* KXMLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXMLTools.h; sourceTree = "<group>"; };
+		7BFA1E821EDB83130081AFC7 /* vvector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vvector.h; sourceTree = "<group>"; };
+		7BFA1E841EDB83130081AFC7 /* KColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KColor.cpp; sourceTree = "<group>"; };
+		7BFA1E851EDB83130081AFC7 /* KColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KColor.h; sourceTree = "<group>"; };
+		7BFA1E861EDB83130081AFC7 /* KKey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKey.cpp; sourceTree = "<group>"; };
+		7BFA1E871EDB83130081AFC7 /* KKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKey.h; sourceTree = "<group>"; };
+		7BFA1E881EDB83130081AFC7 /* KLightingProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KLightingProjection.cpp; sourceTree = "<group>"; };
+		7BFA1E891EDB83130081AFC7 /* KLightingProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLightingProjection.h; sourceTree = "<group>"; };
+		7BFA1E8A1EDB83130081AFC7 /* KMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrix.cpp; sourceTree = "<group>"; };
+		7BFA1E8B1EDB83130081AFC7 /* KMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrix.h; sourceTree = "<group>"; };
+		7BFA1E8C1EDB83130081AFC7 /* KOrthographicProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KOrthographicProjection.cpp; sourceTree = "<group>"; };
+		7BFA1E8D1EDB83130081AFC7 /* KOrthographicProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOrthographicProjection.h; sourceTree = "<group>"; };
+		7BFA1E8E1EDB83130081AFC7 /* KPerspectiveProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KPerspectiveProjection.cpp; sourceTree = "<group>"; };
+		7BFA1E8F1EDB83130081AFC7 /* KPerspectiveProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPerspectiveProjection.h; sourceTree = "<group>"; };
+		7BFA1E901EDB83130081AFC7 /* KProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KProjection.cpp; sourceTree = "<group>"; };
+		7BFA1E911EDB83130081AFC7 /* KProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KProjection.h; sourceTree = "<group>"; };
+		7BFA1E921EDB83130081AFC7 /* KSeparatedMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSeparatedMatrix.cpp; sourceTree = "<group>"; };
+		7BFA1E931EDB83130081AFC7 /* KSeparatedMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSeparatedMatrix.h; sourceTree = "<group>"; };
+		7BFA1E941EDB83130081AFC7 /* KTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTexture.cpp; sourceTree = "<group>"; };
+		7BFA1E951EDB83130081AFC7 /* KTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTexture.h; sourceTree = "<group>"; };
+		7BFA1E961EDB83130081AFC7 /* KTrash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTrash.cpp; sourceTree = "<group>"; };
+		7BFA1E971EDB83130081AFC7 /* KTrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTrash.h; sourceTree = "<group>"; };
+		7BFA1E981EDB83130081AFC7 /* KVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KVector.cpp; sourceTree = "<group>"; };
+		7BFA1E991EDB83130081AFC7 /* KVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVector.h; sourceTree = "<group>"; };
+		7BFA1E9B1EDB83130081AFC7 /* KBoolValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KBoolValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1E9C1EDB83130081AFC7 /* KBoolValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBoolValueObject.h; sourceTree = "<group>"; };
+		7BFA1E9D1EDB83130081AFC7 /* KDiscreteValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDiscreteValueObject.h; sourceTree = "<group>"; };
+		7BFA1E9E1EDB83130081AFC7 /* KFileNameValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileNameValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1E9F1EDB83130081AFC7 /* KFileNameValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileNameValueObject.h; sourceTree = "<group>"; };
+		7BFA1EA01EDB83130081AFC7 /* KFloatValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFloatValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1EA11EDB83130081AFC7 /* KFloatValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFloatValueObject.h; sourceTree = "<group>"; };
+		7BFA1EA21EDB83130081AFC7 /* KKeyValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1EA31EDB83130081AFC7 /* KKeyValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyValueObject.h; sourceTree = "<group>"; };
+		7BFA1EA41EDB83130081AFC7 /* KSizeValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSizeValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1EA51EDB83130081AFC7 /* KSizeValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSizeValueObject.h; sourceTree = "<group>"; };
+		7BFA1EA61EDB83130081AFC7 /* KStringValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KStringValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1EA71EDB83130081AFC7 /* KStringValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStringValueObject.h; sourceTree = "<group>"; };
+		7BFA1EA81EDB83130081AFC7 /* KValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KValueObject.cpp; sourceTree = "<group>"; };
+		7BFA1EA91EDB83130081AFC7 /* KValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KValueObject.h; sourceTree = "<group>"; };
+		7BFA1EAB1EDB83130081AFC7 /* KButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KButton.cpp; sourceTree = "<group>"; };
+		7BFA1EAC1EDB83130081AFC7 /* KButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KButton.h; sourceTree = "<group>"; };
+		7BFA1EAD1EDB83130081AFC7 /* KButtonBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KButtonBox.cpp; sourceTree = "<group>"; };
+		7BFA1EAE1EDB83130081AFC7 /* KButtonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KButtonBox.h; sourceTree = "<group>"; };
+		7BFA1EAF1EDB83130081AFC7 /* KButtonSymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KButtonSymbols.h; sourceTree = "<group>"; };
+		7BFA1EB01EDB83130081AFC7 /* KFileNameField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileNameField.cpp; sourceTree = "<group>"; };
+		7BFA1EB11EDB83130081AFC7 /* KFileNameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileNameField.h; sourceTree = "<group>"; };
+		7BFA1EB21EDB83130081AFC7 /* KFileTreeDir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDir.cpp; sourceTree = "<group>"; };
+		7BFA1EB31EDB83130081AFC7 /* KFileTreeDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeDir.h; sourceTree = "<group>"; };
+		7BFA1EB41EDB83130081AFC7 /* KFileTreeDirCurrent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDirCurrent.cpp; sourceTree = "<group>"; };
+		7BFA1EB51EDB83130081AFC7 /* KFileTreeDirCurrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeDirCurrent.h; sourceTree = "<group>"; };
+		7BFA1EB61EDB83130081AFC7 /* KFileTreeDirUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDirUp.cpp; sourceTree = "<group>"; };
+		7BFA1EB71EDB83130081AFC7 /* KFileTreeDirUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeDirUp.h; sourceTree = "<group>"; };
+		7BFA1EB81EDB83130081AFC7 /* KFileTreeFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeFile.cpp; sourceTree = "<group>"; };
+		7BFA1EB91EDB83130081AFC7 /* KFileTreeFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeFile.h; sourceTree = "<group>"; };
+		7BFA1EBA1EDB83130081AFC7 /* KFileTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeNode.cpp; sourceTree = "<group>"; };
+		7BFA1EBB1EDB83130081AFC7 /* KFileTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeNode.h; sourceTree = "<group>"; };
+		7BFA1EBC1EDB83130081AFC7 /* KFileTreeWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeWidget.cpp; sourceTree = "<group>"; };
+		7BFA1EBD1EDB83130081AFC7 /* KFileTreeWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeWidget.h; sourceTree = "<group>"; };
+		7BFA1EBE1EDB83130081AFC7 /* KIconButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KIconButton.cpp; sourceTree = "<group>"; };
+		7BFA1EBF1EDB83130081AFC7 /* KIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIconButton.h; sourceTree = "<group>"; };
+		7BFA1EC01EDB83130081AFC7 /* KKeySequenceField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KKeySequenceField.cpp; sourceTree = "<group>"; };
+		7BFA1EC11EDB83130081AFC7 /* KKeySequenceField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeySequenceField.h; sourceTree = "<group>"; };
+		7BFA1EC21EDB83130081AFC7 /* KLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KLabel.cpp; sourceTree = "<group>"; };
+		7BFA1EC31EDB83130081AFC7 /* KLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLabel.h; sourceTree = "<group>"; };
+		7BFA1EC41EDB83130081AFC7 /* KMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMenu.cpp; sourceTree = "<group>"; };
+		7BFA1EC51EDB83130081AFC7 /* KMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMenu.h; sourceTree = "<group>"; };
+		7BFA1EC61EDB83130081AFC7 /* KMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMenuItem.cpp; sourceTree = "<group>"; };
+		7BFA1EC71EDB83130081AFC7 /* KMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMenuItem.h; sourceTree = "<group>"; };
+		7BFA1EC81EDB83130081AFC7 /* KNumberField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KNumberField.cpp; sourceTree = "<group>"; };
+		7BFA1EC91EDB83130081AFC7 /* KNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNumberField.h; sourceTree = "<group>"; };
+		7BFA1ECA1EDB83130081AFC7 /* KProjectionWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KProjectionWidget.cpp; sourceTree = "<group>"; };
+		7BFA1ECB1EDB83130081AFC7 /* KProjectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KProjectionWidget.h; sourceTree = "<group>"; };
+		7BFA1ECC1EDB83130081AFC7 /* KStatusMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KStatusMenuItem.cpp; sourceTree = "<group>"; };
+		7BFA1ECD1EDB83130081AFC7 /* KStatusMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStatusMenuItem.h; sourceTree = "<group>"; };
+		7BFA1ECE1EDB83130081AFC7 /* KSubMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSubMenuItem.cpp; sourceTree = "<group>"; };
+		7BFA1ECF1EDB83130081AFC7 /* KSubMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSubMenuItem.h; sourceTree = "<group>"; };
+		7BFA1ED01EDB83130081AFC7 /* KTextField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextField.cpp; sourceTree = "<group>"; };
+		7BFA1ED11EDB83130081AFC7 /* KTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextField.h; sourceTree = "<group>"; };
+		7BFA1ED21EDB83130081AFC7 /* KTextWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextWidget.cpp; sourceTree = "<group>"; };
+		7BFA1ED31EDB83130081AFC7 /* KTextWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextWidget.h; sourceTree = "<group>"; };
+		7BFA1ED41EDB83130081AFC7 /* KToggleButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KToggleButton.cpp; sourceTree = "<group>"; };
+		7BFA1ED51EDB83130081AFC7 /* KToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KToggleButton.h; sourceTree = "<group>"; };
+		7BFA1ED61EDB83130081AFC7 /* KWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KWidget.cpp; sourceTree = "<group>"; };
+		7BFA1ED71EDB83130081AFC7 /* KWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWidget.h; sourceTree = "<group>"; };
+		7BFA1ED81EDB83130081AFC7 /* KWidgetArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KWidgetArray.cpp; sourceTree = "<group>"; };
+		7BFA1ED91EDB83130081AFC7 /* KWidgetArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWidgetArray.h; sourceTree = "<group>"; };
+		7BFA1EDB1EDB83130081AFC7 /* KConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConsole.cpp; sourceTree = "<group>"; };
+		7BFA1EDC1EDB83130081AFC7 /* KConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConsole.h; sourceTree = "<group>"; };
+		7BFA1EDD1EDB83130081AFC7 /* KFileTreeWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeWindow.cpp; sourceTree = "<group>"; };
+		7BFA1EDE1EDB83130081AFC7 /* KFileTreeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFileTreeWindow.h; sourceTree = "<group>"; };
+		7BFA1EDF1EDB83130081AFC7 /* KMenuWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMenuWindow.cpp; sourceTree = "<group>"; };
+		7BFA1EE01EDB83130081AFC7 /* KMenuWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMenuWindow.h; sourceTree = "<group>"; };
+		7BFA1EE11EDB83130081AFC7 /* KMessagePanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMessagePanel.cpp; sourceTree = "<group>"; };
+		7BFA1EE21EDB83130081AFC7 /* KMessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMessagePanel.h; sourceTree = "<group>"; };
+		7BFA1EE31EDB83130081AFC7 /* KPopupMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KPopupMenu.cpp; sourceTree = "<group>"; };
+		7BFA1EE41EDB83130081AFC7 /* KPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPopupMenu.h; sourceTree = "<group>"; };
+		7BFA1EE51EDB83130081AFC7 /* KWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KWindow.cpp; sourceTree = "<group>"; };
+		7BFA1EE61EDB83130081AFC7 /* KWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWindow.h; sourceTree = "<group>"; };
+		7BFA1F281EDB831D0081AFC7 /* KCameraHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KCameraHandler.cpp; sourceTree = "<group>"; };
+		7BFA1F291EDB831D0081AFC7 /* KCameraHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCameraHandler.h; sourceTree = "<group>"; };
+		7BFA1F2A1EDB831D0081AFC7 /* KController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KController.cpp; sourceTree = "<group>"; };
+		7BFA1F2B1EDB831D0081AFC7 /* KController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KController.h; sourceTree = "<group>"; };
+		7BFA1F2C1EDB831D0081AFC7 /* KMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMain.cpp; sourceTree = "<group>"; };
+		7BFA1F2D1EDB831D0081AFC7 /* KMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMain.h; sourceTree = "<group>"; };
+		7BFA1F2E1EDB831D0081AFC7 /* KMainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMainMenu.cpp; sourceTree = "<group>"; };
+		7BFA1F2F1EDB831D0081AFC7 /* KMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMainMenu.h; sourceTree = "<group>"; };
+		7BFA1F301EDB831D0081AFC7 /* KModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModules.cpp; sourceTree = "<group>"; };
+		7BFA1F311EDB831D0081AFC7 /* KModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModules.h; sourceTree = "<group>"; };
+		7BFA1F321EDB831D0081AFC7 /* KObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KObjects.cpp; sourceTree = "<group>"; };
+		7BFA1F331EDB831D0081AFC7 /* KObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KObjects.h; sourceTree = "<group>"; };
+		7BFA1F341EDB831D0081AFC7 /* KPreferences.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KPreferences.cpp; sourceTree = "<group>"; };
+		7BFA1F351EDB831D0081AFC7 /* KPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPreferences.h; sourceTree = "<group>"; };
+		7BFA1F361EDB831D0081AFC7 /* KTextureSets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureSets.cpp; sourceTree = "<group>"; };
+		7BFA1F371EDB831D0081AFC7 /* KTextureSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextureSets.h; sourceTree = "<group>"; };
+		7BFA1F391EDB831D0081AFC7 /* KConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnector.cpp; sourceTree = "<group>"; };
+		7BFA1F3A1EDB831D0081AFC7 /* KConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnector.h; sourceTree = "<group>"; };
+		7BFA1F3B1EDB831D0081AFC7 /* KConnectorAttributeIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorAttributeIn.cpp; sourceTree = "<group>"; };
+		7BFA1F3C1EDB831D0081AFC7 /* KConnectorAttributeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorAttributeIn.h; sourceTree = "<group>"; };
+		7BFA1F3D1EDB831D0081AFC7 /* KConnectorAttributeOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorAttributeOut.cpp; sourceTree = "<group>"; };
+		7BFA1F3E1EDB831D0081AFC7 /* KConnectorAttributeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorAttributeOut.h; sourceTree = "<group>"; };
+		7BFA1F3F1EDB831D0081AFC7 /* KConnectorDiscreteValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorDiscreteValueInOut.h; sourceTree = "<group>"; };
+		7BFA1F401EDB831D0081AFC7 /* KConnectorIntValueInOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorIntValueInOut.cpp; sourceTree = "<group>"; };
+		7BFA1F411EDB831D0081AFC7 /* KConnectorIntValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorIntValueInOut.h; sourceTree = "<group>"; };
+		7BFA1F421EDB831D0081AFC7 /* KConnectorMatrixIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorMatrixIn.cpp; sourceTree = "<group>"; };
+		7BFA1F431EDB831D0081AFC7 /* KConnectorMatrixIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorMatrixIn.h; sourceTree = "<group>"; };
+		7BFA1F441EDB831D0081AFC7 /* KConnectorMatrixOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorMatrixOut.cpp; sourceTree = "<group>"; };
+		7BFA1F451EDB831D0081AFC7 /* KConnectorMatrixOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorMatrixOut.h; sourceTree = "<group>"; };
+		7BFA1F461EDB831D0081AFC7 /* KConnectorModulatorIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorModulatorIn.cpp; sourceTree = "<group>"; };
+		7BFA1F471EDB831D0081AFC7 /* KConnectorModulatorIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorModulatorIn.h; sourceTree = "<group>"; };
+		7BFA1F481EDB831D0081AFC7 /* KConnectorModulatorOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorModulatorOut.cpp; sourceTree = "<group>"; };
+		7BFA1F491EDB831D0081AFC7 /* KConnectorModulatorOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorModulatorOut.h; sourceTree = "<group>"; };
+		7BFA1F4A1EDB831D0081AFC7 /* KConnectorParticleIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorParticleIn.cpp; sourceTree = "<group>"; };
+		7BFA1F4B1EDB831D0081AFC7 /* KConnectorParticleIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorParticleIn.h; sourceTree = "<group>"; };
+		7BFA1F4C1EDB831D0081AFC7 /* KConnectorParticleOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorParticleOut.cpp; sourceTree = "<group>"; };
+		7BFA1F4D1EDB831D0081AFC7 /* KConnectorParticleOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorParticleOut.h; sourceTree = "<group>"; };
+		7BFA1F4E1EDB831D0081AFC7 /* KConnectorSceneIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorSceneIn.cpp; sourceTree = "<group>"; };
+		7BFA1F4F1EDB831D0081AFC7 /* KConnectorSceneIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorSceneIn.h; sourceTree = "<group>"; };
+		7BFA1F501EDB831D0081AFC7 /* KConnectorSceneOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorSceneOut.cpp; sourceTree = "<group>"; };
+		7BFA1F511EDB831D0081AFC7 /* KConnectorSceneOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorSceneOut.h; sourceTree = "<group>"; };
+		7BFA1F521EDB831D0081AFC7 /* KConnectorTextureBatchIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureBatchIn.cpp; sourceTree = "<group>"; };
+		7BFA1F531EDB831D0081AFC7 /* KConnectorTextureBatchIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureBatchIn.h; sourceTree = "<group>"; };
+		7BFA1F541EDB831D0081AFC7 /* KConnectorTextureBatchOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureBatchOut.cpp; sourceTree = "<group>"; };
+		7BFA1F551EDB831D0081AFC7 /* KConnectorTextureBatchOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureBatchOut.h; sourceTree = "<group>"; };
+		7BFA1F561EDB831D0081AFC7 /* KConnectorTextureFileIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureFileIn.cpp; sourceTree = "<group>"; };
+		7BFA1F571EDB831D0081AFC7 /* KConnectorTextureFileIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureFileIn.h; sourceTree = "<group>"; };
+		7BFA1F581EDB831D0081AFC7 /* KConnectorTextureFileOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureFileOut.cpp; sourceTree = "<group>"; };
+		7BFA1F591EDB831D0081AFC7 /* KConnectorTextureFileOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureFileOut.h; sourceTree = "<group>"; };
+		7BFA1F5A1EDB831D0081AFC7 /* KConnectorTextureVersionIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureVersionIn.cpp; sourceTree = "<group>"; };
+		7BFA1F5B1EDB831D0081AFC7 /* KConnectorTextureVersionIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureVersionIn.h; sourceTree = "<group>"; };
+		7BFA1F5C1EDB831D0081AFC7 /* KConnectorTextureVersionOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureVersionOut.cpp; sourceTree = "<group>"; };
+		7BFA1F5D1EDB831D0081AFC7 /* KConnectorTextureVersionOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureVersionOut.h; sourceTree = "<group>"; };
+		7BFA1F5E1EDB831D0081AFC7 /* KConnectorValueIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueIn.cpp; sourceTree = "<group>"; };
+		7BFA1F5F1EDB831D0081AFC7 /* KConnectorValueIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorValueIn.h; sourceTree = "<group>"; };
+		7BFA1F601EDB831D0081AFC7 /* KConnectorValueInOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueInOut.cpp; sourceTree = "<group>"; };
+		7BFA1F611EDB831D0081AFC7 /* KConnectorValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorValueInOut.h; sourceTree = "<group>"; };
+		7BFA1F621EDB831D0081AFC7 /* KConnectorValueOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueOut.cpp; sourceTree = "<group>"; };
+		7BFA1F631EDB831D0081AFC7 /* KConnectorValueOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KConnectorValueOut.h; sourceTree = "<group>"; };
+		7BFA1F641EDB831D0081AFC7 /* KValueConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KValueConnector.cpp; sourceTree = "<group>"; };
+		7BFA1F651EDB831D0081AFC7 /* KValueConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KValueConnector.h; sourceTree = "<group>"; };
+		7BFA1F671EDB831D0081AFC7 /* KHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F681EDB831D0081AFC7 /* KHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHandle.h; sourceTree = "<group>"; };
+		7BFA1F691EDB831D0081AFC7 /* KHandlesObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KHandlesObject.cpp; sourceTree = "<group>"; };
+		7BFA1F6A1EDB831D0081AFC7 /* KHandlesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHandlesObject.h; sourceTree = "<group>"; };
+		7BFA1F6B1EDB831D0081AFC7 /* KMatrixHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F6C1EDB831D0081AFC7 /* KMatrixHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrixHandle.h; sourceTree = "<group>"; };
+		7BFA1F6D1EDB831D0081AFC7 /* KMatrixHandleRotate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleRotate.cpp; sourceTree = "<group>"; };
+		7BFA1F6E1EDB831D0081AFC7 /* KMatrixHandleRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleRotate.h; sourceTree = "<group>"; };
+		7BFA1F6F1EDB831D0081AFC7 /* KMatrixHandleScale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleScale.cpp; sourceTree = "<group>"; };
+		7BFA1F701EDB831D0081AFC7 /* KMatrixHandleScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleScale.h; sourceTree = "<group>"; };
+		7BFA1F711EDB831D0081AFC7 /* KMatrixHandleTranslate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleTranslate.cpp; sourceTree = "<group>"; };
+		7BFA1F721EDB831D0081AFC7 /* KMatrixHandleTranslate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleTranslate.h; sourceTree = "<group>"; };
+		7BFA1F731EDB831D0081AFC7 /* KMoveHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMoveHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F741EDB831D0081AFC7 /* KMoveHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMoveHandle.h; sourceTree = "<group>"; };
+		7BFA1F751EDB831D0081AFC7 /* KOneDirectionHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KOneDirectionHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F761EDB831D0081AFC7 /* KOneDirectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOneDirectionHandle.h; sourceTree = "<group>"; };
+		7BFA1F771EDB831D0081AFC7 /* KRotationHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KRotationHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F781EDB831D0081AFC7 /* KRotationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRotationHandle.h; sourceTree = "<group>"; };
+		7BFA1F791EDB831D0081AFC7 /* KScaleHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KScaleHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F7A1EDB831D0081AFC7 /* KScaleHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScaleHandle.h; sourceTree = "<group>"; };
+		7BFA1F7B1EDB831D0081AFC7 /* KTwoDirectionHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTwoDirectionHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F7C1EDB831D0081AFC7 /* KTwoDirectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTwoDirectionHandle.h; sourceTree = "<group>"; };
+		7BFA1F7D1EDB831D0081AFC7 /* KVertexHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KVertexHandle.cpp; sourceTree = "<group>"; };
+		7BFA1F7E1EDB831D0081AFC7 /* KVertexHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVertexHandle.h; sourceTree = "<group>"; };
+		7BFA1F7F1EDB831D0081AFC7 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		7BFA1F801EDB831D0081AFC7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BFA1F821EDB831D0081AFC7 /* KModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModule.cpp; sourceTree = "<group>"; };
+		7BFA1F831EDB831D0081AFC7 /* KModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModule.h; sourceTree = "<group>"; };
+		7BFA1F841EDB831D0081AFC7 /* KModuleInspector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleInspector.cpp; sourceTree = "<group>"; };
+		7BFA1F851EDB831D0081AFC7 /* KModuleInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleInspector.h; sourceTree = "<group>"; };
+		7BFA1F861EDB831D0081AFC7 /* KScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KScene.cpp; sourceTree = "<group>"; };
+		7BFA1F871EDB831D0081AFC7 /* KScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScene.h; sourceTree = "<group>"; };
+		7BFA1F881EDB831D0081AFC7 /* KSceneSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSceneSet.cpp; sourceTree = "<group>"; };
+		7BFA1F891EDB831D0081AFC7 /* KSceneSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSceneSet.h; sourceTree = "<group>"; };
+		7BFA1F8A1EDB831D0081AFC7 /* KTextureBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureBatch.cpp; sourceTree = "<group>"; };
+		7BFA1F8B1EDB831D0081AFC7 /* KTextureBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextureBatch.h; sourceTree = "<group>"; };
+		7BFA1F8C1EDB831D0081AFC7 /* KTextureFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureFile.cpp; sourceTree = "<group>"; };
+		7BFA1F8D1EDB831D0081AFC7 /* KTextureFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextureFile.h; sourceTree = "<group>"; };
+		7BFA1F8E1EDB831D0081AFC7 /* KTextureModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureModule.cpp; sourceTree = "<group>"; };
+		7BFA1F8F1EDB831D0081AFC7 /* KTextureModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextureModule.h; sourceTree = "<group>"; };
+		7BFA1F901EDB831D0081AFC7 /* KTextureSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureSet.cpp; sourceTree = "<group>"; };
+		7BFA1F911EDB831D0081AFC7 /* KTextureSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTextureSet.h; sourceTree = "<group>"; };
+		7BFA1F931EDB831D0081AFC7 /* KAttributeModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KAttributeModule.cpp; sourceTree = "<group>"; };
+		7BFA1F941EDB831D0081AFC7 /* KAttributeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAttributeModule.h; sourceTree = "<group>"; };
+		7BFA1F951EDB831D0081AFC7 /* KModuleAttributeHub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleAttributeHub.cpp; sourceTree = "<group>"; };
+		7BFA1F961EDB831D0081AFC7 /* KModuleAttributeHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleAttributeHub.h; sourceTree = "<group>"; };
+		7BFA1F971EDB831D0081AFC7 /* KModuleBlend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleBlend.cpp; sourceTree = "<group>"; };
+		7BFA1F981EDB831D0081AFC7 /* KModuleBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleBlend.h; sourceTree = "<group>"; };
+		7BFA1F991EDB831D0081AFC7 /* KModuleColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleColor.cpp; sourceTree = "<group>"; };
+		7BFA1F9A1EDB831D0081AFC7 /* KModuleColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleColor.h; sourceTree = "<group>"; };
+		7BFA1F9B1EDB831D0081AFC7 /* KModuleColorMask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleColorMask.cpp; sourceTree = "<group>"; };
+		7BFA1F9C1EDB831D0081AFC7 /* KModuleColorMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleColorMask.h; sourceTree = "<group>"; };
+		7BFA1F9D1EDB831D0081AFC7 /* KModuleFog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleFog.cpp; sourceTree = "<group>"; };
+		7BFA1F9E1EDB831D0081AFC7 /* KModuleFog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleFog.h; sourceTree = "<group>"; };
+		7BFA1F9F1EDB831D0081AFC7 /* KModuleMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMaterial.cpp; sourceTree = "<group>"; };
+		7BFA1FA01EDB831D0081AFC7 /* KModuleMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleMaterial.h; sourceTree = "<group>"; };
+		7BFA1FA11EDB831D0081AFC7 /* KModuleTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTexture.cpp; sourceTree = "<group>"; };
+		7BFA1FA21EDB831D0081AFC7 /* KModuleTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleTexture.h; sourceTree = "<group>"; };
+		7BFA1FA31EDB831D0081AFC7 /* KModuleTextureFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTextureFile.cpp; sourceTree = "<group>"; };
+		7BFA1FA41EDB831D0081AFC7 /* KModuleTextureFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleTextureFile.h; sourceTree = "<group>"; };
+		7BFA1FA51EDB831D0081AFC7 /* KModuleTextureMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTextureMatrix.cpp; sourceTree = "<group>"; };
+		7BFA1FA61EDB831D0081AFC7 /* KModuleTextureMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleTextureMatrix.h; sourceTree = "<group>"; };
+		7BFA1FA81EDB831D0081AFC7 /* KHubModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KHubModule.cpp; sourceTree = "<group>"; };
+		7BFA1FA91EDB831D0081AFC7 /* KHubModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHubModule.h; sourceTree = "<group>"; };
+		7BFA1FAA1EDB831D0081AFC7 /* KMatrixModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixModule.cpp; sourceTree = "<group>"; };
+		7BFA1FAB1EDB831D0081AFC7 /* KMatrixModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMatrixModule.h; sourceTree = "<group>"; };
+		7BFA1FAC1EDB831D0081AFC7 /* KModuleGoto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleGoto.cpp; sourceTree = "<group>"; };
+		7BFA1FAD1EDB831D0081AFC7 /* KModuleGoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleGoto.h; sourceTree = "<group>"; };
+		7BFA1FAE1EDB831D0081AFC7 /* KModuleIdentity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleIdentity.cpp; sourceTree = "<group>"; };
+		7BFA1FAF1EDB831D0081AFC7 /* KModuleIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleIdentity.h; sourceTree = "<group>"; };
+		7BFA1FB01EDB831D0081AFC7 /* KModuleLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLabel.cpp; sourceTree = "<group>"; };
+		7BFA1FB11EDB831D0081AFC7 /* KModuleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleLabel.h; sourceTree = "<group>"; };
+		7BFA1FB21EDB831D0081AFC7 /* KModuleMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMatrix.cpp; sourceTree = "<group>"; };
+		7BFA1FB31EDB831D0081AFC7 /* KModuleMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleMatrix.h; sourceTree = "<group>"; };
+		7BFA1FB41EDB831D0081AFC7 /* KModuleMatrixHub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMatrixHub.cpp; sourceTree = "<group>"; };
+		7BFA1FB51EDB831D0081AFC7 /* KModuleMatrixHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleMatrixHub.h; sourceTree = "<group>"; };
+		7BFA1FB61EDB831D0081AFC7 /* KModuleRotate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleRotate.cpp; sourceTree = "<group>"; };
+		7BFA1FB71EDB831D0081AFC7 /* KModuleRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleRotate.h; sourceTree = "<group>"; };
+		7BFA1FB81EDB831D0081AFC7 /* KModuleScale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleScale.cpp; sourceTree = "<group>"; };
+		7BFA1FB91EDB831D0081AFC7 /* KModuleScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleScale.h; sourceTree = "<group>"; };
+		7BFA1FBA1EDB831D0081AFC7 /* KModuleSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleSize.cpp; sourceTree = "<group>"; };
+		7BFA1FBB1EDB831D0081AFC7 /* KModuleSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleSize.h; sourceTree = "<group>"; };
+		7BFA1FBC1EDB831D0081AFC7 /* KModuleTranslate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTranslate.cpp; sourceTree = "<group>"; };
+		7BFA1FBD1EDB831D0081AFC7 /* KModuleTranslate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleTranslate.h; sourceTree = "<group>"; };
+		7BFA1FBF1EDB831D0081AFC7 /* KModuleCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleCamera.cpp; sourceTree = "<group>"; };
+		7BFA1FC01EDB831D0081AFC7 /* KModuleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleCamera.h; sourceTree = "<group>"; };
+		7BFA1FC11EDB831D0081AFC7 /* KModuleLSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLSystem.cpp; sourceTree = "<group>"; };
+		7BFA1FC21EDB831D0081AFC7 /* KModuleLSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleLSystem.h; sourceTree = "<group>"; };
+		7BFA1FC31EDB831D0081AFC7 /* KModuleLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLight.cpp; sourceTree = "<group>"; };
+		7BFA1FC41EDB831D0081AFC7 /* KModuleLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleLight.h; sourceTree = "<group>"; };
+		7BFA1FC51EDB831D0081AFC7 /* KModuleObjectBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectBox.cpp; sourceTree = "<group>"; };
+		7BFA1FC61EDB831D0081AFC7 /* KModuleObjectBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectBox.h; sourceTree = "<group>"; };
+		7BFA1FC71EDB831D0081AFC7 /* KModuleObjectCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectCylinder.cpp; sourceTree = "<group>"; };
+		7BFA1FC81EDB831D0081AFC7 /* KModuleObjectCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectCylinder.h; sourceTree = "<group>"; };
+		7BFA1FC91EDB831D0081AFC7 /* KModuleObjectDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectDisk.cpp; sourceTree = "<group>"; };
+		7BFA1FCA1EDB831D0081AFC7 /* KModuleObjectDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectDisk.h; sourceTree = "<group>"; };
+		7BFA1FCB1EDB831D0081AFC7 /* KModuleObjectFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectFace.cpp; sourceTree = "<group>"; };
+		7BFA1FCC1EDB831D0081AFC7 /* KModuleObjectFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectFace.h; sourceTree = "<group>"; };
+		7BFA1FCD1EDB831D0081AFC7 /* KModuleObjectLandscape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectLandscape.cpp; sourceTree = "<group>"; };
+		7BFA1FCE1EDB831D0081AFC7 /* KModuleObjectLandscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectLandscape.h; sourceTree = "<group>"; };
+		7BFA1FCF1EDB831D0081AFC7 /* KModuleObjectPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectPoint.cpp; sourceTree = "<group>"; };
+		7BFA1FD01EDB831D0081AFC7 /* KModuleObjectPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectPoint.h; sourceTree = "<group>"; };
+		7BFA1FD11EDB831D0081AFC7 /* KModuleObjectSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectSphere.cpp; sourceTree = "<group>"; };
+		7BFA1FD21EDB831D0081AFC7 /* KModuleObjectSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectSphere.h; sourceTree = "<group>"; };
+		7BFA1FD31EDB831D0081AFC7 /* KModuleObjectText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectText.cpp; sourceTree = "<group>"; };
+		7BFA1FD41EDB831D0081AFC7 /* KModuleObjectText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleObjectText.h; sourceTree = "<group>"; };
+		7BFA1FD51EDB831D0081AFC7 /* KModuleParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleParticle.cpp; sourceTree = "<group>"; };
+		7BFA1FD61EDB831D0081AFC7 /* KModuleParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleParticle.h; sourceTree = "<group>"; };
+		7BFA1FD71EDB831D0081AFC7 /* KModuleParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleParticleEmitter.cpp; sourceTree = "<group>"; };
+		7BFA1FD81EDB831D0081AFC7 /* KModuleParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleParticleEmitter.h; sourceTree = "<group>"; };
+		7BFA1FD91EDB831D0081AFC7 /* KModuleVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleVertex.cpp; sourceTree = "<group>"; };
+		7BFA1FDA1EDB831D0081AFC7 /* KModuleVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleVertex.h; sourceTree = "<group>"; };
+		7BFA1FDB1EDB831D0081AFC7 /* KObjectModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KObjectModule.cpp; sourceTree = "<group>"; };
+		7BFA1FDC1EDB831D0081AFC7 /* KObjectModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KObjectModule.h; sourceTree = "<group>"; };
+		7BFA1FDE1EDB831D0081AFC7 /* KActivationValueModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KActivationValueModule.cpp; sourceTree = "<group>"; };
+		7BFA1FDF1EDB831D0081AFC7 /* KActivationValueModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KActivationValueModule.h; sourceTree = "<group>"; };
+		7BFA1FE01EDB831D0081AFC7 /* KFilterModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFilterModule.cpp; sourceTree = "<group>"; };
+		7BFA1FE11EDB831D0081AFC7 /* KFilterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFilterModule.h; sourceTree = "<group>"; };
+		7BFA1FE21EDB831D0081AFC7 /* KGlobalModulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KGlobalModulator.cpp; sourceTree = "<group>"; };
+		7BFA1FE31EDB831D0081AFC7 /* KGlobalModulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGlobalModulator.h; sourceTree = "<group>"; };
+		7BFA1FE41EDB831D0081AFC7 /* KITunesModulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KITunesModulation.h; sourceTree = "<group>"; };
+		7BFA1FE51EDB831D0081AFC7 /* KITunesModulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KITunesModulation.m; sourceTree = "<group>"; };
+		7BFA1FE61EDB831D0081AFC7 /* KITunesModulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KITunesModulator.cpp; sourceTree = "<group>"; };
+		7BFA1FE71EDB831D0081AFC7 /* KITunesModulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KITunesModulator.h; sourceTree = "<group>"; };
+		7BFA1FE81EDB831D0081AFC7 /* KModulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModulator.cpp; sourceTree = "<group>"; };
+		7BFA1FE91EDB831D0081AFC7 /* KModulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModulator.h; sourceTree = "<group>"; };
+		7BFA1FEA1EDB831D0081AFC7 /* KModuleAccu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleAccu.cpp; sourceTree = "<group>"; };
+		7BFA1FEB1EDB831D0081AFC7 /* KModuleAccu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleAccu.h; sourceTree = "<group>"; };
+		7BFA1FEC1EDB831D0081AFC7 /* KModuleRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleRandom.cpp; sourceTree = "<group>"; };
+		7BFA1FED1EDB831D0081AFC7 /* KModuleRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleRandom.h; sourceTree = "<group>"; };
+		7BFA1FEE1EDB831D0081AFC7 /* KModuleSwitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleSwitch.cpp; sourceTree = "<group>"; };
+		7BFA1FEF1EDB831D0081AFC7 /* KModuleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleSwitch.h; sourceTree = "<group>"; };
+		7BFA1FF01EDB831D0081AFC7 /* KModuleTrigger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTrigger.cpp; sourceTree = "<group>"; };
+		7BFA1FF11EDB831D0081AFC7 /* KModuleTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleTrigger.h; sourceTree = "<group>"; };
+		7BFA1FF21EDB831D0081AFC7 /* KModuleVariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleVariable.cpp; sourceTree = "<group>"; };
+		7BFA1FF31EDB831D0081AFC7 /* KModuleVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KModuleVariable.h; sourceTree = "<group>"; };
+		7BFA1FF41EDB831D0081AFC7 /* KOperationModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KOperationModule.cpp; sourceTree = "<group>"; };
+		7BFA1FF51EDB831D0081AFC7 /* KOperationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOperationModule.h; sourceTree = "<group>"; };
+		7BFA1FF61EDB831D0081AFC7 /* KSequenceGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSequenceGenerator.cpp; sourceTree = "<group>"; };
+		7BFA1FF71EDB831D0081AFC7 /* KSequenceGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSequenceGenerator.h; sourceTree = "<group>"; };
+		7BFA1FF81EDB831D0081AFC7 /* KValueModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KValueModule.cpp; sourceTree = "<group>"; };
+		7BFA1FF91EDB831D0081AFC7 /* KValueModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KValueModule.h; sourceTree = "<group>"; };
+		7BFA1FFB1EDB831D0081AFC7 /* KBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KBox.cpp; sourceTree = "<group>"; };
+		7BFA1FFC1EDB831D0081AFC7 /* KBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBox.h; sourceTree = "<group>"; };
+		7BFA1FFD1EDB831D0081AFC7 /* KCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KCamera.cpp; sourceTree = "<group>"; };
+		7BFA1FFE1EDB831D0081AFC7 /* KCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCamera.h; sourceTree = "<group>"; };
+		7BFA1FFF1EDB831D0081AFC7 /* KCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KCylinder.cpp; sourceTree = "<group>"; };
+		7BFA20001EDB831D0081AFC7 /* KCylinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCylinder.h; sourceTree = "<group>"; };
+		7BFA20011EDB831D0081AFC7 /* KDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KDisk.cpp; sourceTree = "<group>"; };
+		7BFA20021EDB831D0081AFC7 /* KDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDisk.h; sourceTree = "<group>"; };
+		7BFA20031EDB831D0081AFC7 /* KFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KFace.cpp; sourceTree = "<group>"; };
+		7BFA20041EDB831D0081AFC7 /* KFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFace.h; sourceTree = "<group>"; };
+		7BFA20051EDB831D0081AFC7 /* KLandscape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KLandscape.cpp; sourceTree = "<group>"; };
+		7BFA20061EDB831D0081AFC7 /* KLandscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLandscape.h; sourceTree = "<group>"; };
+		7BFA20071EDB831D0081AFC7 /* KLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KLight.cpp; sourceTree = "<group>"; };
+		7BFA20081EDB831D0081AFC7 /* KLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLight.h; sourceTree = "<group>"; };
+		7BFA20091EDB831D0081AFC7 /* KParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KParticle.cpp; sourceTree = "<group>"; };
+		7BFA200A1EDB831D0081AFC7 /* KParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KParticle.h; sourceTree = "<group>"; };
+		7BFA200B1EDB831D0081AFC7 /* KSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KSphere.cpp; sourceTree = "<group>"; };
+		7BFA200C1EDB831D0081AFC7 /* KSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSphere.h; sourceTree = "<group>"; };
+		7BFA200D1EDB831D0081AFC7 /* KText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KText.cpp; sourceTree = "<group>"; };
+		7BFA200E1EDB831D0081AFC7 /* KText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KText.h; sourceTree = "<group>"; };
+		7BFA200F1EDB831D0081AFC7 /* KVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KVertex.cpp; sourceTree = "<group>"; };
+		7BFA20101EDB831D0081AFC7 /* KVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVertex.h; sourceTree = "<group>"; };
+		7BFA20821EDB83460081AFC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = macosx/Info.plist; sourceTree = "<group>"; };
+		7BFA20851EDB83B50081AFC7 /* libSDL_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_image.dylib"; path = "/usr/local/lib/libSDL_image.dylib"; sourceTree = "<group>"; };
+		7BFA20861EDB83B50081AFC7 /* libSDL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL.dylib"; path = "/usr/local/lib/libSDL.dylib"; sourceTree = "<group>"; };
+		7BFA20891EDB83BA0081AFC7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BFA1E441EDB82EC0081AFC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFA208A1EDB83BA0081AFC7 /* GLUT.framework in Frameworks */,
+				7BFA20881EDB83B50081AFC7 /* libSDL.dylib in Frameworks */,
+				7BFA20871EDB83B50081AFC7 /* libSDL_image.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BFA1E3E1EDB82EC0081AFC7 = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E491EDB82EC0081AFC7 /* kodisein */,
+				7BFA1E481EDB82EC0081AFC7 /* Products */,
+				7BFA20841EDB83B50081AFC7 /* Frameworks */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		7BFA1E481EDB82EC0081AFC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E471EDB82EC0081AFC7 /* kodisein.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BFA1E491EDB82EC0081AFC7 /* kodisein */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E5E1EDB83130081AFC7 /* lib */,
+				7BFA1F261EDB831D0081AFC7 /* src */,
+				7BFA20821EDB83460081AFC7 /* Info.plist */,
+			);
+			name = kodisein;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7BFA1E5E1EDB83130081AFC7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E5F1EDB83130081AFC7 /* handler */,
+				7BFA1E721EDB83130081AFC7 /* tools */,
+				7BFA1E831EDB83130081AFC7 /* types */,
+				7BFA1E9A1EDB83130081AFC7 /* values */,
+				7BFA1EAA1EDB83130081AFC7 /* widgets */,
+				7BFA1EDA1EDB83130081AFC7 /* windows */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		7BFA1E5F1EDB83130081AFC7 /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E601EDB83130081AFC7 /* KEventHandler.cpp */,
+				7BFA1E611EDB83130081AFC7 /* KEventHandler.h */,
+				7BFA1E621EDB83130081AFC7 /* KFileHandler.cpp */,
+				7BFA1E631EDB83130081AFC7 /* KFileHandler.h */,
+				7BFA1E641EDB83130081AFC7 /* KKeyActionHandler.cpp */,
+				7BFA1E651EDB83130081AFC7 /* KKeyActionHandler.h */,
+				7BFA1E661EDB83130081AFC7 /* KKeyHandler.cpp */,
+				7BFA1E671EDB83130081AFC7 /* KKeyHandler.h */,
+				7BFA1E681EDB83130081AFC7 /* KKeyRecorder.cpp */,
+				7BFA1E691EDB83130081AFC7 /* KKeyRecorder.h */,
+				7BFA1E6A1EDB83130081AFC7 /* KPickHandler.cpp */,
+				7BFA1E6B1EDB83130081AFC7 /* KPickHandler.h */,
+				7BFA1E6C1EDB83130081AFC7 /* KPickable.cpp */,
+				7BFA1E6D1EDB83130081AFC7 /* KPickable.h */,
+				7BFA1E6E1EDB83130081AFC7 /* KSelectable.cpp */,
+				7BFA1E6F1EDB83130081AFC7 /* KSelectable.h */,
+				7BFA1E701EDB83130081AFC7 /* KSelectionHandler.cpp */,
+				7BFA1E711EDB83130081AFC7 /* KSelectionHandler.h */,
+			);
+			path = handler;
+			sourceTree = "<group>";
+		};
+		7BFA1E721EDB83130081AFC7 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E731EDB83130081AFC7 /* KFileTools.cpp */,
+				7BFA1E741EDB83130081AFC7 /* KFileTools.h */,
+				7BFA1E751EDB83130081AFC7 /* KIntrospection.cpp */,
+				7BFA1E761EDB83130081AFC7 /* KIntrospection.h */,
+				7BFA1E771EDB83130081AFC7 /* KKeySymbols.h */,
+				7BFA1E781EDB83130081AFC7 /* KKeyTools.cpp */,
+				7BFA1E791EDB83130081AFC7 /* KKeyTools.h */,
+				7BFA1E7A1EDB83130081AFC7 /* KNotificationObject.cpp */,
+				7BFA1E7B1EDB83130081AFC7 /* KNotificationObject.h */,
+				7BFA1E7C1EDB83130081AFC7 /* KStringTools.cpp */,
+				7BFA1E7D1EDB83130081AFC7 /* KStringTools.h */,
+				7BFA1E7E1EDB83130081AFC7 /* KTools.cpp */,
+				7BFA1E7F1EDB83130081AFC7 /* KTools.h */,
+				7BFA1E801EDB83130081AFC7 /* KXMLTools.cpp */,
+				7BFA1E811EDB83130081AFC7 /* KXMLTools.h */,
+				7BFA1E821EDB83130081AFC7 /* vvector.h */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		7BFA1E831EDB83130081AFC7 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E841EDB83130081AFC7 /* KColor.cpp */,
+				7BFA1E851EDB83130081AFC7 /* KColor.h */,
+				7BFA1E861EDB83130081AFC7 /* KKey.cpp */,
+				7BFA1E871EDB83130081AFC7 /* KKey.h */,
+				7BFA1E881EDB83130081AFC7 /* KLightingProjection.cpp */,
+				7BFA1E891EDB83130081AFC7 /* KLightingProjection.h */,
+				7BFA1E8A1EDB83130081AFC7 /* KMatrix.cpp */,
+				7BFA1E8B1EDB83130081AFC7 /* KMatrix.h */,
+				7BFA1E8C1EDB83130081AFC7 /* KOrthographicProjection.cpp */,
+				7BFA1E8D1EDB83130081AFC7 /* KOrthographicProjection.h */,
+				7BFA1E8E1EDB83130081AFC7 /* KPerspectiveProjection.cpp */,
+				7BFA1E8F1EDB83130081AFC7 /* KPerspectiveProjection.h */,
+				7BFA1E901EDB83130081AFC7 /* KProjection.cpp */,
+				7BFA1E911EDB83130081AFC7 /* KProjection.h */,
+				7BFA1E921EDB83130081AFC7 /* KSeparatedMatrix.cpp */,
+				7BFA1E931EDB83130081AFC7 /* KSeparatedMatrix.h */,
+				7BFA1E941EDB83130081AFC7 /* KTexture.cpp */,
+				7BFA1E951EDB83130081AFC7 /* KTexture.h */,
+				7BFA1E961EDB83130081AFC7 /* KTrash.cpp */,
+				7BFA1E971EDB83130081AFC7 /* KTrash.h */,
+				7BFA1E981EDB83130081AFC7 /* KVector.cpp */,
+				7BFA1E991EDB83130081AFC7 /* KVector.h */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		7BFA1E9A1EDB83130081AFC7 /* values */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1E9B1EDB83130081AFC7 /* KBoolValueObject.cpp */,
+				7BFA1E9C1EDB83130081AFC7 /* KBoolValueObject.h */,
+				7BFA1E9D1EDB83130081AFC7 /* KDiscreteValueObject.h */,
+				7BFA1E9E1EDB83130081AFC7 /* KFileNameValueObject.cpp */,
+				7BFA1E9F1EDB83130081AFC7 /* KFileNameValueObject.h */,
+				7BFA1EA01EDB83130081AFC7 /* KFloatValueObject.cpp */,
+				7BFA1EA11EDB83130081AFC7 /* KFloatValueObject.h */,
+				7BFA1EA21EDB83130081AFC7 /* KKeyValueObject.cpp */,
+				7BFA1EA31EDB83130081AFC7 /* KKeyValueObject.h */,
+				7BFA1EA41EDB83130081AFC7 /* KSizeValueObject.cpp */,
+				7BFA1EA51EDB83130081AFC7 /* KSizeValueObject.h */,
+				7BFA1EA61EDB83130081AFC7 /* KStringValueObject.cpp */,
+				7BFA1EA71EDB83130081AFC7 /* KStringValueObject.h */,
+				7BFA1EA81EDB83130081AFC7 /* KValueObject.cpp */,
+				7BFA1EA91EDB83130081AFC7 /* KValueObject.h */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		7BFA1EAA1EDB83130081AFC7 /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1EAB1EDB83130081AFC7 /* KButton.cpp */,
+				7BFA1EAC1EDB83130081AFC7 /* KButton.h */,
+				7BFA1EAD1EDB83130081AFC7 /* KButtonBox.cpp */,
+				7BFA1EAE1EDB83130081AFC7 /* KButtonBox.h */,
+				7BFA1EAF1EDB83130081AFC7 /* KButtonSymbols.h */,
+				7BFA1EB01EDB83130081AFC7 /* KFileNameField.cpp */,
+				7BFA1EB11EDB83130081AFC7 /* KFileNameField.h */,
+				7BFA1EB21EDB83130081AFC7 /* KFileTreeDir.cpp */,
+				7BFA1EB31EDB83130081AFC7 /* KFileTreeDir.h */,
+				7BFA1EB41EDB83130081AFC7 /* KFileTreeDirCurrent.cpp */,
+				7BFA1EB51EDB83130081AFC7 /* KFileTreeDirCurrent.h */,
+				7BFA1EB61EDB83130081AFC7 /* KFileTreeDirUp.cpp */,
+				7BFA1EB71EDB83130081AFC7 /* KFileTreeDirUp.h */,
+				7BFA1EB81EDB83130081AFC7 /* KFileTreeFile.cpp */,
+				7BFA1EB91EDB83130081AFC7 /* KFileTreeFile.h */,
+				7BFA1EBA1EDB83130081AFC7 /* KFileTreeNode.cpp */,
+				7BFA1EBB1EDB83130081AFC7 /* KFileTreeNode.h */,
+				7BFA1EBC1EDB83130081AFC7 /* KFileTreeWidget.cpp */,
+				7BFA1EBD1EDB83130081AFC7 /* KFileTreeWidget.h */,
+				7BFA1EBE1EDB83130081AFC7 /* KIconButton.cpp */,
+				7BFA1EBF1EDB83130081AFC7 /* KIconButton.h */,
+				7BFA1EC01EDB83130081AFC7 /* KKeySequenceField.cpp */,
+				7BFA1EC11EDB83130081AFC7 /* KKeySequenceField.h */,
+				7BFA1EC21EDB83130081AFC7 /* KLabel.cpp */,
+				7BFA1EC31EDB83130081AFC7 /* KLabel.h */,
+				7BFA1EC41EDB83130081AFC7 /* KMenu.cpp */,
+				7BFA1EC51EDB83130081AFC7 /* KMenu.h */,
+				7BFA1EC61EDB83130081AFC7 /* KMenuItem.cpp */,
+				7BFA1EC71EDB83130081AFC7 /* KMenuItem.h */,
+				7BFA1EC81EDB83130081AFC7 /* KNumberField.cpp */,
+				7BFA1EC91EDB83130081AFC7 /* KNumberField.h */,
+				7BFA1ECA1EDB83130081AFC7 /* KProjectionWidget.cpp */,
+				7BFA1ECB1EDB83130081AFC7 /* KProjectionWidget.h */,
+				7BFA1ECC1EDB83130081AFC7 /* KStatusMenuItem.cpp */,
+				7BFA1ECD1EDB83130081AFC7 /* KStatusMenuItem.h */,
+				7BFA1ECE1EDB83130081AFC7 /* KSubMenuItem.cpp */,
+				7BFA1ECF1EDB83130081AFC7 /* KSubMenuItem.h */,
+				7BFA1ED01EDB83130081AFC7 /* KTextField.cpp */,
+				7BFA1ED11EDB83130081AFC7 /* KTextField.h */,
+				7BFA1ED21EDB83130081AFC7 /* KTextWidget.cpp */,
+				7BFA1ED31EDB83130081AFC7 /* KTextWidget.h */,
+				7BFA1ED41EDB83130081AFC7 /* KToggleButton.cpp */,
+				7BFA1ED51EDB83130081AFC7 /* KToggleButton.h */,
+				7BFA1ED61EDB83130081AFC7 /* KWidget.cpp */,
+				7BFA1ED71EDB83130081AFC7 /* KWidget.h */,
+				7BFA1ED81EDB83130081AFC7 /* KWidgetArray.cpp */,
+				7BFA1ED91EDB83130081AFC7 /* KWidgetArray.h */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+		7BFA1EDA1EDB83130081AFC7 /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1EDB1EDB83130081AFC7 /* KConsole.cpp */,
+				7BFA1EDC1EDB83130081AFC7 /* KConsole.h */,
+				7BFA1EDD1EDB83130081AFC7 /* KFileTreeWindow.cpp */,
+				7BFA1EDE1EDB83130081AFC7 /* KFileTreeWindow.h */,
+				7BFA1EDF1EDB83130081AFC7 /* KMenuWindow.cpp */,
+				7BFA1EE01EDB83130081AFC7 /* KMenuWindow.h */,
+				7BFA1EE11EDB83130081AFC7 /* KMessagePanel.cpp */,
+				7BFA1EE21EDB83130081AFC7 /* KMessagePanel.h */,
+				7BFA1EE31EDB83130081AFC7 /* KPopupMenu.cpp */,
+				7BFA1EE41EDB83130081AFC7 /* KPopupMenu.h */,
+				7BFA1EE51EDB83130081AFC7 /* KWindow.cpp */,
+				7BFA1EE61EDB83130081AFC7 /* KWindow.h */,
+			);
+			path = windows;
+			sourceTree = "<group>";
+		};
+		7BFA1F261EDB831D0081AFC7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1F281EDB831D0081AFC7 /* KCameraHandler.cpp */,
+				7BFA1F291EDB831D0081AFC7 /* KCameraHandler.h */,
+				7BFA1F2A1EDB831D0081AFC7 /* KController.cpp */,
+				7BFA1F2B1EDB831D0081AFC7 /* KController.h */,
+				7BFA1F2C1EDB831D0081AFC7 /* KMain.cpp */,
+				7BFA1F2D1EDB831D0081AFC7 /* KMain.h */,
+				7BFA1F2E1EDB831D0081AFC7 /* KMainMenu.cpp */,
+				7BFA1F2F1EDB831D0081AFC7 /* KMainMenu.h */,
+				7BFA1F301EDB831D0081AFC7 /* KModules.cpp */,
+				7BFA1F311EDB831D0081AFC7 /* KModules.h */,
+				7BFA1F321EDB831D0081AFC7 /* KObjects.cpp */,
+				7BFA1F331EDB831D0081AFC7 /* KObjects.h */,
+				7BFA1F341EDB831D0081AFC7 /* KPreferences.cpp */,
+				7BFA1F351EDB831D0081AFC7 /* KPreferences.h */,
+				7BFA1F361EDB831D0081AFC7 /* KTextureSets.cpp */,
+				7BFA1F371EDB831D0081AFC7 /* KTextureSets.h */,
+				7BFA1F381EDB831D0081AFC7 /* connectors */,
+				7BFA1F661EDB831D0081AFC7 /* handles */,
+				7BFA1F7F1EDB831D0081AFC7 /* main.h */,
+				7BFA1F801EDB831D0081AFC7 /* main.m */,
+				7BFA1F811EDB831D0081AFC7 /* modules */,
+				7BFA1FFA1EDB831D0081AFC7 /* objects */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7BFA1F381EDB831D0081AFC7 /* connectors */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1F391EDB831D0081AFC7 /* KConnector.cpp */,
+				7BFA1F3A1EDB831D0081AFC7 /* KConnector.h */,
+				7BFA1F3B1EDB831D0081AFC7 /* KConnectorAttributeIn.cpp */,
+				7BFA1F3C1EDB831D0081AFC7 /* KConnectorAttributeIn.h */,
+				7BFA1F3D1EDB831D0081AFC7 /* KConnectorAttributeOut.cpp */,
+				7BFA1F3E1EDB831D0081AFC7 /* KConnectorAttributeOut.h */,
+				7BFA1F3F1EDB831D0081AFC7 /* KConnectorDiscreteValueInOut.h */,
+				7BFA1F401EDB831D0081AFC7 /* KConnectorIntValueInOut.cpp */,
+				7BFA1F411EDB831D0081AFC7 /* KConnectorIntValueInOut.h */,
+				7BFA1F421EDB831D0081AFC7 /* KConnectorMatrixIn.cpp */,
+				7BFA1F431EDB831D0081AFC7 /* KConnectorMatrixIn.h */,
+				7BFA1F441EDB831D0081AFC7 /* KConnectorMatrixOut.cpp */,
+				7BFA1F451EDB831D0081AFC7 /* KConnectorMatrixOut.h */,
+				7BFA1F461EDB831D0081AFC7 /* KConnectorModulatorIn.cpp */,
+				7BFA1F471EDB831D0081AFC7 /* KConnectorModulatorIn.h */,
+				7BFA1F481EDB831D0081AFC7 /* KConnectorModulatorOut.cpp */,
+				7BFA1F491EDB831D0081AFC7 /* KConnectorModulatorOut.h */,
+				7BFA1F4A1EDB831D0081AFC7 /* KConnectorParticleIn.cpp */,
+				7BFA1F4B1EDB831D0081AFC7 /* KConnectorParticleIn.h */,
+				7BFA1F4C1EDB831D0081AFC7 /* KConnectorParticleOut.cpp */,
+				7BFA1F4D1EDB831D0081AFC7 /* KConnectorParticleOut.h */,
+				7BFA1F4E1EDB831D0081AFC7 /* KConnectorSceneIn.cpp */,
+				7BFA1F4F1EDB831D0081AFC7 /* KConnectorSceneIn.h */,
+				7BFA1F501EDB831D0081AFC7 /* KConnectorSceneOut.cpp */,
+				7BFA1F511EDB831D0081AFC7 /* KConnectorSceneOut.h */,
+				7BFA1F521EDB831D0081AFC7 /* KConnectorTextureBatchIn.cpp */,
+				7BFA1F531EDB831D0081AFC7 /* KConnectorTextureBatchIn.h */,
+				7BFA1F541EDB831D0081AFC7 /* KConnectorTextureBatchOut.cpp */,
+				7BFA1F551EDB831D0081AFC7 /* KConnectorTextureBatchOut.h */,
+				7BFA1F561EDB831D0081AFC7 /* KConnectorTextureFileIn.cpp */,
+				7BFA1F571EDB831D0081AFC7 /* KConnectorTextureFileIn.h */,
+				7BFA1F581EDB831D0081AFC7 /* KConnectorTextureFileOut.cpp */,
+				7BFA1F591EDB831D0081AFC7 /* KConnectorTextureFileOut.h */,
+				7BFA1F5A1EDB831D0081AFC7 /* KConnectorTextureVersionIn.cpp */,
+				7BFA1F5B1EDB831D0081AFC7 /* KConnectorTextureVersionIn.h */,
+				7BFA1F5C1EDB831D0081AFC7 /* KConnectorTextureVersionOut.cpp */,
+				7BFA1F5D1EDB831D0081AFC7 /* KConnectorTextureVersionOut.h */,
+				7BFA1F5E1EDB831D0081AFC7 /* KConnectorValueIn.cpp */,
+				7BFA1F5F1EDB831D0081AFC7 /* KConnectorValueIn.h */,
+				7BFA1F601EDB831D0081AFC7 /* KConnectorValueInOut.cpp */,
+				7BFA1F611EDB831D0081AFC7 /* KConnectorValueInOut.h */,
+				7BFA1F621EDB831D0081AFC7 /* KConnectorValueOut.cpp */,
+				7BFA1F631EDB831D0081AFC7 /* KConnectorValueOut.h */,
+				7BFA1F641EDB831D0081AFC7 /* KValueConnector.cpp */,
+				7BFA1F651EDB831D0081AFC7 /* KValueConnector.h */,
+			);
+			path = connectors;
+			sourceTree = "<group>";
+		};
+		7BFA1F661EDB831D0081AFC7 /* handles */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1F671EDB831D0081AFC7 /* KHandle.cpp */,
+				7BFA1F681EDB831D0081AFC7 /* KHandle.h */,
+				7BFA1F691EDB831D0081AFC7 /* KHandlesObject.cpp */,
+				7BFA1F6A1EDB831D0081AFC7 /* KHandlesObject.h */,
+				7BFA1F6B1EDB831D0081AFC7 /* KMatrixHandle.cpp */,
+				7BFA1F6C1EDB831D0081AFC7 /* KMatrixHandle.h */,
+				7BFA1F6D1EDB831D0081AFC7 /* KMatrixHandleRotate.cpp */,
+				7BFA1F6E1EDB831D0081AFC7 /* KMatrixHandleRotate.h */,
+				7BFA1F6F1EDB831D0081AFC7 /* KMatrixHandleScale.cpp */,
+				7BFA1F701EDB831D0081AFC7 /* KMatrixHandleScale.h */,
+				7BFA1F711EDB831D0081AFC7 /* KMatrixHandleTranslate.cpp */,
+				7BFA1F721EDB831D0081AFC7 /* KMatrixHandleTranslate.h */,
+				7BFA1F731EDB831D0081AFC7 /* KMoveHandle.cpp */,
+				7BFA1F741EDB831D0081AFC7 /* KMoveHandle.h */,
+				7BFA1F751EDB831D0081AFC7 /* KOneDirectionHandle.cpp */,
+				7BFA1F761EDB831D0081AFC7 /* KOneDirectionHandle.h */,
+				7BFA1F771EDB831D0081AFC7 /* KRotationHandle.cpp */,
+				7BFA1F781EDB831D0081AFC7 /* KRotationHandle.h */,
+				7BFA1F791EDB831D0081AFC7 /* KScaleHandle.cpp */,
+				7BFA1F7A1EDB831D0081AFC7 /* KScaleHandle.h */,
+				7BFA1F7B1EDB831D0081AFC7 /* KTwoDirectionHandle.cpp */,
+				7BFA1F7C1EDB831D0081AFC7 /* KTwoDirectionHandle.h */,
+				7BFA1F7D1EDB831D0081AFC7 /* KVertexHandle.cpp */,
+				7BFA1F7E1EDB831D0081AFC7 /* KVertexHandle.h */,
+			);
+			path = handles;
+			sourceTree = "<group>";
+		};
+		7BFA1F811EDB831D0081AFC7 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1F821EDB831D0081AFC7 /* KModule.cpp */,
+				7BFA1F831EDB831D0081AFC7 /* KModule.h */,
+				7BFA1F841EDB831D0081AFC7 /* KModuleInspector.cpp */,
+				7BFA1F851EDB831D0081AFC7 /* KModuleInspector.h */,
+				7BFA1F861EDB831D0081AFC7 /* KScene.cpp */,
+				7BFA1F871EDB831D0081AFC7 /* KScene.h */,
+				7BFA1F881EDB831D0081AFC7 /* KSceneSet.cpp */,
+				7BFA1F891EDB831D0081AFC7 /* KSceneSet.h */,
+				7BFA1F8A1EDB831D0081AFC7 /* KTextureBatch.cpp */,
+				7BFA1F8B1EDB831D0081AFC7 /* KTextureBatch.h */,
+				7BFA1F8C1EDB831D0081AFC7 /* KTextureFile.cpp */,
+				7BFA1F8D1EDB831D0081AFC7 /* KTextureFile.h */,
+				7BFA1F8E1EDB831D0081AFC7 /* KTextureModule.cpp */,
+				7BFA1F8F1EDB831D0081AFC7 /* KTextureModule.h */,
+				7BFA1F901EDB831D0081AFC7 /* KTextureSet.cpp */,
+				7BFA1F911EDB831D0081AFC7 /* KTextureSet.h */,
+				7BFA1F921EDB831D0081AFC7 /* attribute */,
+				7BFA1FA71EDB831D0081AFC7 /* matrix */,
+				7BFA1FBE1EDB831D0081AFC7 /* object */,
+				7BFA1FDD1EDB831D0081AFC7 /* value */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		7BFA1F921EDB831D0081AFC7 /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1F931EDB831D0081AFC7 /* KAttributeModule.cpp */,
+				7BFA1F941EDB831D0081AFC7 /* KAttributeModule.h */,
+				7BFA1F951EDB831D0081AFC7 /* KModuleAttributeHub.cpp */,
+				7BFA1F961EDB831D0081AFC7 /* KModuleAttributeHub.h */,
+				7BFA1F971EDB831D0081AFC7 /* KModuleBlend.cpp */,
+				7BFA1F981EDB831D0081AFC7 /* KModuleBlend.h */,
+				7BFA1F991EDB831D0081AFC7 /* KModuleColor.cpp */,
+				7BFA1F9A1EDB831D0081AFC7 /* KModuleColor.h */,
+				7BFA1F9B1EDB831D0081AFC7 /* KModuleColorMask.cpp */,
+				7BFA1F9C1EDB831D0081AFC7 /* KModuleColorMask.h */,
+				7BFA1F9D1EDB831D0081AFC7 /* KModuleFog.cpp */,
+				7BFA1F9E1EDB831D0081AFC7 /* KModuleFog.h */,
+				7BFA1F9F1EDB831D0081AFC7 /* KModuleMaterial.cpp */,
+				7BFA1FA01EDB831D0081AFC7 /* KModuleMaterial.h */,
+				7BFA1FA11EDB831D0081AFC7 /* KModuleTexture.cpp */,
+				7BFA1FA21EDB831D0081AFC7 /* KModuleTexture.h */,
+				7BFA1FA31EDB831D0081AFC7 /* KModuleTextureFile.cpp */,
+				7BFA1FA41EDB831D0081AFC7 /* KModuleTextureFile.h */,
+				7BFA1FA51EDB831D0081AFC7 /* KModuleTextureMatrix.cpp */,
+				7BFA1FA61EDB831D0081AFC7 /* KModuleTextureMatrix.h */,
+			);
+			path = attribute;
+			sourceTree = "<group>";
+		};
+		7BFA1FA71EDB831D0081AFC7 /* matrix */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1FA81EDB831D0081AFC7 /* KHubModule.cpp */,
+				7BFA1FA91EDB831D0081AFC7 /* KHubModule.h */,
+				7BFA1FAA1EDB831D0081AFC7 /* KMatrixModule.cpp */,
+				7BFA1FAB1EDB831D0081AFC7 /* KMatrixModule.h */,
+				7BFA1FAC1EDB831D0081AFC7 /* KModuleGoto.cpp */,
+				7BFA1FAD1EDB831D0081AFC7 /* KModuleGoto.h */,
+				7BFA1FAE1EDB831D0081AFC7 /* KModuleIdentity.cpp */,
+				7BFA1FAF1EDB831D0081AFC7 /* KModuleIdentity.h */,
+				7BFA1FB01EDB831D0081AFC7 /* KModuleLabel.cpp */,
+				7BFA1FB11EDB831D0081AFC7 /* KModuleLabel.h */,
+				7BFA1FB21EDB831D0081AFC7 /* KModuleMatrix.cpp */,
+				7BFA1FB31EDB831D0081AFC7 /* KModuleMatrix.h */,
+				7BFA1FB41EDB831D0081AFC7 /* KModuleMatrixHub.cpp */,
+				7BFA1FB51EDB831D0081AFC7 /* KModuleMatrixHub.h */,
+				7BFA1FB61EDB831D0081AFC7 /* KModuleRotate.cpp */,
+				7BFA1FB71EDB831D0081AFC7 /* KModuleRotate.h */,
+				7BFA1FB81EDB831D0081AFC7 /* KModuleScale.cpp */,
+				7BFA1FB91EDB831D0081AFC7 /* KModuleScale.h */,
+				7BFA1FBA1EDB831D0081AFC7 /* KModuleSize.cpp */,
+				7BFA1FBB1EDB831D0081AFC7 /* KModuleSize.h */,
+				7BFA1FBC1EDB831D0081AFC7 /* KModuleTranslate.cpp */,
+				7BFA1FBD1EDB831D0081AFC7 /* KModuleTranslate.h */,
+			);
+			path = matrix;
+			sourceTree = "<group>";
+		};
+		7BFA1FBE1EDB831D0081AFC7 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1FBF1EDB831D0081AFC7 /* KModuleCamera.cpp */,
+				7BFA1FC01EDB831D0081AFC7 /* KModuleCamera.h */,
+				7BFA1FC11EDB831D0081AFC7 /* KModuleLSystem.cpp */,
+				7BFA1FC21EDB831D0081AFC7 /* KModuleLSystem.h */,
+				7BFA1FC31EDB831D0081AFC7 /* KModuleLight.cpp */,
+				7BFA1FC41EDB831D0081AFC7 /* KModuleLight.h */,
+				7BFA1FC51EDB831D0081AFC7 /* KModuleObjectBox.cpp */,
+				7BFA1FC61EDB831D0081AFC7 /* KModuleObjectBox.h */,
+				7BFA1FC71EDB831D0081AFC7 /* KModuleObjectCylinder.cpp */,
+				7BFA1FC81EDB831D0081AFC7 /* KModuleObjectCylinder.h */,
+				7BFA1FC91EDB831D0081AFC7 /* KModuleObjectDisk.cpp */,
+				7BFA1FCA1EDB831D0081AFC7 /* KModuleObjectDisk.h */,
+				7BFA1FCB1EDB831D0081AFC7 /* KModuleObjectFace.cpp */,
+				7BFA1FCC1EDB831D0081AFC7 /* KModuleObjectFace.h */,
+				7BFA1FCD1EDB831D0081AFC7 /* KModuleObjectLandscape.cpp */,
+				7BFA1FCE1EDB831D0081AFC7 /* KModuleObjectLandscape.h */,
+				7BFA1FCF1EDB831D0081AFC7 /* KModuleObjectPoint.cpp */,
+				7BFA1FD01EDB831D0081AFC7 /* KModuleObjectPoint.h */,
+				7BFA1FD11EDB831D0081AFC7 /* KModuleObjectSphere.cpp */,
+				7BFA1FD21EDB831D0081AFC7 /* KModuleObjectSphere.h */,
+				7BFA1FD31EDB831D0081AFC7 /* KModuleObjectText.cpp */,
+				7BFA1FD41EDB831D0081AFC7 /* KModuleObjectText.h */,
+				7BFA1FD51EDB831D0081AFC7 /* KModuleParticle.cpp */,
+				7BFA1FD61EDB831D0081AFC7 /* KModuleParticle.h */,
+				7BFA1FD71EDB831D0081AFC7 /* KModuleParticleEmitter.cpp */,
+				7BFA1FD81EDB831D0081AFC7 /* KModuleParticleEmitter.h */,
+				7BFA1FD91EDB831D0081AFC7 /* KModuleVertex.cpp */,
+				7BFA1FDA1EDB831D0081AFC7 /* KModuleVertex.h */,
+				7BFA1FDB1EDB831D0081AFC7 /* KObjectModule.cpp */,
+				7BFA1FDC1EDB831D0081AFC7 /* KObjectModule.h */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
+		7BFA1FDD1EDB831D0081AFC7 /* value */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1FDE1EDB831D0081AFC7 /* KActivationValueModule.cpp */,
+				7BFA1FDF1EDB831D0081AFC7 /* KActivationValueModule.h */,
+				7BFA1FE01EDB831D0081AFC7 /* KFilterModule.cpp */,
+				7BFA1FE11EDB831D0081AFC7 /* KFilterModule.h */,
+				7BFA1FE21EDB831D0081AFC7 /* KGlobalModulator.cpp */,
+				7BFA1FE31EDB831D0081AFC7 /* KGlobalModulator.h */,
+				7BFA1FE41EDB831D0081AFC7 /* KITunesModulation.h */,
+				7BFA1FE51EDB831D0081AFC7 /* KITunesModulation.m */,
+				7BFA1FE61EDB831D0081AFC7 /* KITunesModulator.cpp */,
+				7BFA1FE71EDB831D0081AFC7 /* KITunesModulator.h */,
+				7BFA1FE81EDB831D0081AFC7 /* KModulator.cpp */,
+				7BFA1FE91EDB831D0081AFC7 /* KModulator.h */,
+				7BFA1FEA1EDB831D0081AFC7 /* KModuleAccu.cpp */,
+				7BFA1FEB1EDB831D0081AFC7 /* KModuleAccu.h */,
+				7BFA1FEC1EDB831D0081AFC7 /* KModuleRandom.cpp */,
+				7BFA1FED1EDB831D0081AFC7 /* KModuleRandom.h */,
+				7BFA1FEE1EDB831D0081AFC7 /* KModuleSwitch.cpp */,
+				7BFA1FEF1EDB831D0081AFC7 /* KModuleSwitch.h */,
+				7BFA1FF01EDB831D0081AFC7 /* KModuleTrigger.cpp */,
+				7BFA1FF11EDB831D0081AFC7 /* KModuleTrigger.h */,
+				7BFA1FF21EDB831D0081AFC7 /* KModuleVariable.cpp */,
+				7BFA1FF31EDB831D0081AFC7 /* KModuleVariable.h */,
+				7BFA1FF41EDB831D0081AFC7 /* KOperationModule.cpp */,
+				7BFA1FF51EDB831D0081AFC7 /* KOperationModule.h */,
+				7BFA1FF61EDB831D0081AFC7 /* KSequenceGenerator.cpp */,
+				7BFA1FF71EDB831D0081AFC7 /* KSequenceGenerator.h */,
+				7BFA1FF81EDB831D0081AFC7 /* KValueModule.cpp */,
+				7BFA1FF91EDB831D0081AFC7 /* KValueModule.h */,
+			);
+			path = value;
+			sourceTree = "<group>";
+		};
+		7BFA1FFA1EDB831D0081AFC7 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA1FFB1EDB831D0081AFC7 /* KBox.cpp */,
+				7BFA1FFC1EDB831D0081AFC7 /* KBox.h */,
+				7BFA1FFD1EDB831D0081AFC7 /* KCamera.cpp */,
+				7BFA1FFE1EDB831D0081AFC7 /* KCamera.h */,
+				7BFA1FFF1EDB831D0081AFC7 /* KCylinder.cpp */,
+				7BFA20001EDB831D0081AFC7 /* KCylinder.h */,
+				7BFA20011EDB831D0081AFC7 /* KDisk.cpp */,
+				7BFA20021EDB831D0081AFC7 /* KDisk.h */,
+				7BFA20031EDB831D0081AFC7 /* KFace.cpp */,
+				7BFA20041EDB831D0081AFC7 /* KFace.h */,
+				7BFA20051EDB831D0081AFC7 /* KLandscape.cpp */,
+				7BFA20061EDB831D0081AFC7 /* KLandscape.h */,
+				7BFA20071EDB831D0081AFC7 /* KLight.cpp */,
+				7BFA20081EDB831D0081AFC7 /* KLight.h */,
+				7BFA20091EDB831D0081AFC7 /* KParticle.cpp */,
+				7BFA200A1EDB831D0081AFC7 /* KParticle.h */,
+				7BFA200B1EDB831D0081AFC7 /* KSphere.cpp */,
+				7BFA200C1EDB831D0081AFC7 /* KSphere.h */,
+				7BFA200D1EDB831D0081AFC7 /* KText.cpp */,
+				7BFA200E1EDB831D0081AFC7 /* KText.h */,
+				7BFA200F1EDB831D0081AFC7 /* KVertex.cpp */,
+				7BFA20101EDB831D0081AFC7 /* KVertex.h */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		7BFA20841EDB83B50081AFC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BFA20891EDB83BA0081AFC7 /* GLUT.framework */,
+				7BFA20851EDB83B50081AFC7 /* libSDL_image.dylib */,
+				7BFA20861EDB83B50081AFC7 /* libSDL.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BFA1E461EDB82EC0081AFC7 /* kodisein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BFA1E5B1EDB82ED0081AFC7 /* Build configuration list for PBXNativeTarget "kodisein" */;
+			buildPhases = (
+				7BFA1E431EDB82EC0081AFC7 /* Sources */,
+				7BFA1E441EDB82EC0081AFC7 /* Frameworks */,
+				7BFA1E451EDB82EC0081AFC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kodisein;
+			productName = kodisein;
+			productReference = 7BFA1E471EDB82EC0081AFC7 /* kodisein.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BFA1E3F1EDB82EC0081AFC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = frizlab;
+				TargetAttributes = {
+					7BFA1E461EDB82EC0081AFC7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7BFA1E421EDB82EC0081AFC7 /* Build configuration list for PBXProject "kodisein" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BFA1E3E1EDB82EC0081AFC7;
+			productRefGroup = 7BFA1E481EDB82EC0081AFC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BFA1E461EDB82EC0081AFC7 /* kodisein */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BFA1E451EDB82EC0081AFC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFA208B1EDB848A0081AFC7 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BFA1E431EDB82EC0081AFC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFA1EFA1EDB83130081AFC7 /* KMatrix.cpp in Sources */,
+				7BFA20591EDB831D0081AFC7 /* KModuleTranslate.cpp in Sources */,
+				7BFA1F0C1EDB83130081AFC7 /* KFileTreeDir.cpp in Sources */,
+				7BFA203A1EDB831D0081AFC7 /* KTwoDirectionHandle.cpp in Sources */,
+				7BFA205E1EDB831D0081AFC7 /* KModuleObjectCylinder.cpp in Sources */,
+				7BFA1EF91EDB83130081AFC7 /* KLightingProjection.cpp in Sources */,
+				7BFA20511EDB831D0081AFC7 /* KModuleGoto.cpp in Sources */,
+				7BFA20241EDB831D0081AFC7 /* KConnectorSceneIn.cpp in Sources */,
+				7BFA20721EDB831D0081AFC7 /* KModuleTrigger.cpp in Sources */,
+				7BFA20581EDB831D0081AFC7 /* KModuleSize.cpp in Sources */,
+				7BFA1EEB1EDB83130081AFC7 /* KKeyRecorder.cpp in Sources */,
+				7BFA1EEF1EDB83130081AFC7 /* KSelectionHandler.cpp in Sources */,
+				7BFA20541EDB831D0081AFC7 /* KModuleMatrix.cpp in Sources */,
+				7BFA204C1EDB831D0081AFC7 /* KModuleTexture.cpp in Sources */,
+				7BFA204E1EDB831D0081AFC7 /* KModuleTextureMatrix.cpp in Sources */,
+				7BFA20361EDB831D0081AFC7 /* KMoveHandle.cpp in Sources */,
+				7BFA202C1EDB831D0081AFC7 /* KConnectorValueIn.cpp in Sources */,
+				7BFA1EF41EDB83130081AFC7 /* KStringTools.cpp in Sources */,
+				7BFA20211EDB831D0081AFC7 /* KConnectorModulatorOut.cpp in Sources */,
+				7BFA20651EDB831D0081AFC7 /* KModuleParticle.cpp in Sources */,
+				7BFA20371EDB831D0081AFC7 /* KOneDirectionHandle.cpp in Sources */,
+				7BFA20381EDB831D0081AFC7 /* KRotationHandle.cpp in Sources */,
+				7BFA203E1EDB831D0081AFC7 /* KModuleInspector.cpp in Sources */,
+				7BFA203B1EDB831D0081AFC7 /* KVertexHandle.cpp in Sources */,
+				7BFA207A1EDB831D0081AFC7 /* KDisk.cpp in Sources */,
+				7BFA207D1EDB831D0081AFC7 /* KLight.cpp in Sources */,
+				7BFA1F1D1EDB83130081AFC7 /* KToggleButton.cpp in Sources */,
+				7BFA1F201EDB83130081AFC7 /* KConsole.cpp in Sources */,
+				7BFA206A1EDB831D0081AFC7 /* KFilterModule.cpp in Sources */,
+				7BFA20311EDB831D0081AFC7 /* KHandlesObject.cpp in Sources */,
+				7BFA20251EDB831D0081AFC7 /* KConnectorSceneOut.cpp in Sources */,
+				7BFA20491EDB831D0081AFC7 /* KModuleColorMask.cpp in Sources */,
+				7BFA205B1EDB831D0081AFC7 /* KModuleLSystem.cpp in Sources */,
+				7BFA204A1EDB831D0081AFC7 /* KModuleFog.cpp in Sources */,
+				7BFA205D1EDB831D0081AFC7 /* KModuleObjectBox.cpp in Sources */,
+				7BFA20181EDB831D0081AFC7 /* KPreferences.cpp in Sources */,
+				7BFA207B1EDB831D0081AFC7 /* KFace.cpp in Sources */,
+				7BFA20741EDB831D0081AFC7 /* KOperationModule.cpp in Sources */,
+				7BFA20321EDB831D0081AFC7 /* KMatrixHandle.cpp in Sources */,
+				7BFA1EFB1EDB83130081AFC7 /* KOrthographicProjection.cpp in Sources */,
+				7BFA1EFE1EDB83130081AFC7 /* KSeparatedMatrix.cpp in Sources */,
+				7BFA1F181EDB83130081AFC7 /* KProjectionWidget.cpp in Sources */,
+				7BFA20561EDB831D0081AFC7 /* KModuleRotate.cpp in Sources */,
+				7BFA20441EDB831D0081AFC7 /* KTextureSet.cpp in Sources */,
+				7BFA20601EDB831D0081AFC7 /* KModuleObjectFace.cpp in Sources */,
+				7BFA20571EDB831D0081AFC7 /* KModuleScale.cpp in Sources */,
+				7BFA1F091EDB83130081AFC7 /* KButton.cpp in Sources */,
+				7BFA1F0D1EDB83130081AFC7 /* KFileTreeDirCurrent.cpp in Sources */,
+				7BFA20171EDB831D0081AFC7 /* KObjects.cpp in Sources */,
+				7BFA20761EDB831D0081AFC7 /* KValueModule.cpp in Sources */,
+				7BFA20731EDB831D0081AFC7 /* KModuleVariable.cpp in Sources */,
+				7BFA20691EDB831D0081AFC7 /* KActivationValueModule.cpp in Sources */,
+				7BFA1F251EDB83130081AFC7 /* KWindow.cpp in Sources */,
+				7BFA20671EDB831D0081AFC7 /* KModuleVertex.cpp in Sources */,
+				7BFA20131EDB831D0081AFC7 /* KController.cpp in Sources */,
+				7BFA204B1EDB831D0081AFC7 /* KModuleMaterial.cpp in Sources */,
+				7BFA1F191EDB83130081AFC7 /* KStatusMenuItem.cpp in Sources */,
+				7BFA1F141EDB83130081AFC7 /* KLabel.cpp in Sources */,
+				7BFA20271EDB831D0081AFC7 /* KConnectorTextureBatchOut.cpp in Sources */,
+				7BFA1EE81EDB83130081AFC7 /* KFileHandler.cpp in Sources */,
+				7BFA20331EDB831D0081AFC7 /* KMatrixHandleRotate.cpp in Sources */,
+				7BFA20681EDB831D0081AFC7 /* KObjectModule.cpp in Sources */,
+				7BFA1F131EDB83130081AFC7 /* KKeySequenceField.cpp in Sources */,
+				7BFA201A1EDB831D0081AFC7 /* KConnector.cpp in Sources */,
+				7BFA1EF01EDB83130081AFC7 /* KFileTools.cpp in Sources */,
+				7BFA1F121EDB83130081AFC7 /* KIconButton.cpp in Sources */,
+				7BFA1F031EDB83130081AFC7 /* KFileNameValueObject.cpp in Sources */,
+				7BFA20121EDB831D0081AFC7 /* KCameraHandler.cpp in Sources */,
+				7BFA20701EDB831D0081AFC7 /* KModuleRandom.cpp in Sources */,
+				7BFA203F1EDB831D0081AFC7 /* KScene.cpp in Sources */,
+				7BFA20621EDB831D0081AFC7 /* KModuleObjectPoint.cpp in Sources */,
+				7BFA1F151EDB83130081AFC7 /* KMenu.cpp in Sources */,
+				7BFA20151EDB831D0081AFC7 /* KMainMenu.cpp in Sources */,
+				7BFA20461EDB831D0081AFC7 /* KModuleAttributeHub.cpp in Sources */,
+				7BFA20531EDB831D0081AFC7 /* KModuleLabel.cpp in Sources */,
+				7BFA20231EDB831D0081AFC7 /* KConnectorParticleOut.cpp in Sources */,
+				7BFA20551EDB831D0081AFC7 /* KModuleMatrixHub.cpp in Sources */,
+				7BFA1F0A1EDB83130081AFC7 /* KButtonBox.cpp in Sources */,
+				7BFA1F071EDB83130081AFC7 /* KStringValueObject.cpp in Sources */,
+				7BFA20711EDB831D0081AFC7 /* KModuleSwitch.cpp in Sources */,
+				7BFA1EF71EDB83130081AFC7 /* KColor.cpp in Sources */,
+				7BFA1F211EDB83130081AFC7 /* KFileTreeWindow.cpp in Sources */,
+				7BFA202E1EDB831D0081AFC7 /* KConnectorValueOut.cpp in Sources */,
+				7BFA20431EDB831D0081AFC7 /* KTextureModule.cpp in Sources */,
+				7BFA1EE91EDB83130081AFC7 /* KKeyActionHandler.cpp in Sources */,
+				7BFA20391EDB831D0081AFC7 /* KScaleHandle.cpp in Sources */,
+				7BFA203D1EDB831D0081AFC7 /* KModule.cpp in Sources */,
+				7BFA1F111EDB83130081AFC7 /* KFileTreeWidget.cpp in Sources */,
+				7BFA207E1EDB831D0081AFC7 /* KParticle.cpp in Sources */,
+				7BFA202D1EDB831D0081AFC7 /* KConnectorValueInOut.cpp in Sources */,
+				7BFA1EEA1EDB83130081AFC7 /* KKeyHandler.cpp in Sources */,
+				7BFA206F1EDB831D0081AFC7 /* KModuleAccu.cpp in Sources */,
+				7BFA1F0E1EDB83130081AFC7 /* KFileTreeDirUp.cpp in Sources */,
+				7BFA1F241EDB83130081AFC7 /* KPopupMenu.cpp in Sources */,
+				7BFA1F171EDB83130081AFC7 /* KNumberField.cpp in Sources */,
+				7BFA206E1EDB831D0081AFC7 /* KModulator.cpp in Sources */,
+				7BFA20811EDB831D0081AFC7 /* KVertex.cpp in Sources */,
+				7BFA20201EDB831D0081AFC7 /* KConnectorModulatorIn.cpp in Sources */,
+				7BFA201F1EDB831D0081AFC7 /* KConnectorMatrixOut.cpp in Sources */,
+				7BFA1EF31EDB83130081AFC7 /* KNotificationObject.cpp in Sources */,
+				7BFA20631EDB831D0081AFC7 /* KModuleObjectSphere.cpp in Sources */,
+				7BFA1F011EDB83130081AFC7 /* KVector.cpp in Sources */,
+				7BFA204F1EDB831D0081AFC7 /* KHubModule.cpp in Sources */,
+				7BFA1F101EDB83130081AFC7 /* KFileTreeNode.cpp in Sources */,
+				7BFA201E1EDB831D0081AFC7 /* KConnectorMatrixIn.cpp in Sources */,
+				7BFA207C1EDB831D0081AFC7 /* KLandscape.cpp in Sources */,
+				7BFA1F1F1EDB83130081AFC7 /* KWidgetArray.cpp in Sources */,
+				7BFA1EFD1EDB83130081AFC7 /* KProjection.cpp in Sources */,
+				7BFA202A1EDB831D0081AFC7 /* KConnectorTextureVersionIn.cpp in Sources */,
+				7BFA205A1EDB831D0081AFC7 /* KModuleCamera.cpp in Sources */,
+				7BFA207F1EDB831D0081AFC7 /* KSphere.cpp in Sources */,
+				7BFA20411EDB831D0081AFC7 /* KTextureBatch.cpp in Sources */,
+				7BFA20791EDB831D0081AFC7 /* KCylinder.cpp in Sources */,
+				7BFA1EF81EDB83130081AFC7 /* KKey.cpp in Sources */,
+				7BFA205C1EDB831D0081AFC7 /* KModuleLight.cpp in Sources */,
+				7BFA1F161EDB83130081AFC7 /* KMenuItem.cpp in Sources */,
+				7BFA20291EDB831D0081AFC7 /* KConnectorTextureFileOut.cpp in Sources */,
+				7BFA20501EDB831D0081AFC7 /* KMatrixModule.cpp in Sources */,
+				7BFA20451EDB831D0081AFC7 /* KAttributeModule.cpp in Sources */,
+				7BFA1F0B1EDB83130081AFC7 /* KFileNameField.cpp in Sources */,
+				7BFA20471EDB831D0081AFC7 /* KModuleBlend.cpp in Sources */,
+				7BFA206B1EDB831D0081AFC7 /* KGlobalModulator.cpp in Sources */,
+				7BFA20801EDB831D0081AFC7 /* KText.cpp in Sources */,
+				7BFA204D1EDB831D0081AFC7 /* KModuleTextureFile.cpp in Sources */,
+				7BFA20261EDB831D0081AFC7 /* KConnectorTextureBatchIn.cpp in Sources */,
+				7BFA202B1EDB831D0081AFC7 /* KConnectorTextureVersionOut.cpp in Sources */,
+				7BFA20641EDB831D0081AFC7 /* KModuleObjectText.cpp in Sources */,
+				7BFA1F041EDB83130081AFC7 /* KFloatValueObject.cpp in Sources */,
+				7BFA20661EDB831D0081AFC7 /* KModuleParticleEmitter.cpp in Sources */,
+				7BFA201C1EDB831D0081AFC7 /* KConnectorAttributeOut.cpp in Sources */,
+				7BFA1EFC1EDB83130081AFC7 /* KPerspectiveProjection.cpp in Sources */,
+				7BFA1F081EDB83130081AFC7 /* KValueObject.cpp in Sources */,
+				7BFA201D1EDB831D0081AFC7 /* KConnectorIntValueInOut.cpp in Sources */,
+				7BFA1F001EDB83130081AFC7 /* KTrash.cpp in Sources */,
+				7BFA20401EDB831D0081AFC7 /* KSceneSet.cpp in Sources */,
+				7BFA1EE71EDB83130081AFC7 /* KEventHandler.cpp in Sources */,
+				7BFA1EF21EDB83130081AFC7 /* KKeyTools.cpp in Sources */,
+				7BFA20301EDB831D0081AFC7 /* KHandle.cpp in Sources */,
+				7BFA20221EDB831D0081AFC7 /* KConnectorParticleIn.cpp in Sources */,
+				7BFA20611EDB831D0081AFC7 /* KModuleObjectLandscape.cpp in Sources */,
+				7BFA20281EDB831D0081AFC7 /* KConnectorTextureFileIn.cpp in Sources */,
+				7BFA1F021EDB83130081AFC7 /* KBoolValueObject.cpp in Sources */,
+				7BFA1F0F1EDB83130081AFC7 /* KFileTreeFile.cpp in Sources */,
+				7BFA20191EDB831D0081AFC7 /* KTextureSets.cpp in Sources */,
+				7BFA1EF11EDB83130081AFC7 /* KIntrospection.cpp in Sources */,
+				7BFA201B1EDB831D0081AFC7 /* KConnectorAttributeIn.cpp in Sources */,
+				7BFA1F231EDB83130081AFC7 /* KMessagePanel.cpp in Sources */,
+				7BFA205F1EDB831D0081AFC7 /* KModuleObjectDisk.cpp in Sources */,
+				7BFA1F051EDB83130081AFC7 /* KKeyValueObject.cpp in Sources */,
+				7BFA1F221EDB83130081AFC7 /* KMenuWindow.cpp in Sources */,
+				7BFA1EFF1EDB83130081AFC7 /* KTexture.cpp in Sources */,
+				7BFA20771EDB831D0081AFC7 /* KBox.cpp in Sources */,
+				7BFA203C1EDB831D0081AFC7 /* main.m in Sources */,
+				7BFA1EF61EDB83130081AFC7 /* KXMLTools.cpp in Sources */,
+				7BFA1EED1EDB83130081AFC7 /* KPickable.cpp in Sources */,
+				7BFA20481EDB831D0081AFC7 /* KModuleColor.cpp in Sources */,
+				7BFA1EEC1EDB83130081AFC7 /* KPickHandler.cpp in Sources */,
+				7BFA1F1B1EDB83130081AFC7 /* KTextField.cpp in Sources */,
+				7BFA20751EDB831D0081AFC7 /* KSequenceGenerator.cpp in Sources */,
+				7BFA1EF51EDB83130081AFC7 /* KTools.cpp in Sources */,
+				7BFA20341EDB831D0081AFC7 /* KMatrixHandleScale.cpp in Sources */,
+				7BFA20161EDB831D0081AFC7 /* KModules.cpp in Sources */,
+				7BFA20141EDB831D0081AFC7 /* KMain.cpp in Sources */,
+				7BFA20781EDB831D0081AFC7 /* KCamera.cpp in Sources */,
+				7BFA202F1EDB831D0081AFC7 /* KValueConnector.cpp in Sources */,
+				7BFA1F1E1EDB83130081AFC7 /* KWidget.cpp in Sources */,
+				7BFA1EEE1EDB83130081AFC7 /* KSelectable.cpp in Sources */,
+				7BFA1F1A1EDB83130081AFC7 /* KSubMenuItem.cpp in Sources */,
+				7BFA1F1C1EDB83130081AFC7 /* KTextWidget.cpp in Sources */,
+				7BFA20421EDB831D0081AFC7 /* KTextureFile.cpp in Sources */,
+				7BFA20351EDB831D0081AFC7 /* KMatrixHandleTranslate.cpp in Sources */,
+				7BFA1F061EDB83130081AFC7 /* KSizeValueObject.cpp in Sources */,
+				7BFA20521EDB831D0081AFC7 /* KModuleIdentity.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7BFA1E591EDB82ED0081AFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BFA1E5A1EDB82ED0081AFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7BFA1E5C1EDB82ED0081AFC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_DARWIN_NO_64_BIT_INODE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include/SDL,
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.frizlab.kodisein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BFA1E5D1EDB82ED0081AFC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_DARWIN_NO_64_BIT_INODE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/include/SDL,
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.frizlab.kodisein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BFA1E421EDB82EC0081AFC7 /* Build configuration list for PBXProject "kodisein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFA1E591EDB82ED0081AFC7 /* Debug */,
+				7BFA1E5A1EDB82ED0081AFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BFA1E5B1EDB82ED0081AFC7 /* Build configuration list for PBXNativeTarget "kodisein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFA1E5C1EDB82ED0081AFC7 /* Debug */,
+				7BFA1E5D1EDB82ED0081AFC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BFA1E3F1EDB82EC0081AFC7 /* Project object */;
+}

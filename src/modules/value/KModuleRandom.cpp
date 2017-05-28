@@ -12,7 +12,7 @@
 #include "KConnectorValueIn.h"
 #include "KConsole.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDL_CLASS_INTROSPECTION_1 	(KModuleRandom,  KValueModule)
 KDS_MODULE_VALUES		(KModuleRandom, "Random", 1.0, 1.0, 0.0, 0.6)
@@ -54,7 +54,7 @@ void KModuleRandom::randomize ( float newValue )
 // --------------------------------------------------------------------------------------------------------
 bool KModuleRandom::shouldPropagate ( int time )
 {
-    if ((KValueConnector*)getConnectorWithName(VALUE_IN)->isConnected() == false)
+    if (((KValueConnector*)getConnectorWithName(VALUE_IN))->isConnected() == false)
     {
         return true;
     }

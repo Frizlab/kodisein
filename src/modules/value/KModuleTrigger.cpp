@@ -15,7 +15,7 @@
 #include "KKeyValueObject.h"
 #include "KConsole.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDL_CLASS_INTROSPECTION_1 	(KModuleTrigger,  KActivationValueModule)
 KDS_MODULE_VALUES		(KModuleTrigger, "Trigger", 0.0, 0.0, 1.0, 0.6)

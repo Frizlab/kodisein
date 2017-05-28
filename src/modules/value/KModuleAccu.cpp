@@ -12,7 +12,7 @@
 #include "KConsole.h"
 #include "KController.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDL_CLASS_INTROSPECTION_1 	(KModuleAccu,  KValueModule)
 KDS_MODULE_VALUES		(KModuleAccu, "Accu", 1.0, 1.0, 0.0, 0.6)

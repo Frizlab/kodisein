@@ -8,7 +8,7 @@
 #include "KController.h"
 #include "KTools.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDL_CLASS_INTROSPECTION_1 (KText, KMatrixHandle)
 

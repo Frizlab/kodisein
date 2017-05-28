@@ -6,7 +6,7 @@
 #include "KConnectorParticleIn.h"
 #include "KController.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDS_CONNECTION_VALUES (KConnectorParticleIn, KDS_CONNECTOR_PARTICLE_IN, KDS_CONNECTOR_PARTICLE_OUT)
 

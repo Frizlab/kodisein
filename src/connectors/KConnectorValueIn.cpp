@@ -13,7 +13,7 @@
 #include "KConsole.h"
 #include "KTools.h"
 
-#include <glut.h>
+#include <GLUT/glut.h>
 
 KDL_CLASS_INTROSPECTION_1(KConnectorValueIn, KValueConnector)
 const int KConnectorValueIn::type = KDS_CONNECTOR_VALUE_IN;

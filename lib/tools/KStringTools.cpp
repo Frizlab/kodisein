@@ -14,7 +14,7 @@ using namespace std;
 // --------------------------------------------------------------------------------------------------------
 void kStringInsertStringBehindTags ( string & str, const string & insertString, const string & tag )
 {
-    unsigned int oldPos = 0;
+    string::size_type oldPos = 0;
     while ((oldPos = str.find(tag, oldPos)) != string::npos)
     {
         oldPos += tag.size();
@@ -35,8 +35,8 @@ vector<string> kStringGetComponents ( const string & str, const string & divider
 {
     vector<string> components;
     
-    unsigned int dividerLength = divider.size();
-    unsigned int oldpos = 0, pos;
+    string::size_type dividerLength = divider.size();
+    string::size_type oldpos = 0, pos;
     
     while ((pos = str.find(divider, oldpos)) != string::npos)
     {
@@ -51,7 +51,7 @@ vector<string> kStringGetComponents ( const string & str, const string & divider
 // --------------------------------------------------------------------------------------------------------
 void kStringReplace ( string & str, const string & toReplace, const string & replacement )
 {
-    unsigned int pos = 0, chars = toReplace.size();
+    string::size_type pos = 0, chars = toReplace.size();
     while ((pos = str.find(toReplace, pos)) != string::npos)
     {
         str.replace(pos, chars, replacement);
@@ -61,11 +61,11 @@ void kStringReplace ( string & str, const string & toReplace, const string & rep
 // --------------------------------------------------------------------------------------------------------
 void kStringReplaceTabs ( string & str, unsigned int tabWidth )
 {
-    unsigned int tabPos;
+    string::size_type tabPos;
     while ((tabPos = str.find('\t')) != string::npos)
     {
-        unsigned int lastNewlinePos = str.rfind('\n', tabPos-1);
-        unsigned int relPos = (lastNewlinePos == string::npos) ? tabPos : tabPos - lastNewlinePos; 
+        string::size_type lastNewlinePos = str.rfind('\n', tabPos-1);
+        string::size_type relPos = (lastNewlinePos == string::npos) ? tabPos : tabPos - lastNewlinePos;
         str.replace(tabPos, 1, string(tabWidth-(relPos % tabWidth), ' '));
     }
 }
@@ -75,7 +75,8 @@ string kStringGetSharedPrefix ( const vector<string> & strings )
 {
     if (strings.empty()) return "";
     vector<string>::const_iterator iter = strings.begin();
-    unsigned int maxlength = INT_MAX;
+#warning FLFL: Should not set to INT_MAX...
+    string::size_type maxlength = INT_MAX;
     while (iter != strings.end())
     {
         maxlength = kMin(maxlength, iter->size()); 
@@ -113,9 +114,9 @@ unsigned int kStringCountChars ( const string & str, char c )
 }
 
 // --------------------------------------------------------------------------------------------------------
-unsigned int kStringNthCharPos ( const string & str, unsigned int n, char c )
+string::size_type kStringNthCharPos ( const string & str, string::size_type n, char c )
 {
-    unsigned int loc = n, oloc = 0;
+    string::size_type loc = n, oloc = 0;
     while (n > 0 && (loc = str.find(c, oloc)) != string::npos)
     { 
         n--; 
@@ -126,20 +127,20 @@ unsigned int kStringNthCharPos ( const string & str, unsigned int n, char c )
 }
 
 // --------------------------------------------------------------------------------------------------------
-void kStringCropRows ( string & str, unsigned int rows )
+void kStringCropRows ( string & str, string::size_type rows )
 {        
-    unsigned int lines = kStringRows(str);
+    string::size_type lines = kStringRows(str);
     if (lines > rows)
     {
-        unsigned int loc = kStringNthCharPos(str, (lines-rows), '\n');
+        auto loc = kStringNthCharPos(str, (lines-rows), '\n');
         str.erase(0, loc+1);
     }
 }
 
 // --------------------------------------------------------------------------------------------------------
-void kStringCropCols ( string & str, unsigned int columns )
+void kStringCropCols ( string & str, string::size_type columns )
 {        
-    unsigned int oloc = 0, nloc = 0;
+    string::size_type oloc = 0, nloc = 0;
     while ((nloc = str.find('\n', oloc)) != string::npos)
     {
         if ((nloc - oloc) > columns)
@@ -158,12 +159,12 @@ void kStringCropCols ( string & str, unsigned int columns )
 }
 
 // --------------------------------------------------------------------------------------------------------
-unsigned int kStringCols ( const string & str )
+string::size_type kStringCols ( const string & str )
 {
     if (str.size() == 0) return 0;
-    int oloc = 0, nloc;
+    string::size_type oloc = 0, nloc;
     string substring;
-    int maxlength = 0, length;
+    string::size_type maxlength = 0, length;
     while ((nloc = str.find('\n', oloc)) != (int)string::npos) 
     {
         substring = str.substr(oloc, nloc - oloc);
@@ -179,10 +180,10 @@ unsigned int kStringCols ( const string & str )
 }
 
 // --------------------------------------------------------------------------------------------------------
-unsigned int kStringRows ( const string & str )
+string::size_type kStringRows ( const string & str )
 {
     if (str.size() == 0) return 1;
-    unsigned int loc = 0, lines = 0;
+    string::size_type loc = 0, lines = 0;
     while ((loc = str.find('\n', loc)) != string::npos) { lines++; loc++; }
     if (str[str.size()-1] == '\n') return lines;
     return lines+1;
@@ -205,8 +206,8 @@ string kStringPrintFormArgs ( const string & fmt, va_list * argList )
 {
     static char str[256];
     string format(fmt), subformat, text;
-    unsigned int oloc = 0;
-    unsigned int nloc = 0;
+    string::size_type oloc = 0;
+    string::size_type nloc = 0;
     
     kStringReplaceTabs(format);
     
@@ -263,7 +264,7 @@ string kStringPrintf ( const char * fmt ...)
 // --------------------------------------------------------------------------------------------------------
 bool kStringHasSuffix ( const string & str, const string & suffix )
 {
-    unsigned int result = str.rfind(suffix);
+    string::size_type result = str.rfind(suffix);
     if (result == string::npos) return false;
     return (result == str.size()-suffix.size());
 }

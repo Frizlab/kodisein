@@ -25,11 +25,11 @@ vector<string>	kStringGetComponents		( const string & str, const string & divide
 void 		kStringReplace			( string &, const string & , const string & );
 void		kStringReplaceTabs		( string &, unsigned int = 4 );
 string		kStringGetSharedPrefix		( const vector<string> & );
-void 		kStringCropCols 		( string & , unsigned int );
-void 		kStringCropRows			( string & , unsigned int );
-unsigned int	kStringNthCharPos		( const string & , unsigned int, char );
-unsigned int	kStringRows 			( const string & );
-unsigned int	kStringCols 			( const string & );
+void 		kStringCropCols 		( string & , string::size_type );
+void 		kStringCropRows			( string & , string::size_type );
+string::size_type	kStringNthCharPos		( const string & , string::size_type, char );
+string::size_type	kStringRows 			( const string & );
+string::size_type	kStringCols 			( const string & );
 unsigned int	kStringWidth 			( const string & , bool = true);
 unsigned int	kStringHeight 			( const string & , bool = true);
 unsigned int 	kStringCountChars 		( const string &, char );
