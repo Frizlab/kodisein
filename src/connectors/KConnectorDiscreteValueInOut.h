@@ -17,6 +17,7 @@
 #include "KLabel.h"
 #include "KXMLTools.h"
 
+#include <vector>
 #include <string>
 #include <algorithm>
 
@@ -101,7 +102,7 @@ void KConnectorDiscreteValueInOut<T>::setTypedReceiverValue ( const T v )
 template <class T>
 const string & KConnectorDiscreteValueInOut<T>::getNameForValue ( const T & typedValue ) const
 {
-    vector<T>::const_iterator result = find (values.begin(), values.end(), typedValue);
+    typename vector<T>::const_iterator result = find (values.begin(), values.end(), typedValue);
     if (result != values.end())
     {
         return names[result-values.begin()];
@@ -138,7 +139,7 @@ const T & KConnectorDiscreteValueInOut<T>::getValueAtIndex ( int index ) const
 template <class T>
 int KConnectorDiscreteValueInOut<T>::getIndexForValue ( const T & v ) const
 {
-    vector<T>::const_iterator result = find(values.begin(), values.end(), v);
+    typename vector<T>::const_iterator result = find(values.begin(), values.end(), v);
     return (result-values.begin());
 }
 

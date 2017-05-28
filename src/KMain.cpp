@@ -18,7 +18,7 @@
 
 // --------------------------------------------------------------------------------------------------------
 
-#include <hash_map>
+#include <ext/hash_map>
 #include "KConsole.h"
 
 KController Controller;

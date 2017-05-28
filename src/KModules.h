@@ -10,7 +10,9 @@
 #include "KSelectionHandler.h"
 #include "KCameraHandler.h"
 
-#include <hash_map>
+#include <ext/hash_map>
+
+using namespace __gnu_cxx;
 
 typedef KModule * (KModule::*ModuleConstructorPtr)();
 

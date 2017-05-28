@@ -9,7 +9,7 @@
 #include "KKeyHandler.h"
 #include "KConsole.h"
 
-#include <hash_map>
+#include <ext/hash_map>
 
 using namespace std;
 
@@ -39,7 +39,7 @@ struct eqstr
   }
 };
 
-typedef hash_map<const char*, KKeyAction *, hash<const char*>, eqstr> KeyActionHash;
+typedef __gnu_cxx::hash_map<const char*, KKeyAction *, __gnu_cxx::hash<const char*>, eqstr> KeyActionHash;
 
 // --------------------------------------------------------------------------------------------------------
 class KKeyActionHandler : public KKeyHandler

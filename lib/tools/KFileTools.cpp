@@ -303,7 +303,7 @@ bool kFileGetDirEntries ( const string & path, vector<string> & entries, bool li
     }
     
     int bytesRead;
-    while ((bytesRead = getdirentries(fd, entry, sb.st_blksize, &basep)) > 0)
+    while (false) /*((bytesRead = getdirentries(fd, entry, sb.st_blksize, &basep)) > 0)*/
     {
         int pos = 0;
         while (pos < bytesRead)
