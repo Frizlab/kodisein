@@ -75,8 +75,7 @@ string kStringGetSharedPrefix ( const vector<string> & strings )
 {
     if (strings.empty()) return "";
     vector<string>::const_iterator iter = strings.begin();
-#warning FLFL: Should not set to INT_MAX...
-    string::size_type maxlength = INT_MAX;
+    string::size_type maxlength = string::npos;
     while (iter != strings.end())
     {
         maxlength = kMin(maxlength, iter->size()); 
