@@ -1,0 +1,1802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C35DD17106DB73A90012D687 /* KConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD08D06DB73A80012D687 /* KConnector.cpp */; };
+		C35DD17206DB73A90012D687 /* KConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD08E06DB73A80012D687 /* KConnector.h */; };
+		C35DD17306DB73A90012D687 /* KConnectorAttributeIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD08F06DB73A80012D687 /* KConnectorAttributeIn.cpp */; };
+		C35DD17406DB73A90012D687 /* KConnectorAttributeIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09006DB73A80012D687 /* KConnectorAttributeIn.h */; };
+		C35DD17506DB73A90012D687 /* KConnectorAttributeOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09106DB73A80012D687 /* KConnectorAttributeOut.cpp */; };
+		C35DD17606DB73A90012D687 /* KConnectorAttributeOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09206DB73A80012D687 /* KConnectorAttributeOut.h */; };
+		C35DD17706DB73A90012D687 /* KConnectorDiscreteValueInOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09306DB73A80012D687 /* KConnectorDiscreteValueInOut.h */; };
+		C35DD17806DB73A90012D687 /* KConnectorIntValueInOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09406DB73A80012D687 /* KConnectorIntValueInOut.cpp */; };
+		C35DD17906DB73A90012D687 /* KConnectorIntValueInOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09506DB73A80012D687 /* KConnectorIntValueInOut.h */; };
+		C35DD17A06DB73A90012D687 /* KConnectorMatrixIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09606DB73A80012D687 /* KConnectorMatrixIn.cpp */; };
+		C35DD17B06DB73A90012D687 /* KConnectorMatrixIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09706DB73A80012D687 /* KConnectorMatrixIn.h */; };
+		C35DD17C06DB73A90012D687 /* KConnectorMatrixOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09806DB73A80012D687 /* KConnectorMatrixOut.cpp */; };
+		C35DD17D06DB73A90012D687 /* KConnectorMatrixOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09906DB73A80012D687 /* KConnectorMatrixOut.h */; };
+		C35DD17E06DB73A90012D687 /* KConnectorModulatorIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09A06DB73A80012D687 /* KConnectorModulatorIn.cpp */; };
+		C35DD17F06DB73A90012D687 /* KConnectorModulatorIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09B06DB73A80012D687 /* KConnectorModulatorIn.h */; };
+		C35DD18006DB73A90012D687 /* KConnectorModulatorOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09C06DB73A80012D687 /* KConnectorModulatorOut.cpp */; };
+		C35DD18106DB73A90012D687 /* KConnectorModulatorOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09D06DB73A80012D687 /* KConnectorModulatorOut.h */; };
+		C35DD18206DB73A90012D687 /* KConnectorParticleIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD09E06DB73A80012D687 /* KConnectorParticleIn.cpp */; };
+		C35DD18306DB73A90012D687 /* KConnectorParticleIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD09F06DB73A80012D687 /* KConnectorParticleIn.h */; };
+		C35DD18406DB73A90012D687 /* KConnectorParticleOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0A006DB73A80012D687 /* KConnectorParticleOut.cpp */; };
+		C35DD18506DB73A90012D687 /* KConnectorParticleOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0A106DB73A80012D687 /* KConnectorParticleOut.h */; };
+		C35DD18606DB73A90012D687 /* KConnectorSceneIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0A206DB73A80012D687 /* KConnectorSceneIn.cpp */; };
+		C35DD18706DB73A90012D687 /* KConnectorSceneIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0A306DB73A80012D687 /* KConnectorSceneIn.h */; };
+		C35DD18806DB73A90012D687 /* KConnectorSceneOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0A406DB73A80012D687 /* KConnectorSceneOut.cpp */; };
+		C35DD18906DB73A90012D687 /* KConnectorSceneOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0A506DB73A80012D687 /* KConnectorSceneOut.h */; };
+		C35DD18A06DB73A90012D687 /* KConnectorTextureBatchIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0A606DB73A80012D687 /* KConnectorTextureBatchIn.cpp */; };
+		C35DD18B06DB73A90012D687 /* KConnectorTextureBatchIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0A706DB73A80012D687 /* KConnectorTextureBatchIn.h */; };
+		C35DD18C06DB73A90012D687 /* KConnectorTextureBatchOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0A806DB73A80012D687 /* KConnectorTextureBatchOut.cpp */; };
+		C35DD18D06DB73A90012D687 /* KConnectorTextureBatchOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0A906DB73A80012D687 /* KConnectorTextureBatchOut.h */; };
+		C35DD18E06DB73A90012D687 /* KConnectorTextureFileIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0AA06DB73A80012D687 /* KConnectorTextureFileIn.cpp */; };
+		C35DD18F06DB73A90012D687 /* KConnectorTextureFileIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0AB06DB73A80012D687 /* KConnectorTextureFileIn.h */; };
+		C35DD19006DB73A90012D687 /* KConnectorTextureFileOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0AC06DB73A80012D687 /* KConnectorTextureFileOut.cpp */; };
+		C35DD19106DB73A90012D687 /* KConnectorTextureFileOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0AD06DB73A80012D687 /* KConnectorTextureFileOut.h */; };
+		C35DD19206DB73A90012D687 /* KConnectorTextureVersionIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0AE06DB73A80012D687 /* KConnectorTextureVersionIn.cpp */; };
+		C35DD19306DB73A90012D687 /* KConnectorTextureVersionIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0AF06DB73A80012D687 /* KConnectorTextureVersionIn.h */; };
+		C35DD19406DB73A90012D687 /* KConnectorTextureVersionOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0B006DB73A80012D687 /* KConnectorTextureVersionOut.cpp */; };
+		C35DD19506DB73A90012D687 /* KConnectorTextureVersionOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0B106DB73A80012D687 /* KConnectorTextureVersionOut.h */; };
+		C35DD19606DB73A90012D687 /* KConnectorValueIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0B206DB73A80012D687 /* KConnectorValueIn.cpp */; };
+		C35DD19706DB73A90012D687 /* KConnectorValueIn.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0B306DB73A80012D687 /* KConnectorValueIn.h */; };
+		C35DD19806DB73A90012D687 /* KConnectorValueInOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0B406DB73A80012D687 /* KConnectorValueInOut.cpp */; };
+		C35DD19906DB73A90012D687 /* KConnectorValueInOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0B506DB73A80012D687 /* KConnectorValueInOut.h */; };
+		C35DD19A06DB73A90012D687 /* KConnectorValueOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0B606DB73A80012D687 /* KConnectorValueOut.cpp */; };
+		C35DD19B06DB73A90012D687 /* KConnectorValueOut.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0B706DB73A80012D687 /* KConnectorValueOut.h */; };
+		C35DD19C06DB73A90012D687 /* KValueConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0B806DB73A80012D687 /* KValueConnector.cpp */; };
+		C35DD19D06DB73A90012D687 /* KValueConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0B906DB73A80012D687 /* KValueConnector.h */; };
+		C35DD19E06DB73A90012D687 /* KHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0BB06DB73A80012D687 /* KHandle.cpp */; };
+		C35DD19F06DB73A90012D687 /* KHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0BC06DB73A80012D687 /* KHandle.h */; };
+		C35DD1A006DB73A90012D687 /* KHandlesObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0BD06DB73A80012D687 /* KHandlesObject.cpp */; };
+		C35DD1A106DB73A90012D687 /* KHandlesObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0BE06DB73A80012D687 /* KHandlesObject.h */; };
+		C35DD1A206DB73A90012D687 /* KMatrixHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0BF06DB73A80012D687 /* KMatrixHandle.cpp */; };
+		C35DD1A306DB73A90012D687 /* KMatrixHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0C006DB73A80012D687 /* KMatrixHandle.h */; };
+		C35DD1A406DB73A90012D687 /* KMatrixHandleRotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0C106DB73A80012D687 /* KMatrixHandleRotate.cpp */; };
+		C35DD1A506DB73A90012D687 /* KMatrixHandleRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0C206DB73A80012D687 /* KMatrixHandleRotate.h */; };
+		C35DD1A606DB73A90012D687 /* KMatrixHandleScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0C306DB73A80012D687 /* KMatrixHandleScale.cpp */; };
+		C35DD1A706DB73A90012D687 /* KMatrixHandleScale.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0C406DB73A80012D687 /* KMatrixHandleScale.h */; };
+		C35DD1A806DB73A90012D687 /* KMatrixHandleTranslate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0C506DB73A80012D687 /* KMatrixHandleTranslate.cpp */; };
+		C35DD1A906DB73A90012D687 /* KMatrixHandleTranslate.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0C606DB73A80012D687 /* KMatrixHandleTranslate.h */; };
+		C35DD1AA06DB73A90012D687 /* KMoveHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0C706DB73A80012D687 /* KMoveHandle.cpp */; };
+		C35DD1AB06DB73A90012D687 /* KMoveHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0C806DB73A80012D687 /* KMoveHandle.h */; };
+		C35DD1AC06DB73A90012D687 /* KOneDirectionHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0C906DB73A80012D687 /* KOneDirectionHandle.cpp */; };
+		C35DD1AD06DB73A90012D687 /* KOneDirectionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0CA06DB73A80012D687 /* KOneDirectionHandle.h */; };
+		C35DD1AE06DB73A90012D687 /* KRotationHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0CB06DB73A80012D687 /* KRotationHandle.cpp */; };
+		C35DD1AF06DB73A90012D687 /* KRotationHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0CC06DB73A80012D687 /* KRotationHandle.h */; };
+		C35DD1B006DB73A90012D687 /* KScaleHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0CD06DB73A80012D687 /* KScaleHandle.cpp */; };
+		C35DD1B106DB73A90012D687 /* KScaleHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0CE06DB73A80012D687 /* KScaleHandle.h */; };
+		C35DD1B206DB73A90012D687 /* KTwoDirectionHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0CF06DB73A80012D687 /* KTwoDirectionHandle.cpp */; };
+		C35DD1B306DB73A90012D687 /* KTwoDirectionHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0D006DB73A80012D687 /* KTwoDirectionHandle.h */; };
+		C35DD1B406DB73A90012D687 /* KVertexHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0D106DB73A80012D687 /* KVertexHandle.cpp */; };
+		C35DD1B506DB73A90012D687 /* KVertexHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0D206DB73A80012D687 /* KVertexHandle.h */; };
+		C35DD1B606DB73A90012D687 /* KCameraHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0D306DB73A80012D687 /* KCameraHandler.cpp */; };
+		C35DD1B706DB73A90012D687 /* KCameraHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0D406DB73A80012D687 /* KCameraHandler.h */; };
+		C35DD1B806DB73A90012D687 /* KController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0D506DB73A80012D687 /* KController.cpp */; };
+		C35DD1B906DB73A90012D687 /* KController.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0D606DB73A80012D687 /* KController.h */; };
+		C35DD1BA06DB73A90012D687 /* KMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0D706DB73A80012D687 /* KMain.cpp */; };
+		C35DD1BB06DB73A90012D687 /* KMain.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0D806DB73A80012D687 /* KMain.h */; };
+		C35DD1BC06DB73A90012D687 /* KMainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0D906DB73A80012D687 /* KMainMenu.cpp */; };
+		C35DD1BD06DB73A90012D687 /* KMainMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0DA06DB73A80012D687 /* KMainMenu.h */; };
+		C35DD1BE06DB73A90012D687 /* KModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0DB06DB73A80012D687 /* KModules.cpp */; };
+		C35DD1BF06DB73A90012D687 /* KModules.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0DC06DB73A80012D687 /* KModules.h */; };
+		C35DD1C006DB73A90012D687 /* KObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0DD06DB73A80012D687 /* KObjects.cpp */; };
+		C35DD1C106DB73A90012D687 /* KObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0DE06DB73A80012D687 /* KObjects.h */; };
+		C35DD1C206DB73A90012D687 /* KPreferences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0DF06DB73A80012D687 /* KPreferences.cpp */; };
+		C35DD1C306DB73A90012D687 /* KPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0E006DB73A80012D687 /* KPreferences.h */; };
+		C35DD1C406DB73A90012D687 /* KTextureSets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0E106DB73A90012D687 /* KTextureSets.cpp */; };
+		C35DD1C506DB73A90012D687 /* KTextureSets.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0E206DB73A90012D687 /* KTextureSets.h */; };
+		C35DD1C606DB73A90012D687 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0E306DB73A90012D687 /* main.h */; };
+		C35DD1C706DB73A90012D687 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0E406DB73A90012D687 /* main.m */; };
+		C35DD1C806DB73A90012D687 /* KAttributeModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0E706DB73A90012D687 /* KAttributeModule.cpp */; };
+		C35DD1C906DB73A90012D687 /* KAttributeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0E806DB73A90012D687 /* KAttributeModule.h */; };
+		C35DD1CA06DB73A90012D687 /* KModuleAttributeHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0E906DB73A90012D687 /* KModuleAttributeHub.cpp */; };
+		C35DD1CB06DB73A90012D687 /* KModuleAttributeHub.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0EA06DB73A90012D687 /* KModuleAttributeHub.h */; };
+		C35DD1CC06DB73A90012D687 /* KModuleBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0EB06DB73A90012D687 /* KModuleBlend.cpp */; };
+		C35DD1CD06DB73A90012D687 /* KModuleBlend.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0EC06DB73A90012D687 /* KModuleBlend.h */; };
+		C35DD1CE06DB73A90012D687 /* KModuleColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0ED06DB73A90012D687 /* KModuleColor.cpp */; };
+		C35DD1CF06DB73A90012D687 /* KModuleColor.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0EE06DB73A90012D687 /* KModuleColor.h */; };
+		C35DD1D006DB73A90012D687 /* KModuleColorMask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0EF06DB73A90012D687 /* KModuleColorMask.cpp */; };
+		C35DD1D106DB73A90012D687 /* KModuleColorMask.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0F006DB73A90012D687 /* KModuleColorMask.h */; };
+		C35DD1D206DB73A90012D687 /* KModuleFog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0F106DB73A90012D687 /* KModuleFog.cpp */; };
+		C35DD1D306DB73A90012D687 /* KModuleFog.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0F206DB73A90012D687 /* KModuleFog.h */; };
+		C35DD1D406DB73A90012D687 /* KModuleMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0F306DB73A90012D687 /* KModuleMaterial.cpp */; };
+		C35DD1D506DB73A90012D687 /* KModuleMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0F406DB73A90012D687 /* KModuleMaterial.h */; };
+		C35DD1D606DB73A90012D687 /* KModuleTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0F506DB73A90012D687 /* KModuleTexture.cpp */; };
+		C35DD1D706DB73A90012D687 /* KModuleTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0F606DB73A90012D687 /* KModuleTexture.h */; };
+		C35DD1D806DB73A90012D687 /* KModuleTextureFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0F706DB73A90012D687 /* KModuleTextureFile.cpp */; };
+		C35DD1D906DB73A90012D687 /* KModuleTextureFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0F806DB73A90012D687 /* KModuleTextureFile.h */; };
+		C35DD1DA06DB73A90012D687 /* KModuleTextureMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0F906DB73A90012D687 /* KModuleTextureMatrix.cpp */; };
+		C35DD1DB06DB73A90012D687 /* KModuleTextureMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0FA06DB73A90012D687 /* KModuleTextureMatrix.h */; };
+		C35DD1DC06DB73A90012D687 /* KModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0FB06DB73A90012D687 /* KModule.cpp */; };
+		C35DD1DD06DB73A90012D687 /* KModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0FC06DB73A90012D687 /* KModule.h */; };
+		C35DD1DE06DB73A90012D687 /* KModuleInspector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0FD06DB73A90012D687 /* KModuleInspector.cpp */; };
+		C35DD1DF06DB73A90012D687 /* KModuleInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD0FE06DB73A90012D687 /* KModuleInspector.h */; };
+		C35DD1E006DB73A90012D687 /* KScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD0FF06DB73A90012D687 /* KScene.cpp */; };
+		C35DD1E106DB73A90012D687 /* KScene.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10006DB73A90012D687 /* KScene.h */; };
+		C35DD1E206DB73A90012D687 /* KSceneSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10106DB73A90012D687 /* KSceneSet.cpp */; };
+		C35DD1E306DB73A90012D687 /* KSceneSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10206DB73A90012D687 /* KSceneSet.h */; };
+		C35DD1E406DB73A90012D687 /* KTextureBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10306DB73A90012D687 /* KTextureBatch.cpp */; };
+		C35DD1E506DB73A90012D687 /* KTextureBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10406DB73A90012D687 /* KTextureBatch.h */; };
+		C35DD1E606DB73A90012D687 /* KTextureFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10506DB73A90012D687 /* KTextureFile.cpp */; };
+		C35DD1E706DB73A90012D687 /* KTextureFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10606DB73A90012D687 /* KTextureFile.h */; };
+		C35DD1E806DB73A90012D687 /* KTextureModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10706DB73A90012D687 /* KTextureModule.cpp */; };
+		C35DD1E906DB73A90012D687 /* KTextureModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10806DB73A90012D687 /* KTextureModule.h */; };
+		C35DD1EA06DB73A90012D687 /* KTextureSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10906DB73A90012D687 /* KTextureSet.cpp */; };
+		C35DD1EB06DB73A90012D687 /* KTextureSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10A06DB73A90012D687 /* KTextureSet.h */; };
+		C35DD1EC06DB73A90012D687 /* KHubModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10C06DB73A90012D687 /* KHubModule.cpp */; };
+		C35DD1ED06DB73A90012D687 /* KHubModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10D06DB73A90012D687 /* KHubModule.h */; };
+		C35DD1EE06DB73A90012D687 /* KMatrixModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD10E06DB73A90012D687 /* KMatrixModule.cpp */; };
+		C35DD1EF06DB73A90012D687 /* KMatrixModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD10F06DB73A90012D687 /* KMatrixModule.h */; };
+		C35DD1F006DB73A90012D687 /* KModuleGoto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11006DB73A90012D687 /* KModuleGoto.cpp */; };
+		C35DD1F106DB73A90012D687 /* KModuleGoto.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11106DB73A90012D687 /* KModuleGoto.h */; };
+		C35DD1F206DB73A90012D687 /* KModuleIdentity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11206DB73A90012D687 /* KModuleIdentity.cpp */; };
+		C35DD1F306DB73A90012D687 /* KModuleIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11306DB73A90012D687 /* KModuleIdentity.h */; };
+		C35DD1F406DB73A90012D687 /* KModuleLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11406DB73A90012D687 /* KModuleLabel.cpp */; };
+		C35DD1F506DB73A90012D687 /* KModuleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11506DB73A90012D687 /* KModuleLabel.h */; };
+		C35DD1F606DB73A90012D687 /* KModuleMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11606DB73A90012D687 /* KModuleMatrix.cpp */; };
+		C35DD1F706DB73A90012D687 /* KModuleMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11706DB73A90012D687 /* KModuleMatrix.h */; };
+		C35DD1F806DB73A90012D687 /* KModuleMatrixHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11806DB73A90012D687 /* KModuleMatrixHub.cpp */; };
+		C35DD1F906DB73A90012D687 /* KModuleMatrixHub.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11906DB73A90012D687 /* KModuleMatrixHub.h */; };
+		C35DD1FA06DB73A90012D687 /* KModuleRotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11A06DB73A90012D687 /* KModuleRotate.cpp */; };
+		C35DD1FB06DB73A90012D687 /* KModuleRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11B06DB73A90012D687 /* KModuleRotate.h */; };
+		C35DD1FC06DB73A90012D687 /* KModuleScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11C06DB73A90012D687 /* KModuleScale.cpp */; };
+		C35DD1FD06DB73A90012D687 /* KModuleScale.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11D06DB73A90012D687 /* KModuleScale.h */; };
+		C35DD1FE06DB73A90012D687 /* KModuleSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD11E06DB73A90012D687 /* KModuleSize.cpp */; };
+		C35DD1FF06DB73A90012D687 /* KModuleSize.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD11F06DB73A90012D687 /* KModuleSize.h */; };
+		C35DD20006DB73A90012D687 /* KModuleTranslate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12006DB73A90012D687 /* KModuleTranslate.cpp */; };
+		C35DD20106DB73A90012D687 /* KModuleTranslate.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12106DB73A90012D687 /* KModuleTranslate.h */; };
+		C35DD20206DB73A90012D687 /* KModuleCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12306DB73A90012D687 /* KModuleCamera.cpp */; };
+		C35DD20306DB73A90012D687 /* KModuleCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12406DB73A90012D687 /* KModuleCamera.h */; };
+		C35DD20406DB73A90012D687 /* KModuleLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12506DB73A90012D687 /* KModuleLight.cpp */; };
+		C35DD20506DB73A90012D687 /* KModuleLight.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12606DB73A90012D687 /* KModuleLight.h */; };
+		C35DD20606DB73A90012D687 /* KModuleLSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12706DB73A90012D687 /* KModuleLSystem.cpp */; };
+		C35DD20706DB73A90012D687 /* KModuleLSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12806DB73A90012D687 /* KModuleLSystem.h */; };
+		C35DD20806DB73A90012D687 /* KModuleObjectBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12906DB73A90012D687 /* KModuleObjectBox.cpp */; };
+		C35DD20906DB73A90012D687 /* KModuleObjectBox.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12A06DB73A90012D687 /* KModuleObjectBox.h */; };
+		C35DD20A06DB73A90012D687 /* KModuleObjectCylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12B06DB73A90012D687 /* KModuleObjectCylinder.cpp */; };
+		C35DD20B06DB73A90012D687 /* KModuleObjectCylinder.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12C06DB73A90012D687 /* KModuleObjectCylinder.h */; };
+		C35DD20C06DB73A90012D687 /* KModuleObjectDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12D06DB73A90012D687 /* KModuleObjectDisk.cpp */; };
+		C35DD20D06DB73A90012D687 /* KModuleObjectDisk.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD12E06DB73A90012D687 /* KModuleObjectDisk.h */; };
+		C35DD20E06DB73A90012D687 /* KModuleObjectFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD12F06DB73A90012D687 /* KModuleObjectFace.cpp */; };
+		C35DD20F06DB73A90012D687 /* KModuleObjectFace.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13006DB73A90012D687 /* KModuleObjectFace.h */; };
+		C35DD21006DB73A90012D687 /* KModuleObjectLandscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13106DB73A90012D687 /* KModuleObjectLandscape.cpp */; };
+		C35DD21106DB73A90012D687 /* KModuleObjectLandscape.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13206DB73A90012D687 /* KModuleObjectLandscape.h */; };
+		C35DD21206DB73A90012D687 /* KModuleObjectPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13306DB73A90012D687 /* KModuleObjectPoint.cpp */; };
+		C35DD21306DB73A90012D687 /* KModuleObjectPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13406DB73A90012D687 /* KModuleObjectPoint.h */; };
+		C35DD21406DB73A90012D687 /* KModuleObjectSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13506DB73A90012D687 /* KModuleObjectSphere.cpp */; };
+		C35DD21506DB73A90012D687 /* KModuleObjectSphere.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13606DB73A90012D687 /* KModuleObjectSphere.h */; };
+		C35DD21606DB73A90012D687 /* KModuleObjectText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13706DB73A90012D687 /* KModuleObjectText.cpp */; };
+		C35DD21706DB73A90012D687 /* KModuleObjectText.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13806DB73A90012D687 /* KModuleObjectText.h */; };
+		C35DD21806DB73A90012D687 /* KModuleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13906DB73A90012D687 /* KModuleParticle.cpp */; };
+		C35DD21906DB73A90012D687 /* KModuleParticle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13A06DB73A90012D687 /* KModuleParticle.h */; };
+		C35DD21A06DB73A90012D687 /* KModuleParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13B06DB73A90012D687 /* KModuleParticleEmitter.cpp */; };
+		C35DD21B06DB73A90012D687 /* KModuleParticleEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13C06DB73A90012D687 /* KModuleParticleEmitter.h */; };
+		C35DD21C06DB73A90012D687 /* KModuleVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13D06DB73A90012D687 /* KModuleVertex.cpp */; };
+		C35DD21D06DB73A90012D687 /* KModuleVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD13E06DB73A90012D687 /* KModuleVertex.h */; };
+		C35DD21E06DB73A90012D687 /* KObjectModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD13F06DB73A90012D687 /* KObjectModule.cpp */; };
+		C35DD21F06DB73A90012D687 /* KObjectModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14006DB73A90012D687 /* KObjectModule.h */; };
+		C35DD22006DB73A90012D687 /* KActivationValueModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14206DB73A90012D687 /* KActivationValueModule.cpp */; };
+		C35DD22106DB73A90012D687 /* KActivationValueModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14306DB73A90012D687 /* KActivationValueModule.h */; };
+		C35DD22206DB73A90012D687 /* KFilterModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14406DB73A90012D687 /* KFilterModule.cpp */; };
+		C35DD22306DB73A90012D687 /* KFilterModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14506DB73A90012D687 /* KFilterModule.h */; };
+		C35DD22406DB73A90012D687 /* KGlobalModulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14606DB73A90012D687 /* KGlobalModulator.cpp */; };
+		C35DD22506DB73A90012D687 /* KGlobalModulator.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14706DB73A90012D687 /* KGlobalModulator.h */; };
+		C35DD22606DB73A90012D687 /* KModulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14806DB73A90012D687 /* KModulator.cpp */; };
+		C35DD22706DB73A90012D687 /* KModulator.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14906DB73A90012D687 /* KModulator.h */; };
+		C35DD22806DB73A90012D687 /* KModuleAccu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14A06DB73A90012D687 /* KModuleAccu.cpp */; };
+		C35DD22906DB73A90012D687 /* KModuleAccu.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14B06DB73A90012D687 /* KModuleAccu.h */; };
+		C35DD22A06DB73A90012D687 /* KModuleRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14C06DB73A90012D687 /* KModuleRandom.cpp */; };
+		C35DD22B06DB73A90012D687 /* KModuleRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14D06DB73A90012D687 /* KModuleRandom.h */; };
+		C35DD22C06DB73A90012D687 /* KModuleSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD14E06DB73A90012D687 /* KModuleSwitch.cpp */; };
+		C35DD22D06DB73A90012D687 /* KModuleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD14F06DB73A90012D687 /* KModuleSwitch.h */; };
+		C35DD22E06DB73A90012D687 /* KModuleTrigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15006DB73A90012D687 /* KModuleTrigger.cpp */; };
+		C35DD22F06DB73A90012D687 /* KModuleTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15106DB73A90012D687 /* KModuleTrigger.h */; };
+		C35DD23006DB73A90012D687 /* KModuleVariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15206DB73A90012D687 /* KModuleVariable.cpp */; };
+		C35DD23106DB73A90012D687 /* KModuleVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15306DB73A90012D687 /* KModuleVariable.h */; };
+		C35DD23206DB73A90012D687 /* KOperationModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15406DB73A90012D687 /* KOperationModule.cpp */; };
+		C35DD23306DB73A90012D687 /* KOperationModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15506DB73A90012D687 /* KOperationModule.h */; };
+		C35DD23406DB73A90012D687 /* KSequenceGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15606DB73A90012D687 /* KSequenceGenerator.cpp */; };
+		C35DD23506DB73A90012D687 /* KSequenceGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15706DB73A90012D687 /* KSequenceGenerator.h */; };
+		C35DD23606DB73A90012D687 /* KValueModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15806DB73A90012D687 /* KValueModule.cpp */; };
+		C35DD23706DB73A90012D687 /* KValueModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15906DB73A90012D687 /* KValueModule.h */; };
+		C35DD23806DB73A90012D687 /* KBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15B06DB73A90012D687 /* KBox.cpp */; };
+		C35DD23906DB73A90012D687 /* KBox.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15C06DB73A90012D687 /* KBox.h */; };
+		C35DD23A06DB73A90012D687 /* KCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15D06DB73A90012D687 /* KCamera.cpp */; };
+		C35DD23B06DB73A90012D687 /* KCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD15E06DB73A90012D687 /* KCamera.h */; };
+		C35DD23C06DB73A90012D687 /* KCylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD15F06DB73A90012D687 /* KCylinder.cpp */; };
+		C35DD23D06DB73A90012D687 /* KCylinder.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16006DB73A90012D687 /* KCylinder.h */; };
+		C35DD23E06DB73A90012D687 /* KDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16106DB73A90012D687 /* KDisk.cpp */; };
+		C35DD23F06DB73A90012D687 /* KDisk.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16206DB73A90012D687 /* KDisk.h */; };
+		C35DD24006DB73A90012D687 /* KFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16306DB73A90012D687 /* KFace.cpp */; };
+		C35DD24106DB73A90012D687 /* KFace.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16406DB73A90012D687 /* KFace.h */; };
+		C35DD24206DB73A90012D687 /* KLandscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16506DB73A90012D687 /* KLandscape.cpp */; };
+		C35DD24306DB73A90012D687 /* KLandscape.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16606DB73A90012D687 /* KLandscape.h */; };
+		C35DD24406DB73A90012D687 /* KLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16706DB73A90012D687 /* KLight.cpp */; };
+		C35DD24506DB73A90012D687 /* KLight.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16806DB73A90012D687 /* KLight.h */; };
+		C35DD24606DB73A90012D687 /* KParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16906DB73A90012D687 /* KParticle.cpp */; };
+		C35DD24706DB73A90012D687 /* KParticle.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16A06DB73A90012D687 /* KParticle.h */; };
+		C35DD24806DB73A90012D687 /* KSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16B06DB73A90012D687 /* KSphere.cpp */; };
+		C35DD24906DB73A90012D687 /* KSphere.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16C06DB73A90012D687 /* KSphere.h */; };
+		C35DD24A06DB73A90012D687 /* KText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16D06DB73A90012D687 /* KText.cpp */; };
+		C35DD24B06DB73A90012D687 /* KText.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD16E06DB73A90012D687 /* KText.h */; };
+		C35DD24C06DB73A90012D687 /* KVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C35DD16F06DB73A90012D687 /* KVertex.cpp */; };
+		C35DD24D06DB73A90012D687 /* KVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = C35DD17006DB73A90012D687 /* KVertex.h */; };
+		C36857A406D8CF1400672963 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36857A306D8CF1400672963 /* OpenGL.framework */; };
+		C386B1C706DA362A00AF9EFE /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C386B1C606DA362A00AF9EFE /* GLUT.framework */; };
+		C386B2B206DA39EF00AF9EFE /* KEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B22B06DA39EF00AF9EFE /* KEventHandler.cpp */; };
+		C386B2B306DA39EF00AF9EFE /* KEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B22C06DA39EF00AF9EFE /* KEventHandler.h */; };
+		C386B2B406DA39EF00AF9EFE /* KFileHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B22D06DA39EF00AF9EFE /* KFileHandler.cpp */; };
+		C386B2B506DA39EF00AF9EFE /* KFileHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B22E06DA39EF00AF9EFE /* KFileHandler.h */; };
+		C386B2B606DA39EF00AF9EFE /* KKeyActionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B22F06DA39EF00AF9EFE /* KKeyActionHandler.cpp */; };
+		C386B2B706DA39EF00AF9EFE /* KKeyActionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23006DA39EF00AF9EFE /* KKeyActionHandler.h */; };
+		C386B2B806DA39EF00AF9EFE /* KKeyHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23106DA39EF00AF9EFE /* KKeyHandler.cpp */; };
+		C386B2B906DA39EF00AF9EFE /* KKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23206DA39EF00AF9EFE /* KKeyHandler.h */; };
+		C386B2BA06DA39EF00AF9EFE /* KKeyRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23306DA39EF00AF9EFE /* KKeyRecorder.cpp */; };
+		C386B2BB06DA39EF00AF9EFE /* KKeyRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23406DA39EF00AF9EFE /* KKeyRecorder.h */; };
+		C386B2BC06DA39EF00AF9EFE /* KPickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23506DA39EF00AF9EFE /* KPickable.cpp */; };
+		C386B2BD06DA39EF00AF9EFE /* KPickable.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23606DA39EF00AF9EFE /* KPickable.h */; };
+		C386B2BE06DA39EF00AF9EFE /* KPickHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23706DA39EF00AF9EFE /* KPickHandler.cpp */; };
+		C386B2BF06DA39EF00AF9EFE /* KPickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23806DA39EF00AF9EFE /* KPickHandler.h */; };
+		C386B2C006DA39EF00AF9EFE /* KSelectable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23906DA39EF00AF9EFE /* KSelectable.cpp */; };
+		C386B2C106DA39EF00AF9EFE /* KSelectable.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23A06DA39EF00AF9EFE /* KSelectable.h */; };
+		C386B2C206DA39EF00AF9EFE /* KSelectionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23B06DA39EF00AF9EFE /* KSelectionHandler.cpp */; };
+		C386B2C306DA39EF00AF9EFE /* KSelectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23C06DA39EF00AF9EFE /* KSelectionHandler.h */; };
+		C386B2C406DA39EF00AF9EFE /* KFileTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B23E06DA39EF00AF9EFE /* KFileTools.cpp */; };
+		C386B2C506DA39EF00AF9EFE /* KFileTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B23F06DA39EF00AF9EFE /* KFileTools.h */; };
+		C386B2C606DA39EF00AF9EFE /* KIntrospection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24006DA39EF00AF9EFE /* KIntrospection.cpp */; };
+		C386B2C706DA39EF00AF9EFE /* KIntrospection.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24106DA39EF00AF9EFE /* KIntrospection.h */; };
+		C386B2C806DA39EF00AF9EFE /* KKeySymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24206DA39EF00AF9EFE /* KKeySymbols.h */; };
+		C386B2C906DA39EF00AF9EFE /* KKeyTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24306DA39EF00AF9EFE /* KKeyTools.cpp */; };
+		C386B2CA06DA39EF00AF9EFE /* KKeyTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24406DA39EF00AF9EFE /* KKeyTools.h */; };
+		C386B2CB06DA39EF00AF9EFE /* KNotificationObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24506DA39EF00AF9EFE /* KNotificationObject.cpp */; };
+		C386B2CC06DA39EF00AF9EFE /* KNotificationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24606DA39EF00AF9EFE /* KNotificationObject.h */; };
+		C386B2CD06DA39EF00AF9EFE /* KStringTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24706DA39EF00AF9EFE /* KStringTools.cpp */; };
+		C386B2CE06DA39EF00AF9EFE /* KStringTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24806DA39EF00AF9EFE /* KStringTools.h */; };
+		C386B2CF06DA39EF00AF9EFE /* KTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24906DA39EF00AF9EFE /* KTools.cpp */; };
+		C386B2D006DA39EF00AF9EFE /* KTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24A06DA39EF00AF9EFE /* KTools.h */; };
+		C386B2D106DA39EF00AF9EFE /* KXMLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24B06DA39EF00AF9EFE /* KXMLTools.cpp */; };
+		C386B2D206DA39EF00AF9EFE /* KXMLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24C06DA39EF00AF9EFE /* KXMLTools.h */; };
+		C386B2D306DA39EF00AF9EFE /* vvector.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B24D06DA39EF00AF9EFE /* vvector.h */; };
+		C386B2D406DA39EF00AF9EFE /* KColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B24F06DA39EF00AF9EFE /* KColor.cpp */; };
+		C386B2D506DA39EF00AF9EFE /* KColor.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25006DA39EF00AF9EFE /* KColor.h */; };
+		C386B2D606DA39EF00AF9EFE /* KKey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25106DA39EF00AF9EFE /* KKey.cpp */; };
+		C386B2D706DA39EF00AF9EFE /* KKey.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25206DA39EF00AF9EFE /* KKey.h */; };
+		C386B2D806DA39EF00AF9EFE /* KLightingProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25306DA39EF00AF9EFE /* KLightingProjection.cpp */; };
+		C386B2D906DA39EF00AF9EFE /* KLightingProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25406DA39EF00AF9EFE /* KLightingProjection.h */; };
+		C386B2DA06DA39EF00AF9EFE /* KMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25506DA39EF00AF9EFE /* KMatrix.cpp */; };
+		C386B2DB06DA39EF00AF9EFE /* KMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25606DA39EF00AF9EFE /* KMatrix.h */; };
+		C386B2DC06DA39EF00AF9EFE /* KOrthographicProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25706DA39EF00AF9EFE /* KOrthographicProjection.cpp */; };
+		C386B2DD06DA39EF00AF9EFE /* KOrthographicProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25806DA39EF00AF9EFE /* KOrthographicProjection.h */; };
+		C386B2DE06DA39EF00AF9EFE /* KPerspectiveProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25906DA39EF00AF9EFE /* KPerspectiveProjection.cpp */; };
+		C386B2DF06DA39EF00AF9EFE /* KPerspectiveProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25A06DA39EF00AF9EFE /* KPerspectiveProjection.h */; };
+		C386B2E006DA39EF00AF9EFE /* KProjection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25B06DA39EF00AF9EFE /* KProjection.cpp */; };
+		C386B2E106DA39EF00AF9EFE /* KProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25C06DA39EF00AF9EFE /* KProjection.h */; };
+		C386B2E206DA39EF00AF9EFE /* KSeparatedMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25D06DA39EF00AF9EFE /* KSeparatedMatrix.cpp */; };
+		C386B2E306DA39EF00AF9EFE /* KSeparatedMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B25E06DA39EF00AF9EFE /* KSeparatedMatrix.h */; };
+		C386B2E406DA39EF00AF9EFE /* KTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B25F06DA39EF00AF9EFE /* KTexture.cpp */; };
+		C386B2E506DA39EF00AF9EFE /* KTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26006DA39EF00AF9EFE /* KTexture.h */; };
+		C386B2E606DA39EF00AF9EFE /* KTrash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26106DA39EF00AF9EFE /* KTrash.cpp */; };
+		C386B2E706DA39EF00AF9EFE /* KTrash.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26206DA39EF00AF9EFE /* KTrash.h */; };
+		C386B2E806DA39EF00AF9EFE /* KVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26306DA39EF00AF9EFE /* KVector.cpp */; };
+		C386B2E906DA39EF00AF9EFE /* KVector.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26406DA39EF00AF9EFE /* KVector.h */; };
+		C386B2EA06DA39EF00AF9EFE /* KBoolValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26606DA39EF00AF9EFE /* KBoolValueObject.cpp */; };
+		C386B2EB06DA39EF00AF9EFE /* KBoolValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26706DA39EF00AF9EFE /* KBoolValueObject.h */; };
+		C386B2EC06DA39EF00AF9EFE /* KDiscreteValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26806DA39EF00AF9EFE /* KDiscreteValueObject.h */; };
+		C386B2ED06DA39EF00AF9EFE /* KFileNameValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26906DA39EF00AF9EFE /* KFileNameValueObject.cpp */; };
+		C386B2EE06DA39EF00AF9EFE /* KFileNameValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26A06DA39EF00AF9EFE /* KFileNameValueObject.h */; };
+		C386B2EF06DA39EF00AF9EFE /* KFloatValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26B06DA39EF00AF9EFE /* KFloatValueObject.cpp */; };
+		C386B2F006DA39EF00AF9EFE /* KFloatValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26C06DA39EF00AF9EFE /* KFloatValueObject.h */; };
+		C386B2F106DA39EF00AF9EFE /* KKeyValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26D06DA39EF00AF9EFE /* KKeyValueObject.cpp */; };
+		C386B2F206DA39EF00AF9EFE /* KKeyValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B26E06DA39EF00AF9EFE /* KKeyValueObject.h */; };
+		C386B2F306DA39EF00AF9EFE /* KSizeValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B26F06DA39EF00AF9EFE /* KSizeValueObject.cpp */; };
+		C386B2F406DA39EF00AF9EFE /* KSizeValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27006DA39EF00AF9EFE /* KSizeValueObject.h */; };
+		C386B2F506DA39EF00AF9EFE /* KStringValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27106DA39EF00AF9EFE /* KStringValueObject.cpp */; };
+		C386B2F606DA39EF00AF9EFE /* KStringValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27206DA39EF00AF9EFE /* KStringValueObject.h */; };
+		C386B2F706DA39EF00AF9EFE /* KValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27306DA39EF00AF9EFE /* KValueObject.cpp */; };
+		C386B2F806DA39EF00AF9EFE /* KValueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27406DA39EF00AF9EFE /* KValueObject.h */; };
+		C386B2F906DA39EF00AF9EFE /* KButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27606DA39EF00AF9EFE /* KButton.cpp */; };
+		C386B2FA06DA39EF00AF9EFE /* KButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27706DA39EF00AF9EFE /* KButton.h */; };
+		C386B2FB06DA39EF00AF9EFE /* KButtonBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27806DA39EF00AF9EFE /* KButtonBox.cpp */; };
+		C386B2FC06DA39EF00AF9EFE /* KButtonBox.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27906DA39EF00AF9EFE /* KButtonBox.h */; };
+		C386B2FD06DA39EF00AF9EFE /* KButtonSymbols.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27A06DA39EF00AF9EFE /* KButtonSymbols.h */; };
+		C386B2FE06DA39EF00AF9EFE /* KFileNameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27B06DA39EF00AF9EFE /* KFileNameField.cpp */; };
+		C386B2FF06DA39EF00AF9EFE /* KFileNameField.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27C06DA39EF00AF9EFE /* KFileNameField.h */; };
+		C386B30006DA39EF00AF9EFE /* KFileTreeDir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27D06DA39EF00AF9EFE /* KFileTreeDir.cpp */; };
+		C386B30106DA39EF00AF9EFE /* KFileTreeDir.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B27E06DA39EF00AF9EFE /* KFileTreeDir.h */; };
+		C386B30206DA39EF00AF9EFE /* KFileTreeDirCurrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B27F06DA39EF00AF9EFE /* KFileTreeDirCurrent.cpp */; };
+		C386B30306DA39EF00AF9EFE /* KFileTreeDirCurrent.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28006DA39EF00AF9EFE /* KFileTreeDirCurrent.h */; };
+		C386B30406DA39EF00AF9EFE /* KFileTreeDirUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28106DA39EF00AF9EFE /* KFileTreeDirUp.cpp */; };
+		C386B30506DA39EF00AF9EFE /* KFileTreeDirUp.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28206DA39EF00AF9EFE /* KFileTreeDirUp.h */; };
+		C386B30606DA39EF00AF9EFE /* KFileTreeFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28306DA39EF00AF9EFE /* KFileTreeFile.cpp */; };
+		C386B30706DA39EF00AF9EFE /* KFileTreeFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28406DA39EF00AF9EFE /* KFileTreeFile.h */; };
+		C386B30806DA39EF00AF9EFE /* KFileTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28506DA39EF00AF9EFE /* KFileTreeNode.cpp */; };
+		C386B30906DA39EF00AF9EFE /* KFileTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28606DA39EF00AF9EFE /* KFileTreeNode.h */; };
+		C386B30A06DA39EF00AF9EFE /* KFileTreeWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28706DA39EF00AF9EFE /* KFileTreeWidget.cpp */; };
+		C386B30B06DA39EF00AF9EFE /* KFileTreeWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28806DA39EF00AF9EFE /* KFileTreeWidget.h */; };
+		C386B30C06DA39EF00AF9EFE /* KIconButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28906DA39EF00AF9EFE /* KIconButton.cpp */; };
+		C386B30D06DA39EF00AF9EFE /* KIconButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28A06DA39EF00AF9EFE /* KIconButton.h */; };
+		C386B30E06DA39EF00AF9EFE /* KKeySequenceField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28B06DA39EF00AF9EFE /* KKeySequenceField.cpp */; };
+		C386B30F06DA39EF00AF9EFE /* KKeySequenceField.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28C06DA39EF00AF9EFE /* KKeySequenceField.h */; };
+		C386B31006DA39EF00AF9EFE /* KLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28D06DA39EF00AF9EFE /* KLabel.cpp */; };
+		C386B31106DA39EF00AF9EFE /* KLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B28E06DA39EF00AF9EFE /* KLabel.h */; };
+		C386B31206DA39EF00AF9EFE /* KMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B28F06DA39EF00AF9EFE /* KMenu.cpp */; };
+		C386B31306DA39EF00AF9EFE /* KMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29006DA39EF00AF9EFE /* KMenu.h */; };
+		C386B31406DA39EF00AF9EFE /* KMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29106DA39EF00AF9EFE /* KMenuItem.cpp */; };
+		C386B31506DA39EF00AF9EFE /* KMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29206DA39EF00AF9EFE /* KMenuItem.h */; };
+		C386B31606DA39EF00AF9EFE /* KNumberField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29306DA39EF00AF9EFE /* KNumberField.cpp */; };
+		C386B31706DA39EF00AF9EFE /* KNumberField.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29406DA39EF00AF9EFE /* KNumberField.h */; };
+		C386B31806DA39EF00AF9EFE /* KProjectionWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29506DA39EF00AF9EFE /* KProjectionWidget.cpp */; };
+		C386B31906DA39EF00AF9EFE /* KProjectionWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29606DA39EF00AF9EFE /* KProjectionWidget.h */; };
+		C386B31A06DA39EF00AF9EFE /* KStatusMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29706DA39EF00AF9EFE /* KStatusMenuItem.cpp */; };
+		C386B31B06DA39EF00AF9EFE /* KStatusMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29806DA39EF00AF9EFE /* KStatusMenuItem.h */; };
+		C386B31C06DA39EF00AF9EFE /* KSubMenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29906DA39EF00AF9EFE /* KSubMenuItem.cpp */; };
+		C386B31D06DA39EF00AF9EFE /* KSubMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29A06DA39EF00AF9EFE /* KSubMenuItem.h */; };
+		C386B31E06DA39EF00AF9EFE /* KTextField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29B06DA39EF00AF9EFE /* KTextField.cpp */; };
+		C386B31F06DA39EF00AF9EFE /* KTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29C06DA39EF00AF9EFE /* KTextField.h */; };
+		C386B32006DA39EF00AF9EFE /* KTextWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29D06DA39EF00AF9EFE /* KTextWidget.cpp */; };
+		C386B32106DA39EF00AF9EFE /* KTextWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B29E06DA39EF00AF9EFE /* KTextWidget.h */; };
+		C386B32206DA39EF00AF9EFE /* KToggleButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B29F06DA39EF00AF9EFE /* KToggleButton.cpp */; };
+		C386B32306DA39EF00AF9EFE /* KToggleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2A006DA39EF00AF9EFE /* KToggleButton.h */; };
+		C386B32406DA39EF00AF9EFE /* KWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2A106DA39EF00AF9EFE /* KWidget.cpp */; };
+		C386B32506DA39EF00AF9EFE /* KWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2A206DA39EF00AF9EFE /* KWidget.h */; };
+		C386B32606DA39EF00AF9EFE /* KWidgetArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2A306DA39EF00AF9EFE /* KWidgetArray.cpp */; };
+		C386B32706DA39EF00AF9EFE /* KWidgetArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2A406DA39EF00AF9EFE /* KWidgetArray.h */; };
+		C386B32806DA39EF00AF9EFE /* KConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2A606DA39EF00AF9EFE /* KConsole.cpp */; };
+		C386B32906DA39EF00AF9EFE /* KConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2A706DA39EF00AF9EFE /* KConsole.h */; };
+		C386B32A06DA39EF00AF9EFE /* KFileTreeWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2A806DA39EF00AF9EFE /* KFileTreeWindow.cpp */; };
+		C386B32B06DA39EF00AF9EFE /* KFileTreeWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2A906DA39EF00AF9EFE /* KFileTreeWindow.h */; };
+		C386B32C06DA39EF00AF9EFE /* KMenuWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2AA06DA39EF00AF9EFE /* KMenuWindow.cpp */; };
+		C386B32D06DA39EF00AF9EFE /* KMenuWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2AB06DA39EF00AF9EFE /* KMenuWindow.h */; };
+		C386B32E06DA39EF00AF9EFE /* KMessagePanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2AC06DA39EF00AF9EFE /* KMessagePanel.cpp */; };
+		C386B32F06DA39EF00AF9EFE /* KMessagePanel.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2AD06DA39EF00AF9EFE /* KMessagePanel.h */; };
+		C386B33006DA39EF00AF9EFE /* KPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2AE06DA39EF00AF9EFE /* KPopupMenu.cpp */; };
+		C386B33106DA39EF00AF9EFE /* KPopupMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2AF06DA39EF00AF9EFE /* KPopupMenu.h */; };
+		C386B33206DA39EF00AF9EFE /* KWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C386B2B006DA39EF00AF9EFE /* KWindow.cpp */; };
+		C386B33306DA39EF00AF9EFE /* KWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = C386B2B106DA39EF00AF9EFE /* KWindow.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C35DD08D06DB73A80012D687 /* KConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnector.cpp; sourceTree = "<group>"; };
+		C35DD08E06DB73A80012D687 /* KConnector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnector.h; sourceTree = "<group>"; };
+		C35DD08F06DB73A80012D687 /* KConnectorAttributeIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorAttributeIn.cpp; sourceTree = "<group>"; };
+		C35DD09006DB73A80012D687 /* KConnectorAttributeIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorAttributeIn.h; sourceTree = "<group>"; };
+		C35DD09106DB73A80012D687 /* KConnectorAttributeOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorAttributeOut.cpp; sourceTree = "<group>"; };
+		C35DD09206DB73A80012D687 /* KConnectorAttributeOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorAttributeOut.h; sourceTree = "<group>"; };
+		C35DD09306DB73A80012D687 /* KConnectorDiscreteValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorDiscreteValueInOut.h; sourceTree = "<group>"; };
+		C35DD09406DB73A80012D687 /* KConnectorIntValueInOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorIntValueInOut.cpp; sourceTree = "<group>"; };
+		C35DD09506DB73A80012D687 /* KConnectorIntValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorIntValueInOut.h; sourceTree = "<group>"; };
+		C35DD09606DB73A80012D687 /* KConnectorMatrixIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorMatrixIn.cpp; sourceTree = "<group>"; };
+		C35DD09706DB73A80012D687 /* KConnectorMatrixIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorMatrixIn.h; sourceTree = "<group>"; };
+		C35DD09806DB73A80012D687 /* KConnectorMatrixOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorMatrixOut.cpp; sourceTree = "<group>"; };
+		C35DD09906DB73A80012D687 /* KConnectorMatrixOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorMatrixOut.h; sourceTree = "<group>"; };
+		C35DD09A06DB73A80012D687 /* KConnectorModulatorIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorModulatorIn.cpp; sourceTree = "<group>"; };
+		C35DD09B06DB73A80012D687 /* KConnectorModulatorIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorModulatorIn.h; sourceTree = "<group>"; };
+		C35DD09C06DB73A80012D687 /* KConnectorModulatorOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorModulatorOut.cpp; sourceTree = "<group>"; };
+		C35DD09D06DB73A80012D687 /* KConnectorModulatorOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorModulatorOut.h; sourceTree = "<group>"; };
+		C35DD09E06DB73A80012D687 /* KConnectorParticleIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorParticleIn.cpp; sourceTree = "<group>"; };
+		C35DD09F06DB73A80012D687 /* KConnectorParticleIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorParticleIn.h; sourceTree = "<group>"; };
+		C35DD0A006DB73A80012D687 /* KConnectorParticleOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorParticleOut.cpp; sourceTree = "<group>"; };
+		C35DD0A106DB73A80012D687 /* KConnectorParticleOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorParticleOut.h; sourceTree = "<group>"; };
+		C35DD0A206DB73A80012D687 /* KConnectorSceneIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorSceneIn.cpp; sourceTree = "<group>"; };
+		C35DD0A306DB73A80012D687 /* KConnectorSceneIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorSceneIn.h; sourceTree = "<group>"; };
+		C35DD0A406DB73A80012D687 /* KConnectorSceneOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorSceneOut.cpp; sourceTree = "<group>"; };
+		C35DD0A506DB73A80012D687 /* KConnectorSceneOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorSceneOut.h; sourceTree = "<group>"; };
+		C35DD0A606DB73A80012D687 /* KConnectorTextureBatchIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureBatchIn.cpp; sourceTree = "<group>"; };
+		C35DD0A706DB73A80012D687 /* KConnectorTextureBatchIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureBatchIn.h; sourceTree = "<group>"; };
+		C35DD0A806DB73A80012D687 /* KConnectorTextureBatchOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureBatchOut.cpp; sourceTree = "<group>"; };
+		C35DD0A906DB73A80012D687 /* KConnectorTextureBatchOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureBatchOut.h; sourceTree = "<group>"; };
+		C35DD0AA06DB73A80012D687 /* KConnectorTextureFileIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureFileIn.cpp; sourceTree = "<group>"; };
+		C35DD0AB06DB73A80012D687 /* KConnectorTextureFileIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureFileIn.h; sourceTree = "<group>"; };
+		C35DD0AC06DB73A80012D687 /* KConnectorTextureFileOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureFileOut.cpp; sourceTree = "<group>"; };
+		C35DD0AD06DB73A80012D687 /* KConnectorTextureFileOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureFileOut.h; sourceTree = "<group>"; };
+		C35DD0AE06DB73A80012D687 /* KConnectorTextureVersionIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureVersionIn.cpp; sourceTree = "<group>"; };
+		C35DD0AF06DB73A80012D687 /* KConnectorTextureVersionIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureVersionIn.h; sourceTree = "<group>"; };
+		C35DD0B006DB73A80012D687 /* KConnectorTextureVersionOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorTextureVersionOut.cpp; sourceTree = "<group>"; };
+		C35DD0B106DB73A80012D687 /* KConnectorTextureVersionOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorTextureVersionOut.h; sourceTree = "<group>"; };
+		C35DD0B206DB73A80012D687 /* KConnectorValueIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueIn.cpp; sourceTree = "<group>"; };
+		C35DD0B306DB73A80012D687 /* KConnectorValueIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorValueIn.h; sourceTree = "<group>"; };
+		C35DD0B406DB73A80012D687 /* KConnectorValueInOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueInOut.cpp; sourceTree = "<group>"; };
+		C35DD0B506DB73A80012D687 /* KConnectorValueInOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorValueInOut.h; sourceTree = "<group>"; };
+		C35DD0B606DB73A80012D687 /* KConnectorValueOut.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConnectorValueOut.cpp; sourceTree = "<group>"; };
+		C35DD0B706DB73A80012D687 /* KConnectorValueOut.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConnectorValueOut.h; sourceTree = "<group>"; };
+		C35DD0B806DB73A80012D687 /* KValueConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KValueConnector.cpp; sourceTree = "<group>"; };
+		C35DD0B906DB73A80012D687 /* KValueConnector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KValueConnector.h; sourceTree = "<group>"; };
+		C35DD0BB06DB73A80012D687 /* KHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KHandle.cpp; sourceTree = "<group>"; };
+		C35DD0BC06DB73A80012D687 /* KHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KHandle.h; sourceTree = "<group>"; };
+		C35DD0BD06DB73A80012D687 /* KHandlesObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KHandlesObject.cpp; sourceTree = "<group>"; };
+		C35DD0BE06DB73A80012D687 /* KHandlesObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KHandlesObject.h; sourceTree = "<group>"; };
+		C35DD0BF06DB73A80012D687 /* KMatrixHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandle.cpp; sourceTree = "<group>"; };
+		C35DD0C006DB73A80012D687 /* KMatrixHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrixHandle.h; sourceTree = "<group>"; };
+		C35DD0C106DB73A80012D687 /* KMatrixHandleRotate.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleRotate.cpp; sourceTree = "<group>"; };
+		C35DD0C206DB73A80012D687 /* KMatrixHandleRotate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleRotate.h; sourceTree = "<group>"; };
+		C35DD0C306DB73A80012D687 /* KMatrixHandleScale.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleScale.cpp; sourceTree = "<group>"; };
+		C35DD0C406DB73A80012D687 /* KMatrixHandleScale.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleScale.h; sourceTree = "<group>"; };
+		C35DD0C506DB73A80012D687 /* KMatrixHandleTranslate.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixHandleTranslate.cpp; sourceTree = "<group>"; };
+		C35DD0C606DB73A80012D687 /* KMatrixHandleTranslate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrixHandleTranslate.h; sourceTree = "<group>"; };
+		C35DD0C706DB73A80012D687 /* KMoveHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMoveHandle.cpp; sourceTree = "<group>"; };
+		C35DD0C806DB73A80012D687 /* KMoveHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMoveHandle.h; sourceTree = "<group>"; };
+		C35DD0C906DB73A80012D687 /* KOneDirectionHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KOneDirectionHandle.cpp; sourceTree = "<group>"; };
+		C35DD0CA06DB73A80012D687 /* KOneDirectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KOneDirectionHandle.h; sourceTree = "<group>"; };
+		C35DD0CB06DB73A80012D687 /* KRotationHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KRotationHandle.cpp; sourceTree = "<group>"; };
+		C35DD0CC06DB73A80012D687 /* KRotationHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KRotationHandle.h; sourceTree = "<group>"; };
+		C35DD0CD06DB73A80012D687 /* KScaleHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KScaleHandle.cpp; sourceTree = "<group>"; };
+		C35DD0CE06DB73A80012D687 /* KScaleHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KScaleHandle.h; sourceTree = "<group>"; };
+		C35DD0CF06DB73A80012D687 /* KTwoDirectionHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTwoDirectionHandle.cpp; sourceTree = "<group>"; };
+		C35DD0D006DB73A80012D687 /* KTwoDirectionHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTwoDirectionHandle.h; sourceTree = "<group>"; };
+		C35DD0D106DB73A80012D687 /* KVertexHandle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KVertexHandle.cpp; sourceTree = "<group>"; };
+		C35DD0D206DB73A80012D687 /* KVertexHandle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KVertexHandle.h; sourceTree = "<group>"; };
+		C35DD0D306DB73A80012D687 /* KCameraHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KCameraHandler.cpp; sourceTree = "<group>"; };
+		C35DD0D406DB73A80012D687 /* KCameraHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KCameraHandler.h; sourceTree = "<group>"; };
+		C35DD0D506DB73A80012D687 /* KController.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KController.cpp; sourceTree = "<group>"; };
+		C35DD0D606DB73A80012D687 /* KController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KController.h; sourceTree = "<group>"; };
+		C35DD0D706DB73A80012D687 /* KMain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMain.cpp; sourceTree = "<group>"; };
+		C35DD0D806DB73A80012D687 /* KMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMain.h; sourceTree = "<group>"; };
+		C35DD0D906DB73A80012D687 /* KMainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMainMenu.cpp; sourceTree = "<group>"; };
+		C35DD0DA06DB73A80012D687 /* KMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMainMenu.h; sourceTree = "<group>"; };
+		C35DD0DB06DB73A80012D687 /* KModules.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModules.cpp; sourceTree = "<group>"; };
+		C35DD0DC06DB73A80012D687 /* KModules.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModules.h; sourceTree = "<group>"; };
+		C35DD0DD06DB73A80012D687 /* KObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KObjects.cpp; sourceTree = "<group>"; };
+		C35DD0DE06DB73A80012D687 /* KObjects.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KObjects.h; sourceTree = "<group>"; };
+		C35DD0DF06DB73A80012D687 /* KPreferences.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KPreferences.cpp; sourceTree = "<group>"; };
+		C35DD0E006DB73A80012D687 /* KPreferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KPreferences.h; sourceTree = "<group>"; };
+		C35DD0E106DB73A90012D687 /* KTextureSets.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureSets.cpp; sourceTree = "<group>"; };
+		C35DD0E206DB73A90012D687 /* KTextureSets.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextureSets.h; sourceTree = "<group>"; };
+		C35DD0E306DB73A90012D687 /* main.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		C35DD0E406DB73A90012D687 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C35DD0E706DB73A90012D687 /* KAttributeModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KAttributeModule.cpp; sourceTree = "<group>"; };
+		C35DD0E806DB73A90012D687 /* KAttributeModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KAttributeModule.h; sourceTree = "<group>"; };
+		C35DD0E906DB73A90012D687 /* KModuleAttributeHub.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleAttributeHub.cpp; sourceTree = "<group>"; };
+		C35DD0EA06DB73A90012D687 /* KModuleAttributeHub.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleAttributeHub.h; sourceTree = "<group>"; };
+		C35DD0EB06DB73A90012D687 /* KModuleBlend.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleBlend.cpp; sourceTree = "<group>"; };
+		C35DD0EC06DB73A90012D687 /* KModuleBlend.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleBlend.h; sourceTree = "<group>"; };
+		C35DD0ED06DB73A90012D687 /* KModuleColor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleColor.cpp; sourceTree = "<group>"; };
+		C35DD0EE06DB73A90012D687 /* KModuleColor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleColor.h; sourceTree = "<group>"; };
+		C35DD0EF06DB73A90012D687 /* KModuleColorMask.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleColorMask.cpp; sourceTree = "<group>"; };
+		C35DD0F006DB73A90012D687 /* KModuleColorMask.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleColorMask.h; sourceTree = "<group>"; };
+		C35DD0F106DB73A90012D687 /* KModuleFog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleFog.cpp; sourceTree = "<group>"; };
+		C35DD0F206DB73A90012D687 /* KModuleFog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleFog.h; sourceTree = "<group>"; };
+		C35DD0F306DB73A90012D687 /* KModuleMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMaterial.cpp; sourceTree = "<group>"; };
+		C35DD0F406DB73A90012D687 /* KModuleMaterial.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleMaterial.h; sourceTree = "<group>"; };
+		C35DD0F506DB73A90012D687 /* KModuleTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTexture.cpp; sourceTree = "<group>"; };
+		C35DD0F606DB73A90012D687 /* KModuleTexture.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleTexture.h; sourceTree = "<group>"; };
+		C35DD0F706DB73A90012D687 /* KModuleTextureFile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTextureFile.cpp; sourceTree = "<group>"; };
+		C35DD0F806DB73A90012D687 /* KModuleTextureFile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleTextureFile.h; sourceTree = "<group>"; };
+		C35DD0F906DB73A90012D687 /* KModuleTextureMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTextureMatrix.cpp; sourceTree = "<group>"; };
+		C35DD0FA06DB73A90012D687 /* KModuleTextureMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleTextureMatrix.h; sourceTree = "<group>"; };
+		C35DD0FB06DB73A90012D687 /* KModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModule.cpp; sourceTree = "<group>"; };
+		C35DD0FC06DB73A90012D687 /* KModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModule.h; sourceTree = "<group>"; };
+		C35DD0FD06DB73A90012D687 /* KModuleInspector.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleInspector.cpp; sourceTree = "<group>"; };
+		C35DD0FE06DB73A90012D687 /* KModuleInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleInspector.h; sourceTree = "<group>"; };
+		C35DD0FF06DB73A90012D687 /* KScene.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KScene.cpp; sourceTree = "<group>"; };
+		C35DD10006DB73A90012D687 /* KScene.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KScene.h; sourceTree = "<group>"; };
+		C35DD10106DB73A90012D687 /* KSceneSet.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSceneSet.cpp; sourceTree = "<group>"; };
+		C35DD10206DB73A90012D687 /* KSceneSet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSceneSet.h; sourceTree = "<group>"; };
+		C35DD10306DB73A90012D687 /* KTextureBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureBatch.cpp; sourceTree = "<group>"; };
+		C35DD10406DB73A90012D687 /* KTextureBatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextureBatch.h; sourceTree = "<group>"; };
+		C35DD10506DB73A90012D687 /* KTextureFile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureFile.cpp; sourceTree = "<group>"; };
+		C35DD10606DB73A90012D687 /* KTextureFile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextureFile.h; sourceTree = "<group>"; };
+		C35DD10706DB73A90012D687 /* KTextureModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureModule.cpp; sourceTree = "<group>"; };
+		C35DD10806DB73A90012D687 /* KTextureModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextureModule.h; sourceTree = "<group>"; };
+		C35DD10906DB73A90012D687 /* KTextureSet.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextureSet.cpp; sourceTree = "<group>"; };
+		C35DD10A06DB73A90012D687 /* KTextureSet.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextureSet.h; sourceTree = "<group>"; };
+		C35DD10C06DB73A90012D687 /* KHubModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KHubModule.cpp; sourceTree = "<group>"; };
+		C35DD10D06DB73A90012D687 /* KHubModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KHubModule.h; sourceTree = "<group>"; };
+		C35DD10E06DB73A90012D687 /* KMatrixModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrixModule.cpp; sourceTree = "<group>"; };
+		C35DD10F06DB73A90012D687 /* KMatrixModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrixModule.h; sourceTree = "<group>"; };
+		C35DD11006DB73A90012D687 /* KModuleGoto.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleGoto.cpp; sourceTree = "<group>"; };
+		C35DD11106DB73A90012D687 /* KModuleGoto.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleGoto.h; sourceTree = "<group>"; };
+		C35DD11206DB73A90012D687 /* KModuleIdentity.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleIdentity.cpp; sourceTree = "<group>"; };
+		C35DD11306DB73A90012D687 /* KModuleIdentity.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleIdentity.h; sourceTree = "<group>"; };
+		C35DD11406DB73A90012D687 /* KModuleLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLabel.cpp; sourceTree = "<group>"; };
+		C35DD11506DB73A90012D687 /* KModuleLabel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleLabel.h; sourceTree = "<group>"; };
+		C35DD11606DB73A90012D687 /* KModuleMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMatrix.cpp; sourceTree = "<group>"; };
+		C35DD11706DB73A90012D687 /* KModuleMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleMatrix.h; sourceTree = "<group>"; };
+		C35DD11806DB73A90012D687 /* KModuleMatrixHub.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleMatrixHub.cpp; sourceTree = "<group>"; };
+		C35DD11906DB73A90012D687 /* KModuleMatrixHub.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleMatrixHub.h; sourceTree = "<group>"; };
+		C35DD11A06DB73A90012D687 /* KModuleRotate.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleRotate.cpp; sourceTree = "<group>"; };
+		C35DD11B06DB73A90012D687 /* KModuleRotate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleRotate.h; sourceTree = "<group>"; };
+		C35DD11C06DB73A90012D687 /* KModuleScale.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleScale.cpp; sourceTree = "<group>"; };
+		C35DD11D06DB73A90012D687 /* KModuleScale.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleScale.h; sourceTree = "<group>"; };
+		C35DD11E06DB73A90012D687 /* KModuleSize.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleSize.cpp; sourceTree = "<group>"; };
+		C35DD11F06DB73A90012D687 /* KModuleSize.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleSize.h; sourceTree = "<group>"; };
+		C35DD12006DB73A90012D687 /* KModuleTranslate.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTranslate.cpp; sourceTree = "<group>"; };
+		C35DD12106DB73A90012D687 /* KModuleTranslate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleTranslate.h; sourceTree = "<group>"; };
+		C35DD12306DB73A90012D687 /* KModuleCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleCamera.cpp; sourceTree = "<group>"; };
+		C35DD12406DB73A90012D687 /* KModuleCamera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleCamera.h; sourceTree = "<group>"; };
+		C35DD12506DB73A90012D687 /* KModuleLight.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLight.cpp; sourceTree = "<group>"; };
+		C35DD12606DB73A90012D687 /* KModuleLight.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleLight.h; sourceTree = "<group>"; };
+		C35DD12706DB73A90012D687 /* KModuleLSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleLSystem.cpp; sourceTree = "<group>"; };
+		C35DD12806DB73A90012D687 /* KModuleLSystem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleLSystem.h; sourceTree = "<group>"; };
+		C35DD12906DB73A90012D687 /* KModuleObjectBox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectBox.cpp; sourceTree = "<group>"; };
+		C35DD12A06DB73A90012D687 /* KModuleObjectBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectBox.h; sourceTree = "<group>"; };
+		C35DD12B06DB73A90012D687 /* KModuleObjectCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectCylinder.cpp; sourceTree = "<group>"; };
+		C35DD12C06DB73A90012D687 /* KModuleObjectCylinder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectCylinder.h; sourceTree = "<group>"; };
+		C35DD12D06DB73A90012D687 /* KModuleObjectDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectDisk.cpp; sourceTree = "<group>"; };
+		C35DD12E06DB73A90012D687 /* KModuleObjectDisk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectDisk.h; sourceTree = "<group>"; };
+		C35DD12F06DB73A90012D687 /* KModuleObjectFace.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectFace.cpp; sourceTree = "<group>"; };
+		C35DD13006DB73A90012D687 /* KModuleObjectFace.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectFace.h; sourceTree = "<group>"; };
+		C35DD13106DB73A90012D687 /* KModuleObjectLandscape.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectLandscape.cpp; sourceTree = "<group>"; };
+		C35DD13206DB73A90012D687 /* KModuleObjectLandscape.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectLandscape.h; sourceTree = "<group>"; };
+		C35DD13306DB73A90012D687 /* KModuleObjectPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectPoint.cpp; sourceTree = "<group>"; };
+		C35DD13406DB73A90012D687 /* KModuleObjectPoint.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectPoint.h; sourceTree = "<group>"; };
+		C35DD13506DB73A90012D687 /* KModuleObjectSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectSphere.cpp; sourceTree = "<group>"; };
+		C35DD13606DB73A90012D687 /* KModuleObjectSphere.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectSphere.h; sourceTree = "<group>"; };
+		C35DD13706DB73A90012D687 /* KModuleObjectText.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleObjectText.cpp; sourceTree = "<group>"; };
+		C35DD13806DB73A90012D687 /* KModuleObjectText.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleObjectText.h; sourceTree = "<group>"; };
+		C35DD13906DB73A90012D687 /* KModuleParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleParticle.cpp; sourceTree = "<group>"; };
+		C35DD13A06DB73A90012D687 /* KModuleParticle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleParticle.h; sourceTree = "<group>"; };
+		C35DD13B06DB73A90012D687 /* KModuleParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleParticleEmitter.cpp; sourceTree = "<group>"; };
+		C35DD13C06DB73A90012D687 /* KModuleParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleParticleEmitter.h; sourceTree = "<group>"; };
+		C35DD13D06DB73A90012D687 /* KModuleVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleVertex.cpp; sourceTree = "<group>"; };
+		C35DD13E06DB73A90012D687 /* KModuleVertex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleVertex.h; sourceTree = "<group>"; };
+		C35DD13F06DB73A90012D687 /* KObjectModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KObjectModule.cpp; sourceTree = "<group>"; };
+		C35DD14006DB73A90012D687 /* KObjectModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KObjectModule.h; sourceTree = "<group>"; };
+		C35DD14206DB73A90012D687 /* KActivationValueModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KActivationValueModule.cpp; sourceTree = "<group>"; };
+		C35DD14306DB73A90012D687 /* KActivationValueModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KActivationValueModule.h; sourceTree = "<group>"; };
+		C35DD14406DB73A90012D687 /* KFilterModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFilterModule.cpp; sourceTree = "<group>"; };
+		C35DD14506DB73A90012D687 /* KFilterModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFilterModule.h; sourceTree = "<group>"; };
+		C35DD14606DB73A90012D687 /* KGlobalModulator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KGlobalModulator.cpp; sourceTree = "<group>"; };
+		C35DD14706DB73A90012D687 /* KGlobalModulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KGlobalModulator.h; sourceTree = "<group>"; };
+		C35DD14806DB73A90012D687 /* KModulator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModulator.cpp; sourceTree = "<group>"; };
+		C35DD14906DB73A90012D687 /* KModulator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModulator.h; sourceTree = "<group>"; };
+		C35DD14A06DB73A90012D687 /* KModuleAccu.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleAccu.cpp; sourceTree = "<group>"; };
+		C35DD14B06DB73A90012D687 /* KModuleAccu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleAccu.h; sourceTree = "<group>"; };
+		C35DD14C06DB73A90012D687 /* KModuleRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleRandom.cpp; sourceTree = "<group>"; };
+		C35DD14D06DB73A90012D687 /* KModuleRandom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleRandom.h; sourceTree = "<group>"; };
+		C35DD14E06DB73A90012D687 /* KModuleSwitch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleSwitch.cpp; sourceTree = "<group>"; };
+		C35DD14F06DB73A90012D687 /* KModuleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleSwitch.h; sourceTree = "<group>"; };
+		C35DD15006DB73A90012D687 /* KModuleTrigger.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleTrigger.cpp; sourceTree = "<group>"; };
+		C35DD15106DB73A90012D687 /* KModuleTrigger.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleTrigger.h; sourceTree = "<group>"; };
+		C35DD15206DB73A90012D687 /* KModuleVariable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KModuleVariable.cpp; sourceTree = "<group>"; };
+		C35DD15306DB73A90012D687 /* KModuleVariable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KModuleVariable.h; sourceTree = "<group>"; };
+		C35DD15406DB73A90012D687 /* KOperationModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KOperationModule.cpp; sourceTree = "<group>"; };
+		C35DD15506DB73A90012D687 /* KOperationModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KOperationModule.h; sourceTree = "<group>"; };
+		C35DD15606DB73A90012D687 /* KSequenceGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSequenceGenerator.cpp; sourceTree = "<group>"; };
+		C35DD15706DB73A90012D687 /* KSequenceGenerator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSequenceGenerator.h; sourceTree = "<group>"; };
+		C35DD15806DB73A90012D687 /* KValueModule.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KValueModule.cpp; sourceTree = "<group>"; };
+		C35DD15906DB73A90012D687 /* KValueModule.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KValueModule.h; sourceTree = "<group>"; };
+		C35DD15B06DB73A90012D687 /* KBox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KBox.cpp; sourceTree = "<group>"; };
+		C35DD15C06DB73A90012D687 /* KBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KBox.h; sourceTree = "<group>"; };
+		C35DD15D06DB73A90012D687 /* KCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KCamera.cpp; sourceTree = "<group>"; };
+		C35DD15E06DB73A90012D687 /* KCamera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KCamera.h; sourceTree = "<group>"; };
+		C35DD15F06DB73A90012D687 /* KCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KCylinder.cpp; sourceTree = "<group>"; };
+		C35DD16006DB73A90012D687 /* KCylinder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KCylinder.h; sourceTree = "<group>"; };
+		C35DD16106DB73A90012D687 /* KDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KDisk.cpp; sourceTree = "<group>"; };
+		C35DD16206DB73A90012D687 /* KDisk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KDisk.h; sourceTree = "<group>"; };
+		C35DD16306DB73A90012D687 /* KFace.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFace.cpp; sourceTree = "<group>"; };
+		C35DD16406DB73A90012D687 /* KFace.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFace.h; sourceTree = "<group>"; };
+		C35DD16506DB73A90012D687 /* KLandscape.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KLandscape.cpp; sourceTree = "<group>"; };
+		C35DD16606DB73A90012D687 /* KLandscape.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KLandscape.h; sourceTree = "<group>"; };
+		C35DD16706DB73A90012D687 /* KLight.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KLight.cpp; sourceTree = "<group>"; };
+		C35DD16806DB73A90012D687 /* KLight.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KLight.h; sourceTree = "<group>"; };
+		C35DD16906DB73A90012D687 /* KParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KParticle.cpp; sourceTree = "<group>"; };
+		C35DD16A06DB73A90012D687 /* KParticle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KParticle.h; sourceTree = "<group>"; };
+		C35DD16B06DB73A90012D687 /* KSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSphere.cpp; sourceTree = "<group>"; };
+		C35DD16C06DB73A90012D687 /* KSphere.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSphere.h; sourceTree = "<group>"; };
+		C35DD16D06DB73A90012D687 /* KText.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KText.cpp; sourceTree = "<group>"; };
+		C35DD16E06DB73A90012D687 /* KText.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KText.h; sourceTree = "<group>"; };
+		C35DD16F06DB73A90012D687 /* KVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KVertex.cpp; sourceTree = "<group>"; };
+		C35DD17006DB73A90012D687 /* KVertex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KVertex.h; sourceTree = "<group>"; };
+		C368576206D8CD1300672963 /* kodisein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kodisein.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36857A306D8CF1400672963 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		C386B1C606DA362A00AF9EFE /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		C386B22B06DA39EF00AF9EFE /* KEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KEventHandler.cpp; sourceTree = "<group>"; };
+		C386B22C06DA39EF00AF9EFE /* KEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KEventHandler.h; sourceTree = "<group>"; };
+		C386B22D06DA39EF00AF9EFE /* KFileHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileHandler.cpp; sourceTree = "<group>"; };
+		C386B22E06DA39EF00AF9EFE /* KFileHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileHandler.h; sourceTree = "<group>"; };
+		C386B22F06DA39EF00AF9EFE /* KKeyActionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyActionHandler.cpp; sourceTree = "<group>"; };
+		C386B23006DA39EF00AF9EFE /* KKeyActionHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeyActionHandler.h; sourceTree = "<group>"; };
+		C386B23106DA39EF00AF9EFE /* KKeyHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyHandler.cpp; sourceTree = "<group>"; };
+		C386B23206DA39EF00AF9EFE /* KKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeyHandler.h; sourceTree = "<group>"; };
+		C386B23306DA39EF00AF9EFE /* KKeyRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyRecorder.cpp; sourceTree = "<group>"; };
+		C386B23406DA39EF00AF9EFE /* KKeyRecorder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeyRecorder.h; sourceTree = "<group>"; };
+		C386B23506DA39EF00AF9EFE /* KPickable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KPickable.cpp; sourceTree = "<group>"; };
+		C386B23606DA39EF00AF9EFE /* KPickable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KPickable.h; sourceTree = "<group>"; };
+		C386B23706DA39EF00AF9EFE /* KPickHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KPickHandler.cpp; sourceTree = "<group>"; };
+		C386B23806DA39EF00AF9EFE /* KPickHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KPickHandler.h; sourceTree = "<group>"; };
+		C386B23906DA39EF00AF9EFE /* KSelectable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSelectable.cpp; sourceTree = "<group>"; };
+		C386B23A06DA39EF00AF9EFE /* KSelectable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSelectable.h; sourceTree = "<group>"; };
+		C386B23B06DA39EF00AF9EFE /* KSelectionHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSelectionHandler.cpp; sourceTree = "<group>"; };
+		C386B23C06DA39EF00AF9EFE /* KSelectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSelectionHandler.h; sourceTree = "<group>"; };
+		C386B23E06DA39EF00AF9EFE /* KFileTools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTools.cpp; sourceTree = "<group>"; };
+		C386B23F06DA39EF00AF9EFE /* KFileTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTools.h; sourceTree = "<group>"; };
+		C386B24006DA39EF00AF9EFE /* KIntrospection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KIntrospection.cpp; sourceTree = "<group>"; };
+		C386B24106DA39EF00AF9EFE /* KIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KIntrospection.h; sourceTree = "<group>"; };
+		C386B24206DA39EF00AF9EFE /* KKeySymbols.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeySymbols.h; sourceTree = "<group>"; };
+		C386B24306DA39EF00AF9EFE /* KKeyTools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyTools.cpp; sourceTree = "<group>"; };
+		C386B24406DA39EF00AF9EFE /* KKeyTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeyTools.h; sourceTree = "<group>"; };
+		C386B24506DA39EF00AF9EFE /* KNotificationObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KNotificationObject.cpp; sourceTree = "<group>"; };
+		C386B24606DA39EF00AF9EFE /* KNotificationObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KNotificationObject.h; sourceTree = "<group>"; };
+		C386B24706DA39EF00AF9EFE /* KStringTools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KStringTools.cpp; sourceTree = "<group>"; };
+		C386B24806DA39EF00AF9EFE /* KStringTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KStringTools.h; sourceTree = "<group>"; };
+		C386B24906DA39EF00AF9EFE /* KTools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTools.cpp; sourceTree = "<group>"; };
+		C386B24A06DA39EF00AF9EFE /* KTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTools.h; sourceTree = "<group>"; };
+		C386B24B06DA39EF00AF9EFE /* KXMLTools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KXMLTools.cpp; sourceTree = "<group>"; };
+		C386B24C06DA39EF00AF9EFE /* KXMLTools.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KXMLTools.h; sourceTree = "<group>"; };
+		C386B24D06DA39EF00AF9EFE /* vvector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = vvector.h; sourceTree = "<group>"; };
+		C386B24F06DA39EF00AF9EFE /* KColor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KColor.cpp; sourceTree = "<group>"; };
+		C386B25006DA39EF00AF9EFE /* KColor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KColor.h; sourceTree = "<group>"; };
+		C386B25106DA39EF00AF9EFE /* KKey.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKey.cpp; sourceTree = "<group>"; };
+		C386B25206DA39EF00AF9EFE /* KKey.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKey.h; sourceTree = "<group>"; };
+		C386B25306DA39EF00AF9EFE /* KLightingProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KLightingProjection.cpp; sourceTree = "<group>"; };
+		C386B25406DA39EF00AF9EFE /* KLightingProjection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KLightingProjection.h; sourceTree = "<group>"; };
+		C386B25506DA39EF00AF9EFE /* KMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMatrix.cpp; sourceTree = "<group>"; };
+		C386B25606DA39EF00AF9EFE /* KMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMatrix.h; sourceTree = "<group>"; };
+		C386B25706DA39EF00AF9EFE /* KOrthographicProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KOrthographicProjection.cpp; sourceTree = "<group>"; };
+		C386B25806DA39EF00AF9EFE /* KOrthographicProjection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KOrthographicProjection.h; sourceTree = "<group>"; };
+		C386B25906DA39EF00AF9EFE /* KPerspectiveProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KPerspectiveProjection.cpp; sourceTree = "<group>"; };
+		C386B25A06DA39EF00AF9EFE /* KPerspectiveProjection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KPerspectiveProjection.h; sourceTree = "<group>"; };
+		C386B25B06DA39EF00AF9EFE /* KProjection.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KProjection.cpp; sourceTree = "<group>"; };
+		C386B25C06DA39EF00AF9EFE /* KProjection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KProjection.h; sourceTree = "<group>"; };
+		C386B25D06DA39EF00AF9EFE /* KSeparatedMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSeparatedMatrix.cpp; sourceTree = "<group>"; };
+		C386B25E06DA39EF00AF9EFE /* KSeparatedMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSeparatedMatrix.h; sourceTree = "<group>"; };
+		C386B25F06DA39EF00AF9EFE /* KTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTexture.cpp; sourceTree = "<group>"; };
+		C386B26006DA39EF00AF9EFE /* KTexture.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTexture.h; sourceTree = "<group>"; };
+		C386B26106DA39EF00AF9EFE /* KTrash.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTrash.cpp; sourceTree = "<group>"; };
+		C386B26206DA39EF00AF9EFE /* KTrash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTrash.h; sourceTree = "<group>"; };
+		C386B26306DA39EF00AF9EFE /* KVector.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KVector.cpp; sourceTree = "<group>"; };
+		C386B26406DA39EF00AF9EFE /* KVector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KVector.h; sourceTree = "<group>"; };
+		C386B26606DA39EF00AF9EFE /* KBoolValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KBoolValueObject.cpp; sourceTree = "<group>"; };
+		C386B26706DA39EF00AF9EFE /* KBoolValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KBoolValueObject.h; sourceTree = "<group>"; };
+		C386B26806DA39EF00AF9EFE /* KDiscreteValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KDiscreteValueObject.h; sourceTree = "<group>"; };
+		C386B26906DA39EF00AF9EFE /* KFileNameValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileNameValueObject.cpp; sourceTree = "<group>"; };
+		C386B26A06DA39EF00AF9EFE /* KFileNameValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileNameValueObject.h; sourceTree = "<group>"; };
+		C386B26B06DA39EF00AF9EFE /* KFloatValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFloatValueObject.cpp; sourceTree = "<group>"; };
+		C386B26C06DA39EF00AF9EFE /* KFloatValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFloatValueObject.h; sourceTree = "<group>"; };
+		C386B26D06DA39EF00AF9EFE /* KKeyValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeyValueObject.cpp; sourceTree = "<group>"; };
+		C386B26E06DA39EF00AF9EFE /* KKeyValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeyValueObject.h; sourceTree = "<group>"; };
+		C386B26F06DA39EF00AF9EFE /* KSizeValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSizeValueObject.cpp; sourceTree = "<group>"; };
+		C386B27006DA39EF00AF9EFE /* KSizeValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSizeValueObject.h; sourceTree = "<group>"; };
+		C386B27106DA39EF00AF9EFE /* KStringValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KStringValueObject.cpp; sourceTree = "<group>"; };
+		C386B27206DA39EF00AF9EFE /* KStringValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KStringValueObject.h; sourceTree = "<group>"; };
+		C386B27306DA39EF00AF9EFE /* KValueObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KValueObject.cpp; sourceTree = "<group>"; };
+		C386B27406DA39EF00AF9EFE /* KValueObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KValueObject.h; sourceTree = "<group>"; };
+		C386B27606DA39EF00AF9EFE /* KButton.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KButton.cpp; sourceTree = "<group>"; };
+		C386B27706DA39EF00AF9EFE /* KButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KButton.h; sourceTree = "<group>"; };
+		C386B27806DA39EF00AF9EFE /* KButtonBox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KButtonBox.cpp; sourceTree = "<group>"; };
+		C386B27906DA39EF00AF9EFE /* KButtonBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KButtonBox.h; sourceTree = "<group>"; };
+		C386B27A06DA39EF00AF9EFE /* KButtonSymbols.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KButtonSymbols.h; sourceTree = "<group>"; };
+		C386B27B06DA39EF00AF9EFE /* KFileNameField.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileNameField.cpp; sourceTree = "<group>"; };
+		C386B27C06DA39EF00AF9EFE /* KFileNameField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileNameField.h; sourceTree = "<group>"; };
+		C386B27D06DA39EF00AF9EFE /* KFileTreeDir.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDir.cpp; sourceTree = "<group>"; };
+		C386B27E06DA39EF00AF9EFE /* KFileTreeDir.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeDir.h; sourceTree = "<group>"; };
+		C386B27F06DA39EF00AF9EFE /* KFileTreeDirCurrent.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDirCurrent.cpp; sourceTree = "<group>"; };
+		C386B28006DA39EF00AF9EFE /* KFileTreeDirCurrent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeDirCurrent.h; sourceTree = "<group>"; };
+		C386B28106DA39EF00AF9EFE /* KFileTreeDirUp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeDirUp.cpp; sourceTree = "<group>"; };
+		C386B28206DA39EF00AF9EFE /* KFileTreeDirUp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeDirUp.h; sourceTree = "<group>"; };
+		C386B28306DA39EF00AF9EFE /* KFileTreeFile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeFile.cpp; sourceTree = "<group>"; };
+		C386B28406DA39EF00AF9EFE /* KFileTreeFile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeFile.h; sourceTree = "<group>"; };
+		C386B28506DA39EF00AF9EFE /* KFileTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeNode.cpp; sourceTree = "<group>"; };
+		C386B28606DA39EF00AF9EFE /* KFileTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeNode.h; sourceTree = "<group>"; };
+		C386B28706DA39EF00AF9EFE /* KFileTreeWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeWidget.cpp; sourceTree = "<group>"; };
+		C386B28806DA39EF00AF9EFE /* KFileTreeWidget.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeWidget.h; sourceTree = "<group>"; };
+		C386B28906DA39EF00AF9EFE /* KIconButton.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KIconButton.cpp; sourceTree = "<group>"; };
+		C386B28A06DA39EF00AF9EFE /* KIconButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KIconButton.h; sourceTree = "<group>"; };
+		C386B28B06DA39EF00AF9EFE /* KKeySequenceField.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KKeySequenceField.cpp; sourceTree = "<group>"; };
+		C386B28C06DA39EF00AF9EFE /* KKeySequenceField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KKeySequenceField.h; sourceTree = "<group>"; };
+		C386B28D06DA39EF00AF9EFE /* KLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KLabel.cpp; sourceTree = "<group>"; };
+		C386B28E06DA39EF00AF9EFE /* KLabel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KLabel.h; sourceTree = "<group>"; };
+		C386B28F06DA39EF00AF9EFE /* KMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMenu.cpp; sourceTree = "<group>"; };
+		C386B29006DA39EF00AF9EFE /* KMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMenu.h; sourceTree = "<group>"; };
+		C386B29106DA39EF00AF9EFE /* KMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMenuItem.cpp; sourceTree = "<group>"; };
+		C386B29206DA39EF00AF9EFE /* KMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMenuItem.h; sourceTree = "<group>"; };
+		C386B29306DA39EF00AF9EFE /* KNumberField.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KNumberField.cpp; sourceTree = "<group>"; };
+		C386B29406DA39EF00AF9EFE /* KNumberField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KNumberField.h; sourceTree = "<group>"; };
+		C386B29506DA39EF00AF9EFE /* KProjectionWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KProjectionWidget.cpp; sourceTree = "<group>"; };
+		C386B29606DA39EF00AF9EFE /* KProjectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KProjectionWidget.h; sourceTree = "<group>"; };
+		C386B29706DA39EF00AF9EFE /* KStatusMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KStatusMenuItem.cpp; sourceTree = "<group>"; };
+		C386B29806DA39EF00AF9EFE /* KStatusMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KStatusMenuItem.h; sourceTree = "<group>"; };
+		C386B29906DA39EF00AF9EFE /* KSubMenuItem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KSubMenuItem.cpp; sourceTree = "<group>"; };
+		C386B29A06DA39EF00AF9EFE /* KSubMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KSubMenuItem.h; sourceTree = "<group>"; };
+		C386B29B06DA39EF00AF9EFE /* KTextField.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextField.cpp; sourceTree = "<group>"; };
+		C386B29C06DA39EF00AF9EFE /* KTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextField.h; sourceTree = "<group>"; };
+		C386B29D06DA39EF00AF9EFE /* KTextWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KTextWidget.cpp; sourceTree = "<group>"; };
+		C386B29E06DA39EF00AF9EFE /* KTextWidget.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTextWidget.h; sourceTree = "<group>"; };
+		C386B29F06DA39EF00AF9EFE /* KToggleButton.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KToggleButton.cpp; sourceTree = "<group>"; };
+		C386B2A006DA39EF00AF9EFE /* KToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KToggleButton.h; sourceTree = "<group>"; };
+		C386B2A106DA39EF00AF9EFE /* KWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KWidget.cpp; sourceTree = "<group>"; };
+		C386B2A206DA39EF00AF9EFE /* KWidget.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KWidget.h; sourceTree = "<group>"; };
+		C386B2A306DA39EF00AF9EFE /* KWidgetArray.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KWidgetArray.cpp; sourceTree = "<group>"; };
+		C386B2A406DA39EF00AF9EFE /* KWidgetArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KWidgetArray.h; sourceTree = "<group>"; };
+		C386B2A606DA39EF00AF9EFE /* KConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KConsole.cpp; sourceTree = "<group>"; };
+		C386B2A706DA39EF00AF9EFE /* KConsole.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KConsole.h; sourceTree = "<group>"; };
+		C386B2A806DA39EF00AF9EFE /* KFileTreeWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KFileTreeWindow.cpp; sourceTree = "<group>"; };
+		C386B2A906DA39EF00AF9EFE /* KFileTreeWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KFileTreeWindow.h; sourceTree = "<group>"; };
+		C386B2AA06DA39EF00AF9EFE /* KMenuWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMenuWindow.cpp; sourceTree = "<group>"; };
+		C386B2AB06DA39EF00AF9EFE /* KMenuWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMenuWindow.h; sourceTree = "<group>"; };
+		C386B2AC06DA39EF00AF9EFE /* KMessagePanel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KMessagePanel.cpp; sourceTree = "<group>"; };
+		C386B2AD06DA39EF00AF9EFE /* KMessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KMessagePanel.h; sourceTree = "<group>"; };
+		C386B2AE06DA39EF00AF9EFE /* KPopupMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KPopupMenu.cpp; sourceTree = "<group>"; };
+		C386B2AF06DA39EF00AF9EFE /* KPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KPopupMenu.h; sourceTree = "<group>"; };
+		C386B2B006DA39EF00AF9EFE /* KWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = KWindow.cpp; sourceTree = "<group>"; };
+		C386B2B106DA39EF00AF9EFE /* KWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KWindow.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C368576006D8CD1300672963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36857A406D8CF1400672963 /* OpenGL.framework in Frameworks */,
+				C386B1C706DA362A00AF9EFE /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C35DD08B06DB73A80012D687 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD08C06DB73A80012D687 /* connectors */,
+				C35DD0BA06DB73A80012D687 /* handles */,
+				C35DD0E506DB73A90012D687 /* modules */,
+				C35DD15A06DB73A90012D687 /* objects */,
+				C35DD0D306DB73A80012D687 /* KCameraHandler.cpp */,
+				C35DD0D406DB73A80012D687 /* KCameraHandler.h */,
+				C35DD0D506DB73A80012D687 /* KController.cpp */,
+				C35DD0D606DB73A80012D687 /* KController.h */,
+				C35DD0D706DB73A80012D687 /* KMain.cpp */,
+				C35DD0D806DB73A80012D687 /* KMain.h */,
+				C35DD0D906DB73A80012D687 /* KMainMenu.cpp */,
+				C35DD0DA06DB73A80012D687 /* KMainMenu.h */,
+				C35DD0DB06DB73A80012D687 /* KModules.cpp */,
+				C35DD0DC06DB73A80012D687 /* KModules.h */,
+				C35DD0DD06DB73A80012D687 /* KObjects.cpp */,
+				C35DD0DE06DB73A80012D687 /* KObjects.h */,
+				C35DD0DF06DB73A80012D687 /* KPreferences.cpp */,
+				C35DD0E006DB73A80012D687 /* KPreferences.h */,
+				C35DD0E106DB73A90012D687 /* KTextureSets.cpp */,
+				C35DD0E206DB73A90012D687 /* KTextureSets.h */,
+				C35DD0E306DB73A90012D687 /* main.h */,
+				C35DD0E406DB73A90012D687 /* main.m */,
+			);
+			name = src;
+			path = /Users/kodi/Projects/kodisein/src;
+			sourceTree = "<absolute>";
+		};
+		C35DD08C06DB73A80012D687 /* connectors */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD08D06DB73A80012D687 /* KConnector.cpp */,
+				C35DD08E06DB73A80012D687 /* KConnector.h */,
+				C35DD08F06DB73A80012D687 /* KConnectorAttributeIn.cpp */,
+				C35DD09006DB73A80012D687 /* KConnectorAttributeIn.h */,
+				C35DD09106DB73A80012D687 /* KConnectorAttributeOut.cpp */,
+				C35DD09206DB73A80012D687 /* KConnectorAttributeOut.h */,
+				C35DD09306DB73A80012D687 /* KConnectorDiscreteValueInOut.h */,
+				C35DD09406DB73A80012D687 /* KConnectorIntValueInOut.cpp */,
+				C35DD09506DB73A80012D687 /* KConnectorIntValueInOut.h */,
+				C35DD09606DB73A80012D687 /* KConnectorMatrixIn.cpp */,
+				C35DD09706DB73A80012D687 /* KConnectorMatrixIn.h */,
+				C35DD09806DB73A80012D687 /* KConnectorMatrixOut.cpp */,
+				C35DD09906DB73A80012D687 /* KConnectorMatrixOut.h */,
+				C35DD09A06DB73A80012D687 /* KConnectorModulatorIn.cpp */,
+				C35DD09B06DB73A80012D687 /* KConnectorModulatorIn.h */,
+				C35DD09C06DB73A80012D687 /* KConnectorModulatorOut.cpp */,
+				C35DD09D06DB73A80012D687 /* KConnectorModulatorOut.h */,
+				C35DD09E06DB73A80012D687 /* KConnectorParticleIn.cpp */,
+				C35DD09F06DB73A80012D687 /* KConnectorParticleIn.h */,
+				C35DD0A006DB73A80012D687 /* KConnectorParticleOut.cpp */,
+				C35DD0A106DB73A80012D687 /* KConnectorParticleOut.h */,
+				C35DD0A206DB73A80012D687 /* KConnectorSceneIn.cpp */,
+				C35DD0A306DB73A80012D687 /* KConnectorSceneIn.h */,
+				C35DD0A406DB73A80012D687 /* KConnectorSceneOut.cpp */,
+				C35DD0A506DB73A80012D687 /* KConnectorSceneOut.h */,
+				C35DD0A606DB73A80012D687 /* KConnectorTextureBatchIn.cpp */,
+				C35DD0A706DB73A80012D687 /* KConnectorTextureBatchIn.h */,
+				C35DD0A806DB73A80012D687 /* KConnectorTextureBatchOut.cpp */,
+				C35DD0A906DB73A80012D687 /* KConnectorTextureBatchOut.h */,
+				C35DD0AA06DB73A80012D687 /* KConnectorTextureFileIn.cpp */,
+				C35DD0AB06DB73A80012D687 /* KConnectorTextureFileIn.h */,
+				C35DD0AC06DB73A80012D687 /* KConnectorTextureFileOut.cpp */,
+				C35DD0AD06DB73A80012D687 /* KConnectorTextureFileOut.h */,
+				C35DD0AE06DB73A80012D687 /* KConnectorTextureVersionIn.cpp */,
+				C35DD0AF06DB73A80012D687 /* KConnectorTextureVersionIn.h */,
+				C35DD0B006DB73A80012D687 /* KConnectorTextureVersionOut.cpp */,
+				C35DD0B106DB73A80012D687 /* KConnectorTextureVersionOut.h */,
+				C35DD0B206DB73A80012D687 /* KConnectorValueIn.cpp */,
+				C35DD0B306DB73A80012D687 /* KConnectorValueIn.h */,
+				C35DD0B406DB73A80012D687 /* KConnectorValueInOut.cpp */,
+				C35DD0B506DB73A80012D687 /* KConnectorValueInOut.h */,
+				C35DD0B606DB73A80012D687 /* KConnectorValueOut.cpp */,
+				C35DD0B706DB73A80012D687 /* KConnectorValueOut.h */,
+				C35DD0B806DB73A80012D687 /* KValueConnector.cpp */,
+				C35DD0B906DB73A80012D687 /* KValueConnector.h */,
+			);
+			path = connectors;
+			sourceTree = "<group>";
+		};
+		C35DD0BA06DB73A80012D687 /* handles */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD0BB06DB73A80012D687 /* KHandle.cpp */,
+				C35DD0BC06DB73A80012D687 /* KHandle.h */,
+				C35DD0BD06DB73A80012D687 /* KHandlesObject.cpp */,
+				C35DD0BE06DB73A80012D687 /* KHandlesObject.h */,
+				C35DD0BF06DB73A80012D687 /* KMatrixHandle.cpp */,
+				C35DD0C006DB73A80012D687 /* KMatrixHandle.h */,
+				C35DD0C106DB73A80012D687 /* KMatrixHandleRotate.cpp */,
+				C35DD0C206DB73A80012D687 /* KMatrixHandleRotate.h */,
+				C35DD0C306DB73A80012D687 /* KMatrixHandleScale.cpp */,
+				C35DD0C406DB73A80012D687 /* KMatrixHandleScale.h */,
+				C35DD0C506DB73A80012D687 /* KMatrixHandleTranslate.cpp */,
+				C35DD0C606DB73A80012D687 /* KMatrixHandleTranslate.h */,
+				C35DD0C706DB73A80012D687 /* KMoveHandle.cpp */,
+				C35DD0C806DB73A80012D687 /* KMoveHandle.h */,
+				C35DD0C906DB73A80012D687 /* KOneDirectionHandle.cpp */,
+				C35DD0CA06DB73A80012D687 /* KOneDirectionHandle.h */,
+				C35DD0CB06DB73A80012D687 /* KRotationHandle.cpp */,
+				C35DD0CC06DB73A80012D687 /* KRotationHandle.h */,
+				C35DD0CD06DB73A80012D687 /* KScaleHandle.cpp */,
+				C35DD0CE06DB73A80012D687 /* KScaleHandle.h */,
+				C35DD0CF06DB73A80012D687 /* KTwoDirectionHandle.cpp */,
+				C35DD0D006DB73A80012D687 /* KTwoDirectionHandle.h */,
+				C35DD0D106DB73A80012D687 /* KVertexHandle.cpp */,
+				C35DD0D206DB73A80012D687 /* KVertexHandle.h */,
+			);
+			path = handles;
+			sourceTree = "<group>";
+		};
+		C35DD0E506DB73A90012D687 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD0E606DB73A90012D687 /* attribute */,
+				C35DD0FB06DB73A90012D687 /* KModule.cpp */,
+				C35DD0FC06DB73A90012D687 /* KModule.h */,
+				C35DD0FD06DB73A90012D687 /* KModuleInspector.cpp */,
+				C35DD0FE06DB73A90012D687 /* KModuleInspector.h */,
+				C35DD0FF06DB73A90012D687 /* KScene.cpp */,
+				C35DD10006DB73A90012D687 /* KScene.h */,
+				C35DD10106DB73A90012D687 /* KSceneSet.cpp */,
+				C35DD10206DB73A90012D687 /* KSceneSet.h */,
+				C35DD10306DB73A90012D687 /* KTextureBatch.cpp */,
+				C35DD10406DB73A90012D687 /* KTextureBatch.h */,
+				C35DD10506DB73A90012D687 /* KTextureFile.cpp */,
+				C35DD10606DB73A90012D687 /* KTextureFile.h */,
+				C35DD10706DB73A90012D687 /* KTextureModule.cpp */,
+				C35DD10806DB73A90012D687 /* KTextureModule.h */,
+				C35DD10906DB73A90012D687 /* KTextureSet.cpp */,
+				C35DD10A06DB73A90012D687 /* KTextureSet.h */,
+				C35DD10B06DB73A90012D687 /* matrix */,
+				C35DD12206DB73A90012D687 /* object */,
+				C35DD14106DB73A90012D687 /* value */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		C35DD0E606DB73A90012D687 /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD0E706DB73A90012D687 /* KAttributeModule.cpp */,
+				C35DD0E806DB73A90012D687 /* KAttributeModule.h */,
+				C35DD0E906DB73A90012D687 /* KModuleAttributeHub.cpp */,
+				C35DD0EA06DB73A90012D687 /* KModuleAttributeHub.h */,
+				C35DD0EB06DB73A90012D687 /* KModuleBlend.cpp */,
+				C35DD0EC06DB73A90012D687 /* KModuleBlend.h */,
+				C35DD0ED06DB73A90012D687 /* KModuleColor.cpp */,
+				C35DD0EE06DB73A90012D687 /* KModuleColor.h */,
+				C35DD0EF06DB73A90012D687 /* KModuleColorMask.cpp */,
+				C35DD0F006DB73A90012D687 /* KModuleColorMask.h */,
+				C35DD0F106DB73A90012D687 /* KModuleFog.cpp */,
+				C35DD0F206DB73A90012D687 /* KModuleFog.h */,
+				C35DD0F306DB73A90012D687 /* KModuleMaterial.cpp */,
+				C35DD0F406DB73A90012D687 /* KModuleMaterial.h */,
+				C35DD0F506DB73A90012D687 /* KModuleTexture.cpp */,
+				C35DD0F606DB73A90012D687 /* KModuleTexture.h */,
+				C35DD0F706DB73A90012D687 /* KModuleTextureFile.cpp */,
+				C35DD0F806DB73A90012D687 /* KModuleTextureFile.h */,
+				C35DD0F906DB73A90012D687 /* KModuleTextureMatrix.cpp */,
+				C35DD0FA06DB73A90012D687 /* KModuleTextureMatrix.h */,
+			);
+			path = attribute;
+			sourceTree = "<group>";
+		};
+		C35DD10B06DB73A90012D687 /* matrix */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD10C06DB73A90012D687 /* KHubModule.cpp */,
+				C35DD10D06DB73A90012D687 /* KHubModule.h */,
+				C35DD10E06DB73A90012D687 /* KMatrixModule.cpp */,
+				C35DD10F06DB73A90012D687 /* KMatrixModule.h */,
+				C35DD11006DB73A90012D687 /* KModuleGoto.cpp */,
+				C35DD11106DB73A90012D687 /* KModuleGoto.h */,
+				C35DD11206DB73A90012D687 /* KModuleIdentity.cpp */,
+				C35DD11306DB73A90012D687 /* KModuleIdentity.h */,
+				C35DD11406DB73A90012D687 /* KModuleLabel.cpp */,
+				C35DD11506DB73A90012D687 /* KModuleLabel.h */,
+				C35DD11606DB73A90012D687 /* KModuleMatrix.cpp */,
+				C35DD11706DB73A90012D687 /* KModuleMatrix.h */,
+				C35DD11806DB73A90012D687 /* KModuleMatrixHub.cpp */,
+				C35DD11906DB73A90012D687 /* KModuleMatrixHub.h */,
+				C35DD11A06DB73A90012D687 /* KModuleRotate.cpp */,
+				C35DD11B06DB73A90012D687 /* KModuleRotate.h */,
+				C35DD11C06DB73A90012D687 /* KModuleScale.cpp */,
+				C35DD11D06DB73A90012D687 /* KModuleScale.h */,
+				C35DD11E06DB73A90012D687 /* KModuleSize.cpp */,
+				C35DD11F06DB73A90012D687 /* KModuleSize.h */,
+				C35DD12006DB73A90012D687 /* KModuleTranslate.cpp */,
+				C35DD12106DB73A90012D687 /* KModuleTranslate.h */,
+			);
+			path = matrix;
+			sourceTree = "<group>";
+		};
+		C35DD12206DB73A90012D687 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD12306DB73A90012D687 /* KModuleCamera.cpp */,
+				C35DD12406DB73A90012D687 /* KModuleCamera.h */,
+				C35DD12506DB73A90012D687 /* KModuleLight.cpp */,
+				C35DD12606DB73A90012D687 /* KModuleLight.h */,
+				C35DD12706DB73A90012D687 /* KModuleLSystem.cpp */,
+				C35DD12806DB73A90012D687 /* KModuleLSystem.h */,
+				C35DD12906DB73A90012D687 /* KModuleObjectBox.cpp */,
+				C35DD12A06DB73A90012D687 /* KModuleObjectBox.h */,
+				C35DD12B06DB73A90012D687 /* KModuleObjectCylinder.cpp */,
+				C35DD12C06DB73A90012D687 /* KModuleObjectCylinder.h */,
+				C35DD12D06DB73A90012D687 /* KModuleObjectDisk.cpp */,
+				C35DD12E06DB73A90012D687 /* KModuleObjectDisk.h */,
+				C35DD12F06DB73A90012D687 /* KModuleObjectFace.cpp */,
+				C35DD13006DB73A90012D687 /* KModuleObjectFace.h */,
+				C35DD13106DB73A90012D687 /* KModuleObjectLandscape.cpp */,
+				C35DD13206DB73A90012D687 /* KModuleObjectLandscape.h */,
+				C35DD13306DB73A90012D687 /* KModuleObjectPoint.cpp */,
+				C35DD13406DB73A90012D687 /* KModuleObjectPoint.h */,
+				C35DD13506DB73A90012D687 /* KModuleObjectSphere.cpp */,
+				C35DD13606DB73A90012D687 /* KModuleObjectSphere.h */,
+				C35DD13706DB73A90012D687 /* KModuleObjectText.cpp */,
+				C35DD13806DB73A90012D687 /* KModuleObjectText.h */,
+				C35DD13906DB73A90012D687 /* KModuleParticle.cpp */,
+				C35DD13A06DB73A90012D687 /* KModuleParticle.h */,
+				C35DD13B06DB73A90012D687 /* KModuleParticleEmitter.cpp */,
+				C35DD13C06DB73A90012D687 /* KModuleParticleEmitter.h */,
+				C35DD13D06DB73A90012D687 /* KModuleVertex.cpp */,
+				C35DD13E06DB73A90012D687 /* KModuleVertex.h */,
+				C35DD13F06DB73A90012D687 /* KObjectModule.cpp */,
+				C35DD14006DB73A90012D687 /* KObjectModule.h */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
+		C35DD14106DB73A90012D687 /* value */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD14206DB73A90012D687 /* KActivationValueModule.cpp */,
+				C35DD14306DB73A90012D687 /* KActivationValueModule.h */,
+				C35DD14406DB73A90012D687 /* KFilterModule.cpp */,
+				C35DD14506DB73A90012D687 /* KFilterModule.h */,
+				C35DD14606DB73A90012D687 /* KGlobalModulator.cpp */,
+				C35DD14706DB73A90012D687 /* KGlobalModulator.h */,
+				C35DD14806DB73A90012D687 /* KModulator.cpp */,
+				C35DD14906DB73A90012D687 /* KModulator.h */,
+				C35DD14A06DB73A90012D687 /* KModuleAccu.cpp */,
+				C35DD14B06DB73A90012D687 /* KModuleAccu.h */,
+				C35DD14C06DB73A90012D687 /* KModuleRandom.cpp */,
+				C35DD14D06DB73A90012D687 /* KModuleRandom.h */,
+				C35DD14E06DB73A90012D687 /* KModuleSwitch.cpp */,
+				C35DD14F06DB73A90012D687 /* KModuleSwitch.h */,
+				C35DD15006DB73A90012D687 /* KModuleTrigger.cpp */,
+				C35DD15106DB73A90012D687 /* KModuleTrigger.h */,
+				C35DD15206DB73A90012D687 /* KModuleVariable.cpp */,
+				C35DD15306DB73A90012D687 /* KModuleVariable.h */,
+				C35DD15406DB73A90012D687 /* KOperationModule.cpp */,
+				C35DD15506DB73A90012D687 /* KOperationModule.h */,
+				C35DD15606DB73A90012D687 /* KSequenceGenerator.cpp */,
+				C35DD15706DB73A90012D687 /* KSequenceGenerator.h */,
+				C35DD15806DB73A90012D687 /* KValueModule.cpp */,
+				C35DD15906DB73A90012D687 /* KValueModule.h */,
+			);
+			path = value;
+			sourceTree = "<group>";
+		};
+		C35DD15A06DB73A90012D687 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				C35DD15B06DB73A90012D687 /* KBox.cpp */,
+				C35DD15C06DB73A90012D687 /* KBox.h */,
+				C35DD15D06DB73A90012D687 /* KCamera.cpp */,
+				C35DD15E06DB73A90012D687 /* KCamera.h */,
+				C35DD15F06DB73A90012D687 /* KCylinder.cpp */,
+				C35DD16006DB73A90012D687 /* KCylinder.h */,
+				C35DD16106DB73A90012D687 /* KDisk.cpp */,
+				C35DD16206DB73A90012D687 /* KDisk.h */,
+				C35DD16306DB73A90012D687 /* KFace.cpp */,
+				C35DD16406DB73A90012D687 /* KFace.h */,
+				C35DD16506DB73A90012D687 /* KLandscape.cpp */,
+				C35DD16606DB73A90012D687 /* KLandscape.h */,
+				C35DD16706DB73A90012D687 /* KLight.cpp */,
+				C35DD16806DB73A90012D687 /* KLight.h */,
+				C35DD16906DB73A90012D687 /* KParticle.cpp */,
+				C35DD16A06DB73A90012D687 /* KParticle.h */,
+				C35DD16B06DB73A90012D687 /* KSphere.cpp */,
+				C35DD16C06DB73A90012D687 /* KSphere.h */,
+				C35DD16D06DB73A90012D687 /* KText.cpp */,
+				C35DD16E06DB73A90012D687 /* KText.h */,
+				C35DD16F06DB73A90012D687 /* KVertex.cpp */,
+				C35DD17006DB73A90012D687 /* KVertex.h */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		C36855D806D8CC8800672963 = {
+			isa = PBXGroup;
+			children = (
+				C35DD08B06DB73A80012D687 /* src */,
+				C386B22906DA39EF00AF9EFE /* lib */,
+				C368576306D8CD1300672963 /* Products */,
+				C386B1C606DA362A00AF9EFE /* GLUT.framework */,
+				C36857A306D8CF1400672963 /* OpenGL.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		C368576306D8CD1300672963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C368576206D8CD1300672963 /* kodisein.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C386B22906DA39EF00AF9EFE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C386B22A06DA39EF00AF9EFE /* handler */,
+				C386B23D06DA39EF00AF9EFE /* tools */,
+				C386B24E06DA39EF00AF9EFE /* types */,
+				C386B26506DA39EF00AF9EFE /* values */,
+				C386B27506DA39EF00AF9EFE /* widgets */,
+				C386B2A506DA39EF00AF9EFE /* windows */,
+			);
+			name = lib;
+			path = /Users/kodi/Projects/kodisein/lib;
+			sourceTree = "<absolute>";
+		};
+		C386B22A06DA39EF00AF9EFE /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				C386B22B06DA39EF00AF9EFE /* KEventHandler.cpp */,
+				C386B22C06DA39EF00AF9EFE /* KEventHandler.h */,
+				C386B22D06DA39EF00AF9EFE /* KFileHandler.cpp */,
+				C386B22E06DA39EF00AF9EFE /* KFileHandler.h */,
+				C386B22F06DA39EF00AF9EFE /* KKeyActionHandler.cpp */,
+				C386B23006DA39EF00AF9EFE /* KKeyActionHandler.h */,
+				C386B23106DA39EF00AF9EFE /* KKeyHandler.cpp */,
+				C386B23206DA39EF00AF9EFE /* KKeyHandler.h */,
+				C386B23306DA39EF00AF9EFE /* KKeyRecorder.cpp */,
+				C386B23406DA39EF00AF9EFE /* KKeyRecorder.h */,
+				C386B23506DA39EF00AF9EFE /* KPickable.cpp */,
+				C386B23606DA39EF00AF9EFE /* KPickable.h */,
+				C386B23706DA39EF00AF9EFE /* KPickHandler.cpp */,
+				C386B23806DA39EF00AF9EFE /* KPickHandler.h */,
+				C386B23906DA39EF00AF9EFE /* KSelectable.cpp */,
+				C386B23A06DA39EF00AF9EFE /* KSelectable.h */,
+				C386B23B06DA39EF00AF9EFE /* KSelectionHandler.cpp */,
+				C386B23C06DA39EF00AF9EFE /* KSelectionHandler.h */,
+			);
+			path = handler;
+			sourceTree = "<group>";
+		};
+		C386B23D06DA39EF00AF9EFE /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				C386B23E06DA39EF00AF9EFE /* KFileTools.cpp */,
+				C386B23F06DA39EF00AF9EFE /* KFileTools.h */,
+				C386B24006DA39EF00AF9EFE /* KIntrospection.cpp */,
+				C386B24106DA39EF00AF9EFE /* KIntrospection.h */,
+				C386B24206DA39EF00AF9EFE /* KKeySymbols.h */,
+				C386B24306DA39EF00AF9EFE /* KKeyTools.cpp */,
+				C386B24406DA39EF00AF9EFE /* KKeyTools.h */,
+				C386B24506DA39EF00AF9EFE /* KNotificationObject.cpp */,
+				C386B24606DA39EF00AF9EFE /* KNotificationObject.h */,
+				C386B24706DA39EF00AF9EFE /* KStringTools.cpp */,
+				C386B24806DA39EF00AF9EFE /* KStringTools.h */,
+				C386B24906DA39EF00AF9EFE /* KTools.cpp */,
+				C386B24A06DA39EF00AF9EFE /* KTools.h */,
+				C386B24B06DA39EF00AF9EFE /* KXMLTools.cpp */,
+				C386B24C06DA39EF00AF9EFE /* KXMLTools.h */,
+				C386B24D06DA39EF00AF9EFE /* vvector.h */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		C386B24E06DA39EF00AF9EFE /* types */ = {
+			isa = PBXGroup;
+			children = (
+				C386B24F06DA39EF00AF9EFE /* KColor.cpp */,
+				C386B25006DA39EF00AF9EFE /* KColor.h */,
+				C386B25106DA39EF00AF9EFE /* KKey.cpp */,
+				C386B25206DA39EF00AF9EFE /* KKey.h */,
+				C386B25306DA39EF00AF9EFE /* KLightingProjection.cpp */,
+				C386B25406DA39EF00AF9EFE /* KLightingProjection.h */,
+				C386B25506DA39EF00AF9EFE /* KMatrix.cpp */,
+				C386B25606DA39EF00AF9EFE /* KMatrix.h */,
+				C386B25706DA39EF00AF9EFE /* KOrthographicProjection.cpp */,
+				C386B25806DA39EF00AF9EFE /* KOrthographicProjection.h */,
+				C386B25906DA39EF00AF9EFE /* KPerspectiveProjection.cpp */,
+				C386B25A06DA39EF00AF9EFE /* KPerspectiveProjection.h */,
+				C386B25B06DA39EF00AF9EFE /* KProjection.cpp */,
+				C386B25C06DA39EF00AF9EFE /* KProjection.h */,
+				C386B25D06DA39EF00AF9EFE /* KSeparatedMatrix.cpp */,
+				C386B25E06DA39EF00AF9EFE /* KSeparatedMatrix.h */,
+				C386B25F06DA39EF00AF9EFE /* KTexture.cpp */,
+				C386B26006DA39EF00AF9EFE /* KTexture.h */,
+				C386B26106DA39EF00AF9EFE /* KTrash.cpp */,
+				C386B26206DA39EF00AF9EFE /* KTrash.h */,
+				C386B26306DA39EF00AF9EFE /* KVector.cpp */,
+				C386B26406DA39EF00AF9EFE /* KVector.h */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		C386B26506DA39EF00AF9EFE /* values */ = {
+			isa = PBXGroup;
+			children = (
+				C386B26606DA39EF00AF9EFE /* KBoolValueObject.cpp */,
+				C386B26706DA39EF00AF9EFE /* KBoolValueObject.h */,
+				C386B26806DA39EF00AF9EFE /* KDiscreteValueObject.h */,
+				C386B26906DA39EF00AF9EFE /* KFileNameValueObject.cpp */,
+				C386B26A06DA39EF00AF9EFE /* KFileNameValueObject.h */,
+				C386B26B06DA39EF00AF9EFE /* KFloatValueObject.cpp */,
+				C386B26C06DA39EF00AF9EFE /* KFloatValueObject.h */,
+				C386B26D06DA39EF00AF9EFE /* KKeyValueObject.cpp */,
+				C386B26E06DA39EF00AF9EFE /* KKeyValueObject.h */,
+				C386B26F06DA39EF00AF9EFE /* KSizeValueObject.cpp */,
+				C386B27006DA39EF00AF9EFE /* KSizeValueObject.h */,
+				C386B27106DA39EF00AF9EFE /* KStringValueObject.cpp */,
+				C386B27206DA39EF00AF9EFE /* KStringValueObject.h */,
+				C386B27306DA39EF00AF9EFE /* KValueObject.cpp */,
+				C386B27406DA39EF00AF9EFE /* KValueObject.h */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		C386B27506DA39EF00AF9EFE /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				C386B27606DA39EF00AF9EFE /* KButton.cpp */,
+				C386B27706DA39EF00AF9EFE /* KButton.h */,
+				C386B27806DA39EF00AF9EFE /* KButtonBox.cpp */,
+				C386B27906DA39EF00AF9EFE /* KButtonBox.h */,
+				C386B27A06DA39EF00AF9EFE /* KButtonSymbols.h */,
+				C386B27B06DA39EF00AF9EFE /* KFileNameField.cpp */,
+				C386B27C06DA39EF00AF9EFE /* KFileNameField.h */,
+				C386B27D06DA39EF00AF9EFE /* KFileTreeDir.cpp */,
+				C386B27E06DA39EF00AF9EFE /* KFileTreeDir.h */,
+				C386B27F06DA39EF00AF9EFE /* KFileTreeDirCurrent.cpp */,
+				C386B28006DA39EF00AF9EFE /* KFileTreeDirCurrent.h */,
+				C386B28106DA39EF00AF9EFE /* KFileTreeDirUp.cpp */,
+				C386B28206DA39EF00AF9EFE /* KFileTreeDirUp.h */,
+				C386B28306DA39EF00AF9EFE /* KFileTreeFile.cpp */,
+				C386B28406DA39EF00AF9EFE /* KFileTreeFile.h */,
+				C386B28506DA39EF00AF9EFE /* KFileTreeNode.cpp */,
+				C386B28606DA39EF00AF9EFE /* KFileTreeNode.h */,
+				C386B28706DA39EF00AF9EFE /* KFileTreeWidget.cpp */,
+				C386B28806DA39EF00AF9EFE /* KFileTreeWidget.h */,
+				C386B28906DA39EF00AF9EFE /* KIconButton.cpp */,
+				C386B28A06DA39EF00AF9EFE /* KIconButton.h */,
+				C386B28B06DA39EF00AF9EFE /* KKeySequenceField.cpp */,
+				C386B28C06DA39EF00AF9EFE /* KKeySequenceField.h */,
+				C386B28D06DA39EF00AF9EFE /* KLabel.cpp */,
+				C386B28E06DA39EF00AF9EFE /* KLabel.h */,
+				C386B28F06DA39EF00AF9EFE /* KMenu.cpp */,
+				C386B29006DA39EF00AF9EFE /* KMenu.h */,
+				C386B29106DA39EF00AF9EFE /* KMenuItem.cpp */,
+				C386B29206DA39EF00AF9EFE /* KMenuItem.h */,
+				C386B29306DA39EF00AF9EFE /* KNumberField.cpp */,
+				C386B29406DA39EF00AF9EFE /* KNumberField.h */,
+				C386B29506DA39EF00AF9EFE /* KProjectionWidget.cpp */,
+				C386B29606DA39EF00AF9EFE /* KProjectionWidget.h */,
+				C386B29706DA39EF00AF9EFE /* KStatusMenuItem.cpp */,
+				C386B29806DA39EF00AF9EFE /* KStatusMenuItem.h */,
+				C386B29906DA39EF00AF9EFE /* KSubMenuItem.cpp */,
+				C386B29A06DA39EF00AF9EFE /* KSubMenuItem.h */,
+				C386B29B06DA39EF00AF9EFE /* KTextField.cpp */,
+				C386B29C06DA39EF00AF9EFE /* KTextField.h */,
+				C386B29D06DA39EF00AF9EFE /* KTextWidget.cpp */,
+				C386B29E06DA39EF00AF9EFE /* KTextWidget.h */,
+				C386B29F06DA39EF00AF9EFE /* KToggleButton.cpp */,
+				C386B2A006DA39EF00AF9EFE /* KToggleButton.h */,
+				C386B2A106DA39EF00AF9EFE /* KWidget.cpp */,
+				C386B2A206DA39EF00AF9EFE /* KWidget.h */,
+				C386B2A306DA39EF00AF9EFE /* KWidgetArray.cpp */,
+				C386B2A406DA39EF00AF9EFE /* KWidgetArray.h */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+		C386B2A506DA39EF00AF9EFE /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				C386B2A606DA39EF00AF9EFE /* KConsole.cpp */,
+				C386B2A706DA39EF00AF9EFE /* KConsole.h */,
+				C386B2A806DA39EF00AF9EFE /* KFileTreeWindow.cpp */,
+				C386B2A906DA39EF00AF9EFE /* KFileTreeWindow.h */,
+				C386B2AA06DA39EF00AF9EFE /* KMenuWindow.cpp */,
+				C386B2AB06DA39EF00AF9EFE /* KMenuWindow.h */,
+				C386B2AC06DA39EF00AF9EFE /* KMessagePanel.cpp */,
+				C386B2AD06DA39EF00AF9EFE /* KMessagePanel.h */,
+				C386B2AE06DA39EF00AF9EFE /* KPopupMenu.cpp */,
+				C386B2AF06DA39EF00AF9EFE /* KPopupMenu.h */,
+				C386B2B006DA39EF00AF9EFE /* KWindow.cpp */,
+				C386B2B106DA39EF00AF9EFE /* KWindow.h */,
+			);
+			path = windows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C368575C06D8CD1300672963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C386B2B306DA39EF00AF9EFE /* KEventHandler.h in Headers */,
+				C386B2B506DA39EF00AF9EFE /* KFileHandler.h in Headers */,
+				C386B2B706DA39EF00AF9EFE /* KKeyActionHandler.h in Headers */,
+				C386B2B906DA39EF00AF9EFE /* KKeyHandler.h in Headers */,
+				C386B2BB06DA39EF00AF9EFE /* KKeyRecorder.h in Headers */,
+				C386B2BD06DA39EF00AF9EFE /* KPickable.h in Headers */,
+				C386B2BF06DA39EF00AF9EFE /* KPickHandler.h in Headers */,
+				C386B2C106DA39EF00AF9EFE /* KSelectable.h in Headers */,
+				C386B2C306DA39EF00AF9EFE /* KSelectionHandler.h in Headers */,
+				C386B2C506DA39EF00AF9EFE /* KFileTools.h in Headers */,
+				C386B2C706DA39EF00AF9EFE /* KIntrospection.h in Headers */,
+				C386B2C806DA39EF00AF9EFE /* KKeySymbols.h in Headers */,
+				C386B2CA06DA39EF00AF9EFE /* KKeyTools.h in Headers */,
+				C386B2CC06DA39EF00AF9EFE /* KNotificationObject.h in Headers */,
+				C386B2CE06DA39EF00AF9EFE /* KStringTools.h in Headers */,
+				C386B2D006DA39EF00AF9EFE /* KTools.h in Headers */,
+				C386B2D206DA39EF00AF9EFE /* KXMLTools.h in Headers */,
+				C386B2D306DA39EF00AF9EFE /* vvector.h in Headers */,
+				C386B2D506DA39EF00AF9EFE /* KColor.h in Headers */,
+				C386B2D706DA39EF00AF9EFE /* KKey.h in Headers */,
+				C386B2D906DA39EF00AF9EFE /* KLightingProjection.h in Headers */,
+				C386B2DB06DA39EF00AF9EFE /* KMatrix.h in Headers */,
+				C386B2DD06DA39EF00AF9EFE /* KOrthographicProjection.h in Headers */,
+				C386B2DF06DA39EF00AF9EFE /* KPerspectiveProjection.h in Headers */,
+				C386B2E106DA39EF00AF9EFE /* KProjection.h in Headers */,
+				C386B2E306DA39EF00AF9EFE /* KSeparatedMatrix.h in Headers */,
+				C386B2E506DA39EF00AF9EFE /* KTexture.h in Headers */,
+				C386B2E706DA39EF00AF9EFE /* KTrash.h in Headers */,
+				C386B2E906DA39EF00AF9EFE /* KVector.h in Headers */,
+				C386B2EB06DA39EF00AF9EFE /* KBoolValueObject.h in Headers */,
+				C386B2EC06DA39EF00AF9EFE /* KDiscreteValueObject.h in Headers */,
+				C386B2EE06DA39EF00AF9EFE /* KFileNameValueObject.h in Headers */,
+				C386B2F006DA39EF00AF9EFE /* KFloatValueObject.h in Headers */,
+				C386B2F206DA39EF00AF9EFE /* KKeyValueObject.h in Headers */,
+				C386B2F406DA39EF00AF9EFE /* KSizeValueObject.h in Headers */,
+				C386B2F606DA39EF00AF9EFE /* KStringValueObject.h in Headers */,
+				C386B2F806DA39EF00AF9EFE /* KValueObject.h in Headers */,
+				C386B2FA06DA39EF00AF9EFE /* KButton.h in Headers */,
+				C386B2FC06DA39EF00AF9EFE /* KButtonBox.h in Headers */,
+				C386B2FD06DA39EF00AF9EFE /* KButtonSymbols.h in Headers */,
+				C386B2FF06DA39EF00AF9EFE /* KFileNameField.h in Headers */,
+				C386B30106DA39EF00AF9EFE /* KFileTreeDir.h in Headers */,
+				C386B30306DA39EF00AF9EFE /* KFileTreeDirCurrent.h in Headers */,
+				C386B30506DA39EF00AF9EFE /* KFileTreeDirUp.h in Headers */,
+				C386B30706DA39EF00AF9EFE /* KFileTreeFile.h in Headers */,
+				C386B30906DA39EF00AF9EFE /* KFileTreeNode.h in Headers */,
+				C386B30B06DA39EF00AF9EFE /* KFileTreeWidget.h in Headers */,
+				C386B30D06DA39EF00AF9EFE /* KIconButton.h in Headers */,
+				C386B30F06DA39EF00AF9EFE /* KKeySequenceField.h in Headers */,
+				C386B31106DA39EF00AF9EFE /* KLabel.h in Headers */,
+				C386B31306DA39EF00AF9EFE /* KMenu.h in Headers */,
+				C386B31506DA39EF00AF9EFE /* KMenuItem.h in Headers */,
+				C386B31706DA39EF00AF9EFE /* KNumberField.h in Headers */,
+				C386B31906DA39EF00AF9EFE /* KProjectionWidget.h in Headers */,
+				C386B31B06DA39EF00AF9EFE /* KStatusMenuItem.h in Headers */,
+				C386B31D06DA39EF00AF9EFE /* KSubMenuItem.h in Headers */,
+				C386B31F06DA39EF00AF9EFE /* KTextField.h in Headers */,
+				C386B32106DA39EF00AF9EFE /* KTextWidget.h in Headers */,
+				C386B32306DA39EF00AF9EFE /* KToggleButton.h in Headers */,
+				C386B32506DA39EF00AF9EFE /* KWidget.h in Headers */,
+				C386B32706DA39EF00AF9EFE /* KWidgetArray.h in Headers */,
+				C386B32906DA39EF00AF9EFE /* KConsole.h in Headers */,
+				C386B32B06DA39EF00AF9EFE /* KFileTreeWindow.h in Headers */,
+				C386B32D06DA39EF00AF9EFE /* KMenuWindow.h in Headers */,
+				C386B32F06DA39EF00AF9EFE /* KMessagePanel.h in Headers */,
+				C386B33106DA39EF00AF9EFE /* KPopupMenu.h in Headers */,
+				C386B33306DA39EF00AF9EFE /* KWindow.h in Headers */,
+				C35DD17206DB73A90012D687 /* KConnector.h in Headers */,
+				C35DD17406DB73A90012D687 /* KConnectorAttributeIn.h in Headers */,
+				C35DD17606DB73A90012D687 /* KConnectorAttributeOut.h in Headers */,
+				C35DD17706DB73A90012D687 /* KConnectorDiscreteValueInOut.h in Headers */,
+				C35DD17906DB73A90012D687 /* KConnectorIntValueInOut.h in Headers */,
+				C35DD17B06DB73A90012D687 /* KConnectorMatrixIn.h in Headers */,
+				C35DD17D06DB73A90012D687 /* KConnectorMatrixOut.h in Headers */,
+				C35DD17F06DB73A90012D687 /* KConnectorModulatorIn.h in Headers */,
+				C35DD18106DB73A90012D687 /* KConnectorModulatorOut.h in Headers */,
+				C35DD18306DB73A90012D687 /* KConnectorParticleIn.h in Headers */,
+				C35DD18506DB73A90012D687 /* KConnectorParticleOut.h in Headers */,
+				C35DD18706DB73A90012D687 /* KConnectorSceneIn.h in Headers */,
+				C35DD18906DB73A90012D687 /* KConnectorSceneOut.h in Headers */,
+				C35DD18B06DB73A90012D687 /* KConnectorTextureBatchIn.h in Headers */,
+				C35DD18D06DB73A90012D687 /* KConnectorTextureBatchOut.h in Headers */,
+				C35DD18F06DB73A90012D687 /* KConnectorTextureFileIn.h in Headers */,
+				C35DD19106DB73A90012D687 /* KConnectorTextureFileOut.h in Headers */,
+				C35DD19306DB73A90012D687 /* KConnectorTextureVersionIn.h in Headers */,
+				C35DD19506DB73A90012D687 /* KConnectorTextureVersionOut.h in Headers */,
+				C35DD19706DB73A90012D687 /* KConnectorValueIn.h in Headers */,
+				C35DD19906DB73A90012D687 /* KConnectorValueInOut.h in Headers */,
+				C35DD19B06DB73A90012D687 /* KConnectorValueOut.h in Headers */,
+				C35DD19D06DB73A90012D687 /* KValueConnector.h in Headers */,
+				C35DD19F06DB73A90012D687 /* KHandle.h in Headers */,
+				C35DD1A106DB73A90012D687 /* KHandlesObject.h in Headers */,
+				C35DD1A306DB73A90012D687 /* KMatrixHandle.h in Headers */,
+				C35DD1A506DB73A90012D687 /* KMatrixHandleRotate.h in Headers */,
+				C35DD1A706DB73A90012D687 /* KMatrixHandleScale.h in Headers */,
+				C35DD1A906DB73A90012D687 /* KMatrixHandleTranslate.h in Headers */,
+				C35DD1AB06DB73A90012D687 /* KMoveHandle.h in Headers */,
+				C35DD1AD06DB73A90012D687 /* KOneDirectionHandle.h in Headers */,
+				C35DD1AF06DB73A90012D687 /* KRotationHandle.h in Headers */,
+				C35DD1B106DB73A90012D687 /* KScaleHandle.h in Headers */,
+				C35DD1B306DB73A90012D687 /* KTwoDirectionHandle.h in Headers */,
+				C35DD1B506DB73A90012D687 /* KVertexHandle.h in Headers */,
+				C35DD1B706DB73A90012D687 /* KCameraHandler.h in Headers */,
+				C35DD1B906DB73A90012D687 /* KController.h in Headers */,
+				C35DD1BB06DB73A90012D687 /* KMain.h in Headers */,
+				C35DD1BD06DB73A90012D687 /* KMainMenu.h in Headers */,
+				C35DD1BF06DB73A90012D687 /* KModules.h in Headers */,
+				C35DD1C106DB73A90012D687 /* KObjects.h in Headers */,
+				C35DD1C306DB73A90012D687 /* KPreferences.h in Headers */,
+				C35DD1C506DB73A90012D687 /* KTextureSets.h in Headers */,
+				C35DD1C606DB73A90012D687 /* main.h in Headers */,
+				C35DD1C906DB73A90012D687 /* KAttributeModule.h in Headers */,
+				C35DD1CB06DB73A90012D687 /* KModuleAttributeHub.h in Headers */,
+				C35DD1CD06DB73A90012D687 /* KModuleBlend.h in Headers */,
+				C35DD1CF06DB73A90012D687 /* KModuleColor.h in Headers */,
+				C35DD1D106DB73A90012D687 /* KModuleColorMask.h in Headers */,
+				C35DD1D306DB73A90012D687 /* KModuleFog.h in Headers */,
+				C35DD1D506DB73A90012D687 /* KModuleMaterial.h in Headers */,
+				C35DD1D706DB73A90012D687 /* KModuleTexture.h in Headers */,
+				C35DD1D906DB73A90012D687 /* KModuleTextureFile.h in Headers */,
+				C35DD1DB06DB73A90012D687 /* KModuleTextureMatrix.h in Headers */,
+				C35DD1DD06DB73A90012D687 /* KModule.h in Headers */,
+				C35DD1DF06DB73A90012D687 /* KModuleInspector.h in Headers */,
+				C35DD1E106DB73A90012D687 /* KScene.h in Headers */,
+				C35DD1E306DB73A90012D687 /* KSceneSet.h in Headers */,
+				C35DD1E506DB73A90012D687 /* KTextureBatch.h in Headers */,
+				C35DD1E706DB73A90012D687 /* KTextureFile.h in Headers */,
+				C35DD1E906DB73A90012D687 /* KTextureModule.h in Headers */,
+				C35DD1EB06DB73A90012D687 /* KTextureSet.h in Headers */,
+				C35DD1ED06DB73A90012D687 /* KHubModule.h in Headers */,
+				C35DD1EF06DB73A90012D687 /* KMatrixModule.h in Headers */,
+				C35DD1F106DB73A90012D687 /* KModuleGoto.h in Headers */,
+				C35DD1F306DB73A90012D687 /* KModuleIdentity.h in Headers */,
+				C35DD1F506DB73A90012D687 /* KModuleLabel.h in Headers */,
+				C35DD1F706DB73A90012D687 /* KModuleMatrix.h in Headers */,
+				C35DD1F906DB73A90012D687 /* KModuleMatrixHub.h in Headers */,
+				C35DD1FB06DB73A90012D687 /* KModuleRotate.h in Headers */,
+				C35DD1FD06DB73A90012D687 /* KModuleScale.h in Headers */,
+				C35DD1FF06DB73A90012D687 /* KModuleSize.h in Headers */,
+				C35DD20106DB73A90012D687 /* KModuleTranslate.h in Headers */,
+				C35DD20306DB73A90012D687 /* KModuleCamera.h in Headers */,
+				C35DD20506DB73A90012D687 /* KModuleLight.h in Headers */,
+				C35DD20706DB73A90012D687 /* KModuleLSystem.h in Headers */,
+				C35DD20906DB73A90012D687 /* KModuleObjectBox.h in Headers */,
+				C35DD20B06DB73A90012D687 /* KModuleObjectCylinder.h in Headers */,
+				C35DD20D06DB73A90012D687 /* KModuleObjectDisk.h in Headers */,
+				C35DD20F06DB73A90012D687 /* KModuleObjectFace.h in Headers */,
+				C35DD21106DB73A90012D687 /* KModuleObjectLandscape.h in Headers */,
+				C35DD21306DB73A90012D687 /* KModuleObjectPoint.h in Headers */,
+				C35DD21506DB73A90012D687 /* KModuleObjectSphere.h in Headers */,
+				C35DD21706DB73A90012D687 /* KModuleObjectText.h in Headers */,
+				C35DD21906DB73A90012D687 /* KModuleParticle.h in Headers */,
+				C35DD21B06DB73A90012D687 /* KModuleParticleEmitter.h in Headers */,
+				C35DD21D06DB73A90012D687 /* KModuleVertex.h in Headers */,
+				C35DD21F06DB73A90012D687 /* KObjectModule.h in Headers */,
+				C35DD22106DB73A90012D687 /* KActivationValueModule.h in Headers */,
+				C35DD22306DB73A90012D687 /* KFilterModule.h in Headers */,
+				C35DD22506DB73A90012D687 /* KGlobalModulator.h in Headers */,
+				C35DD22706DB73A90012D687 /* KModulator.h in Headers */,
+				C35DD22906DB73A90012D687 /* KModuleAccu.h in Headers */,
+				C35DD22B06DB73A90012D687 /* KModuleRandom.h in Headers */,
+				C35DD22D06DB73A90012D687 /* KModuleSwitch.h in Headers */,
+				C35DD22F06DB73A90012D687 /* KModuleTrigger.h in Headers */,
+				C35DD23106DB73A90012D687 /* KModuleVariable.h in Headers */,
+				C35DD23306DB73A90012D687 /* KOperationModule.h in Headers */,
+				C35DD23506DB73A90012D687 /* KSequenceGenerator.h in Headers */,
+				C35DD23706DB73A90012D687 /* KValueModule.h in Headers */,
+				C35DD23906DB73A90012D687 /* KBox.h in Headers */,
+				C35DD23B06DB73A90012D687 /* KCamera.h in Headers */,
+				C35DD23D06DB73A90012D687 /* KCylinder.h in Headers */,
+				C35DD23F06DB73A90012D687 /* KDisk.h in Headers */,
+				C35DD24106DB73A90012D687 /* KFace.h in Headers */,
+				C35DD24306DB73A90012D687 /* KLandscape.h in Headers */,
+				C35DD24506DB73A90012D687 /* KLight.h in Headers */,
+				C35DD24706DB73A90012D687 /* KParticle.h in Headers */,
+				C35DD24906DB73A90012D687 /* KSphere.h in Headers */,
+				C35DD24B06DB73A90012D687 /* KText.h in Headers */,
+				C35DD24D06DB73A90012D687 /* KVertex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C368576106D8CD1300672963 /* kodisein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2DAD352837D8A9007B7157 /* Build configuration list for PBXNativeTarget "kodisein" */;
+			buildPhases = (
+				C368575C06D8CD1300672963 /* Headers */,
+				C368575D06D8CD1300672963 /* Resources */,
+				C368575E06D8CD1300672963 /* Sources */,
+				C368575F06D8CD1300672963 /* Rez */,
+				C368576006D8CD1300672963 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kodisein;
+			productName = kodisein;
+			productReference = C368576206D8CD1300672963 /* kodisein.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C36855DC06D8CC8800672963 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7B2DAD342837D8A9007B7157 /* Build configuration list for PBXProject "kodisein" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = C36855D806D8CC8800672963;
+			productRefGroup = C368576306D8CD1300672963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C368576106D8CD1300672963 /* kodisein */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C368575D06D8CD1300672963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		C368575F06D8CD1300672963 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C368575E06D8CD1300672963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C386B2B206DA39EF00AF9EFE /* KEventHandler.cpp in Sources */,
+				C386B2B406DA39EF00AF9EFE /* KFileHandler.cpp in Sources */,
+				C386B2B606DA39EF00AF9EFE /* KKeyActionHandler.cpp in Sources */,
+				C386B2B806DA39EF00AF9EFE /* KKeyHandler.cpp in Sources */,
+				C386B2BA06DA39EF00AF9EFE /* KKeyRecorder.cpp in Sources */,
+				C386B2BC06DA39EF00AF9EFE /* KPickable.cpp in Sources */,
+				C386B2BE06DA39EF00AF9EFE /* KPickHandler.cpp in Sources */,
+				C386B2C006DA39EF00AF9EFE /* KSelectable.cpp in Sources */,
+				C386B2C206DA39EF00AF9EFE /* KSelectionHandler.cpp in Sources */,
+				C386B2C406DA39EF00AF9EFE /* KFileTools.cpp in Sources */,
+				C386B2C606DA39EF00AF9EFE /* KIntrospection.cpp in Sources */,
+				C386B2C906DA39EF00AF9EFE /* KKeyTools.cpp in Sources */,
+				C386B2CB06DA39EF00AF9EFE /* KNotificationObject.cpp in Sources */,
+				C386B2CD06DA39EF00AF9EFE /* KStringTools.cpp in Sources */,
+				C386B2CF06DA39EF00AF9EFE /* KTools.cpp in Sources */,
+				C386B2D106DA39EF00AF9EFE /* KXMLTools.cpp in Sources */,
+				C386B2D406DA39EF00AF9EFE /* KColor.cpp in Sources */,
+				C386B2D606DA39EF00AF9EFE /* KKey.cpp in Sources */,
+				C386B2D806DA39EF00AF9EFE /* KLightingProjection.cpp in Sources */,
+				C386B2DA06DA39EF00AF9EFE /* KMatrix.cpp in Sources */,
+				C386B2DC06DA39EF00AF9EFE /* KOrthographicProjection.cpp in Sources */,
+				C386B2DE06DA39EF00AF9EFE /* KPerspectiveProjection.cpp in Sources */,
+				C386B2E006DA39EF00AF9EFE /* KProjection.cpp in Sources */,
+				C386B2E206DA39EF00AF9EFE /* KSeparatedMatrix.cpp in Sources */,
+				C386B2E406DA39EF00AF9EFE /* KTexture.cpp in Sources */,
+				C386B2E606DA39EF00AF9EFE /* KTrash.cpp in Sources */,
+				C386B2E806DA39EF00AF9EFE /* KVector.cpp in Sources */,
+				C386B2EA06DA39EF00AF9EFE /* KBoolValueObject.cpp in Sources */,
+				C386B2ED06DA39EF00AF9EFE /* KFileNameValueObject.cpp in Sources */,
+				C386B2EF06DA39EF00AF9EFE /* KFloatValueObject.cpp in Sources */,
+				C386B2F106DA39EF00AF9EFE /* KKeyValueObject.cpp in Sources */,
+				C386B2F306DA39EF00AF9EFE /* KSizeValueObject.cpp in Sources */,
+				C386B2F506DA39EF00AF9EFE /* KStringValueObject.cpp in Sources */,
+				C386B2F706DA39EF00AF9EFE /* KValueObject.cpp in Sources */,
+				C386B2F906DA39EF00AF9EFE /* KButton.cpp in Sources */,
+				C386B2FB06DA39EF00AF9EFE /* KButtonBox.cpp in Sources */,
+				C386B2FE06DA39EF00AF9EFE /* KFileNameField.cpp in Sources */,
+				C386B30006DA39EF00AF9EFE /* KFileTreeDir.cpp in Sources */,
+				C386B30206DA39EF00AF9EFE /* KFileTreeDirCurrent.cpp in Sources */,
+				C386B30406DA39EF00AF9EFE /* KFileTreeDirUp.cpp in Sources */,
+				C386B30606DA39EF00AF9EFE /* KFileTreeFile.cpp in Sources */,
+				C386B30806DA39EF00AF9EFE /* KFileTreeNode.cpp in Sources */,
+				C386B30A06DA39EF00AF9EFE /* KFileTreeWidget.cpp in Sources */,
+				C386B30C06DA39EF00AF9EFE /* KIconButton.cpp in Sources */,
+				C386B30E06DA39EF00AF9EFE /* KKeySequenceField.cpp in Sources */,
+				C386B31006DA39EF00AF9EFE /* KLabel.cpp in Sources */,
+				C386B31206DA39EF00AF9EFE /* KMenu.cpp in Sources */,
+				C386B31406DA39EF00AF9EFE /* KMenuItem.cpp in Sources */,
+				C386B31606DA39EF00AF9EFE /* KNumberField.cpp in Sources */,
+				C386B31806DA39EF00AF9EFE /* KProjectionWidget.cpp in Sources */,
+				C386B31A06DA39EF00AF9EFE /* KStatusMenuItem.cpp in Sources */,
+				C386B31C06DA39EF00AF9EFE /* KSubMenuItem.cpp in Sources */,
+				C386B31E06DA39EF00AF9EFE /* KTextField.cpp in Sources */,
+				C386B32006DA39EF00AF9EFE /* KTextWidget.cpp in Sources */,
+				C386B32206DA39EF00AF9EFE /* KToggleButton.cpp in Sources */,
+				C386B32406DA39EF00AF9EFE /* KWidget.cpp in Sources */,
+				C386B32606DA39EF00AF9EFE /* KWidgetArray.cpp in Sources */,
+				C386B32806DA39EF00AF9EFE /* KConsole.cpp in Sources */,
+				C386B32A06DA39EF00AF9EFE /* KFileTreeWindow.cpp in Sources */,
+				C386B32C06DA39EF00AF9EFE /* KMenuWindow.cpp in Sources */,
+				C386B32E06DA39EF00AF9EFE /* KMessagePanel.cpp in Sources */,
+				C386B33006DA39EF00AF9EFE /* KPopupMenu.cpp in Sources */,
+				C386B33206DA39EF00AF9EFE /* KWindow.cpp in Sources */,
+				C35DD17106DB73A90012D687 /* KConnector.cpp in Sources */,
+				C35DD17306DB73A90012D687 /* KConnectorAttributeIn.cpp in Sources */,
+				C35DD17506DB73A90012D687 /* KConnectorAttributeOut.cpp in Sources */,
+				C35DD17806DB73A90012D687 /* KConnectorIntValueInOut.cpp in Sources */,
+				C35DD17A06DB73A90012D687 /* KConnectorMatrixIn.cpp in Sources */,
+				C35DD17C06DB73A90012D687 /* KConnectorMatrixOut.cpp in Sources */,
+				C35DD17E06DB73A90012D687 /* KConnectorModulatorIn.cpp in Sources */,
+				C35DD18006DB73A90012D687 /* KConnectorModulatorOut.cpp in Sources */,
+				C35DD18206DB73A90012D687 /* KConnectorParticleIn.cpp in Sources */,
+				C35DD18406DB73A90012D687 /* KConnectorParticleOut.cpp in Sources */,
+				C35DD18606DB73A90012D687 /* KConnectorSceneIn.cpp in Sources */,
+				C35DD18806DB73A90012D687 /* KConnectorSceneOut.cpp in Sources */,
+				C35DD18A06DB73A90012D687 /* KConnectorTextureBatchIn.cpp in Sources */,
+				C35DD18C06DB73A90012D687 /* KConnectorTextureBatchOut.cpp in Sources */,
+				C35DD18E06DB73A90012D687 /* KConnectorTextureFileIn.cpp in Sources */,
+				C35DD19006DB73A90012D687 /* KConnectorTextureFileOut.cpp in Sources */,
+				C35DD19206DB73A90012D687 /* KConnectorTextureVersionIn.cpp in Sources */,
+				C35DD19406DB73A90012D687 /* KConnectorTextureVersionOut.cpp in Sources */,
+				C35DD19606DB73A90012D687 /* KConnectorValueIn.cpp in Sources */,
+				C35DD19806DB73A90012D687 /* KConnectorValueInOut.cpp in Sources */,
+				C35DD19A06DB73A90012D687 /* KConnectorValueOut.cpp in Sources */,
+				C35DD19C06DB73A90012D687 /* KValueConnector.cpp in Sources */,
+				C35DD19E06DB73A90012D687 /* KHandle.cpp in Sources */,
+				C35DD1A006DB73A90012D687 /* KHandlesObject.cpp in Sources */,
+				C35DD1A206DB73A90012D687 /* KMatrixHandle.cpp in Sources */,
+				C35DD1A406DB73A90012D687 /* KMatrixHandleRotate.cpp in Sources */,
+				C35DD1A606DB73A90012D687 /* KMatrixHandleScale.cpp in Sources */,
+				C35DD1A806DB73A90012D687 /* KMatrixHandleTranslate.cpp in Sources */,
+				C35DD1AA06DB73A90012D687 /* KMoveHandle.cpp in Sources */,
+				C35DD1AC06DB73A90012D687 /* KOneDirectionHandle.cpp in Sources */,
+				C35DD1AE06DB73A90012D687 /* KRotationHandle.cpp in Sources */,
+				C35DD1B006DB73A90012D687 /* KScaleHandle.cpp in Sources */,
+				C35DD1B206DB73A90012D687 /* KTwoDirectionHandle.cpp in Sources */,
+				C35DD1B406DB73A90012D687 /* KVertexHandle.cpp in Sources */,
+				C35DD1B606DB73A90012D687 /* KCameraHandler.cpp in Sources */,
+				C35DD1B806DB73A90012D687 /* KController.cpp in Sources */,
+				C35DD1BA06DB73A90012D687 /* KMain.cpp in Sources */,
+				C35DD1BC06DB73A90012D687 /* KMainMenu.cpp in Sources */,
+				C35DD1BE06DB73A90012D687 /* KModules.cpp in Sources */,
+				C35DD1C006DB73A90012D687 /* KObjects.cpp in Sources */,
+				C35DD1C206DB73A90012D687 /* KPreferences.cpp in Sources */,
+				C35DD1C406DB73A90012D687 /* KTextureSets.cpp in Sources */,
+				C35DD1C706DB73A90012D687 /* main.m in Sources */,
+				C35DD1C806DB73A90012D687 /* KAttributeModule.cpp in Sources */,
+				C35DD1CA06DB73A90012D687 /* KModuleAttributeHub.cpp in Sources */,
+				C35DD1CC06DB73A90012D687 /* KModuleBlend.cpp in Sources */,
+				C35DD1CE06DB73A90012D687 /* KModuleColor.cpp in Sources */,
+				C35DD1D006DB73A90012D687 /* KModuleColorMask.cpp in Sources */,
+				C35DD1D206DB73A90012D687 /* KModuleFog.cpp in Sources */,
+				C35DD1D406DB73A90012D687 /* KModuleMaterial.cpp in Sources */,
+				C35DD1D606DB73A90012D687 /* KModuleTexture.cpp in Sources */,
+				C35DD1D806DB73A90012D687 /* KModuleTextureFile.cpp in Sources */,
+				C35DD1DA06DB73A90012D687 /* KModuleTextureMatrix.cpp in Sources */,
+				C35DD1DC06DB73A90012D687 /* KModule.cpp in Sources */,
+				C35DD1DE06DB73A90012D687 /* KModuleInspector.cpp in Sources */,
+				C35DD1E006DB73A90012D687 /* KScene.cpp in Sources */,
+				C35DD1E206DB73A90012D687 /* KSceneSet.cpp in Sources */,
+				C35DD1E406DB73A90012D687 /* KTextureBatch.cpp in Sources */,
+				C35DD1E606DB73A90012D687 /* KTextureFile.cpp in Sources */,
+				C35DD1E806DB73A90012D687 /* KTextureModule.cpp in Sources */,
+				C35DD1EA06DB73A90012D687 /* KTextureSet.cpp in Sources */,
+				C35DD1EC06DB73A90012D687 /* KHubModule.cpp in Sources */,
+				C35DD1EE06DB73A90012D687 /* KMatrixModule.cpp in Sources */,
+				C35DD1F006DB73A90012D687 /* KModuleGoto.cpp in Sources */,
+				C35DD1F206DB73A90012D687 /* KModuleIdentity.cpp in Sources */,
+				C35DD1F406DB73A90012D687 /* KModuleLabel.cpp in Sources */,
+				C35DD1F606DB73A90012D687 /* KModuleMatrix.cpp in Sources */,
+				C35DD1F806DB73A90012D687 /* KModuleMatrixHub.cpp in Sources */,
+				C35DD1FA06DB73A90012D687 /* KModuleRotate.cpp in Sources */,
+				C35DD1FC06DB73A90012D687 /* KModuleScale.cpp in Sources */,
+				C35DD1FE06DB73A90012D687 /* KModuleSize.cpp in Sources */,
+				C35DD20006DB73A90012D687 /* KModuleTranslate.cpp in Sources */,
+				C35DD20206DB73A90012D687 /* KModuleCamera.cpp in Sources */,
+				C35DD20406DB73A90012D687 /* KModuleLight.cpp in Sources */,
+				C35DD20606DB73A90012D687 /* KModuleLSystem.cpp in Sources */,
+				C35DD20806DB73A90012D687 /* KModuleObjectBox.cpp in Sources */,
+				C35DD20A06DB73A90012D687 /* KModuleObjectCylinder.cpp in Sources */,
+				C35DD20C06DB73A90012D687 /* KModuleObjectDisk.cpp in Sources */,
+				C35DD20E06DB73A90012D687 /* KModuleObjectFace.cpp in Sources */,
+				C35DD21006DB73A90012D687 /* KModuleObjectLandscape.cpp in Sources */,
+				C35DD21206DB73A90012D687 /* KModuleObjectPoint.cpp in Sources */,
+				C35DD21406DB73A90012D687 /* KModuleObjectSphere.cpp in Sources */,
+				C35DD21606DB73A90012D687 /* KModuleObjectText.cpp in Sources */,
+				C35DD21806DB73A90012D687 /* KModuleParticle.cpp in Sources */,
+				C35DD21A06DB73A90012D687 /* KModuleParticleEmitter.cpp in Sources */,
+				C35DD21C06DB73A90012D687 /* KModuleVertex.cpp in Sources */,
+				C35DD21E06DB73A90012D687 /* KObjectModule.cpp in Sources */,
+				C35DD22006DB73A90012D687 /* KActivationValueModule.cpp in Sources */,
+				C35DD22206DB73A90012D687 /* KFilterModule.cpp in Sources */,
+				C35DD22406DB73A90012D687 /* KGlobalModulator.cpp in Sources */,
+				C35DD22606DB73A90012D687 /* KModulator.cpp in Sources */,
+				C35DD22806DB73A90012D687 /* KModuleAccu.cpp in Sources */,
+				C35DD22A06DB73A90012D687 /* KModuleRandom.cpp in Sources */,
+				C35DD22C06DB73A90012D687 /* KModuleSwitch.cpp in Sources */,
+				C35DD22E06DB73A90012D687 /* KModuleTrigger.cpp in Sources */,
+				C35DD23006DB73A90012D687 /* KModuleVariable.cpp in Sources */,
+				C35DD23206DB73A90012D687 /* KOperationModule.cpp in Sources */,
+				C35DD23406DB73A90012D687 /* KSequenceGenerator.cpp in Sources */,
+				C35DD23606DB73A90012D687 /* KValueModule.cpp in Sources */,
+				C35DD23806DB73A90012D687 /* KBox.cpp in Sources */,
+				C35DD23A06DB73A90012D687 /* KCamera.cpp in Sources */,
+				C35DD23C06DB73A90012D687 /* KCylinder.cpp in Sources */,
+				C35DD23E06DB73A90012D687 /* KDisk.cpp in Sources */,
+				C35DD24006DB73A90012D687 /* KFace.cpp in Sources */,
+				C35DD24206DB73A90012D687 /* KLandscape.cpp in Sources */,
+				C35DD24406DB73A90012D687 /* KLight.cpp in Sources */,
+				C35DD24606DB73A90012D687 /* KParticle.cpp in Sources */,
+				C35DD24806DB73A90012D687 /* KSphere.cpp in Sources */,
+				C35DD24A06DB73A90012D687 /* KText.cpp in Sources */,
+				C35DD24C06DB73A90012D687 /* KVertex.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B2DAD2E2837D8A9007B7157 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		7B2DAD2F2837D8A9007B7157 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		7B2DAD302837D8A9007B7157 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+		7B2DAD312837D8A9007B7157 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL_image.framework/Versions/A/Headers,
+					/System/Library/Frameworks/GLUT.framework/Versions/A/Headers,
+				);
+				INFOPLIST_FILE = "kodisein-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kodisein;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Development;
+		};
+		7B2DAD322837D8A9007B7157 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL_image.framework/Versions/A/Headers,
+					/System/Library/Frameworks/GLUT.framework/Versions/A/Headers,
+				);
+				INFOPLIST_FILE = "kodisein-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kodisein;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Deployment;
+		};
+		7B2DAD332837D8A9007B7157 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL_image.framework/Versions/A/Headers,
+					/System/Library/Frameworks/GLUT.framework/Versions/A/Headers,
+				);
+				INFOPLIST_FILE = "kodisein-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = kodisein;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B2DAD342837D8A9007B7157 /* Build configuration list for PBXProject "kodisein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2DAD2E2837D8A9007B7157 /* Development */,
+				7B2DAD2F2837D8A9007B7157 /* Deployment */,
+				7B2DAD302837D8A9007B7157 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		7B2DAD352837D8A9007B7157 /* Build configuration list for PBXNativeTarget "kodisein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2DAD312837D8A9007B7157 /* Development */,
+				7B2DAD322837D8A9007B7157 /* Deployment */,
+				7B2DAD332837D8A9007B7157 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C36855DC06D8CC8800672963 /* Project object */;
+}
